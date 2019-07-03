@@ -13,7 +13,14 @@
 
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-    <link rel="stylesheet" href="assets/css/main.min.css">
+    <!--build:css assets/css/main.min.css -->
+    <link href="node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet" />
+    <link href="node_modules/roboto-fontface/css/roboto/roboto-fontface.css" rel="stylesheet" />
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="node_modules/hamburgers/dist/hamburgers.css" rel="stylesheet" />
+    <link href="node_modules/highlight.js/styles/tomorrow.css" rel="stylesheet" />
+    <link href="assets/css/trinity.css" rel="stylesheet" />
+    <!--endbuild -->
   </head>
 
   <body id="page-top">
@@ -564,7 +571,15 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
       </div>
     </footer>
 
-    <script src="assets/js/main.min.js"></script>
+    <!--build:js assets/js/main.min.js -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/smooth-scroll/dist/smooth-scroll.js"></script>
+    <script src="node_modules/typed.js/lib/typed.js"></script>
+    <script src="assets/js/jquery.particleground.js"></script>
+    <script src="assets/js/highlight.site.pack.js"></script>
+    <script src="assets/js/@init.js"></script>
+    <!--endbuild -->
 
     <script src="https://static.semiodesk.com/semiodesk.trinity/release/stable/currentVersion.php"></script>
 
