@@ -1,0 +1,1147 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StoreBase
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StoreBase
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Semiodesk.Trinity.StoreBase">
+  
+  
+  <h1 id="Semiodesk_Trinity_StoreBase" data-uid="Semiodesk.Trinity.StoreBase" class="text-break">Class StoreBase
+  </h1>
+  <div class="markdown level0 summary"><p>This class encapsulates the functionality of an abstract triple store. Cannot be used directly. 
+Use StoreFactory to get a concret implementation.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">StoreBase</span></div>
+      <div class="level2"><a class="xref" href="Semiodesk.Trinity.Store.dotNetRDFStore.html">dotNetRDFStore</a></div>
+      <div class="level2"><a class="xref" href="Semiodesk.Trinity.Store.Stardog.StardogStore.html">StardogStore</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Semiodesk.Trinity.IStore.html">IStore</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Semiodesk.Trinity.html">Semiodesk.Trinity</a></h6>
+  <h6><strong>Assembly</strong>: Semiodesk.Trinity.dll</h6>
+  <h5 id="Semiodesk_Trinity_StoreBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class StoreBase : IStore, IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreBase_IsReady.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreBase.IsReady%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreBase.cs/#L46">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreBase_IsReady_" data-uid="Semiodesk.Trinity.StoreBase.IsReady*"></a>
+  <h4 id="Semiodesk_Trinity_StoreBase_IsReady" data-uid="Semiodesk.Trinity.StoreBase.IsReady">IsReady</h4>
+  <div class="markdown level1 summary"><p>This property gives the state of the store. True means that the connection is ready and awaiting queries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsReady { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreBase_Log.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreBase.Log%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreBase.cs/#L52">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreBase_Log_" data-uid="Semiodesk.Trinity.StoreBase.Log*"></a>
+  <h4 id="Semiodesk_Trinity_StoreBase_Log" data-uid="Semiodesk.Trinity.StoreBase.Log">Log</h4>
+  <div class="markdown level1 summary"><p>Set this property to log the SPARQL queries which are executed on this store.
+For example, to log to the console, set this property to System.Console.Write(System.String).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;string&gt; Log { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreBase_BeginTransaction_System_Data_IsolationLevel_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreBase.BeginTransaction(System.Data.IsolationLevel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreBase.cs/#L116">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreBase_BeginTransaction_" data-uid="Semiodesk.Trinity.StoreBase.BeginTransaction*"></a>
+  <h4 id="Semiodesk_Trinity_StoreBase_BeginTransaction_System_Data_IsolationLevel_" data-uid="Semiodesk.Trinity.StoreBase.BeginTransaction(System.Data.IsolationLevel)">BeginTransaction(IsolationLevel)</h4>
+  <div class="markdown level1 summary"><p>Starts a transaction. The resulting transaction handle can be used to chain operations together.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ITransaction BeginTransaction(IsolationLevel isolationLevel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.IsolationLevel</span></td>
+        <td><span class="parametername">isolationLevel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.ITransaction.html">ITransaction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreBase_ContainsModel_Semiodesk_Trinity_IModel_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreBase.ContainsModel(Semiodesk.Trinity.IModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreBase.cs/#L84">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreBase_ContainsModel_" data-uid="Semiodesk.Trinity.StoreBase.ContainsModel*"></a>
+  <h4 id="Semiodesk_Trinity_StoreBase_ContainsModel_Semiodesk_Trinity_IModel_" data-uid="Semiodesk.Trinity.StoreBase.ContainsModel(Semiodesk.Trinity.IModel)">ContainsModel(IModel)</h4>
+  <div class="markdown level1 summary"><p>Query if the model exists in the store.
+OBSOLETE: This method does not list empty models. At the moment you should just call GetModel() and test for IsEmpty</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This method does not list empty models. At the moment you should just call GetModel() and test for IsEmpty&quot;)]
+public virtual bool ContainsModel(IModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.IModel.html">IModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>Handle to the model which is to be queried.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreBase_ContainsModel_System_Uri_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreBase.ContainsModel(System.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreBase.cs/#L75">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreBase_ContainsModel_" data-uid="Semiodesk.Trinity.StoreBase.ContainsModel*"></a>
+  <h4 id="Semiodesk_Trinity_StoreBase_ContainsModel_System_Uri_" data-uid="Semiodesk.Trinity.StoreBase.ContainsModel(System.Uri)">ContainsModel(Uri)</h4>
+  <div class="markdown level1 summary"><p>Query if the model exists in the store.
+OBSOLETE: This method does not list empty models. At the moment you should just call GetModel() and test for IsEmpty</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This method does not list empty models. At the moment you should just call GetModel() and test for IsEmpty&quot;)]
+public abstract bool ContainsModel(Uri uri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td><p>Uri of the model which is to be queried.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreBase_CreateModel_System_Uri_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreBase.CreateModel(System.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreBase.cs/#L227">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreBase_CreateModel_" data-uid="Semiodesk.Trinity.StoreBase.CreateModel*"></a>
+  <h4 id="Semiodesk_Trinity_StoreBase_CreateModel_System_Uri_" data-uid="Semiodesk.Trinity.StoreBase.CreateModel(System.Uri)">CreateModel(Uri)</h4>
+  <div class="markdown level1 summary"><p>Adds a new model with the given uri to the storage. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;It is not necessary to create models explicitly. Use GetModel() instead, if the model does not exist, it will be created implicitly.&quot;)]
+public virtual IModel CreateModel(Uri uri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td><p>Uri of the model</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.IModel.html">IModel</a></td>
+        <td><p>Handle to the model</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreBase_CreateModelGroup_Semiodesk_Trinity_IModel___.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreBase.CreateModelGroup(Semiodesk.Trinity.IModel%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreBase.cs/#L265">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreBase_CreateModelGroup_" data-uid="Semiodesk.Trinity.StoreBase.CreateModelGroup*"></a>
+  <h4 id="Semiodesk_Trinity_StoreBase_CreateModelGroup_Semiodesk_Trinity_IModel___" data-uid="Semiodesk.Trinity.StoreBase.CreateModelGroup(Semiodesk.Trinity.IModel[])">CreateModelGroup(IModel[])</h4>
+  <div class="markdown level1 summary"><p>Creates a model group which allows for queries to be made on multiple models at once.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IModelGroup CreateModelGroup(params IModel[] models)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.IModel.html">IModel</a>[]</td>
+        <td><span class="parametername">models</span></td>
+        <td><p>The list of model handles that should be grouped together.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.IModelGroup.html">IModelGroup</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreBase_CreateModelGroup_System_Uri___.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreBase.CreateModelGroup(System.Uri%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreBase.cs/#L248">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreBase_CreateModelGroup_" data-uid="Semiodesk.Trinity.StoreBase.CreateModelGroup*"></a>
+  <h4 id="Semiodesk_Trinity_StoreBase_CreateModelGroup_System_Uri___" data-uid="Semiodesk.Trinity.StoreBase.CreateModelGroup(System.Uri[])">CreateModelGroup(Uri[])</h4>
+  <div class="markdown level1 summary"><p>Creates a model group which allows for queries to be made on multiple models at once.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IModelGroup CreateModelGroup(params Uri[] models)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span>[]</td>
+        <td><span class="parametername">models</span></td>
+        <td><p>The list of uris of the models that should be grouped together.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.IModelGroup.html">IModelGroup</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreBase_Dispose.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreBase.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreBase.cs/#L220">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreBase_Dispose_" data-uid="Semiodesk.Trinity.StoreBase.Dispose*"></a>
+  <h4 id="Semiodesk_Trinity_StoreBase_Dispose" data-uid="Semiodesk.Trinity.StoreBase.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Disposes this store and it&apos;s underlying connection. This object cannot be reused after disposing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreBase_ExecuteNonQuery_Semiodesk_Trinity_SparqlUpdate_Semiodesk_Trinity_ITransaction_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreBase.ExecuteNonQuery(Semiodesk.Trinity.SparqlUpdate%2CSemiodesk.Trinity.ITransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreBase.cs/#L109">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreBase_ExecuteNonQuery_" data-uid="Semiodesk.Trinity.StoreBase.ExecuteNonQuery*"></a>
+  <h4 id="Semiodesk_Trinity_StoreBase_ExecuteNonQuery_Semiodesk_Trinity_SparqlUpdate_Semiodesk_Trinity_ITransaction_" data-uid="Semiodesk.Trinity.StoreBase.ExecuteNonQuery(Semiodesk.Trinity.SparqlUpdate,Semiodesk.Trinity.ITransaction)">ExecuteNonQuery(SparqlUpdate, ITransaction)</h4>
+  <div class="markdown level1 summary"><p>Executes a query on the store which does not expect a result.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void ExecuteNonQuery(SparqlUpdate update, ITransaction transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.SparqlUpdate.html">SparqlUpdate</a></td>
+        <td><span class="parametername">update</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.ITransaction.html">ITransaction</a></td>
+        <td><span class="parametername">transaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreBase_ExecuteQuery_Semiodesk_Trinity_ISparqlQuery_Semiodesk_Trinity_ITransaction_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreBase.ExecuteQuery(Semiodesk.Trinity.ISparqlQuery%2CSemiodesk.Trinity.ITransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreBase.cs/#L102">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreBase_ExecuteQuery_" data-uid="Semiodesk.Trinity.StoreBase.ExecuteQuery*"></a>
+  <h4 id="Semiodesk_Trinity_StoreBase_ExecuteQuery_Semiodesk_Trinity_ISparqlQuery_Semiodesk_Trinity_ITransaction_" data-uid="Semiodesk.Trinity.StoreBase.ExecuteQuery(Semiodesk.Trinity.ISparqlQuery,Semiodesk.Trinity.ITransaction)">ExecuteQuery(ISparqlQuery, ITransaction)</h4>
+  <div class="markdown level1 summary"><p>Executes a SparqlQuery on the store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ISparqlQueryResult ExecuteQuery(ISparqlQuery query, ITransaction transaction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.ISparqlQuery.html">ISparqlQuery</a></td>
+        <td><span class="parametername">query</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.ITransaction.html">ITransaction</a></td>
+        <td><span class="parametername">transaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.ISparqlQueryResult.html">ISparqlQueryResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreBase_GetModel_System_Uri_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreBase.GetModel(System.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreBase.cs/#L238">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreBase_GetModel_" data-uid="Semiodesk.Trinity.StoreBase.GetModel*"></a>
+  <h4 id="Semiodesk_Trinity_StoreBase_GetModel_System_Uri_" data-uid="Semiodesk.Trinity.StoreBase.GetModel(System.Uri)">GetModel(Uri)</h4>
+  <div class="markdown level1 summary"><p>Gets a handle to a model in the store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IModel GetModel(Uri uri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td><p>Uri of the model.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.IModel.html">IModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreBase_InitializeFromConfiguration_System_String_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreBase.InitializeFromConfiguration(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreBase.cs/#L169">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreBase_InitializeFromConfiguration_" data-uid="Semiodesk.Trinity.StoreBase.InitializeFromConfiguration*"></a>
+  <h4 id="Semiodesk_Trinity_StoreBase_InitializeFromConfiguration_System_String_System_String_" data-uid="Semiodesk.Trinity.StoreBase.InitializeFromConfiguration(System.String,System.String)">InitializeFromConfiguration(String, String)</h4>
+  <div class="markdown level1 summary"><p>Initializes the store from the configuration. It uses either the provided file or attempts to load from &quot;ontologies.config&quot; located next to the executing assembly.
+For legacy reasons it also looks in the app.config file.
+If the ontology files are in a different path, this can be supplied as a base path..</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void InitializeFromConfiguration(string configPath = null, string sourceDir = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">configPath</span></td>
+        <td><p>Path the configuration should be read from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceDir</span></td>
+        <td><p>Path where the ontologies should be searched for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreBase_ListModels.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreBase.ListModels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreBase.cs/#L94">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreBase_ListModels_" data-uid="Semiodesk.Trinity.StoreBase.ListModels*"></a>
+  <h4 id="Semiodesk_Trinity_StoreBase_ListModels" data-uid="Semiodesk.Trinity.StoreBase.ListModels">ListModels()</h4>
+  <div class="markdown level1 summary"><p>Lists all models in the store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract IEnumerable&lt;IModel&gt; ListModels()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Semiodesk.Trinity.IModel.html">IModel</a>&gt;</td>
+        <td><p>All handles to existing models.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreBase_LoadConfiguration_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreBase.LoadConfiguration(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreBase.cs/#L182">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreBase_LoadConfiguration_" data-uid="Semiodesk.Trinity.StoreBase.LoadConfiguration*"></a>
+  <h4 id="Semiodesk_Trinity_StoreBase_LoadConfiguration_System_String_" data-uid="Semiodesk.Trinity.StoreBase.LoadConfiguration(System.String)">LoadConfiguration(String)</h4>
+  <div class="markdown level1 summary"><p>This method loads the configuration data from the given file. 
+This can read the old App.config and new ontologies.config files.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IConfiguration LoadConfiguration(string configPath = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">configPath</span></td>
+        <td><p>Path to either ontologies.config or App.config file.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Semiodesk.Trinity.Configuration.IConfiguration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreBase_LoadOntologies_Semiodesk_Trinity_Configuration_IConfiguration_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreBase.LoadOntologies(Semiodesk.Trinity.Configuration.IConfiguration%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreBase.cs/#L199">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreBase_LoadOntologies_" data-uid="Semiodesk.Trinity.StoreBase.LoadOntologies*"></a>
+  <h4 id="Semiodesk_Trinity_StoreBase_LoadOntologies_Semiodesk_Trinity_Configuration_IConfiguration_System_String_" data-uid="Semiodesk.Trinity.StoreBase.LoadOntologies(Semiodesk.Trinity.Configuration.IConfiguration,System.String)">LoadOntologies(IConfiguration, String)</h4>
+  <div class="markdown level1 summary"><p>Loads Ontologies defined in the currently loaded config file into the store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void LoadOntologies(IConfiguration configuration, string sourceDir = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Semiodesk.Trinity.Configuration.IConfiguration</span></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>Handle of the configuration.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceDir</span></td>
+        <td><p>Searchpath for the ontologies.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreBase_LoadOntologySettings_System_String_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreBase.LoadOntologySettings(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreBase.cs/#L154">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreBase_LoadOntologySettings_" data-uid="Semiodesk.Trinity.StoreBase.LoadOntologySettings*"></a>
+  <h4 id="Semiodesk_Trinity_StoreBase_LoadOntologySettings_System_String_System_String_" data-uid="Semiodesk.Trinity.StoreBase.LoadOntologySettings(System.String,System.String)">LoadOntologySettings(String, String)</h4>
+  <div class="markdown level1 summary"><p>Initializes the store from the configuration. It uses either the provided file or attempts to load from &quot;ontologies.config&quot; located next to the executing assembly.
+For legacy reasons it also looks in the app.config file.
+If the ontology files are in a different path, this can be supplied as a base path..</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This method will be removed in the future. Use InitializeFromConfiguration() instead.&quot;)]
+public virtual void LoadOntologySettings(string configPath = null, string sourceDir = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">configPath</span></td>
+        <td><p>Load a specific configuration file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sourceDir</span></td>
+        <td><p>If given, this function tries to load the ontologies from this folder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreBase_Read_System_IO_Stream_System_Uri_Semiodesk_Trinity_RdfSerializationFormat_System_Boolean_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreBase.Read(System.IO.Stream%2CSystem.Uri%2CSemiodesk.Trinity.RdfSerializationFormat%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreBase.cs/#L136">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreBase_Read_" data-uid="Semiodesk.Trinity.StoreBase.Read*"></a>
+  <h4 id="Semiodesk_Trinity_StoreBase_Read_System_IO_Stream_System_Uri_Semiodesk_Trinity_RdfSerializationFormat_System_Boolean_" data-uid="Semiodesk.Trinity.StoreBase.Read(System.IO.Stream,System.Uri,Semiodesk.Trinity.RdfSerializationFormat,System.Boolean)">Read(Stream, Uri, RdfSerializationFormat, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Loads a serialized graph from the given stream into the current store. See allowed <a class="xref" href="Semiodesk.Trinity.RdfSerializationFormat.html">RdfSerializationFormat</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Uri Read(Stream stream, Uri graphUri, RdfSerializationFormat format, bool update)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>Stream containing a serialized graph</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">graphUri</span></td>
+        <td><p>Uri of the graph in this store</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.RdfSerializationFormat.html">RdfSerializationFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>Allowed formats</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">update</span></td>
+        <td><p>Pass false if you want to overwrite the existing data. True if you want to add the new data to the existing.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreBase_Read_System_Uri_System_Uri_Semiodesk_Trinity_RdfSerializationFormat_System_Boolean_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreBase.Read(System.Uri%2CSystem.Uri%2CSemiodesk.Trinity.RdfSerializationFormat%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreBase.cs/#L126">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreBase_Read_" data-uid="Semiodesk.Trinity.StoreBase.Read*"></a>
+  <h4 id="Semiodesk_Trinity_StoreBase_Read_System_Uri_System_Uri_Semiodesk_Trinity_RdfSerializationFormat_System_Boolean_" data-uid="Semiodesk.Trinity.StoreBase.Read(System.Uri,System.Uri,Semiodesk.Trinity.RdfSerializationFormat,System.Boolean)">Read(Uri, Uri, RdfSerializationFormat, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Loads a serialized graph from the given location into the current store. See allowed <a class="xref" href="Semiodesk.Trinity.RdfSerializationFormat.html">RdfSerializationFormat</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Uri Read(Uri modelUri, Uri url, RdfSerializationFormat format, bool update)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">modelUri</span></td>
+        <td><p>Uri of the graph in this store</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>Location</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.RdfSerializationFormat.html">RdfSerializationFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>Allowed formats</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">update</span></td>
+        <td><p>Pass false if you want to overwrite the existing data. True if you want to add the new data to the existing.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreBase_RemoveModel_Semiodesk_Trinity_IModel_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreBase.RemoveModel(Semiodesk.Trinity.IModel)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreBase.cs/#L64">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreBase_RemoveModel_" data-uid="Semiodesk.Trinity.StoreBase.RemoveModel*"></a>
+  <h4 id="Semiodesk_Trinity_StoreBase_RemoveModel_Semiodesk_Trinity_IModel_" data-uid="Semiodesk.Trinity.StoreBase.RemoveModel(Semiodesk.Trinity.IModel)">RemoveModel(IModel)</h4>
+  <div class="markdown level1 summary"><p>Removes model from the store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RemoveModel(IModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.IModel.html">IModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>Handle of the model which is to be removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreBase_RemoveModel_System_Uri_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreBase.RemoveModel(System.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreBase.cs/#L58">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreBase_RemoveModel_" data-uid="Semiodesk.Trinity.StoreBase.RemoveModel*"></a>
+  <h4 id="Semiodesk_Trinity_StoreBase_RemoveModel_System_Uri_" data-uid="Semiodesk.Trinity.StoreBase.RemoveModel(System.Uri)">RemoveModel(Uri)</h4>
+  <div class="markdown level1 summary"><p>Removes model from the store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void RemoveModel(Uri uri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td><p>Uri of the model which is to be removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreBase_Write_System_IO_Stream_System_Uri_Semiodesk_Trinity_RdfSerializationFormat_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreBase.Write(System.IO.Stream%2CSystem.Uri%2CSemiodesk.Trinity.RdfSerializationFormat)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreBase.cs/#L145">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreBase_Write_" data-uid="Semiodesk.Trinity.StoreBase.Write*"></a>
+  <h4 id="Semiodesk_Trinity_StoreBase_Write_System_IO_Stream_System_Uri_Semiodesk_Trinity_RdfSerializationFormat_" data-uid="Semiodesk.Trinity.StoreBase.Write(System.IO.Stream,System.Uri,Semiodesk.Trinity.RdfSerializationFormat)">Write(Stream, Uri, RdfSerializationFormat)</h4>
+  <div class="markdown level1 summary"><p>Writes a serialized graph to the given stream. See allowed <a class="xref" href="Semiodesk.Trinity.RdfSerializationFormat.html">RdfSerializationFormat</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Write(Stream fs, Uri graphUri, RdfSerializationFormat format)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.Stream</span></td>
+        <td><span class="parametername">fs</span></td>
+        <td><p>Stream to which the content should be written.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">graphUri</span></td>
+        <td><p>Uri fo the graph in this store</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.RdfSerializationFormat.html">RdfSerializationFormat</a></td>
+        <td><span class="parametername">format</span></td>
+        <td><p>Allowed formats</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Semiodesk.Trinity.IStore.html">IStore</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreBase.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreBase.cs/#L39" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

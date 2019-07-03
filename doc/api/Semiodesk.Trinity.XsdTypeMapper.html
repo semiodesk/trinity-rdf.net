@@ -1,0 +1,2223 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class XsdTypeMapper
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class XsdTypeMapper
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Semiodesk.Trinity.XsdTypeMapper">
+  
+  
+  <h1 id="Semiodesk_Trinity_XsdTypeMapper" data-uid="Semiodesk.Trinity.XsdTypeMapper" class="text-break">Class XsdTypeMapper
+  </h1>
+  <div class="markdown level0 summary"><p>Provides functionality for the serialization and deserialization of .NET 
+objects to XML Schema encoded strings.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">XsdTypeMapper</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Semiodesk.Trinity.html">Semiodesk.Trinity</a></h6>
+  <h6><strong>Assembly</strong>: Semiodesk.Trinity.dll</h6>
+  <h5 id="Semiodesk_Trinity_XsdTypeMapper_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class XsdTypeMapper</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_NativeToXsd.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.NativeToXsd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L79">View Source</a>
+  </span>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_NativeToXsd" data-uid="Semiodesk.Trinity.XsdTypeMapper.NativeToXsd">NativeToXsd</h4>
+  <div class="markdown level1 summary"><p>Maps .NET types to XSD type URIs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static Dictionary&lt;Type, Uri&gt; NativeToXsd</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.Type</span>, <span class="xref">System.Uri</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_Serializers.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.Serializers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L122">View Source</a>
+  </span>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_Serializers" data-uid="Semiodesk.Trinity.XsdTypeMapper.Serializers">Serializers</h4>
+  <div class="markdown level1 summary"><p>Maps .NET types to object serialization delegates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static Dictionary&lt;Type, XsdTypeMapper.ObjectSerializationDelegate&gt; Serializers</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.Type</span>, <a class="xref" href="Semiodesk.Trinity.XsdTypeMapper.ObjectSerializationDelegate.html">XsdTypeMapper.ObjectSerializationDelegate</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_XsdToNative.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.XsdToNative%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L99">View Source</a>
+  </span>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_XsdToNative" data-uid="Semiodesk.Trinity.XsdTypeMapper.XsdToNative">XsdToNative</h4>
+  <div class="markdown level1 summary"><p>Maps XSD type URIs to .NET types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static Dictionary&lt;string, Type&gt; XsdToNative</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Type</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_DeserializeBool_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.DeserializeBool(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L560">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_DeserializeBool_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeBool*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_DeserializeBool_System_String_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeBool(System.String)">DeserializeBool(String)</h4>
+  <div class="markdown level1 summary"><p>Deserialize a bool from a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object DeserializeBool(string str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>The serialized bool</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>A bool value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_DeserializeByteArray_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.DeserializeByteArray(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L630">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_DeserializeByteArray_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeByteArray*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_DeserializeByteArray_System_String_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeByteArray(System.String)">DeserializeByteArray(String)</h4>
+  <div class="markdown level1 summary"><p>Deserialize a ByteArray from a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object DeserializeByteArray(string str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>The serialized ByteArray</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>A ByteArray value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_DeserializeDateTime_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.DeserializeDateTime(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L600">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_DeserializeDateTime_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeDateTime*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_DeserializeDateTime_System_String_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeDateTime(System.String)">DeserializeDateTime(String)</h4>
+  <div class="markdown level1 summary"><p>Deserialize a DateTime from a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object DeserializeDateTime(string str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>The serialized DateTime</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>A DateTime value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_DeserializeDecimal_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.DeserializeDecimal(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L570">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_DeserializeDecimal_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeDecimal*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_DeserializeDecimal_System_String_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeDecimal(System.String)">DeserializeDecimal(String)</h4>
+  <div class="markdown level1 summary"><p>Deserialize a decimal from a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object DeserializeDecimal(string str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>The serialized decimal</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>A decimal value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_DeserializeDouble_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.DeserializeDouble(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L580">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_DeserializeDouble_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeDouble*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_DeserializeDouble_System_String_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeDouble(System.String)">DeserializeDouble(String)</h4>
+  <div class="markdown level1 summary"><p>Deserialize a double from a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object DeserializeDouble(string str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>The serialized double</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>A double value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_DeserializeInt16_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.DeserializeInt16(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L500">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_DeserializeInt16_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeInt16*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_DeserializeInt16_System_String_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeInt16(System.String)">DeserializeInt16(String)</h4>
+  <div class="markdown level1 summary"><p>Deserialize an int16 from a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object DeserializeInt16(string str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>The serialized int16</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>An int16</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_DeserializeInt32_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.DeserializeInt32(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L510">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_DeserializeInt32_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeInt32*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_DeserializeInt32_System_String_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeInt32(System.String)">DeserializeInt32(String)</h4>
+  <div class="markdown level1 summary"><p>Deserialize an int32 from a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object DeserializeInt32(string str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>The serialized int32</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>a int32 value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_DeserializeInt64_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.DeserializeInt64(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L520">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_DeserializeInt64_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeInt64*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_DeserializeInt64_System_String_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeInt64(System.String)">DeserializeInt64(String)</h4>
+  <div class="markdown level1 summary"><p>Deserialize an int64 from a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object DeserializeInt64(string str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>The serialized int64</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>A int64 value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_DeserializeLiteralNode_VDS_RDF_BaseLiteralNode_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.DeserializeLiteralNode(VDS.RDF.BaseLiteralNode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L686">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_DeserializeLiteralNode_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeLiteralNode*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_DeserializeLiteralNode_VDS_RDF_BaseLiteralNode_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeLiteralNode(VDS.RDF.BaseLiteralNode)">DeserializeLiteralNode(BaseLiteralNode)</h4>
+  <div class="markdown level1 summary"><p>Deserialize a LiteralNode from a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object DeserializeLiteralNode(BaseLiteralNode node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VDS.RDF.BaseLiteralNode</span></td>
+        <td><span class="parametername">node</span></td>
+        <td><p>The serialized LiteralNode</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>A LiteralNode value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_DeserializeResource_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.DeserializeResource(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L610">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_DeserializeResource_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeResource*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_DeserializeResource_System_String_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeResource(System.String)">DeserializeResource(String)</h4>
+  <div class="markdown level1 summary"><p>Deserialize a Resource from a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object DeserializeResource(string str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>The serialized Resource</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>A Resource value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_DeserializeSingle_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.DeserializeSingle(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L590">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_DeserializeSingle_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeSingle*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_DeserializeSingle_System_String_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeSingle(System.String)">DeserializeSingle(String)</h4>
+  <div class="markdown level1 summary"><p>Deserialize a single from a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object DeserializeSingle(string str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>The serialized single</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>A single value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_DeserializeString_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.DeserializeString(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L477">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_DeserializeString_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeString*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_DeserializeString_System_String_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeString(System.String)">DeserializeString(String)</h4>
+  <div class="markdown level1 summary"><p>Deserialize string, nothing to do.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object DeserializeString(string str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>The string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_DeserializeString_System_String_System_Uri_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.DeserializeString(System.String%2CSystem.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L488">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_DeserializeString_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeString*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_DeserializeString_System_String_System_Uri_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeString(System.String,System.Uri)">DeserializeString(String, Uri)</h4>
+  <div class="markdown level1 summary"><p>Deserialize string with given type uri.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object DeserializeString(string str, Uri typeUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>The value as string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">typeUri</span></td>
+        <td><p>The xsd type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The value in its correct type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_DeserializeUInt16_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.DeserializeUInt16(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L530">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_DeserializeUInt16_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeUInt16*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_DeserializeUInt16_System_String_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeUInt16(System.String)">DeserializeUInt16(String)</h4>
+  <div class="markdown level1 summary"><p>Deserialize an uint6 from a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object DeserializeUInt16(string str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>The serialized int64</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>A uint16 value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_DeserializeUInt32_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.DeserializeUInt32(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L540">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_DeserializeUInt32_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeUInt32*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_DeserializeUInt32_System_String_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeUInt32(System.String)">DeserializeUInt32(String)</h4>
+  <div class="markdown level1 summary"><p>Deserialize an int32 from a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object DeserializeUInt32(string str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>The serialized int32</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>A int32 value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_DeserializeUInt64_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.DeserializeUInt64(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L550">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_DeserializeUInt64_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeUInt64*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_DeserializeUInt64_System_String_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeUInt64(System.String)">DeserializeUInt64(String)</h4>
+  <div class="markdown level1 summary"><p>Deserialize an uint64 from a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object DeserializeUInt64(string str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>The serialized uint64</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>A uint64 value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_DeserializeUri_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.DeserializeUri(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L620">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_DeserializeUri_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeUri*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_DeserializeUri_System_String_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeUri(System.String)">DeserializeUri(String)</h4>
+  <div class="markdown level1 summary"><p>Deserialize a uri from a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object DeserializeUri(string str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>The serialized uri</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>A uri value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_DeserializeXmlNode_System_Xml_XmlNode_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.DeserializeXmlNode(System.Xml.XmlNode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L640">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_DeserializeXmlNode_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeXmlNode*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_DeserializeXmlNode_System_Xml_XmlNode_" data-uid="Semiodesk.Trinity.XsdTypeMapper.DeserializeXmlNode(System.Xml.XmlNode)">DeserializeXmlNode(XmlNode)</h4>
+  <div class="markdown level1 summary"><p>Deserialize a XmlNode from a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object DeserializeXmlNode(XmlNode node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Xml.XmlNode</span></td>
+        <td><span class="parametername">node</span></td>
+        <td><p>The serialized XmlNode</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>A XmlNode value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_GetTypeFromXsd_System_Uri_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.GetTypeFromXsd(System.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L198">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_GetTypeFromXsd_" data-uid="Semiodesk.Trinity.XsdTypeMapper.GetTypeFromXsd*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_GetTypeFromXsd_System_Uri_" data-uid="Semiodesk.Trinity.XsdTypeMapper.GetTypeFromXsd(System.Uri)">GetTypeFromXsd(Uri)</h4>
+  <div class="markdown level1 summary"><p>Provides the XML Schema type URI for a given .NET type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Type GetTypeFromXsd(Uri uri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td><p>A xsd type uri.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><p>A XML Schema type URI.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_GetXsdTypeUri_System_Type_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.GetXsdTypeUri(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L178">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_GetXsdTypeUri_" data-uid="Semiodesk.Trinity.XsdTypeMapper.GetXsdTypeUri*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_GetXsdTypeUri_System_Type_" data-uid="Semiodesk.Trinity.XsdTypeMapper.GetXsdTypeUri(System.Type)">GetXsdTypeUri(Type)</h4>
+  <div class="markdown level1 summary"><p>Provides the XML Schema type URI for a given .NET type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri GetXsdTypeUri(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>A .NET type object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><p>A XML Schema type URI.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_HasXsdTypeUri_System_Type_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.HasXsdTypeUri(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L188">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_HasXsdTypeUri_" data-uid="Semiodesk.Trinity.XsdTypeMapper.HasXsdTypeUri*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_HasXsdTypeUri_System_Type_" data-uid="Semiodesk.Trinity.XsdTypeMapper.HasXsdTypeUri(System.Type)">HasXsdTypeUri(Type)</h4>
+  <div class="markdown level1 summary"><p>Indicates if there is a registered XML Schema type URI for the given .NET type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasXsdTypeUri(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>A .NET type object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if there is a XML schema type, <code>false</code> otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_SerializeBool_System_Object_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.SerializeBool(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L366">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_SerializeBool_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeBool*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_SerializeBool_System_Object_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeBool(System.Object)">SerializeBool(Object)</h4>
+  <div class="markdown level1 summary"><p>Serialize a bool</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeBool(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_SerializeByteArray_System_Object_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.SerializeByteArray(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L348">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_SerializeByteArray_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeByteArray*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_SerializeByteArray_System_Object_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeByteArray(System.Object)">SerializeByteArray(Object)</h4>
+  <div class="markdown level1 summary"><p>Serialize a byte array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeByteArray(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_SerializeDateTime_System_Object_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.SerializeDateTime(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L338">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_SerializeDateTime_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeDateTime*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_SerializeDateTime_System_Object_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeDateTime(System.Object)">SerializeDateTime(Object)</h4>
+  <div class="markdown level1 summary"><p>Serialize a DateTime</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeDateTime(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_SerializeDecimal_System_Object_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.SerializeDecimal(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L436">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_SerializeDecimal_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeDecimal*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_SerializeDecimal_System_Object_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeDecimal(System.Object)">SerializeDecimal(Object)</h4>
+  <div class="markdown level1 summary"><p>Serialize a decimal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeDecimal(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_SerializeDouble_System_Object_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.SerializeDouble(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L446">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_SerializeDouble_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeDouble*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_SerializeDouble_System_Object_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeDouble(System.Object)">SerializeDouble(Object)</h4>
+  <div class="markdown level1 summary"><p>Serialize a double</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeDouble(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_SerializeInt16_System_Object_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.SerializeInt16(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L376">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_SerializeInt16_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeInt16*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_SerializeInt16_System_Object_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeInt16(System.Object)">SerializeInt16(Object)</h4>
+  <div class="markdown level1 summary"><p>Serialize an Int16</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeInt16(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_SerializeInt32_System_Object_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.SerializeInt32(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L386">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_SerializeInt32_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeInt32*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_SerializeInt32_System_Object_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeInt32(System.Object)">SerializeInt32(Object)</h4>
+  <div class="markdown level1 summary"><p>Serialize an Int32</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeInt32(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_SerializeInt64_System_Object_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.SerializeInt64(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L396">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_SerializeInt64_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeInt64*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_SerializeInt64_System_Object_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeInt64(System.Object)">SerializeInt64(Object)</h4>
+  <div class="markdown level1 summary"><p>Serialize an Int64</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeInt64(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_SerializeIResource_System_Object_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.SerializeIResource(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L254">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_SerializeIResource_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeIResource*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_SerializeIResource_System_Object_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeIResource(System.Object)">SerializeIResource(Object)</h4>
+  <div class="markdown level1 summary"><p>Serialize an IResource</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeIResource(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_SerializeObject_System_Object_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.SerializeObject(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L219">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_SerializeObject_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeObject*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_SerializeObject_System_Object_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeObject(System.Object)">SerializeObject(Object)</h4>
+  <div class="markdown level1 summary"><p>Serializes an object to an XML Schema encoded string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeObject(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_SerializeObject_System_Object_System_Type_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.SerializeObject(System.Object%2CSystem.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L244">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_SerializeObject_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeObject*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_SerializeObject_System_Object_System_Type_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeObject(System.Object,System.Type)">SerializeObject(Object, Type)</h4>
+  <div class="markdown level1 summary"><p>Serializes an object forcd to a given type to an XML Schema encoded string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeObject(object obj, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_SerializeSingle_System_Object_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.SerializeSingle(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L456">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_SerializeSingle_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeSingle*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_SerializeSingle_System_Object_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeSingle(System.Object)">SerializeSingle(Object)</h4>
+  <div class="markdown level1 summary"><p>Serialize a float</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeSingle(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_SerializeString_System_Object_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.SerializeString(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L292">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_SerializeString_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeString*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_SerializeString_System_Object_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeString(System.Object)">SerializeString(Object)</h4>
+  <div class="markdown level1 summary"><p>Serialize a string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeString(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_SerializeStringArray_System_Object_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.SerializeStringArray(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L302">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_SerializeStringArray_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeStringArray*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_SerializeStringArray_System_Object_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeStringArray(System.Object)">SerializeStringArray(Object)</h4>
+  <div class="markdown level1 summary"><p>Serialize an array of strings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeStringArray(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_SerializeStringCultureInfoTuple_System_Object_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.SerializeStringCultureInfoTuple(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L320">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_SerializeStringCultureInfoTuple_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeStringCultureInfoTuple*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_SerializeStringCultureInfoTuple_System_Object_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeStringCultureInfoTuple(System.Object)">SerializeStringCultureInfoTuple(Object)</h4>
+  <div class="markdown level1 summary"><p>Serialize a tuple consisting of a string and its associated culture</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeStringCultureInfoTuple(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_SerializeUInt16_System_Object_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.SerializeUInt16(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L406">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_SerializeUInt16_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeUInt16*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_SerializeUInt16_System_Object_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeUInt16(System.Object)">SerializeUInt16(Object)</h4>
+  <div class="markdown level1 summary"><p>Serialize an Uint16</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeUInt16(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_SerializeUInt32_System_Object_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.SerializeUInt32(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L416">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_SerializeUInt32_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeUInt32*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_SerializeUInt32_System_Object_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeUInt32(System.Object)">SerializeUInt32(Object)</h4>
+  <div class="markdown level1 summary"><p>Serialize an Uint32</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeUInt32(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_SerializeUInt64_System_Object_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.SerializeUInt64(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L426">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_SerializeUInt64_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeUInt64*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_SerializeUInt64_System_Object_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeUInt64(System.Object)">SerializeUInt64(Object)</h4>
+  <div class="markdown level1 summary"><p>Serialize an Uint64</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeUInt64(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper_SerializeUri_System_Object_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper.SerializeUri(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L273">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_XsdTypeMapper_SerializeUri_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeUri*"></a>
+  <h4 id="Semiodesk_Trinity_XsdTypeMapper_SerializeUri_System_Object_" data-uid="Semiodesk.Trinity.XsdTypeMapper.SerializeUri(System.Object)">SerializeUri(Object)</h4>
+  <div class="markdown level1 summary"><p>Serialize an Uri</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeUri(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_XsdTypeMapper.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.XsdTypeMapper%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/XsdTypeMapper.cs/#L45" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

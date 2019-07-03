@@ -1,0 +1,636 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UriRef
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UriRef
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Semiodesk.Trinity.UriRef">
+  
+  
+  <h1 id="Semiodesk_Trinity_UriRef" data-uid="Semiodesk.Trinity.UriRef" class="text-break">Class UriRef
+  </h1>
+  <div class="markdown level0 summary"><p>This class extends the framework Uri class to also include fragments for
+equality testing.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.Uri</span></div>
+    <div class="level2"><span class="xref">UriRef</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Runtime.Serialization.ISerializable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Uri.SchemeDelimiter</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.UriSchemeFile</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.UriSchemeFtp</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.UriSchemeGopher</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.UriSchemeHttp</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.UriSchemeHttps</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.UriSchemeMailto</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.UriSchemeNetPipe</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.UriSchemeNetTcp</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.UriSchemeNews</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.UriSchemeNntp</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.Canonicalize()</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.CheckHostName(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.CheckSchemeName(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.CheckSecurity()</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.Compare(System.Uri, System.Uri, System.UriComponents, System.UriFormat, System.StringComparison)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.Escape()</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.EscapeDataString(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.EscapeString(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.EscapeUriString(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.FromHex(System.Char)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.GetComponents(System.UriComponents, System.UriFormat)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.GetLeftPart(System.UriPartial)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.HexEscape(System.Char)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.HexUnescape(System.String, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.IsBadFileSystemCharacter(System.Char)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.IsBaseOf(System.Uri)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.IsExcludedCharacter(System.Char)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.IsHexDigit(System.Char)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.IsHexEncoding(System.String, System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.IsReservedCharacter(System.Char)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.IsWellFormedOriginalString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.IsWellFormedUriString(System.String, System.UriKind)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.MakeRelative(System.Uri)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.MakeRelativeUri(System.Uri)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.Parse()</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.TryCreate(System.String, System.UriKind, System.Uri)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.TryCreate(System.Uri, System.String, System.Uri)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.TryCreate(System.Uri, System.Uri, System.Uri)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.Unescape(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.UnescapeDataString(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.AbsolutePath</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.AbsoluteUri</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.Authority</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.DnsSafeHost</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.Fragment</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.Host</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.HostNameType</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.IdnHost</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.IsAbsoluteUri</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.IsDefaultPort</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.IsFile</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.IsLoopback</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.IsUnc</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.LocalPath</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.OriginalString</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.PathAndQuery</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.Port</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.Query</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.Scheme</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.Segments</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.UserEscaped</span>
+    </div>
+    <div>
+      <span class="xref">System.Uri.UserInfo</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Semiodesk.Trinity.html">Semiodesk.Trinity</a></h6>
+  <h6><strong>Assembly</strong>: Semiodesk.Trinity.dll</h6>
+  <h5 id="Semiodesk_Trinity_UriRef_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UriRef : Uri, ISerializable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_UriRef__ctor_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.UriRef.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/UriRef.cs/#L53">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_UriRef__ctor_" data-uid="Semiodesk.Trinity.UriRef.#ctor*"></a>
+  <h4 id="Semiodesk_Trinity_UriRef__ctor_System_String_" data-uid="Semiodesk.Trinity.UriRef.#ctor(System.String)">UriRef(String)</h4>
+  <div class="markdown level1 summary"><p>Create an UriRef from a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UriRef(string uriString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">uriString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_UriRef__ctor_System_String_System_UriKind_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.UriRef.%23ctor(System.String%2CSystem.UriKind)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/UriRef.cs/#L60">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_UriRef__ctor_" data-uid="Semiodesk.Trinity.UriRef.#ctor*"></a>
+  <h4 id="Semiodesk_Trinity_UriRef__ctor_System_String_System_UriKind_" data-uid="Semiodesk.Trinity.UriRef.#ctor(System.String,System.UriKind)">UriRef(String, UriKind)</h4>
+  <div class="markdown level1 summary"><p>Creates an UriRef from a string with a given UriKind.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UriRef(string uriString, UriKind uriKind)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">uriString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UriKind</span></td>
+        <td><span class="parametername">uriKind</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_UriRef__ctor_System_Uri_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.UriRef.%23ctor(System.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/UriRef.cs/#L47">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_UriRef__ctor_" data-uid="Semiodesk.Trinity.UriRef.#ctor*"></a>
+  <h4 id="Semiodesk_Trinity_UriRef__ctor_System_Uri_" data-uid="Semiodesk.Trinity.UriRef.#ctor(System.Uri)">UriRef(Uri)</h4>
+  <div class="markdown level1 summary"><p>Creates an UriRef from an Uri</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UriRef(Uri uri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_UriRef__ctor_System_Uri_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.UriRef.%23ctor(System.Uri%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/UriRef.cs/#L67">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_UriRef__ctor_" data-uid="Semiodesk.Trinity.UriRef.#ctor*"></a>
+  <h4 id="Semiodesk_Trinity_UriRef__ctor_System_Uri_System_String_" data-uid="Semiodesk.Trinity.UriRef.#ctor(System.Uri,System.String)">UriRef(Uri, String)</h4>
+  <div class="markdown level1 summary"><p>Creates an UriRef from a base uri and a relative uri as string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UriRef(Uri baseUri, string relativeUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">baseUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">relativeUri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_UriRef_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.UriRef.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/UriRef.cs/#L78">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_UriRef_Equals_" data-uid="Semiodesk.Trinity.UriRef.Equals*"></a>
+  <h4 id="Semiodesk_Trinity_UriRef_Equals_System_Object_" data-uid="Semiodesk.Trinity.UriRef.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Tests the equality of two UriRefs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object comparand)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">comparand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Uri.Equals(System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_UriRef_GetGuid_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.UriRef.GetGuid(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/UriRef.cs/#L103">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_UriRef_GetGuid_" data-uid="Semiodesk.Trinity.UriRef.GetGuid*"></a>
+  <h4 id="Semiodesk_Trinity_UriRef_GetGuid_System_String_" data-uid="Semiodesk.Trinity.UriRef.GetGuid(System.String)">GetGuid(String)</h4>
+  <div class="markdown level1 summary"><p>Generates a globally unique resource identifier in the Semiodesk namespace: &lt;http://semiodesk.com/id/{GUID}/&gt;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri GetGuid(string format = &quot;http://semiodesk.com/id/{0}&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><p>A Uniform Resource Identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_UriRef_GetHashCode.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.UriRef.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/UriRef.cs/#L94">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_UriRef_GetHashCode_" data-uid="Semiodesk.Trinity.UriRef.GetHashCode*"></a>
+  <h4 id="Semiodesk_Trinity_UriRef_GetHashCode" data-uid="Semiodesk.Trinity.UriRef.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Override of GetHashCode which factors the fragment in. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Uri.GetHashCode()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Runtime.Serialization.ISerializable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Semiodesk.Trinity.UriExtensions.html#Semiodesk_Trinity_UriExtensions_ToUriRef_System_Uri_">UriExtensions.ToUriRef(Uri)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_UriRef.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.UriRef%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/UriRef.cs/#L40" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,465 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StardogResultHandler
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StardogResultHandler
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Semiodesk.Trinity.Store.Stardog.StardogResultHandler">
+  
+  
+  <h1 id="Semiodesk_Trinity_Store_Stardog_StardogResultHandler" data-uid="Semiodesk.Trinity.Store.Stardog.StardogResultHandler" class="text-break">Class StardogResultHandler
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">VDS.RDF.Parsing.Handlers.BaseHandler</span></div>
+    <div class="level2"><span class="xref">VDS.RDF.Parsing.Handlers.BaseResultsHandler</span></div>
+    <div class="level3"><span class="xref">StardogResultHandler</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">VDS.RDF.ISparqlResultsHandler</span></div>
+    <div><span class="xref">VDS.RDF.INodeFactory</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Handlers.BaseResultsHandler.StartResults()</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Handlers.BaseResultsHandler.StartResultsInternal()</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Handlers.BaseResultsHandler.EndResults(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Handlers.BaseResultsHandler.EndResultsInternal(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Handlers.BaseResultsHandler.HandleBooleanResult(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Handlers.BaseResultsHandler.HandleVariable(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Handlers.BaseResultsHandler.HandleResult(VDS.RDF.Query.SparqlResult)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Handlers.BaseHandler.CreateBlankNode()</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Handlers.BaseHandler.CreateBlankNode(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Handlers.BaseHandler.CreateGraphLiteralNode()</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Handlers.BaseHandler.CreateGraphLiteralNode(VDS.RDF.IGraph)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Handlers.BaseHandler.CreateLiteralNode(System.String, System.Uri)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Handlers.BaseHandler.CreateLiteralNode(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Handlers.BaseHandler.CreateLiteralNode(System.String, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Handlers.BaseHandler.CreateUriNode(System.Uri)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Handlers.BaseHandler.CreateVariableNode(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Handlers.BaseHandler.GetNextBlankNodeID()</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Handlers.BaseHandler.NodeFactory</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Semiodesk.Trinity.Store.Stardog.html">Semiodesk.Trinity.Store.Stardog</a></h6>
+  <h6><strong>Assembly</strong>: Semiodesk.Trinity.dll</h6>
+  <h5 id="Semiodesk_Trinity_Store_Stardog_StardogResultHandler_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class StardogResultHandler : BaseResultsHandler, ISparqlResultsHandler, INodeFactory</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Stardog_StardogResultHandler__ctor.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Stardog.StardogResultHandler.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/Stardog/StardogRdfHandler.cs/#L34">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Stardog_StardogResultHandler__ctor_" data-uid="Semiodesk.Trinity.Store.Stardog.StardogResultHandler.#ctor*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Stardog_StardogResultHandler__ctor" data-uid="Semiodesk.Trinity.Store.Stardog.StardogResultHandler.#ctor">StardogResultHandler()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StardogResultHandler()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Stardog_StardogResultHandler_BoolResult.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Stardog.StardogResultHandler.BoolResult%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/Stardog/StardogRdfHandler.cs/#L28">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Stardog_StardogResultHandler_BoolResult_" data-uid="Semiodesk.Trinity.Store.Stardog.StardogResultHandler.BoolResult*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Stardog_StardogResultHandler_BoolResult" data-uid="Semiodesk.Trinity.Store.Stardog.StardogResultHandler.BoolResult">BoolResult</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BoolResult { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Stardog_StardogResultHandler_SparqlResultSet.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Stardog.StardogResultHandler.SparqlResultSet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/Stardog/StardogRdfHandler.cs/#L30">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Stardog_StardogResultHandler_SparqlResultSet_" data-uid="Semiodesk.Trinity.Store.Stardog.StardogResultHandler.SparqlResultSet*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Stardog_StardogResultHandler_SparqlResultSet" data-uid="Semiodesk.Trinity.Store.Stardog.StardogResultHandler.SparqlResultSet">SparqlResultSet</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SparqlResultSet SparqlResultSet { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VDS.RDF.Query.SparqlResultSet</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Stardog_StardogResultHandler_GetAnwser.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Stardog.StardogResultHandler.GetAnwser%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/Stardog/StardogRdfHandler.cs/#L55">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Stardog_StardogResultHandler_GetAnwser_" data-uid="Semiodesk.Trinity.Store.Stardog.StardogResultHandler.GetAnwser*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Stardog_StardogResultHandler_GetAnwser" data-uid="Semiodesk.Trinity.Store.Stardog.StardogResultHandler.GetAnwser">GetAnwser()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetAnwser()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Stardog_StardogResultHandler_HandleBooleanResultInternal_System_Boolean_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Stardog.StardogResultHandler.HandleBooleanResultInternal(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/Stardog/StardogRdfHandler.cs/#L38">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Stardog_StardogResultHandler_HandleBooleanResultInternal_" data-uid="Semiodesk.Trinity.Store.Stardog.StardogResultHandler.HandleBooleanResultInternal*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Stardog_StardogResultHandler_HandleBooleanResultInternal_System_Boolean_" data-uid="Semiodesk.Trinity.Store.Stardog.StardogResultHandler.HandleBooleanResultInternal(System.Boolean)">HandleBooleanResultInternal(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void HandleBooleanResultInternal(bool result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">VDS.RDF.Parsing.Handlers.BaseResultsHandler.HandleBooleanResultInternal(System.Boolean)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Stardog_StardogResultHandler_HandleResultInternal_VDS_RDF_Query_SparqlResult_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Stardog.StardogResultHandler.HandleResultInternal(VDS.RDF.Query.SparqlResult)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/Stardog/StardogRdfHandler.cs/#L43">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Stardog_StardogResultHandler_HandleResultInternal_" data-uid="Semiodesk.Trinity.Store.Stardog.StardogResultHandler.HandleResultInternal*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Stardog_StardogResultHandler_HandleResultInternal_VDS_RDF_Query_SparqlResult_" data-uid="Semiodesk.Trinity.Store.Stardog.StardogResultHandler.HandleResultInternal(VDS.RDF.Query.SparqlResult)">HandleResultInternal(SparqlResult)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool HandleResultInternal(SparqlResult result)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VDS.RDF.Query.SparqlResult</span></td>
+        <td><span class="parametername">result</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">VDS.RDF.Parsing.Handlers.BaseResultsHandler.HandleResultInternal(VDS.RDF.Query.SparqlResult)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Stardog_StardogResultHandler_HandleVariableInternal_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Stardog.StardogResultHandler.HandleVariableInternal(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/Stardog/StardogRdfHandler.cs/#L50">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Stardog_StardogResultHandler_HandleVariableInternal_" data-uid="Semiodesk.Trinity.Store.Stardog.StardogResultHandler.HandleVariableInternal*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Stardog_StardogResultHandler_HandleVariableInternal_System_String_" data-uid="Semiodesk.Trinity.Store.Stardog.StardogResultHandler.HandleVariableInternal(System.String)">HandleVariableInternal(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool HandleVariableInternal(string var)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">var</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">VDS.RDF.Parsing.Handlers.BaseResultsHandler.HandleVariableInternal(System.String)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">VDS.RDF.ISparqlResultsHandler</span>
+  </div>
+  <div>
+      <span class="xref">VDS.RDF.INodeFactory</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Stardog_StardogResultHandler.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Stardog.StardogResultHandler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/Stardog/StardogRdfHandler.cs/#L26" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

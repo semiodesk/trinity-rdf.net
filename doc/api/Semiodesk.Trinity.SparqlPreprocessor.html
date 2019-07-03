@@ -1,0 +1,803 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SparqlPreprocessor
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SparqlPreprocessor
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Semiodesk.Trinity.SparqlPreprocessor">
+  
+  
+  <h1 id="Semiodesk_Trinity_SparqlPreprocessor" data-uid="Semiodesk.Trinity.SparqlPreprocessor" class="text-break">Class SparqlPreprocessor
+  </h1>
+  <div class="markdown level0 summary"><p>A <em>very</em> simple SPARQL parser. This class is primarily intended to support
+a limited range of query preprocessing tasks such as setting the values of 
+query parameters (@-variables) as quickly as possible. It does not aim to 
+support the full SPARQL standard syntax.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser</span></div>
+    <div class="level2"><span class="xref">VDS.RDF.Parsing.Tokens.SparqlTokeniser</span></div>
+    <div class="level3"><span class="xref">SparqlPreprocessor</span></div>
+      <div class="level4"><a class="xref" href="Semiodesk.Trinity.SparqlQueryPreprocessor.html">SparqlQueryPreprocessor</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">VDS.RDF.Parsing.Tokens.ITokeniser</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.StartNewToken()</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.Peek()</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.Backtrack()</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.ConsumeCharacter()</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.ConsumeCharacter(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.ConsumeNewLine(System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.ConsumeNewLine(System.Boolean, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.SkipCharacter()</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.DiscardWhiteSpace()</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.HandleEscapes(VDS.RDF.Parsing.Tokens.TokeniserEscapeMode)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.HandleComplexLocalNameEscapes()</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.IsHexDigit(System.Char)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.Error(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.UnexpectedCharacter(System.Char, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.UnexpectedEndOfInput(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.UnexpectedNewLine(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.UnexpectedToken(System.String, VDS.RDF.Parsing.Tokens.IToken)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.Format</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.Value</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.Length</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.CurrentLine</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.CurrentPosition</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.StartLine</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.StartPosition</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.EndLine</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.EndPosition</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.LastTokenType</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.BaseTokeniser.HasBacktracked</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Semiodesk.Trinity.html">Semiodesk.Trinity</a></h6>
+  <h6><strong>Assembly</strong>: Semiodesk.Trinity.dll</h6>
+  <h5 id="Semiodesk_Trinity_SparqlPreprocessor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SparqlPreprocessor : SparqlTokeniser, ITokeniser</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_SparqlPreprocessor__ctor_System_IO_TextReader_VDS_RDF_Parsing_SparqlQuerySyntax_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.SparqlPreprocessor.%23ctor(System.IO.TextReader%2CVDS.RDF.Parsing.SparqlQuerySyntax)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Query/SparqlPreprocessor.cs/#L73">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_SparqlPreprocessor__ctor_" data-uid="Semiodesk.Trinity.SparqlPreprocessor.#ctor*"></a>
+  <h4 id="Semiodesk_Trinity_SparqlPreprocessor__ctor_System_IO_TextReader_VDS_RDF_Parsing_SparqlQuerySyntax_" data-uid="Semiodesk.Trinity.SparqlPreprocessor.#ctor(System.IO.TextReader,VDS.RDF.Parsing.SparqlQuerySyntax)">SparqlPreprocessor(TextReader, SparqlQuerySyntax)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SparqlPreprocessor(TextReader input, SparqlQuerySyntax syntax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IO.TextReader</span></td>
+        <td><span class="parametername">input</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">VDS.RDF.Parsing.SparqlQuerySyntax</span></td>
+        <td><span class="parametername">syntax</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_SparqlPreprocessor_DeclaredPrefixes.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.SparqlPreprocessor.DeclaredPrefixes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Query/SparqlPreprocessor.cs/#L57">View Source</a>
+  </span>
+  <h4 id="Semiodesk_Trinity_SparqlPreprocessor_DeclaredPrefixes" data-uid="Semiodesk.Trinity.SparqlPreprocessor.DeclaredPrefixes">DeclaredPrefixes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly HashSet&lt;string&gt; DeclaredPrefixes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.HashSet</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_SparqlPreprocessor_DefaultGraphs.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.SparqlPreprocessor.DefaultGraphs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Query/SparqlPreprocessor.cs/#L55">View Source</a>
+  </span>
+  <h4 id="Semiodesk_Trinity_SparqlPreprocessor_DefaultGraphs" data-uid="Semiodesk.Trinity.SparqlPreprocessor.DefaultGraphs">DefaultGraphs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly HashSet&lt;string&gt; DefaultGraphs</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.HashSet</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_SparqlPreprocessor_Parameters.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.SparqlPreprocessor.Parameters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Query/SparqlPreprocessor.cs/#L63">View Source</a>
+  </span>
+  <h4 id="Semiodesk_Trinity_SparqlPreprocessor_Parameters" data-uid="Semiodesk.Trinity.SparqlPreprocessor.Parameters">Parameters</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly HashSet&lt;string&gt; Parameters</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.HashSet</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_SparqlPreprocessor_ParameterTypes.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.SparqlPreprocessor.ParameterTypes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Query/SparqlPreprocessor.cs/#L67">View Source</a>
+  </span>
+  <h4 id="Semiodesk_Trinity_SparqlPreprocessor_ParameterTypes" data-uid="Semiodesk.Trinity.SparqlPreprocessor.ParameterTypes">ParameterTypes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Dictionary&lt;string, int&gt; ParameterTypes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_SparqlPreprocessor_ParameterValues.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.SparqlPreprocessor.ParameterValues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Query/SparqlPreprocessor.cs/#L65">View Source</a>
+  </span>
+  <h4 id="Semiodesk_Trinity_SparqlPreprocessor_ParameterValues" data-uid="Semiodesk.Trinity.SparqlPreprocessor.ParameterValues">ParameterValues</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Dictionary&lt;string, string&gt; ParameterValues</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_SparqlPreprocessor_PreviousTokenType.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.SparqlPreprocessor.PreviousTokenType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Query/SparqlPreprocessor.cs/#L53">View Source</a>
+  </span>
+  <h4 id="Semiodesk_Trinity_SparqlPreprocessor_PreviousTokenType" data-uid="Semiodesk.Trinity.SparqlPreprocessor.PreviousTokenType">PreviousTokenType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int PreviousTokenType</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_SparqlPreprocessor_Tokens.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.SparqlPreprocessor.Tokens%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Query/SparqlPreprocessor.cs/#L51">View Source</a>
+  </span>
+  <h4 id="Semiodesk_Trinity_SparqlPreprocessor_Tokens" data-uid="Semiodesk.Trinity.SparqlPreprocessor.Tokens">Tokens</h4>
+  <div class="markdown level1 summary"><p>We use the list of tokens to generate the query string with bound parameters on demand.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly List&lt;IToken&gt; Tokens</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">VDS.RDF.Parsing.Tokens.IToken</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_SparqlPreprocessor_UsedPrefixes.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.SparqlPreprocessor.UsedPrefixes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Query/SparqlPreprocessor.cs/#L59">View Source</a>
+  </span>
+  <h4 id="Semiodesk_Trinity_SparqlPreprocessor_UsedPrefixes" data-uid="Semiodesk.Trinity.SparqlPreprocessor.UsedPrefixes">UsedPrefixes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly HashSet&lt;string&gt; UsedPrefixes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.HashSet</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_SparqlPreprocessor_AddDefaultGraph_System_Uri_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.SparqlPreprocessor.AddDefaultGraph(System.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Query/SparqlPreprocessor.cs/#L263">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_SparqlPreprocessor_AddDefaultGraph_" data-uid="Semiodesk.Trinity.SparqlPreprocessor.AddDefaultGraph*"></a>
+  <h4 id="Semiodesk_Trinity_SparqlPreprocessor_AddDefaultGraph_System_Uri_" data-uid="Semiodesk.Trinity.SparqlPreprocessor.AddDefaultGraph(System.Uri)">AddDefaultGraph(Uri)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddDefaultGraph(Uri uri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_SparqlPreprocessor_AddNamedGraph_System_Uri_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.SparqlPreprocessor.AddNamedGraph(System.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Query/SparqlPreprocessor.cs/#L268">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_SparqlPreprocessor_AddNamedGraph_" data-uid="Semiodesk.Trinity.SparqlPreprocessor.AddNamedGraph*"></a>
+  <h4 id="Semiodesk_Trinity_SparqlPreprocessor_AddNamedGraph_System_Uri_" data-uid="Semiodesk.Trinity.SparqlPreprocessor.AddNamedGraph(System.Uri)">AddNamedGraph(Uri)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddNamedGraph(Uri uri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_SparqlPreprocessor_Bind_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.SparqlPreprocessor.Bind(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Query/SparqlPreprocessor.cs/#L337">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_SparqlPreprocessor_Bind_" data-uid="Semiodesk.Trinity.SparqlPreprocessor.Bind*"></a>
+  <h4 id="Semiodesk_Trinity_SparqlPreprocessor_Bind_System_String_System_Object_" data-uid="Semiodesk.Trinity.SparqlPreprocessor.Bind(System.String,System.Object)">Bind(String, Object)</h4>
+  <div class="markdown level1 summary"><p>Set the value for a query parameter which is preceeded by &amp;apos;@&apos;.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Bind(string parameter, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">parameter</span></td>
+        <td><p>The parameter name including the &amp;apos;@&apos;.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The paramter value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_SparqlPreprocessor_GetNextToken.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.SparqlPreprocessor.GetNextToken%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Query/SparqlPreprocessor.cs/#L117">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_SparqlPreprocessor_GetNextToken_" data-uid="Semiodesk.Trinity.SparqlPreprocessor.GetNextToken*"></a>
+  <h4 id="Semiodesk_Trinity_SparqlPreprocessor_GetNextToken" data-uid="Semiodesk.Trinity.SparqlPreprocessor.GetNextToken">GetNextToken()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IToken GetNextToken()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VDS.RDF.Parsing.Tokens.IToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">VDS.RDF.Parsing.Tokens.SparqlTokeniser.GetNextToken()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_SparqlPreprocessor_GetPrefixDeclarations.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.SparqlPreprocessor.GetPrefixDeclarations%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Query/SparqlPreprocessor.cs/#L303">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_SparqlPreprocessor_GetPrefixDeclarations_" data-uid="Semiodesk.Trinity.SparqlPreprocessor.GetPrefixDeclarations*"></a>
+  <h4 id="Semiodesk_Trinity_SparqlPreprocessor_GetPrefixDeclarations" data-uid="Semiodesk.Trinity.SparqlPreprocessor.GetPrefixDeclarations">GetPrefixDeclarations()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetPrefixDeclarations()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_SparqlPreprocessor_Process_System_Boolean_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.SparqlPreprocessor.Process(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Query/SparqlPreprocessor.cs/#L82">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_SparqlPreprocessor_Process_" data-uid="Semiodesk.Trinity.SparqlPreprocessor.Process*"></a>
+  <h4 id="Semiodesk_Trinity_SparqlPreprocessor_Process_System_Boolean_" data-uid="Semiodesk.Trinity.SparqlPreprocessor.Process(System.Boolean)">Process(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Process(bool declarePrefixes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">declarePrefixes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_SparqlPreprocessor_Serialize_System_Int32_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.SparqlPreprocessor.Serialize(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Query/SparqlPreprocessor.cs/#L378">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_SparqlPreprocessor_Serialize_" data-uid="Semiodesk.Trinity.SparqlPreprocessor.Serialize*"></a>
+  <h4 id="Semiodesk_Trinity_SparqlPreprocessor_Serialize_System_Int32_" data-uid="Semiodesk.Trinity.SparqlPreprocessor.Serialize(System.Int32)">Serialize(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string Serialize(int outputLevel = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">outputLevel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_SparqlPreprocessor_ToString.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.SparqlPreprocessor.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Query/SparqlPreprocessor.cs/#L470">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_SparqlPreprocessor_ToString_" data-uid="Semiodesk.Trinity.SparqlPreprocessor.ToString*"></a>
+  <h4 id="Semiodesk_Trinity_SparqlPreprocessor_ToString" data-uid="Semiodesk.Trinity.SparqlPreprocessor.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">VDS.RDF.Parsing.Tokens.ITokeniser</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_SparqlPreprocessor.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.SparqlPreprocessor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Query/SparqlPreprocessor.cs/#L44" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

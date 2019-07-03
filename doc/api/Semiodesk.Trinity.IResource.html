@@ -1,0 +1,2127 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IResource
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IResource
+   ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Semiodesk.Trinity.IResource">
+  
+  
+  <h1 id="Semiodesk_Trinity_IResource" data-uid="Semiodesk.Trinity.IResource" class="text-break">Interface IResource
+  </h1>
+  <div class="markdown level0 summary"><p>This interface encapsulates the access to the methods of a RDF resource.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged.PropertyChanged</span>
+    </div>
+    <div>
+      <span class="xref">System.IDisposable.Dispose()</span>
+    </div>
+    <div>
+      <a class="xref" href="Semiodesk.Trinity.ITransactional.html#Semiodesk_Trinity_ITransactional_Commit">ITransactional.Commit()</a>
+    </div>
+    <div>
+      <a class="xref" href="Semiodesk.Trinity.ITransactional.html#Semiodesk_Trinity_ITransactional_Rollback">ITransactional.Rollback()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Semiodesk.Trinity.html">Semiodesk.Trinity</a></h6>
+  <h6><strong>Assembly</strong>: Semiodesk.Trinity.dll</h6>
+  <h5 id="Semiodesk_Trinity_IResource_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IResource : INotifyPropertyChanged, IDisposable, ITransactional</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_IsDisposed.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.IsDisposed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L68">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_IsDisposed_" data-uid="Semiodesk.Trinity.IResource.IsDisposed*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_IsDisposed" data-uid="Semiodesk.Trinity.IResource.IsDisposed">IsDisposed</h4>
+  <div class="markdown level1 summary"><p>Indicates if the resources has been disposed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsDisposed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_IsReadOnly.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.IsReadOnly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L58">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_IsReadOnly_" data-uid="Semiodesk.Trinity.IResource.IsReadOnly*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_IsReadOnly" data-uid="Semiodesk.Trinity.IResource.IsReadOnly">IsReadOnly</h4>
+  <div class="markdown level1 summary"><p>Indicates that this resource is not writable, thus Commit() is illegal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsReadOnly { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_Language.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.Language%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L63">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_Language_" data-uid="Semiodesk.Trinity.IResource.Language*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_Language" data-uid="Semiodesk.Trinity.IResource.Language">Language</h4>
+  <div class="markdown level1 summary"><p>Set the language of this resource. This will change te mapped strings to this language.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Language { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_Model.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.Model%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L53">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_Model_" data-uid="Semiodesk.Trinity.IResource.Model*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_Model" data-uid="Semiodesk.Trinity.IResource.Model">Model</h4>
+  <div class="markdown level1 summary"><p>Model from which the resource was instantiated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IModel Model { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.IModel.html">IModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_Uri.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.Uri%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L48">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_Uri_" data-uid="Semiodesk.Trinity.IResource.Uri*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_Uri" data-uid="Semiodesk.Trinity.IResource.Uri">Uri</h4>
+  <div class="markdown level1 summary"><p>Uniform Resource Identifier (URI).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">UriRef Uri { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.UriRef.html">UriRef</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_Semiodesk_Trinity_IResource_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property%2CSemiodesk.Trinity.IResource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L78">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_AddProperty_" data-uid="Semiodesk.Trinity.IResource.AddProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_Semiodesk_Trinity_IResource_" data-uid="Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property,Semiodesk.Trinity.IResource)">AddProperty(Property, IResource)</h4>
+  <div class="markdown level1 summary"><p>Adds a new property with the given value to the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddProperty(Property property, IResource value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the value should be associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.IResource.html">IResource</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A instance of IResource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_Boolean_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L171">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_AddProperty_" data-uid="Semiodesk.Trinity.IResource.AddProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_Boolean_" data-uid="Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property,System.Boolean)">AddProperty(Property, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Adds a new property with the given value to the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddProperty(Property property, bool value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the value should be associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A boolean value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_Byte___.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L185">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_AddProperty_" data-uid="Semiodesk.Trinity.IResource.AddProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_Byte___" data-uid="Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property,System.Byte[])">AddProperty(Property, Byte[])</h4>
+  <div class="markdown level1 summary"><p>Adds a new property with the given value to the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddProperty(Property property, byte[] value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the value should be associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Arbitrary data in form of a byte array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_DateTime_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property%2CSystem.DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L178">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_AddProperty_" data-uid="Semiodesk.Trinity.IResource.AddProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_DateTime_" data-uid="Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property,System.DateTime)">AddProperty(Property, DateTime)</h4>
+  <div class="markdown level1 summary"><p>Adds a new property with the given value to the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddProperty(Property property, DateTime value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the value should be associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A datetime value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_Decimal_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property%2CSystem.Decimal)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L164">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_AddProperty_" data-uid="Semiodesk.Trinity.IResource.AddProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_Decimal_" data-uid="Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property,System.Decimal)">AddProperty(Property, Decimal)</h4>
+  <div class="markdown level1 summary"><p>Adds a new property with the given value to the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddProperty(Property property, decimal value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the value should be associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A decimal value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_Double_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L157">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_AddProperty_" data-uid="Semiodesk.Trinity.IResource.AddProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_Double_" data-uid="Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property,System.Double)">AddProperty(Property, Double)</h4>
+  <div class="markdown level1 summary"><p>Adds a new property with the given value to the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddProperty(Property property, double value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the value should be associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A double precision float value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_Int16_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property%2CSystem.Int16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L108">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_AddProperty_" data-uid="Semiodesk.Trinity.IResource.AddProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_Int16_" data-uid="Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property,System.Int16)">AddProperty(Property, Int16)</h4>
+  <div class="markdown level1 summary"><p>Adds a new property with the given value to the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddProperty(Property property, short value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the value should be associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A 16-bit integer value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_Int32_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L115">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_AddProperty_" data-uid="Semiodesk.Trinity.IResource.AddProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_Int32_" data-uid="Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property,System.Int32)">AddProperty(Property, Int32)</h4>
+  <div class="markdown level1 summary"><p>Adds a new property with the given value to the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddProperty(Property property, int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the value should be associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A 32-bit integer value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_Int64_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L122">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_AddProperty_" data-uid="Semiodesk.Trinity.IResource.AddProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_Int64_" data-uid="Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property,System.Int64)">AddProperty(Property, Int64)</h4>
+  <div class="markdown level1 summary"><p>Adds a new property with the given value to the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddProperty(Property property, long value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the value should be associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A 64-bit integer value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_Single_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L150">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_AddProperty_" data-uid="Semiodesk.Trinity.IResource.AddProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_Single_" data-uid="Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property,System.Single)">AddProperty(Property, Single)</h4>
+  <div class="markdown level1 summary"><p>Adds a new property with the given value to the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddProperty(Property property, float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the value should be associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A single precision float value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L85">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_AddProperty_" data-uid="Semiodesk.Trinity.IResource.AddProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_String_" data-uid="Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property,System.String)">AddProperty(Property, String)</h4>
+  <div class="markdown level1 summary"><p>Adds a new property with the given value to the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddProperty(Property property, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the value should be associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A string literal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_String_System_Globalization_CultureInfo_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property%2CSystem.String%2CSystem.Globalization.CultureInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L93">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_AddProperty_" data-uid="Semiodesk.Trinity.IResource.AddProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_String_System_Globalization_CultureInfo_" data-uid="Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property,System.String,System.Globalization.CultureInfo)">AddProperty(Property, String, CultureInfo)</h4>
+  <div class="markdown level1 summary"><p>Adds a new property with the given value to the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddProperty(Property property, string value, CultureInfo language)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the value should be associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A string literal.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Globalization.CultureInfo</span></td>
+        <td><span class="parametername">language</span></td>
+        <td><p>The culture of the string literal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_String_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L101">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_AddProperty_" data-uid="Semiodesk.Trinity.IResource.AddProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_String_System_String_" data-uid="Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property,System.String,System.String)">AddProperty(Property, String, String)</h4>
+  <div class="markdown level1 summary"><p>Adds a new property with the given value to the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddProperty(Property property, string value, string language)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the value should be associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A string literal.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">language</span></td>
+        <td><p>The language of the string literal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_UInt16_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property%2CSystem.UInt16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L129">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_AddProperty_" data-uid="Semiodesk.Trinity.IResource.AddProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_UInt16_" data-uid="Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property,System.UInt16)">AddProperty(Property, UInt16)</h4>
+  <div class="markdown level1 summary"><p>Adds a new property with the given value to the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddProperty(Property property, ushort value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the value should be associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A 16-bit unsigned integer value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_UInt32_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L136">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_AddProperty_" data-uid="Semiodesk.Trinity.IResource.AddProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_UInt32_" data-uid="Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property,System.UInt32)">AddProperty(Property, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Adds a new property with the given value to the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddProperty(Property property, uint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the value should be associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A 32-bit unsigned integer value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_UInt64_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property%2CSystem.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L143">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_AddProperty_" data-uid="Semiodesk.Trinity.IResource.AddProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_UInt64_" data-uid="Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property,System.UInt64)">AddProperty(Property, UInt64)</h4>
+  <div class="markdown level1 summary"><p>Adds a new property with the given value to the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddProperty(Property property, ulong value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the value should be associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A 64-bit unsigned integer value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_Uri_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property%2CSystem.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L192">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_AddProperty_" data-uid="Semiodesk.Trinity.IResource.AddProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_AddProperty_Semiodesk_Trinity_Property_System_Uri_" data-uid="Semiodesk.Trinity.IResource.AddProperty(Semiodesk.Trinity.Property,System.Uri)">AddProperty(Property, Uri)</h4>
+  <div class="markdown level1 summary"><p>Adds a new property with the given value to the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddProperty(Property property, Uri value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the value should be associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>An Uri.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_GetValue_Semiodesk_Trinity_Property_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.GetValue(Semiodesk.Trinity.Property)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L375">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_GetValue_" data-uid="Semiodesk.Trinity.IResource.GetValue*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_GetValue_Semiodesk_Trinity_Property_" data-uid="Semiodesk.Trinity.IResource.GetValue(Semiodesk.Trinity.Property)">GetValue(Property)</h4>
+  <div class="markdown level1 summary"><p>Gets the value of a uniquely asserted property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object GetValue(Property property)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>A RDF property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_GetValue_Semiodesk_Trinity_Property_System_Object_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.GetValue(Semiodesk.Trinity.Property%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L383">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_GetValue_" data-uid="Semiodesk.Trinity.IResource.GetValue*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_GetValue_Semiodesk_Trinity_Property_System_Object_" data-uid="Semiodesk.Trinity.IResource.GetValue(Semiodesk.Trinity.Property,System.Object)">GetValue(Property, Object)</h4>
+  <div class="markdown level1 summary"><p>Gets the value of a uniquely asserted property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object GetValue(Property property, object defaultValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>A RDF property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">defaultValue</span></td>
+        <td><p>Specifies a default value that should be returned if no value exists.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_HasProperty_Semiodesk_Trinity_Property_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.HasProperty(Semiodesk.Trinity.Property)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L321">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_HasProperty_" data-uid="Semiodesk.Trinity.IResource.HasProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_HasProperty_Semiodesk_Trinity_Property_" data-uid="Semiodesk.Trinity.IResource.HasProperty(Semiodesk.Trinity.Property)">HasProperty(Property)</h4>
+  <div class="markdown level1 summary"><p>Indicates if the resource has at least one property of the given type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasProperty(Property property)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True on success, False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_HasProperty_Semiodesk_Trinity_Property_System_Object_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.HasProperty(Semiodesk.Trinity.Property%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L329">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_HasProperty_" data-uid="Semiodesk.Trinity.IResource.HasProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_HasProperty_Semiodesk_Trinity_Property_System_Object_" data-uid="Semiodesk.Trinity.IResource.HasProperty(Semiodesk.Trinity.Property,System.Object)">HasProperty(Property, Object)</h4>
+  <div class="markdown level1 summary"><p>Indicates if the resource has a property with the given value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasProperty(Property property, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True on success, False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_HasProperty_Semiodesk_Trinity_Property_System_String_System_Globalization_CultureInfo_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.HasProperty(Semiodesk.Trinity.Property%2CSystem.String%2CSystem.Globalization.CultureInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L338">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_HasProperty_" data-uid="Semiodesk.Trinity.IResource.HasProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_HasProperty_Semiodesk_Trinity_Property_System_String_System_Globalization_CultureInfo_" data-uid="Semiodesk.Trinity.IResource.HasProperty(Semiodesk.Trinity.Property,System.String,System.Globalization.CultureInfo)">HasProperty(Property, String, CultureInfo)</h4>
+  <div class="markdown level1 summary"><p>Indicates if the resource has a property with the given translated string value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasProperty(Property property, string value, CultureInfo language)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Globalization.CultureInfo</span></td>
+        <td><span class="parametername">language</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True on success, False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_HasProperty_Semiodesk_Trinity_Property_System_String_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.HasProperty(Semiodesk.Trinity.Property%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L347">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_HasProperty_" data-uid="Semiodesk.Trinity.IResource.HasProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_HasProperty_Semiodesk_Trinity_Property_System_String_System_String_" data-uid="Semiodesk.Trinity.IResource.HasProperty(Semiodesk.Trinity.Property,System.String,System.String)">HasProperty(Property, String, String)</h4>
+  <div class="markdown level1 summary"><p>Indicates if the resource has a property with the given translated string value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasProperty(Property property, string value, string language)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">language</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True on success, False otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_ListProperties.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.ListProperties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L354">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_ListProperties_" data-uid="Semiodesk.Trinity.IResource.ListProperties*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_ListProperties" data-uid="Semiodesk.Trinity.IResource.ListProperties">ListProperties()</h4>
+  <div class="markdown level1 summary"><p>Enumerates all properties associated with this resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;Property&gt; ListProperties()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Semiodesk.Trinity.Property.html">Property</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_ListValues.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.ListValues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L361">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_ListValues_" data-uid="Semiodesk.Trinity.IResource.ListValues*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_ListValues" data-uid="Semiodesk.Trinity.IResource.ListValues">ListValues()</h4>
+  <div class="markdown level1 summary"><p>Enumerates all properties associated with this resource in form 
+of a tuple mapping properties to their corresponding values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;Tuple&lt;Property, object&gt;&gt; ListValues()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Tuple</span>&lt;<a class="xref" href="Semiodesk.Trinity.Property.html">Property</a>, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_ListValues_Semiodesk_Trinity_Property_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.ListValues(Semiodesk.Trinity.Property)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L368">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_ListValues_" data-uid="Semiodesk.Trinity.IResource.ListValues*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_ListValues_Semiodesk_Trinity_Property_" data-uid="Semiodesk.Trinity.IResource.ListValues(Semiodesk.Trinity.Property)">ListValues(Property)</h4>
+  <div class="markdown level1 summary"><p>Enumerates all property values associated with this resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;object&gt; ListValues(Property property)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_Semiodesk_Trinity_IResource_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property%2CSemiodesk.Trinity.IResource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L199">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_RemoveProperty_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_Semiodesk_Trinity_IResource_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property,Semiodesk.Trinity.IResource)">RemoveProperty(Property, IResource)</h4>
+  <div class="markdown level1 summary"><p>Removes an associated property from the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveProperty(Property property, IResource value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the given value is associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.IResource.html">IResource</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>An IResource instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_Boolean_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L293">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_RemoveProperty_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_Boolean_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property,System.Boolean)">RemoveProperty(Property, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Removes an associated property from the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveProperty(Property property, bool value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the given value is associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A blooean value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_Byte___.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L307">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_RemoveProperty_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_Byte___" data-uid="Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property,System.Byte[])">RemoveProperty(Property, Byte[])</h4>
+  <div class="markdown level1 summary"><p>Removes an associated property from the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveProperty(Property property, byte[] value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the given value is associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Arbitrary data in form of a byte array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_DateTime_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property%2CSystem.DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L300">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_RemoveProperty_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_DateTime_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property,System.DateTime)">RemoveProperty(Property, DateTime)</h4>
+  <div class="markdown level1 summary"><p>Removes an associated property from the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveProperty(Property property, DateTime value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the given value is associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A date value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_Decimal_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property%2CSystem.Decimal)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L286">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_RemoveProperty_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_Decimal_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property,System.Decimal)">RemoveProperty(Property, Decimal)</h4>
+  <div class="markdown level1 summary"><p>Removes an associated property from the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveProperty(Property property, decimal value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the given value is associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A decimal value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_Double_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L279">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_RemoveProperty_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_Double_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property,System.Double)">RemoveProperty(Property, Double)</h4>
+  <div class="markdown level1 summary"><p>Removes an associated property from the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveProperty(Property property, double value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the given value is associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A double precision float value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_Int16_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property%2CSystem.Int16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L230">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_RemoveProperty_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_Int16_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property,System.Int16)">RemoveProperty(Property, Int16)</h4>
+  <div class="markdown level1 summary"><p>Removes an associated property from the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveProperty(Property property, short value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the given value is associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A 16-bit integer value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_Int32_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L237">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_RemoveProperty_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_Int32_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property,System.Int32)">RemoveProperty(Property, Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes an associated property from the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveProperty(Property property, int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the given value is associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A 32-bit integer value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_Int64_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L244">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_RemoveProperty_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_Int64_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property,System.Int64)">RemoveProperty(Property, Int64)</h4>
+  <div class="markdown level1 summary"><p>Removes an associated property from the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveProperty(Property property, long value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the given value is associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A 64-bit integer value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_Single_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L272">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_RemoveProperty_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_Single_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property,System.Single)">RemoveProperty(Property, Single)</h4>
+  <div class="markdown level1 summary"><p>Removes an associated property from the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveProperty(Property property, float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the given value is associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A single precision float value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L206">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_RemoveProperty_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_String_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property,System.String)">RemoveProperty(Property, String)</h4>
+  <div class="markdown level1 summary"><p>Removes an associated property from the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveProperty(Property property, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the given value is associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A instance of IResource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_String_System_Globalization_CultureInfo_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property%2CSystem.String%2CSystem.Globalization.CultureInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L214">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_RemoveProperty_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_String_System_Globalization_CultureInfo_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property,System.String,System.Globalization.CultureInfo)">RemoveProperty(Property, String, CultureInfo)</h4>
+  <div class="markdown level1 summary"><p>Removes an associated property from the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveProperty(Property property, string value, CultureInfo language)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the given value is associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A string literal.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Globalization.CultureInfo</span></td>
+        <td><span class="parametername">language</span></td>
+        <td><p>The culture of the string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_String_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L223">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_RemoveProperty_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_String_System_String_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property,System.String,System.String)">RemoveProperty(Property, String, String)</h4>
+  <div class="markdown level1 summary"><p>Removes an associated property from the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveProperty(Property property, string value, string language)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the given value is associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A string literal.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">language</span></td>
+        <td><p>The language of the string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_UInt16_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property%2CSystem.UInt16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L251">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_RemoveProperty_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_UInt16_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property,System.UInt16)">RemoveProperty(Property, UInt16)</h4>
+  <div class="markdown level1 summary"><p>Removes an associated property from the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveProperty(Property property, ushort value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the given value is associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt16</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A 16-bit unsigned integer value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_UInt32_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L258">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_RemoveProperty_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_UInt32_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property,System.UInt32)">RemoveProperty(Property, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Removes an associated property from the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveProperty(Property property, uint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the given value is associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A 32-bit unsigned integer value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_UInt64_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property%2CSystem.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L265">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_RemoveProperty_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_UInt64_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property,System.UInt64)">RemoveProperty(Property, UInt64)</h4>
+  <div class="markdown level1 summary"><p>Removes an associated property from the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveProperty(Property property, ulong value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the given value is associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>A 64-bit unsigned integer value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_Uri_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property%2CSystem.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L314">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_IResource_RemoveProperty_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty*"></a>
+  <h4 id="Semiodesk_Trinity_IResource_RemoveProperty_Semiodesk_Trinity_Property_System_Uri_" data-uid="Semiodesk.Trinity.IResource.RemoveProperty(Semiodesk.Trinity.Property,System.Uri)">RemoveProperty(Property, Uri)</h4>
+  <div class="markdown level1 summary"><p>Removes an associated property from the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveProperty(Property property, Uri value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>Property the given value is associated with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>An Uri.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Semiodesk.Trinity.ResourceExtensions.html#Semiodesk_Trinity_ResourceExtensions_FindAll__1_Semiodesk_Trinity_IResource___0_System_Int32_">ResourceExtensions.FindAll&lt;T&gt;(IResource, T, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="Semiodesk.Trinity.ResourceExtensions.html#Semiodesk_Trinity_ResourceExtensions_FindAll__1_Semiodesk_Trinity_IResource_System_Collections_Generic_IEnumerable___0__System_Int32_">ResourceExtensions.FindAll&lt;T&gt;(IResource, IEnumerable&lt;T&gt;, Int32)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_IResource.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.IResource%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/IResource.cs/#L41" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
