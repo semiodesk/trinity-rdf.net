@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Music Browser </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Music Browser ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="music-browser">Music Browser</h1>
+
+<p><img src="https://bitbucket.org/repo/pnBbge/images/2022201284-MusicBrowser.png" alt="MusicBrowser.png"></p>
+<p>This examples shows you how to access the LinkedBrainz dataset with the Trinity API. 
+It uses WinForms as UI toolkit and utilises Data binding.</p>
+<p><strong>Linkedbrainz seems to be offline. Before you try this example check linkedbrainz.org!!</strong></p>
+<p>You can download the finished example from<br><a href="http://static.semiodesk.com/semiodesk.trinity/examples/0.9/MusicBrowser.zip">http://static.semiodesk.com/semiodesk.trinity/examples/0.9/MusicBrowser.zip</a></p>
+<p>Because of the way NuGet works, there is one step that needs to be completed for the example to work.  Open the Nuget Package Manager console (&quot;Tools&quot; -&gt; &quot;NuGet Package Manager&quot; -&gt; &quot;Package Manager Console&quot;) and install Semiodesk.Trinity.Modelling.</p>
+<pre><code>#!
+
+PM&gt; Install-Package Semiodesk.Trinity.Modelling 
+</code></pre><h2 id="ontologies-and-object-model">Ontologies and Object Model##</h2>
+<p>As data model we&#39;ve used the <a href="http://purl.org/ontology/mo/">Music Ontology</a>, the <a href="http://xmlns.com/foaf/0.1/">FOAF</a> and the <a href="http://purl.org/dc/elements/1.1/">DCES</a>.</p>
+<p>For the object model we have created representations of the artist as well as his created works.
+<img src="https://bitbucket.org/repo/pnBbge/images/225525627-ClassDiagram.png" alt="ClassDiagram.png"></p>
+<p>||
+|---|
+| <strong>Note:</strong> As you can see, there is no connection between MusicArtist and Release. In this example we have solved the latency problem by wrapping this request in a separate query. |</p>
+<h2 id="accessing-sparql-endpoints">Accessing Sparql Endpoints</h2>
+<p>To query the endpoint we need to create a store with the appropriate parameters.</p>
+<pre><code>#!csharp
+IStore _store = StoreFactory.CreateStore(&quot;provider=sparqlendpoint;endpoint=http://linkedbrainz.org/sparql&quot;);
+IModel _model = _store.GetModel(new Uri(&quot;http://linkedbrainz.org/sparql&quot;));
+</code></pre><p>We use the Sparql Endpoint provider and configure the endpoint adress at <em><a href="http://linkedbrainz.org/sparql">http://linkedbrainz.org/sparql</a></em>.</p>
+<h2 id="data-binding">Data binding</h2>
+<p>Though a bit rudimentary, data binding is possible in Winforms. We have created two ListBoxes which are displaying the Title property of our resources.
+This can be done by setting the <em><a href="https://msdn.microsoft.com/library/system.windows.forms.listcontrol.displaymember%28v=vs.110%29.aspx">DisplayMember</a></em> Property of the ListBox.</p>
+<p>As datasource we create a VirtualizingResourceCollection and set it to the ListBoxes DataSource.</p>
+<pre><code>#!csharp
+ResourceQuery artistEntity = new ResourceQuery(artist); // Artist is the concrete artist resource.
+ResourceQuery madeEntity = new ResourceQuery(mo.Release);
+artistEntity.Where(foaf.made, madeEntity);
+albumListBox.DataSource = new VirtualizingResourceCollection&lt;Release&gt;(Model, madeEntity);
+</code></pre><h2 id="loading-data-in-parallel">Loading Data in Parallel</h2>
+<p>We have used the async/await pattern to keep the UI responsive during querying. As threading is not an issue when using a SPARQL endpoint there is no need to worry about connection pooling.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Documentation/tutorials/musicBrowser.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
