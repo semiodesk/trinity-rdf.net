@@ -65,7 +65,8 @@
               </p>
               <ul class="list-inline mb-5">
                 <li class="list-inline-item mr-4">
-                  <img src="assets/img/osi.svg" width="16" height="16" alt="Open Source Initiative" class="mb-1" /> MIT License
+                  <img src="assets/img/osi.svg" width="16" height="16" alt="Open Source Initiative" class="mb-1" /> MIT
+                  License
                 </li>
                 <li class="list-inline-item"><b style="color: #0BAFEE">.NET</b> Standard, Core, Mono 2.6</li>
               </ul>
@@ -335,6 +336,15 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
             <td><a href="https://opensource.org/licenses/GPL-2.0" target="_blank">GPL 2.0</a>, Commercial</td>
             <td></td>
           </tr>
+          <tr>
+            <td><a href="https://stardog.com/" target="_blank">Stardog</a></td>
+            <td>?</td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+            <td>Commercial</td>
+            <td></td>
+          </tr>
         </table>
       </div>
     </section>
@@ -355,13 +365,13 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
             ><code id="nuget" class="nohighlight">PM> Install-Package Trinity.RDF</code></pre>
           </div>
           <div class="col-lg-6 px-5">
-            <h5 class="mt-4">Wiki</h5>
-            <p>We advise starters to take a look at the following sections in our <a href="#">online wiki</a>:</p>
+            <h5 class="mt-4">DocFX</h5>
+            <p>We advise starters to take a look at the following sections in our <a href="doc/">DocFX pages</a>:</p>
 
             <ul class="my-4">
-              <li><a href="doc/tutorials/firstSteps.html">First Steps</a></li>
+              <li><a href="doc/tutorials/firstSteps.html" target="_blank">First Steps</a></li>
               <li>
-                <a href="doc/tutorials/intro.html">Example Applications</a>
+                <a href="doc/tutorials/intro.html" target="_blank">Example Applications</a>
               </li>
               <li><a href="doc/api/">API Reference</a></li>
             </ul>
@@ -471,63 +481,89 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Contact Semiodesk</h5>
+            <h5 class="modal-title">Contact</h5>
             <button type="button" class="close" data-dismiss="modal">&times;</button>
           </div>
           <div class="modal-body">
-            <p>Thank you for getting in touch with us! We will usually answer your questions in 1-2 business days.</p>
+            <p>Thank you for getting in touch with us!</p>
 
-            <form role="form" id="footer-form" action="https://contact.modom.io/form/send" method="post">
-              <div class="form-group has-feedback">
+            <form id="contact-form" role="form" action="https://contact.modom.io/form/send" method="post">
+              <div class="form-group">
                 <label class="sr-only" for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Name" name="name" required />
-                <i class="fa fa-user form-control-feedback"></i>
+                <input type="name" class="form-control" id="name" placeholder="Name" required />
               </div>
-
-              <div class="form-group has-feedback">
-                <label class="sr-only" for="email">Email address</label>
-                <input type="email" class="form-control" id="reply_to" placeholder="E-Mail" name="reply_to" required />
-                <i class="fa fa-envelope form-control-feedback"></i>
+              <div class="form-group">
+                <label class="sr-only" for="organization">Organization</label>
+                <input type="name" class="form-control" id="organization" placeholder="Organization" required />
               </div>
+              <div class="form-group">
+                <label class="sr-only" for="role">Role</label>
+                <input type="name" class="form-control" id="role" placeholder="Role" />
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="e-mail">Email address</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">@</div>
+                  </div>
 
-              <div class="form-group has-feedback">
+                  <input type="email" class="form-control" id="email" placeholder="E-Mail" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="subject">Subject</label>
+                <select class="form-control" id="subject">
+                  <option>Please choose a subject..</option>
+                  <option>Consulting</option>
+                  <option>Training</option>
+                  <option>Partnership</option>
+                  <option>Feature Request</option>
+                  <option>Schedule Call</option>
+                  <option>Schedule Demo</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
                 <label class="sr-only" for="message">Message</label>
-                <textarea
-                  class="form-control"
-                  rows="8"
-                  id="message"
-                  placeholder="Message"
-                  name="message"
-                  required
-                ></textarea>
-                <i class="fa fa-pencil form-control-feedback"></i>
-              </div>
+                <textarea class="form-control" id="message" rows="10">
+Hello,
 
+</textarea
+                >
+              </div>
               <div class="text-center">
                 <div class="form-status">
                   <div class="form-status-msg form-status-sending">
-                    <div class="lds-ellipsis">
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                      <div></div>
+                    <div class="d-flex flex-row align-items-center justify-content-center">
+                      <div class="lds-ellipsis">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                      </div>
+                      Sending message..
                     </div>
-                    Sending message..
                   </div>
 
                   <div class="form-status-msg form-status-ok">
-                    <i class="fas fa-check text-green"></i> Thank you! We will respond as soon as possible.
+                    <i class="fas fa-check mr-2"></i> Message sent.
+                    <p><small>We will respond to your request within 1-2 business days.</small></p>
                   </div>
 
                   <div class="form-status-msg form-status-error">
-                    <i class="fas fa-times text-orange"></i> Sending message failed. We're sorry.
+                    <i class="fas fa-times mr-2"></i> Sending message failed.
+                    <p>
+                      <small
+                        >We apologize. Please <a href="mailto:hello@semiodesk.com">contact us via e-mail</a>.</small
+                      >
+                    </p>
                   </div>
                 </div>
               </div>
             </form>
           </div>
           <div class="modal-footer">
-            <input type="submit" value="Send" class="btn btn-primary btn-submit px-5" style="margin: auto;" />
+            <button type="submit" class="btn btn-primary btn-submit px-5 ml-auto mr-auto">Send</button>
           </div>
         </div>
       </div>
@@ -554,7 +590,7 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
                 <a href="https://github.com/semiodesk/trinity-rdf/" target="_blank"
                   ><i class="fab fa-2x fa-github text-white ml-3"></i
                 ></a>
-                <a href="https://twitter.com/semiodesk">
+                <a href="#">
                   <i class="fab fa-twitter-square fa-2x fa-fw ml-3"></i>
                 </a>
               </li>

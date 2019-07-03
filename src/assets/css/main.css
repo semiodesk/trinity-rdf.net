@@ -367,6 +367,29 @@ pre code.cs .type {
   background-color: #e4e6e8 !important;
 }
 
+.form-status-msg {
+  background: #efefef;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 3px;
+}
+
+.form-status-sending {
+  background: #efefef;
+}
+
+.form-status-ok {
+  background: #efefef;
+}
+
+.form-status-ok .fas {
+  color: #76b041;
+}
+
+.form-status-error .fas {
+  color: #FF3B2F;
+}
+
 /* Carousel */
 .carousel-inner {
   top: 50px;
@@ -419,4 +442,70 @@ pre code.cs .type {
 .carousel-control-next {
   position: relative;
   top: -0.4em;
+}
+
+/* Loading spinner */
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 27px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #119eda;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 6px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  left: 6px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: 26px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  left: 45px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(19px, 0);
+  }
 }

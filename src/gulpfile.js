@@ -6,7 +6,6 @@ var gulpIf = require("gulp-if");
 var cssnano = require("gulp-cssnano");
 var imagemin = require("gulp-imagemin");
 var cache = require("gulp-cache");
-var runsequence = require("run-sequence");
 
 gulp.task("compact-useref", function() {
   return gulp
