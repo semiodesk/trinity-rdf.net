@@ -220,6 +220,7 @@ bool IsEmpty { get; }</code></pre>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">T AddResource&lt;T&gt;(T resource, ITransaction transaction = null)
+
     where T : Resource</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -292,6 +293,7 @@ bool IsEmpty { get; }</code></pre>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">IQueryable&lt;T&gt; AsQueryable&lt;T&gt;(bool inferenceEnabled = false)
+
     where T : Resource</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -835,6 +837,7 @@ This method can be used to create a resource of a type which was asserted at run
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">T CreateResource&lt;T&gt;(string format = &quot;http://semiodesk.com/id/{0}&quot;, ITransaction transaction = null)
+
     where T : Resource</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -924,6 +927,7 @@ This method can be used to create a resource of a type which was asserted at run
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">T CreateResource&lt;T&gt;(Uri uri, ITransaction transaction = null)
+
     where T : Resource</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1495,6 +1499,7 @@ that the given resource and its stored represenation have identical properties.<
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">T GetResource&lt;T&gt;(IResource resource, ITransaction transaction = null)
+
     where T : Resource</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1567,6 +1572,7 @@ that the given resource and its stored represenation have identical properties.<
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">T GetResource&lt;T&gt;(Uri uri, ITransaction transaction = null)
+
     where T : Resource</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1763,6 +1769,7 @@ that the given resource and its stored represenation have identical properties.<
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">IEnumerable&lt;T&gt; GetResources&lt;T&gt;(ISparqlQuery query, bool inferenceEnabled = false, ITransaction transaction = null)
+
     where T : Resource</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1841,6 +1848,7 @@ that the given resource and its stored represenation have identical properties.<
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">IEnumerable&lt;T&gt; GetResources&lt;T&gt;(ResourceQuery query, bool inferenceEnabled = false, ITransaction transaction = null)
+
     where T : Resource</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -1919,6 +1927,7 @@ that the given resource and its stored represenation have identical properties.<
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">IEnumerable&lt;T&gt; GetResources&lt;T&gt;(bool inferenceEnabled = false, ITransaction transaction = null)
+
     where T : Resource</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
