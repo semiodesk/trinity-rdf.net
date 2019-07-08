@@ -18,7 +18,7 @@ gulp.task("compact-useref", function() {
 
 gulp.task("copy-fonts", function() {
   return gulp
-    .src("node_modules/@fortawesome/fontawesome-free/webfonts/*.{ttf,woff,eof,svg}")
+    .src("node_modules/@fortawesome/fontawesome-free/webfonts/*.{ttf,woff,woff2,eof,svg}")
     .pipe(gulp.dest("../assets/webfonts/"));
 });
 
