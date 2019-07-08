@@ -20,6 +20,10 @@ a:hover {
   text-decoration: underline;
 }
 
+h1 {
+  color: #333;
+}
+
 h6 {
   font-weight: 600;
 }
@@ -155,6 +159,10 @@ a.text-dark:focus {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
+.text-blue {
+  color: #3265d0;
+}
+
 .page-section {
   padding: 8rem 0;
 }
@@ -164,7 +172,7 @@ a.text-dark:focus {
 }
 
 .btn-xl {
-  padding: 1.25rem 2.25rem;
+  padding: 1rem 2rem;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -180,8 +188,8 @@ a.text-dark:focus {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #119eda;
-  border-color: #119eda;
+  background-color: #bf66d3;
+  border-color: #bf66d3;
 }
 
 .btn-primary:focus,
@@ -212,7 +220,24 @@ a.text-dark:focus {
   box-shadow: 0 0 0 0.2rem rgba(246, 122, 88, 0.5);
 }
 
+.btn-blue {
+  color: #fff;
+  background-color: #3265d0;
+  border-color: #3265d0;
+}
+
+.btn-blue:hover {
+  color: #fff;
+  background-color: rgb(73, 129, 248);
+  border-color: rgb(73, 129, 248);
+}
+
 /* Navigation */
+.navbar {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
 #mainNav {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -300,10 +325,9 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
   background: #2f3439;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: transparent url("../img/b3.jpg") top right no-repeat;
   background-attachment: scroll;
-  background-size: cover;
+  background-size: contain;
   height: 60vh;
 }
 
@@ -367,6 +391,10 @@ pre code.cs .type {
   background-color: #e4e6e8 !important;
 }
 
+.bg-gray-light {
+  background-color: #F5F5F6  !important;
+}
+
 .form-status-msg {
   background: #efefef;
   border-radius: 5px;
@@ -387,7 +415,7 @@ pre code.cs .type {
 }
 
 .form-status-error .fas {
-  color: #FF3B2F;
+  color: #ff3b2f;
 }
 
 /* Carousel */

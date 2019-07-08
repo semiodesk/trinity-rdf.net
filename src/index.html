@@ -18,6 +18,7 @@
     <link href="node_modules/roboto-fontface/css/roboto/roboto-fontface.css" rel="stylesheet" />
     <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <link href="node_modules/hamburgers/dist/hamburgers.css" rel="stylesheet" />
+    <link href="node_modules/aos/dist/aos.css" rel="stylesheet" />
     <link href="node_modules/highlight.js/styles/tomorrow.css" rel="stylesheet" />
     <link href="assets/css/main.css" rel="stylesheet" />
     <!--endbuild -->
@@ -64,34 +65,39 @@
       <div class="container h-100">
         <div id="masthead-animation" class="fill-parent z-0 overflow-hidden"></div>
         <div id="masthead-content" class="row h-100 p-relative">
-          <div class="fill-parent z-1 d-flex flex-column align-items-center justify-content-center text-center">
-            <h1 class="text-white text-uppercase font-weight-bold">Everything Connects.</h1>
-            <div class="text-white-75">
-              <p class="font-weight-light">
-                Enterprise ready object mapper for developing RDF knowledge graph applications with .NET
-              </p>
-              <ul class="list-inline mb-5">
-                <li class="list-inline-item mr-4">
-                  <img src="assets/img/osi.svg" width="16" height="16" alt="Open Source Initiative" class="mb-1" /> MIT
-                  License
-                </li>
-                <li class="list-inline-item"><b style="color: #0BAFEE">.NET</b> Standard, Core, Mono 2.6</li>
-              </ul>
-              <a class="btn btn-primary btn-xl mr-4" href="#about">Find Out More</a>
-              <a class="btn btn-outline btn-primary btn-xl text-white" href="#documentation">Get Started</a>
+          <div class="fill-parent z-1 d-flex flex-column align-items-left justify-content-center">
+            <div class="row">
+              <div class="col-md-6">
+                <h1>Entity Framework for Graph Databases.</h1>
+
+                <p class="font-weight-light my-4">
+                  Trinity RDF is a enterprise ready object mapper for developing RDF knowledge graph applications with
+                  .NET
+                </p>
+
+                <ul class="list-unstyled mb-5">
+                  <li class="mb-2">
+                    <img src="assets/img/osi.svg" width="16" height="16" alt="Open Source Initiative" class="mb-1" />
+                    MIT License
+                  </li>
+                  <li class="mb-2"><b style="color: #0BAFEE">.NET</b> Standard, Core, Mono 2.6</li>
+                </ul>
+                <a class="btn btn-blue btn-xl mr-4" href="#about">Find Out More</a>
+                <a class="btn btn-outline btn-blue btn-xl text-white" href="#documentation">Get Started</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </header>
 
-    <section class="page-section" id="about">
+    <section class="page-section bg-gray" id="about">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 text-center" data-aos="fade-right">
             <div class="mt-5">
-              <i class="fas fa-4x fa-smile-beam mb-4" style="color: #fac51d"></i>
-              <h3 class="h4 mb-2">Easy to Use.</h3>
+              <i class="fas fa-4x fa-smile-beam mb-4 text-primary"></i>
+              <h3 class="h4 mb-2">Easy.</h3>
               <p class="text-muted mb-0">
                 Trinity was designed to have a shallow learning curve for developers who are new to RDF knowledge
                 graphs. Familiar concepts such as <a href="#object-mapping">object mapping</a> and native support for
@@ -100,9 +106,9 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 text-center" data-aos="fade-right" data-aos-delay="400">
             <div class="mt-5">
-              <i class="fas fa-4x fa-lightbulb mb-4" style="color: #76b041"></i>
+              <i class="fas fa-4x fa-lightbulb mb-4 text-primary"></i>
               <h3 class="h4 mb-2">Smart.</h3>
               <p class="text-muted mb-0">
                 Many RDF databases can make use of logical reasoning during application runtime to answer queries about
@@ -111,9 +117,9 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4 text-center">
+          <div class="col-md-4 text-center" data-aos="fade-right" data-aos-delay="800">
             <div class="mt-5">
-              <i class="fas fa-4x fa-clock mb-4" style="color: #119eda"></i>
+              <i class="fas fa-4x fa-clock mb-4 text-primary"></i>
               <h3 class="h4 mb-2">Sustainable.</h3>
               <p class="text-muted mb-0">
                 Trinity RDF is based on the
@@ -128,7 +134,7 @@
       </div>
     </section>
 
-    <section class="page-section bg-gray" id="features">
+    <section class="page-section" id="features">
       <h4 class="text-center text-muted mb-4">Features</h4>
       <div id="features-slider" class="carousel slide" data-ride="carousel">
         <div class="carousel-controls d-flex flex-row justify-content-center">
@@ -162,7 +168,7 @@
                     program compilation. This results in higher performance and less runtime errors than solutions based
                     on introspection.
                   </p>
-                  <a class="btn btn-primary btn-xl my-4" href="#about"
+                  <a class="btn btn-blue btn-xl my-4" href="#about"
                     ><i class="fas fa-download mr-3"></i> Download Example</a
                   >
                 </div>
@@ -201,7 +207,7 @@ p.Commit();
                     LINQ to SPARQL translator in Trinity RDF lets you query your RDF knowledge graph using LINQ. No
                     joins attached!
                   </p>
-                  <a class="btn btn-primary btn-xl my-4" href="#about"
+                  <a class="btn btn-blue btn-xl my-4" href="#about"
                     ><i class="fas fa-download mr-3"></i> Download Example</a
                   >
                 </div>
@@ -235,7 +241,7 @@ foreach (<span class="type">Person</span> p in persons.Where(
                     and prototyping. Trinity RDF offers some time-saving attributes that let our byte-code manipulator
                     do the heavy lifting for you.
                   </p>
-                  <a class="btn btn-primary btn-xl my-4" href="#about"
+                  <a class="btn btn-blue btn-xl my-4" href="#about"
                     ><i class="fas fa-download mr-3"></i> Download Example</a
                   >
                 </div>
@@ -271,7 +277,7 @@ public class Person : Resource
                     <a href="https://www.w3.org/TR/rdf-sparql-query/#modOffset" target="_blank">SPARQL</a>
                     has built-in support for paging if you are creating more advanced queries.
                   </p>
-                  <a class="btn btn-primary btn-xl my-4" href="#about"
+                  <a class="btn btn-blue btn-xl my-4" href="#about"
                     ><i class="fas fa-download mr-3"></i> Download Example</a
                   >
                 </div>
@@ -296,17 +302,16 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
       </div>
     </section>
 
-    <section class="page-section bg-gray pt-1">
+    <section class="page-section pt-1">
       <div class="container">
         <hr />
         <h6 class="text-center text-muted mb-4">Supported Databases</h6>
         <p class="mb-0 text-muted">
           Trinity RDF currently has built-in support for the following RDF stores:
         </p>
-        <table class="mt-4">
+        <table class="bg-gray mt-4" data-aos="flip-left">
           <thead>
             <th>Name</th>
-            <th>Scalability</th>
             <th>Inferencing</th>
             <th>Clusterable</th>
             <th>Transactions</th>
@@ -320,23 +325,13 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
                 >In-Memory</a
               >
             </td>
-            <td>~100K Triples</td>
             <td><i class="fas fa-times"></i></td>
             <td><i class="fas fa-times"></i></td>
             <td><i class="fas fa-times"></i></td>
             <td><a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a></td>
           </tr>
           <tr>
-            <td><a href="https://www.w3.org/wiki/SparqlEndpoints" target="_blank">SPARQL Endpoint</a></td>
-            <td>Varying</td>
-            <td>Varying</td>
-            <td>Varying</td>
-            <td><i class="fas fa-times"></i></td>
-            <td></td>
-          </tr>
-          <tr>
             <td><a href="https://github.com/openlink/virtuoso-opensource" target="_blank">OpenLink Virtuoso</a></td>
-            <td>~1B Triples per node</td>
             <td><i class="fas fa-check"></i></td>
             <td><i class="fas fa-check"></i></td>
             <td><i class="fas fa-check"></i></td>
@@ -345,7 +340,6 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
           </tr>
           <tr>
             <td><a href="https://stardog.com/" target="_blank">Stardog</a></td>
-            <td>?</td>
             <td><i class="fas fa-check"></i></td>
             <td><i class="fas fa-check"></i></td>
             <td><i class="fas fa-check"></i></td>
@@ -353,10 +347,16 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
             <td></td>
           </tr>
         </table>
+
+        <p class="mt-4 text-muted">
+          <b>Please note:</b> Using the
+          <a href="https://www.w3.org/TR/sparql11-protocol/" target="_blank">SPARQL 1.1 Protocol</a> Trinity RDF can
+          connect to a variety of databases not listed in the table above.
+        </p>
       </div>
     </section>
 
-    <section class="page-section" id="documentation">
+    <section class="page-section bg-gray" id="documentation">
       <h4 class="text-center text-muted mb-4">Documentation</h4>
       <div class="container p-0">
         <div class="row">
@@ -382,34 +382,33 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
               </li>
               <li><a href="doc/api/">API Reference</a></li>
             </ul>
-
+          </div>
+        </div>
+        <div class="row">
+          <div class="col px-5">
             <h5 class="mt-4">Mailing List</h5>
-            <p>
-              If you have any trouble using Trinity simply to join our mailing list and ask your questions, we'll help
-              you out:
-            </p>
+            If you have any trouble using Trinity simply to join our mailing list and ask your questions, we'll help you
+            out:
 
-            <div class="text-center">
-              <a
-                class="btn btn-primary btn-xl mx-4 mb-4"
-                href="https://groups.google.com/forum/#!forum/semiodesk-trinity"
-                target="_blank"
-                ><i class="fas fa-comments mr-3"></i> Join Mailing List</a
-              >
-            </div>
+            <a
+              class="btn d-inline-block d-xl-inline btn-blue btn-xl mx-4 mb-4"
+              href="https://groups.google.com/forum/#!forum/semiodesk-trinity"
+              target="_blank"
+              ><i class="fas fa-comments mr-3"></i> Join Mailing List</a
+            >
           </div>
         </div>
       </div>
     </section>
 
-    <section class="page-section bg-dark text-white-50" id="references">
+    <section class="page-section" id="references">
       <div class="container text-center">
-        <h4 class="text-center mb-4">References</h4>
-        <p>
+        <h4 class="text-center text-muted mb-4">References</h4>
+        <p class="text-muted">
           Trinity RDF is being used to manage knowledge graphs at the following organizations:
         </p>
 
-        <div class="row">
+        <div class="row" data-aos="zoom-in">
           <div class="col-lg-3"></div>
           <div class="col-lg-3">
             <a href="https://www.se.com" class="d-block m-4" target="_blank">
@@ -418,7 +417,7 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
           </div>
           <div class="col-lg-3">
             <a href="https://www.se.com" class="d-block m-4" target="_blank">
-              <img src="assets/img/ual_white.png" width="200" alt="University of the Arts, London" />
+              <img src="assets/img/ual_black.png" width="200" alt="University of the Arts, London" />
             </a>
           </div>
           <div class="col-lg-3"></div>
@@ -428,7 +427,7 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-6 bg-white text-center" id="contributing">
+        <div class="col-md-6 bg-gray-light text-center" id="contributing">
           <div class="p-5 m-md-5">
             <i class="fas fa-4x fa-users mb-4 text-primary"></i>
             <h2 class="text-center mb-5">Come in, we're open!</h2>
@@ -468,7 +467,7 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
         </div>
         <div class="col-md-6 bg-gray text-center" id="consulting">
           <div class="p-5 m-md-5">
-            <i class="fas fa-4x fa-user-tie mb-4 text-primary"></i>
+            <i class="fas fa-4x fa-user-tie mb-4 text-blue"></i>
             <h2 class="mt-0 mb-5">Consulting</h2>
             <p class="mb-4">
               Your company requires some custom solution to extend Trinity RDF with more features?
@@ -476,9 +475,13 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
               consultation services. Let's get in touch to find out how we can help you!
             </p>
 
-            <a id="btn-contact" class="btn btn-primary btn-xl" href="mailto:hello@semiodesk.com"
+            <a id="btn-contact" class="btn btn-blue btn-xl" href="mailto:hello@semiodesk.com"
               ><i class="fas fa-comments mr-3"></i> Contact Us</a
             >
+
+            <p class="mt-4">
+              Visit <a href="https://www.semiodesk.com" target="_blank">www.semiodesk.com</a> for more information.
+            </p>
           </div>
         </div>
       </div>
@@ -570,7 +573,7 @@ Hello,
             </form>
           </div>
           <div class="modal-footer">
-            <button type="submit" class="btn btn-primary btn-submit px-5 ml-auto mr-auto">Send</button>
+            <button type="submit" class="btn btn-blue btn-submit px-5 ml-auto mr-auto">Send</button>
           </div>
         </div>
       </div>
@@ -612,6 +615,7 @@ Hello,
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="node_modules/smooth-scroll/dist/smooth-scroll.js"></script>
     <script src="node_modules/typed.js/lib/typed.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
     <script src="assets/js/jquery.particleground.js"></script>
     <script src="assets/js/highlight.site.pack.js"></script>
     <script src="assets/js/main.js"></script>
@@ -620,10 +624,12 @@ Hello,
     <script src="https://static.semiodesk.com/semiodesk.trinity/release/stable/currentVersion.php"></script>
 
     <script>
-      particleground(document.getElementById("masthead-animation"), {
-        dotColor: "#555",
-        lineColor: "#555"
-      });
+      AOS.init();
+
+      // particleground(document.getElementById("masthead-animation"), {
+      //   dotColor: "#555",
+      //   lineColor: "#555"
+      // });
 
       $("#features-slider").ready(function() {
         hljs.initHighlighting();
