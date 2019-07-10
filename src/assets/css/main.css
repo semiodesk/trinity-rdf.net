@@ -43,6 +43,11 @@ td {
   position: relative !important;
 }
 
+.pull-center {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 .fill-parent {
   position: absolute;
   left: 0;
@@ -172,7 +177,7 @@ a.text-dark:focus {
 }
 
 .btn-xl {
-  padding: 1rem 2rem;
+  padding: .75rem 1.5rem;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;

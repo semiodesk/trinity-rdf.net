@@ -70,20 +70,9 @@
               <div class="col-md-6">
                 <h1>Entity Framework for Graph Databases.</h1>
 
-                <p class="font-weight-light my-4">
-                  Trinity RDF is a enterprise ready object mapper for developing RDF knowledge graph applications with
-                  .NET
-                </p>
-
-                <ul class="list-unstyled mb-5">
-                  <li class="mb-2">
-                    <img src="assets/img/osi.svg" width="16" height="16" alt="Open Source Initiative" class="mb-1" />
-                    MIT License
-                  </li>
-                  <li class="mb-2"><b style="color: #0BAFEE">.NET</b> Standard, Core, Mono 2.6</li>
-                </ul>
-                <a class="btn btn-blue btn-xl mr-4" href="#about">Find Out More</a>
-                <a class="btn btn-outline btn-blue btn-xl text-white" href="#documentation">Get Started</a>
+                <pre
+                  class="bg-dark text-white p-2 mt-3"
+                ><code id="nuget" class="nohighlight">PM> Install-Package Trinity.RDF</code></pre>
               </div>
             </div>
           </div>
@@ -97,7 +86,7 @@
           <div class="col-md-4 text-center" data-aos="fade-right">
             <div class="mt-5">
               <i class="fas fa-4x fa-smile-beam mb-4 text-primary"></i>
-              <h3 class="h4 mb-2">Easy.</h3>
+              <h3 class="h4 mb-2">Free & Easy</h3>
               <p class="text-muted mb-0">
                 Trinity was designed to have a shallow learning curve for developers who are new to RDF knowledge
                 graphs. Familiar concepts such as <a href="#object-mapping">object mapping</a> and native support for
@@ -109,7 +98,7 @@
           <div class="col-md-4 text-center" data-aos="fade-right" data-aos-delay="400">
             <div class="mt-5">
               <i class="fas fa-4x fa-lightbulb mb-4 text-primary"></i>
-              <h3 class="h4 mb-2">Smart.</h3>
+              <h3 class="h4 mb-2">Smart</h3>
               <p class="text-muted mb-0">
                 Many RDF databases can make use of logical reasoning during application runtime to answer queries about
                 facts which have not been explicitly saved. This allows you to discover hidden facts in your data and
@@ -120,7 +109,8 @@
           <div class="col-md-4 text-center" data-aos="fade-right" data-aos-delay="800">
             <div class="mt-5">
               <i class="fas fa-4x fa-clock mb-4 text-primary"></i>
-              <h3 class="h4 mb-2">Sustainable.</h3>
+              <h3 class="h4 mb-2">Sustainable</h3>
+              .NET Standard, Core, Mono 2.6
               <p class="text-muted mb-0">
                 Trinity RDF is based on the
                 <a href="https://w3.org/rdf" target="_blank">Resource Description Framework (RDF)</a> linked data
@@ -168,7 +158,7 @@
                     program compilation. This results in higher performance and less runtime errors than solutions based
                     on introspection.
                   </p>
-                  <a class="btn btn-blue btn-xl my-4" href="#about"
+                  <a class="btn btn-primary btn-xl my-4" href="#about"
                     ><i class="fas fa-download mr-3"></i> Download Example</a
                   >
                 </div>
@@ -207,7 +197,7 @@ p.Commit();
                     LINQ to SPARQL translator in Trinity RDF lets you query your RDF knowledge graph using LINQ. No
                     joins attached!
                   </p>
-                  <a class="btn btn-blue btn-xl my-4" href="#about"
+                  <a class="btn btn-primary btn-xl my-4" href="#about"
                     ><i class="fas fa-download mr-3"></i> Download Example</a
                   >
                 </div>
@@ -241,7 +231,7 @@ foreach (<span class="type">Person</span> p in persons.Where(
                     and prototyping. Trinity RDF offers some time-saving attributes that let our byte-code manipulator
                     do the heavy lifting for you.
                   </p>
-                  <a class="btn btn-blue btn-xl my-4" href="#about"
+                  <a class="btn btn-primary btn-xl my-4" href="#about"
                     ><i class="fas fa-download mr-3"></i> Download Example</a
                   >
                 </div>
@@ -277,7 +267,7 @@ public class Person : Resource
                     <a href="https://www.w3.org/TR/rdf-sparql-query/#modOffset" target="_blank">SPARQL</a>
                     has built-in support for paging if you are creating more advanced queries.
                   </p>
-                  <a class="btn btn-blue btn-xl my-4" href="#about"
+                  <a class="btn btn-primary btn-xl my-4" href="#about"
                     ><i class="fas fa-download mr-3"></i> Download Example</a
                   >
                 </div>
@@ -356,52 +346,52 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
       </div>
     </section>
 
-    <section class="page-section bg-gray" id="documentation">
-      <h4 class="text-center text-muted mb-4">Documentation</h4>
-      <div class="container p-0">
+    <section>
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-6 px-5">
-            <h5 class="mt-4">Getting Started</h5>
-            <p>
-              The easiest way to start using Trinity RDF is to add it to your .NET project by installing our
-              <a href="https://www.nuget.org/packages/Semiodesk.Trinity/" target="_blank">NuGet package</a>:
-            </p>
+          <div class="col-lg-6 bg-gray-light text-center" id="documentation">
+            <div class="p-5 m-md-5">
+              <i class="fas fa-4x fa-book-open mb-4 text-primary"></i>
+              <h2 class="mb-2">Documentation</h2>
+              <p>We advise starters to take a look at the following sections in our <a href="doc/">DocFX pages</a>:</p>
 
-            <pre
-              class="bg-dark text-white p-2 mt-3"
-            ><code id="nuget" class="nohighlight">PM> Install-Package Trinity.RDF</code></pre>
+              <ul class="my-4 text-left pull-center" style="width: 10em">
+                <li><a href="doc/tutorials/firstSteps.html" target="_blank">First Steps</a></li>
+                <li><a href="doc/tutorials/intro.html" target="_blank">Tutorials</a></li>
+                <li><a href="doc/api/">API Reference</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="col-lg-6 px-5">
-            <h5 class="mt-4">DocFX</h5>
-            <p>We advise starters to take a look at the following sections in our <a href="doc/">DocFX pages</a>:</p>
-
-            <ul class="my-4">
-              <li><a href="doc/tutorials/firstSteps.html" target="_blank">First Steps</a></li>
-              <li>
-                <a href="doc/tutorials/intro.html" target="_blank">Example Applications</a>
-              </li>
-              <li><a href="doc/api/">API Reference</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col px-5">
-            <h5 class="mt-4">Mailing List</h5>
-            If you have any trouble using Trinity simply to join our mailing list and ask your questions, we'll help you
-            out:
-
-            <a
-              class="btn d-inline-block d-xl-inline btn-blue btn-xl mx-4 mb-4"
-              href="https://groups.google.com/forum/#!forum/semiodesk-trinity"
-              target="_blank"
-              ><i class="fas fa-comments mr-3"></i> Join Mailing List</a
-            >
+          <div class="col-lg-6 bg-gray text-center" id="contributing">
+            <div class="p-5 m-md-5">
+              <i class="fas fa-4x fa-users mb-4 text-primary"></i>
+              <h2 class="text-center mb-2">Come in, we're open!</h2>
+              <p class="mb-4">Find answers to your questions in our community:</p>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a
+                    class="btn btn-primary btn-xl mx-2 mb-4"
+                    href="https://stackoverflow.com/questions/tagged/trinity-rdf"
+                    target="_blank"
+                    ><i class="fab fa-stack-overflow fa-2x mr-3"></i> Stackoverflow</a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    class="btn btn-primary btn-xl mx-2 mb-4"
+                    href="https://github.com/semiodesk/trinity-rdf"
+                    target="_blank"
+                    ><i class="fab fa-github fa-2x mr-3"></i> Github</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="page-section" id="references">
+    <!-- <section class="page-section" id="references">
       <div class="container text-center">
         <h4 class="text-center text-muted mb-4">References</h4>
         <p class="text-muted">
@@ -423,68 +413,10 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
           <div class="col-lg-3"></div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6 bg-gray-light text-center" id="contributing">
-          <div class="p-5 m-md-5">
-            <i class="fas fa-4x fa-users mb-4 text-primary"></i>
-            <h2 class="text-center mb-5">Come in, we're open!</h2>
-            <p class="mb-4">
-              We encourage anyone who is interested in using or contributing to Trinity RDF to join our public mailing
-              list. If you want to contribute source code, please make sure that you have all the rights for publication
-              under a MIT license and create a pull request at our GitHub project site.
-            </p>
-
-            <ul class="list-unstyled">
-              <li>
-                <a
-                  class="btn btn-primary btn-xl mx-4 mb-4"
-                  href="https://groups.google.com/forum/#!forum/semiodesk-trinity"
-                  target="_blank"
-                  ><i class="fas fa-comments mr-3"></i> Join Mailing List</a
-                >
-              </li>
-              <li>
-                <a
-                  class="btn btn-primary btn-xl mx-4 mb-4"
-                  href="https://github.com/semiodesk/trinity-rdf"
-                  target="_blank"
-                  ><i class="fas fa-code mr-3"></i> View Source</a
-                >
-              </li>
-              <li>
-                <a
-                  class="btn btn-primary btn-xl mx-4 mb-4"
-                  href="https://github.com/semiodesk/trinity-rdf/issues"
-                  target="_blank"
-                  ><i class="fas fa-bug mr-3"></i> Report Issue</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6 bg-gray text-center" id="consulting">
-          <div class="p-5 m-md-5">
-            <i class="fas fa-4x fa-user-tie mb-4 text-blue"></i>
-            <h2 class="mt-0 mb-5">Consulting</h2>
-            <p class="mb-4">
-              Your company requires some custom solution to extend Trinity RDF with more features?
-              <a href="https://www.semiodesk.com" target="_blank">Semiodesk</a> offers professional development and
-              consultation services. Let's get in touch to find out how we can help you!
-            </p>
-
-            <a id="btn-contact" class="btn btn-blue btn-xl" href="mailto:hello@semiodesk.com"
-              ><i class="fas fa-comments mr-3"></i> Contact Us</a
-            >
-
-            <p class="mt-4">
-              Visit <a href="https://www.semiodesk.com" target="_blank">www.semiodesk.com</a> for more information.
-            </p>
-          </div>
-        </div>
-      </div>
+      <div class="row"></div>
     </div>
 
     <div id="contact-dialog" class="modal fade" tabindex="-1">
@@ -573,7 +505,7 @@ Hello,
             </form>
           </div>
           <div class="modal-footer">
-            <button type="submit" class="btn btn-blue btn-submit px-5 ml-auto mr-auto">Send</button>
+            <button type="submit" class="btn btn-primary btn-submit px-5 ml-auto mr-auto">Send</button>
           </div>
         </div>
       </div>

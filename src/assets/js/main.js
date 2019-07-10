@@ -83,8 +83,6 @@ $(document).ready(function() {
           $(".form-status-sending").css("display", "none");
           $(".form-status-ok").css("display", "none");
           $(".form-status-error").css("display", "block");
-
-          console.error(response);
         } else {
           $(".btn-submit").prop("disabled", true);
           $(".form-status-sending").css("display", "none");
@@ -92,8 +90,6 @@ $(document).ready(function() {
           $(".form-status-error").css("display", "none");
 
           form.reset();
-
-          console.log(response);
         }
       });
     });
@@ -112,8 +108,6 @@ $(document).ready(function() {
       };
 
       xhr.onerror = response => {
-        console.log(response);
-
         callback(true, response.target.response);
       };
 
