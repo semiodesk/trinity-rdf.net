@@ -31,7 +31,6 @@
         <a class="navbar-brand" data-scroll href="#page-top">
           <img src="assets/img/trinity-logo.svg" width="48" height="48" /> Trinity RDF
         </a>
-        <span class="trinity-version"></span>
         <button
           class="hamburger hamburger--collapse navbar-toggler navbar-toggler-right"
           type="button"
@@ -51,11 +50,13 @@
             <li class="nav-item"><a class="nav-link" data-scroll href="#features">Features</a></li>
             <li class="nav-item"><a class="nav-link" data-scroll href="#documentation">Documentation</a></li>
             <li class="nav-item"><a class="nav-link" data-scroll href="#references">References</a></li>
-            <li class="nav-item"><a class="nav-link" data-scroll href="#consulting">Consulting</a></li>
             <li class="nav-item"><a class="nav-link" data-scroll href="#contributing">Contributing</a></li>
           </ul>
           <a href="https://github.com/semiodesk/trinity-rdf/" target="_blank"
             ><i class="fab fa-2x fa-github text-white ml-4"></i
+          ></a>
+          <a href="https://stackoverflow.com/questions/tagged/trinity-rdf" target="_blank"
+            ><i class="fab fa-2x fa-stack-overflow text-white ml-3"></i
           ></a>
         </div>
       </div>
@@ -63,17 +64,18 @@
 
     <header class="masthead p-relative content-top">
       <div class="container h-100">
-        <div id="masthead-animation" class="fill-parent z-0 overflow-hidden"></div>
-        <div id="masthead-content" class="row h-100 p-relative">
-          <div class="fill-parent z-1 d-flex flex-column align-items-left justify-content-center">
-            <div class="row">
-              <div class="col-md-6">
-                <h1>Entity Framework for Graph Databases.</h1>
+        <div id="masthead-content" class="h-100 p-relative">
+          <div class="row text-center text-lg-left">
+            <div class="col-12 col-lg-7 pt-lg-5">
+              <h1 class="mt-lg-5">Entity Framework for Graph Databases.</h1>
 
-                <pre
-                  class="bg-dark text-white p-2 mt-3"
-                ><code id="nuget" class="nohighlight">PM> Install-Package Trinity.RDF</code></pre>
-              </div>
+              <p class="font-weight-light my-4 pr-sm-5">
+                Enterprise ready object mapper for developing RDF knowledge graph applications with .NET
+              </p>
+
+              <button id="btn-download" class="btn btn-accent btn-xl mt-3">
+                <i class="fas fa-download fa-2x"></i><span class="fa-2x-label">Download</span>
+              </button>
             </div>
           </div>
         </div>
@@ -83,41 +85,62 @@
     <section class="page-section bg-gray pt-4" id="about">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 text-center" data-aos="fade-right">
+          <div class="col-md-4" data-aos="fade-right">
             <div class="mt-5">
-              <i class="fas fa-4x fa-smile-beam mb-4 text-primary"></i>
-              <h3 class="h4 mb-2">Free & Easy</h3>
+              <div class="text-center">
+                <i class="fas fa-4x fa-smile-beam mb-4 text-primary"></i>
+                <h3 class="h4 mb-2">Free & Easy</h3>
+              </div>
               <p class="text-muted mb-0">
-                Trinity was designed to have a shallow learning curve for developers who are new to RDF knowledge
-                graphs. Familiar concepts such as <a href="#object-mapping">object mapping</a> and native support for
-                <a href="#linq">LINQ</a> allow users of Trinity libraries to handle RDF knowledge graphs without even
+                With Trinity data model packages, developers can handle large-scale RDF knowledge graphs without even
                 knowing!
               </p>
+              <ul class="fa-ul mt-3">
+                <li>
+                  <i class="fa-li fa fa-check text-green"></i> <span class="fw-500">Open Source, MIT License</span>
+                </li>
+                <li><i class="fa-li fa fa-check text-green"></i> <span class="fw-500">Shallow Learning Curve</span></li>
+                <li><i class="fa-li fa fa-check text-green"></i> <span class="fw-500">LINQ</span></li>
+              </ul>
             </div>
           </div>
-          <div class="col-md-4 text-center" data-aos="fade-right" data-aos-delay="400">
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="400">
             <div class="mt-5">
-              <i class="fas fa-4x fa-lightbulb mb-4 text-primary"></i>
-              <h3 class="h4 mb-2">Smart</h3>
+              <div class="text-center">
+                <i class="fas fa-4x fa-lightbulb mb-4 text-primary"></i>
+                <h3 class="h4 mb-2">Smart</h3>
+              </div>
               <p class="text-muted mb-0">
-                Many RDF databases can make use of logical reasoning during application runtime to answer queries about
-                facts which have not been explicitly saved. This allows you to discover hidden facts in your data and
-                make use of inheritance in your queries.
+                Many RDF databases supoprt logical reasoning during application runtime to answer queries about facts
+                which have not been explicitly saved.
               </p>
+              <ul class="fa-ul mt-3">
+                <li><i class="fa-li fa fa-check text-green"></i> <span class="fw-500">Logical Reasoning</span></li>
+                <li><i class="fa-li fa fa-check text-green"></i> <span class="fw-500">Write Simpler Queries</span></li>
+                <li><i class="fa-li fa fa-check text-green"></i> <span class="fw-500">Discover Hidden Facts</span></li>
+              </ul>
             </div>
           </div>
-          <div class="col-md-4 text-center" data-aos="fade-right" data-aos-delay="800">
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="800">
             <div class="mt-5">
-              <i class="fas fa-4x fa-clock mb-4 text-primary"></i>
-              <h3 class="h4 mb-2">Sustainable</h3>
-              .NET Standard, Core, Mono 2.6
+              <div class="text-center">
+                <i class="fas fa-4x fa-clock mb-4 text-primary"></i>
+                <h3 class="h4 mb-2">Sustainable</h3>
+              </div>
               <p class="text-muted mb-0">
-                Trinity RDF is based on the
-                <a href="https://w3.org/rdf" target="_blank">Resource Description Framework (RDF)</a> linked data
-                platform, which is an open standard maintained by the
-                <a href="https://w3.org/">World Wide Web Consortium (W3C)</a>. This means your data is
-                vendor-independent and will be easily accessible and exchangable in many years to come.
+                The Resource Description Framework linked data platform is an open standard maintained by the World Wide
+                Web Consortium (W3C).
               </p>
+              <ul class="fa-ul mt-3">
+                <li>
+                  <i class="fa-li fa fa-check text-green"></i> <span class="fw-500">.NET Standard, Core, Mono</span>
+                </li>
+                <li>
+                  <i class="fa-li fa fa-check text-green"></i>
+                  <span class="fw-500">Standardized RDF Graph Technology</span>
+                </li>
+                <li><i class="fa-li fa fa-check text-green"></i> <span class="fw-500">Vendor Independent</span></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -126,7 +149,7 @@
 
     <section class="page-section" id="features">
       <h4 class="text-center text-muted mb-4">Features</h4>
-      <div id="features-slider" class="carousel slide" data-ride="carousel">
+      <div id="features-slider" class="carousel slide" data-interval="false">
         <div class="carousel-controls d-flex flex-row justify-content-center">
           <a class="carousel-control carousel-control-prev" href="#features-slider" role="button" data-slide="prev">
             <i class="fas fa-3x fa-arrow-circle-left" aria-hidden="true"></i>
@@ -158,7 +181,7 @@
                     program compilation. This results in higher performance and less runtime errors than solutions based
                     on introspection.
                   </p>
-                  <a class="btn btn-primary btn-xl my-4" href="#about"
+                  <a class="btn btn-accent btn-xl my-4" href="#about"
                     ><i class="fas fa-download mr-3"></i> Download Example</a
                   >
                 </div>
@@ -197,7 +220,7 @@ p.Commit();
                     LINQ to SPARQL translator in Trinity RDF lets you query your RDF knowledge graph using LINQ. No
                     joins attached!
                   </p>
-                  <a class="btn btn-primary btn-xl my-4" href="#about"
+                  <a class="btn btn-accent btn-xl my-4" href="#about"
                     ><i class="fas fa-download mr-3"></i> Download Example</a
                   >
                 </div>
@@ -231,7 +254,7 @@ foreach (<span class="type">Person</span> p in persons.Where(
                     and prototyping. Trinity RDF offers some time-saving attributes that let our byte-code manipulator
                     do the heavy lifting for you.
                   </p>
-                  <a class="btn btn-primary btn-xl my-4" href="#about"
+                  <a class="btn btn-accent btn-xl my-4" href="#about"
                     ><i class="fas fa-download mr-3"></i> Download Example</a
                   >
                 </div>
@@ -267,7 +290,7 @@ public class Person : Resource
                     <a href="https://www.w3.org/TR/rdf-sparql-query/#modOffset" target="_blank">SPARQL</a>
                     has built-in support for paging if you are creating more advanced queries.
                   </p>
-                  <a class="btn btn-primary btn-xl my-4" href="#about"
+                  <a class="btn btn-accent btn-xl my-4" href="#about"
                     ><i class="fas fa-download mr-3"></i> Download Example</a
                   >
                 </div>
@@ -296,9 +319,6 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
       <div class="container">
         <hr />
         <h6 class="text-center text-muted mb-4">Supported Databases</h6>
-        <p class="mb-0 text-muted">
-          Trinity RDF currently has built-in support for the following RDF stores:
-        </p>
         <table class="bg-gray mt-4" data-aos="flip-left">
           <thead>
             <th>Name</th>
@@ -336,13 +356,12 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
             <td>Commercial</td>
             <td></td>
           </tr>
-        </table>
 
-        <p class="mt-4 text-muted">
-          <b>Please note:</b> Using the
-          <a href="https://www.w3.org/TR/sparql11-protocol/" target="_blank">SPARQL 1.1 Protocol</a> Trinity RDF can
-          connect to a variety of databases not listed in the table above.
-        </p>
+          <tr>
+            <td><a href="https://www.w3.org/TR/sparql11-protocol/" target="_blank">SPARQL 1.1 Protocol</a></td>
+            <td colspan="5">Trinity RDF can connect to all databases supporting the SPARQL query language.</td>
+          </tr>
+        </table>
       </div>
     </section>
 
@@ -371,18 +390,22 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
                 <li class="list-inline-item">
                   <a
                     class="btn btn-primary btn-xl mx-2 mb-4"
-                    href="https://stackoverflow.com/questions/tagged/trinity-rdf"
+                    href="https://github.com/semiodesk/trinity-rdf"
                     target="_blank"
-                    ><i class="fab fa-stack-overflow fa-2x mr-3"></i> Stackoverflow</a
+                  >
+                    <i class="fab fa-github fa-2x"></i>
+                    <span class="fa-2x-label">GitHub</span></a
                   >
                 </li>
                 <li class="list-inline-item">
                   <a
                     class="btn btn-primary btn-xl mx-2 mb-4"
-                    href="https://github.com/semiodesk/trinity-rdf"
+                    href="https://stackoverflow.com/questions/tagged/trinity-rdf"
                     target="_blank"
-                    ><i class="fab fa-github fa-2x mr-3"></i> Github</a
                   >
+                    <i class="fab fa-stack-overflow fa-2x"></i>
+                    <span class="fa-2x-label">Stackoverflow</span>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -415,11 +438,54 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
       </div>
     </section> -->
 
-    <div class="container-fluid">
-      <div class="row"></div>
+    <section class="bg-dark text-center text-muted py-5">
+      <div class="container">
+        <a href="https://semiodesk.com" target="_blank"><img src="assets/img/semiodesk-white.svg" style="opacity: .5" width="150" alt="Semiodesk" /></a>
+      </div>
+    </section>
+
+    <div id="modal-download" class="modal fade" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <h4 class="modal-title text-nuget">Trinity.RDF</h4>
+              <small class="text-muted">Version: <span class="trinity-version"></span></small>
+            </div>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <h5 class="mb-4">Install with NuGet (recommended)</h5>
+
+            <div class="d-flex flex-row justify-content-start align-items-start">
+              <a href="https://www.nuget.org/packages/Trinity.RDF/" target="_blank" class="mt-2 mr-2">
+                <img src="assets/img/nuget.svg" alt="NuGet" width="32" height="32" />
+              </a>
+              <div class="w-100">
+                <pre
+                  class="bg-nuget text-white p-3 w-100"
+                  style="border-radius: 5px;"
+                ><code id="nuget" class="nohighlight">PM> Install-Package Trinity.RDF</code></pre>
+                <p>
+                  or install via
+                  <a href="https://docs.nuget.org/consume/package-manager-dialog" target="_blank">Package Management</a>
+                  window.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer d-flex flex-column justify-content-start align-items-start bg-gray">
+            <h5 class="mb-4">Direct Download</h5>
+            <p>
+              <a href="https://github.com/semiodesk/Trinity-RDF/releases">GitHub packages </a> containing assemblies and
+              source code.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div id="contact-dialog" class="modal fade" tabindex="-1">
+    <div id="modal-contact" class="modal fade" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
@@ -511,7 +577,7 @@ Hello,
       </div>
     </div>
 
-    <footer class="footer bg-dark text-white p-5">
+    <footer id="footer" class="footer bg-dark text-white p-5">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
@@ -523,18 +589,25 @@ Hello,
               <li class="list-inline-item">
                 <a href="privacy.html">Privacy Policy</a>
               </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a id="btn-contact" href="#footer">Contact Us</a>
+              </li>
             </ul>
             <p class="text-muted small mb-4 mb-lg-0">&copy; Semiodesk GmbH 2019. All Rights Reserved.</p>
           </div>
           <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
             <ul class="list-inline mb-0">
               <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fab fa-twitter fa-2x fa-fw ml-3"></i>
+                </a>
                 <a href="https://github.com/semiodesk/trinity-rdf/" target="_blank"
                   ><i class="fab fa-2x fa-github text-white ml-3"></i
                 ></a>
-                <a href="#">
-                  <i class="fab fa-twitter-square fa-2x fa-fw ml-3"></i>
-                </a>
+                <a href="https://stackoverflow.com/questions/tagged/trinity-rdf" target="_blank"
+                  ><i class="fab fa-2x fa-stack-overflow text-white ml-3"></i
+                ></a>
               </li>
             </ul>
           </div>
@@ -559,6 +632,18 @@ Hello,
 
       $("#features-slider").ready(function() {
         hljs.initHighlighting();
+      });
+
+      $("#btn-contact").click(function(e) {
+        $("#modal-contact").modal("show");
+
+        e.preventDefault();
+      });
+
+      $("#btn-download").click(function(e) {
+        $("#modal-download").modal("show");
+
+        e.preventDefault();
       });
     </script>
   </body>

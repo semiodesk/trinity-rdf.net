@@ -80,6 +80,10 @@ td {
   color: #984caa !important;
 }
 
+.text-nuget {
+  color: #004880 !important;
+}
+
 a.text-primary:hover,
 a.text-primary:focus {
   color: #119eda !important;
@@ -165,7 +169,43 @@ a.text-dark:focus {
 }
 
 .text-blue {
-  color: #2236B8;
+  color: #2236b8 !important;
+}
+
+.text-green {
+  color: #28a745 !important;
+}
+
+.fw-100 {
+  font-weight: 100 !important;
+}
+
+.fw-200 {
+  font-weight: 200 !important;
+}
+
+.fw-300 {
+  font-weight: 300 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.fw-700 {
+  font-weight: 600 !important;
+}
+
+.fw-800 {
+  font-weight: 800 !important;
 }
 
 .page-section {
@@ -177,7 +217,7 @@ a.text-dark:focus {
 }
 
 .btn-xl {
-  padding: .75rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -225,16 +265,24 @@ a.text-dark:focus {
   box-shadow: 0 0 0 0.2rem rgba(246, 122, 88, 0.5);
 }
 
-.btn-blue {
+.btn-accent {
   color: #fff;
-  background-color: #2236B8;
-  border-color: #2236B8;
+  background-color: #2236b8;
+  border-color: #2236b8;
 }
 
-.btn-blue:hover {
+.btn-accent:hover {
   color: #fff;
   background-color: rgb(73, 129, 248);
   border-color: rgb(73, 129, 248);
+}
+
+.fa-2x-label {
+  margin-left: 1rem;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  top: -0.4em;
 }
 
 /* Navigation */
@@ -327,17 +375,18 @@ a.text-dark:focus {
 }
 
 header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 72px);
-  background: #2f3439;
-  background: transparent url("../img/b3.jpg") top right no-repeat;
-  background-attachment: scroll;
-  background-size: contain;
-  height: 60vh;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: url("../img/b3.jpg") center 100px no-repeat;
+  background-size: auto 48%;
 }
 
 header.masthead h1 {
   font-size: 2.25rem;
+  max-width: 10em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50vh;
 }
 
 @media (min-width: 992px) {
@@ -346,15 +395,18 @@ header.masthead h1 {
   }
 
   header.masthead {
-    min-height: 40rem;
-    padding-top: 0;
-    padding-bottom: 0;
+    min-height: 36vw;
+    height: 600px;
+    background: url("../img/b3.jpg") center right no-repeat;
+    background-size: 45% auto;
   }
   header.masthead p {
     font-size: 1.15rem;
   }
   header.masthead h1 {
     font-size: 3rem;
+    max-width: 25em;
+    margin-top: 0;
   }
 }
 
@@ -387,8 +439,17 @@ pre code.cs .type {
   color: #4271ae;
 }
 
-.bg-dark a {
+.bg-dark a,
+.bg-black a {
   color: white;
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+.bg-black {
+  background-color: #232930 !important;
 }
 
 .bg-gray,
@@ -397,7 +458,11 @@ pre code.cs .type {
 }
 
 .bg-gray-light {
-  background-color: #F5F5F6  !important;
+  background-color: #f5f5f6 !important;
+}
+
+.bg-nuget {
+  background-color: #004880 !important;
 }
 
 .form-status-msg {
@@ -541,4 +606,9 @@ pre code.cs .type {
   100% {
     transform: translate(19px, 0);
   }
+}
+
+/* DocFX */
+.navbar-docfx .navbar-nav {
+  float: right;
 }

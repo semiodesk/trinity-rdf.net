@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "qKs2ESyhGnyzeh51W9xhQg=="
+          "hash": "r/QnJmRqHJZNrwLFmKUPAA=="
         }
       },
       "is_incremental": false,
@@ -52,7 +52,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "1Eazpfo+/5yhZnj5hblYnw=="
+          "hash": "eGlVTL5LHhhg5wKq0Dqcqg=="
         }
       },
       "is_incremental": false,
@@ -76,7 +76,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/firstSteps.html",
-          "hash": "8912RippekvtsFheayluEQ=="
+          "hash": "uIzQ3acCYbZ6zOtt5g6PKw=="
         }
       },
       "is_incremental": false,
@@ -91,7 +91,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/installation.html",
-          "hash": "ujmh8jSI/RmnXbMotnspZg=="
+          "hash": "4D9Pw6q+QJ4hkTRXcmoR1Q=="
         }
       },
       "is_incremental": false,
@@ -103,7 +103,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/intro.html",
-          "hash": "0f5wP+Uu8B95ZBer4fHEtQ=="
+          "hash": "31K2j3YhU55T1didn4DbgA=="
         }
       },
       "is_incremental": false,
@@ -115,7 +115,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/license.html",
-          "hash": "JPE8zZF989MW06xC3+NrzA=="
+          "hash": "dlUi5NMNt8t/xJM+KXK6Ig=="
         }
       },
       "is_incremental": false,
@@ -127,7 +127,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/musicBrowser.html",
-          "hash": "K0xDgXUsC62NVRUHqkthYw=="
+          "hash": "xn1guQ4sTDmbO1uqTTt/XA=="
         }
       },
       "is_incremental": false,
@@ -139,7 +139,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/simpleUnity.html",
-          "hash": "5dad7PPBRyJzbtBfKzL1PA=="
+          "hash": "fQSOJH4yuYc9Wo05pOUi2A=="
         }
       },
       "is_incremental": false,
@@ -163,7 +163,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/virtuoso.html",
-          "hash": "7rLA3orTBbE+o6FkViUvpg=="
+          "hash": "g9f4RXaCJ5kay6CNmv+iQA=="
         }
       },
       "is_incremental": false,
@@ -175,7 +175,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/webApp.html",
-          "hash": "ICUMwg+V1b0Nle2v+pCidg=="
+          "hash": "6edNXIRinTByMeuob5EzLQ=="
         }
       },
       "is_incremental": false,
@@ -185,12 +185,10 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "NoAvailableBuildCache"
+        "skipped_file_count": 0
       },
       "processors": {
         "ResourceDocumentProcessor": {
@@ -208,10 +206,10 @@
           "skipped_file_count": 0
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 10,
-          "skipped_file_count": 0
+          "skipped_file_count": 10
         }
       }
     },

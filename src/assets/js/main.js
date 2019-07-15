@@ -7,12 +7,6 @@ $(document).ready(function() {
   // Set the trinity version in the header.
   $(".trinity-version").text(version);
 
-  $("#btn-contact").click(function(e) {
-    $("#contact-dialog").modal("show");
-
-    e.preventDefault();
-  });
-
   // Enable smooth scrolling.
   new SmoothScroll('a[href*="#"]');
 
