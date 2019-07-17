@@ -58,12 +58,12 @@
                 Enterprise ready object mapper for developing RDF knowledge graph applications with .NET
               </p>
 
-              <button id="btn-download" class="btn btn-accent btn-xl mt-3 mr-3">
+              <button class="btn btn-accent btn-download btn-xl mt-3 mr-3">
                 <i class="fas fa-download fa-2x"></i><span class="fa-2x-label">Download</span>
               </button>
-              <button id="btn-download" class="btn btn-success btn-xl mt-3">
+              <a href="https://github.com/semiodesk/trinity-rdf" target="_blank" class="btn btn-success btn-xl mt-3">
                 <i class="fab fa-github fa-2x"></i><span class="fa-2x-label">Source Code</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -99,7 +99,7 @@
                 <h3 class="h4 mb-2">Smart</h3>
               </div>
               <p class="text-muted mb-0">
-                Many RDF databases supoprt logical reasoning during application runtime to answer queries about facts
+                Many RDF databases support logical reasoning during application runtime to answer queries about facts
                 which have not been explicitly saved.
               </p>
               <ul class="fa-ul mt-3">
@@ -272,7 +272,7 @@ public class Person : Resource
               <div class="row">
                 <div class="col-lg-6 p-lg-3">
                   <p class="mb-0 text-muted">
-                    RDF knowledge graphs can become large datasets quite easily. In order to maintain application
+                    Knowledge graphs can become large datasets quite easily. In order to maintain application
                     performance and user interface responsiveness, Trinity RDF makes paged queries to your datasets
                     easy. Simply use the Take and Skip operators in your LINQ queries and you're done. Of course,
                     <a href="https://www.w3.org/TR/rdf-sparql-query/#modOffset" target="_blank">SPARQL</a>
@@ -405,7 +405,7 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
     <section class="bg-dark-2 text-white text-center py-3">
       <div class="container">
         Ready?
-        <button id="btn-download" class="btn btn-success btn-xl mx-3">
+        <button class="btn btn-success btn-download btn-xl mx-3">
           <i class="fas fa-download fa-2x"></i><span class="fa-2x-label">Download</span>
         </button>
       </div>
@@ -607,7 +607,7 @@ Hello,
         e.preventDefault();
       });
 
-      $("#btn-download").click(function(e) {
+      $(".btn-download").click(function(e) {
         $("#modal-download").modal("show");
 
         e.preventDefault();
