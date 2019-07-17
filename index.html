@@ -41,15 +41,8 @@
           <ul class="navbar-nav ml-auto my-2 my-lg-0">
             <li class="nav-item"><a class="nav-link" data-scroll href="#features">Features</a></li>
             <li class="nav-item"><a class="nav-link" data-scroll href="#documentation">Documentation</a></li>
-            <li class="nav-item"><a class="nav-link" data-scroll href="#references">References</a></li>
             <li class="nav-item"><a class="nav-link" data-scroll href="#contributing">Contributing</a></li>
           </ul>
-          <a href="https://github.com/semiodesk/trinity-rdf/" target="_blank"
-            ><i class="fab fa-2x fa-github text-white ml-4"></i
-          ></a>
-          <a href="https://stackoverflow.com/questions/tagged/trinity-rdf" target="_blank"
-            ><i class="fab fa-2x fa-stack-overflow text-white ml-3"></i
-          ></a>
         </div>
       </div>
     </nav>
@@ -65,8 +58,11 @@
                 Enterprise ready object mapper for developing RDF knowledge graph applications with .NET
               </p>
 
-              <button id="btn-download" class="btn btn-accent btn-xl mt-3">
+              <button id="btn-download" class="btn btn-accent btn-xl mt-3 mr-3">
                 <i class="fas fa-download fa-2x"></i><span class="fa-2x-label">Download</span>
+              </button>
+              <button id="btn-download" class="btn btn-success btn-xl mt-3">
+                <i class="fab fa-github fa-2x"></i><span class="fa-2x-label">Source Code</span>
               </button>
             </div>
           </div>
@@ -406,33 +402,20 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
       </div>
     </section>
 
-    <!-- <section class="page-section" id="references">
-      <div class="container text-center">
-        <h4 class="text-center text-muted mb-4">References</h4>
-        <p class="text-muted">
-          Trinity RDF is being used to manage knowledge graphs at the following organizations:
-        </p>
-
-        <div class="row" data-aos="zoom-in">
-          <div class="col-lg-3"></div>
-          <div class="col-lg-3">
-            <a href="https://www.se.com" class="d-block m-4" target="_blank">
-              <img src="assets/img/schneider-electric.svg" width="200" alt="Schneider Electric" />
-            </a>
-          </div>
-          <div class="col-lg-3">
-            <a href="https://www.se.com" class="d-block m-4" target="_blank">
-              <img src="assets/img/ual_black.png" width="200" alt="University of the Arts, London" />
-            </a>
-          </div>
-          <div class="col-lg-3"></div>
-        </div>
+    <section class="bg-dark-2 text-white text-center py-3">
+      <div class="container">
+        Ready?
+        <button id="btn-download" class="btn btn-success btn-xl mx-3">
+          <i class="fas fa-download fa-2x"></i><span class="fa-2x-label">Download</span>
+        </button>
       </div>
-    </section> -->
+    </section>
 
     <section class="bg-dark text-center text-muted py-5">
       <div class="container">
-        <a href="https://semiodesk.com" target="_blank"><img src="assets/img/semiodesk-white.svg" style="opacity: .5" width="150" alt="Semiodesk" /></a>
+        <a href="https://semiodesk.com" target="_blank"
+          ><img src="assets/img/semiodesk-white.svg" style="opacity: .5" width="150" alt="Semiodesk"
+        /></a>
       </div>
     </section>
 

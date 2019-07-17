@@ -277,6 +277,12 @@ a.text-dark:focus {
   border-color: rgb(73, 129, 248);
 }
 
+.btn-white {
+  color: #984caa;
+  background-color: #fff;
+  border-color: #fff;
+}
+
 .fa-2x-label {
   margin-left: 1rem;
   vertical-align: middle;
@@ -448,8 +454,8 @@ pre code.cs .type {
   background-color: #343a40 !important;
 }
 
-.bg-black {
-  background-color: #232930 !important;
+.bg-dark-2 {
+  background-color: #454b51 !important;
 }
 
 .bg-gray,
@@ -461,8 +467,17 @@ pre code.cs .type {
   background-color: #f5f5f6 !important;
 }
 
+.bg-gray-dark {
+  background-color: #d3d5d7 !important;
+}
+
 .bg-nuget {
   background-color: #004880 !important;
+}
+
+.bg-accent {
+  color: #fff;
+  background-color: #984caa;
 }
 
 .form-status-msg {
