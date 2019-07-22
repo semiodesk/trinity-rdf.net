@@ -617,6 +617,18 @@ Hello,
         hljs.initHighlighting();
       });
 
+      $("#nuget").show(function(e) {
+        // Clear the contents of the code block so typed.js does not go crazy.
+        $("#nuget").text("");
+
+        new Typed("#nuget", {
+          strings: ["PM> Install-Package Trinity.RDF"],
+          startDelay: 500,
+          typeSpeed: 40,
+          loopCount: 1
+        });
+      });
+
       $("#btn-contact").click(function(e) {
         $("#modal-contact").modal("show");
 

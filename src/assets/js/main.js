@@ -10,39 +10,6 @@ $(document).ready(function() {
   // Enable smooth scrolling.
   new SmoothScroll('a[href*="#"]');
 
-  // Clear the contents of the code block so typed.js does not go crazy.
-  $("#nuget").text("");
-
-  var typed = undefined;
-
-  var observeVisibility = function(element, callback) {
-    var options = {
-      root: document.root,
-      rootMargin: "0px",
-      threshold: 1.0
-    };
-
-    var observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        callback(entry.intersectionRatio > 0);
-      });
-    }, options);
-
-    observer.observe(element);
-  };
-
-  observeVisibility(document.getElementById("nuget"), function(visible) {
-    if (visible && !typed) {
-      // Enable typing animation on Nuget code.
-      typed = new Typed("#nuget", {
-        strings: ["PM> Install-Package Trinity.RDF"],
-        startDelay: 500,
-        typeSpeed: 40,
-        loopCount: 1
-      });
-    }
-  });
-
   // Initialize the contact form.
   const form = $("#contact-form");
 
