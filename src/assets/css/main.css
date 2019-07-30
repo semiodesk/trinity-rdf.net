@@ -20,6 +20,39 @@ a:hover {
   text-decoration: underline;
 }
 
+.quote {
+  max-width: 30rem;
+}
+
+blockquote {
+  border-radius: 3px;
+  position: relative;
+  font-style: italic;
+  text-align: left;
+  padding: 1rem 1.2rem;
+  width: 90%;
+  color: #4a4a4a;
+  margin: 1rem auto;
+  background: #e8e8e8;
+}
+
+blockquote:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  color: #e8e8e8;
+  font-size: 34px;
+  content: "\f10d";
+  margin-right: 13px;
+  right: 100%;
+}
+
+.author {
+  color: #4a4a4a;
+  margin-left: 3.5rem;
+}
+
 h1 {
   color: #333;
 }
@@ -157,7 +190,7 @@ a.text-dark:focus {
 }
 
 .text-muted {
-  color: #6c757d !important;
+  color: #5b646c !important;
 }
 
 .text-black-50 {
@@ -223,6 +256,18 @@ a.text-dark:focus {
   text-transform: uppercase;
   border: none;
   border-radius: 10rem;
+}
+
+.btn-blue {
+  color: #fff;
+  background: #119eda;
+  border-color: #119eda;
+}
+
+.btn-blue:hover {
+  color: #fff;
+  background: #22afeb;
+  border-color: #22afeb;
 }
 
 .btn-primary {
@@ -298,8 +343,8 @@ a.text-dark:focus {
 }
 
 #mainNav {
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
   background: #984caa;
@@ -403,8 +448,9 @@ header.masthead h1 {
   header.masthead {
     min-height: 36vw;
     height: 600px;
-    background: url("../img/b3.jpg") center right no-repeat;
-    background-size: 45% auto;
+    background: url("../img/b3.jpg") no-repeat;
+    background-size: 40% auto;
+    background-position: 53vw center;
   }
   header.masthead p {
     font-size: 1.15rem;
@@ -460,7 +506,7 @@ pre code.cs .type {
 
 .bg-gray,
 .bg-gray .hljs {
-  background-color: #e4e6e8 !important;
+  background-color: #e8e8e8 !important;
 }
 
 .bg-gray-light {
@@ -531,7 +577,6 @@ pre code.cs .type {
 
 .carousel-indicators li.active {
   opacity: 1;
-  background-color: #984caa;
 }
 
 .carousel-controls {
@@ -542,17 +587,17 @@ pre code.cs .type {
 
 .carousel-control,
 .carousel-control:focus {
-  color: #984caa;
   opacity: 1;
   width: auto;
 }
 
 .carousel-control:hover {
-  color: #119eda;
+  color: rgb(73, 129, 248);
 }
 
 .carousel-control-prev,
 .carousel-control-next {
+  color: #984caa;
   position: relative;
   top: -0.4em;
 }
@@ -621,6 +666,13 @@ pre code.cs .type {
   100% {
     transform: translate(19px, 0);
   }
+}
+
+.card {
+  background: #E8E8E8;
+  padding: 40px;
+  border: none;
+  border-radius: 5px;
 }
 
 /* DocFX */
