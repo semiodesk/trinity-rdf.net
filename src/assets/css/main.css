@@ -4,7 +4,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #282828;
   text-align: left;
   background-color: #fff;
 }
@@ -186,7 +186,7 @@ a.text-dark:focus {
 }
 
 .text-body {
-  color: #212529 !important;
+  color: #282828 !important;
 }
 
 .text-muted {
@@ -247,6 +247,19 @@ a.text-dark:focus {
 
 .btn {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  color: #212529;
+}
+
+.btn:hover {
+  color: #984caa;
+}
+
+.btn-accent {
+  color: #984caa;
+}
+
+.btn-accent:hover {
+  background: rgba(152, 76, 170, 0.05);
 }
 
 .btn-xl {
@@ -310,22 +323,19 @@ a.text-dark:focus {
   box-shadow: 0 0 0 0.2rem rgba(246, 122, 88, 0.5);
 }
 
-.btn-accent {
-  color: #fff;
-  background-color: #2236b8;
-  border-color: #2236b8;
-}
-
-.btn-accent:hover {
-  color: #fff;
-  background-color: rgb(73, 129, 248);
-  border-color: rgb(73, 129, 248);
-}
-
 .btn-white {
   color: #984caa;
   background-color: #fff;
   border-color: #fff;
+}
+
+.btn-success {
+  color: white;
+}
+
+.btn-success:hover {
+  color: white;
+  background: #39b856;
 }
 
 .fa-2x-label {
