@@ -317,7 +317,7 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
       </div>
     </section>
 
-    <section class="page-section pt-1">
+    <section id="triplestores" class="page-section pt-1">
       <div class="container">
         <hr />
         <h6 class="text-center text-muted mb-4">Supported Databases</h6>
@@ -364,6 +364,11 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
             <td colspan="5">Trinity RDF can connect to all databases supporting the SPARQL query language.</td>
           </tr>
         </table>
+
+        <div class="text-center text-muted mt-5">
+          <h6>Your store is not supported?</h6>
+          <a class="btn btn-primary btn-xl btn-contact" href="#triplestores">Contact us</a>
+        </div>
       </div>
     </section>
 
@@ -374,20 +379,20 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
             <div class="p-5 m-md-5">
               <i class="fas fa-4x fa-book-open mb-4 text-primary"></i>
               <h2 class="mb-2">Documentation</h2>
-              <p>We advise starters to take a look at the following sections in our <a href="doc/">DocFX pages</a>:</p>
+              <p>We advise starters to take a look at the following sections in our <a href="doc/">online documentation</a>:</p>
 
-              <ul class="list-inline my-4">
-                <li class="list-inline-item">
+              <ul class="list-unstyled">
+                <li>
                   <a class="btn btn-xl btn-accent" href="doc/tutorials/firstSteps.html" target="_blank"
                     ><i class="fas fa-file-alt fa-2x"></i> <span class="fa-2x-label">First Steps</span></a
                   >
                 </li>
-                <li class="list-inline-item">
+                <li>
                   <a class="btn btn-xl btn-accent" href="doc/tutorials/intro.html" target="_blank"
                     ><i class="fas fa-file-alt fa-2x"></i> <span class="fa-2x-label">Tutorials</span></a
                   >
                 </li>
-                <li class="list-inline-item">
+                <li>
                   <a class="btn btn-xl btn-accent" href="doc/api/"
                     ><i class="fas fa-file-alt fa-2x"></i> <span class="fa-2x-label">API Reference</span></a
                   >
@@ -400,10 +405,10 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
               <i class="fas fa-4x fa-users mb-4 text-primary"></i>
               <h2 class="text-center mb-2">Come in, we're open!</h2>
               <p class="mb-4">Find answers to your questions in our community:</p>
-              <ul class="list-inline">
-                <li class="list-inline-item">
+              <ul class="list-unstyled">
+                <li>
                   <a
-                    class="btn btn-xl btn-accent mx-2 mb-4"
+                    class="btn btn-xl btn-accent mx-2"
                     href="https://github.com/semiodesk/trinity-rdf"
                     target="_blank"
                   >
@@ -411,9 +416,9 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
                     <span class="fa-2x-label">GitHub</span></a
                   >
                 </li>
-                <li class="list-inline-item">
+                <li>
                   <a
-                    class="btn btn-xl btn-accent mx-2 mb-4"
+                    class="btn btn-xl btn-accent mx-2"
                     href="https://stackoverflow.com/questions/tagged/trinity-rdf"
                     target="_blank"
                   >
@@ -441,7 +446,7 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
         </div>
       </div>
     </section>
-    
+
     <section class="bg-dark-2 text-white text-center py-3">
       <div class="container">
         Ready?
@@ -598,7 +603,7 @@ Hello,
               </li>
               <li class="list-inline-item">&sdot;</li>
               <li class="list-inline-item">
-                <a id="btn-contact" href="#footer">Contact Us</a>
+                <a class="btn-contact" href="#footer">Contact Us</a>
               </li>
             </ul>
             <p class="text-muted small mb-4 mb-lg-0">&copy; Semiodesk GmbH 2019. All Rights Reserved.</p>
@@ -661,7 +666,7 @@ Hello,
         });
       });
 
-      $("#btn-contact").click(function(e) {
+      $(".btn-contact").click(function(e) {
         $("#modal-contact").modal("show");
 
         e.preventDefault();

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Trinity RDF | Set up a Virtuoso instance </title>
+    <title>Trinity RDF | OpenLink Virtuoso </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Set up a Virtuoso instance ">
+    <meta name="title" content="OpenLink Virtuoso ">
     <meta name="generator" content="docfx 2.43.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -23,31 +23,22 @@
     <div id="wrapper">
       <header>
         
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope navbar-docfx" role="navigation">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-        	  <a class="navbar-brand" data-scroll="" href="#page-top">
-                 
-                 <a class="navbar-brand" href="../index.html">
-                   <img id="logo" class="svg" src="../logo.svg" alt="">
-                 </a>
-         Trinity RDF
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
+        <nav class="navbar navbar-docfx navbar-expand-lg navbar-light fixed-top" role="navigation" id="mainNav">
+        	<div class="container-fluid">
+        		<div class="d-flex flex-row">
+        			<a class="navbar-brand" data-scroll="" href="/">
+        				<img id="logo" src="/doc/images/logo.svg" width="48" height="48" alt="Trinity RDF"> Trinity RDF
+        			</a>
+        			<div class="d-flex align-items-center w-100" id="navbar">
+        				<form class="navbar-form navbar-right" role="search" id="search">
+        					<div class="form-group">
+        						<input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+        					</div>
+        				</form>
+        				<div class="w-100"></div>
+        			</div>
+        		</div>
+        	</div>
         </nav>        
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
@@ -78,32 +69,78 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="set-up-a-virtuoso-instance">Set up a Virtuoso instance</h1>
+<h1 id="openlink-virtuoso">OpenLink Virtuoso</h1>
 
-<p>Many features of the Semiodesk.Trinity API are geared towards the <a href="https://github.com/openlink/virtuoso-opensource">Virtuoso Database</a>. If you create a quick installation to get you started then just follow the instructions. The process is a bit different depending on the platform you are on.</p>
+<p>Many features of the Trinity RDF are geared towards the <a href="https://github.com/openlink/virtuoso-opensource">OpenLink Virtuoso</a> 
+database. If you create a quick installation to get you started then just follow these instructions.</p>
 <h2 id="windows">Windows</h2>
-<p><strong>1. Get the latest binary distribution</strong><br>    You can find the pre-build package on this <a href="http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VOSDownload">page</a>.</p>
-<p><strong>2. Unzip it to your desired location</strong><br>    This is where your Virtuoso installation will reside, so pick a sensible directory. Inside this directory, you will have the following folders:<br>    <em>bin</em> contains the binaries<br>    <em>database</em> contains an example configuration<br>    <em>doc</em> contains the documentation<br>    <em>hosting</em> additional modules<br>    <em>lib</em> the libraries to access the database<br>    <em>vad</em> VAD packages BPEL, Conductor, tutorials, documentation   </p>
-<p><strong>3.  Set up the configuration</strong><br>    To get started quick, you can just use the example configuration in the <em>database</em> folder.  </p>
-<p><strong>4.  Starting Virtuoso</strong><br>    Here we have two options, the quickstart which creates a Virtuoso instance that stops once the console window is closed and installing Virtuoso as a Windows Service.  </p>
-<p><em>a. Quickstart</em><br>Open a console in your Virtuoso directory and start it with the following command:  </p>
+<h3 id="1-obtaining-virtuoso">1. Obtaining Virtuoso</h3>
+<p>You can download a pre-build OpenLink Virtuoso version <a href="http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VOSDownload">here</a>.</p>
+<h3 id="2-unzip-package">2. Unzip Package</h3>
+<p>This is where your Virtuoso installation will reside, so pick a sensible directory. Inside 
+this directory, you will have the following folders:</p>
+<table>
+<thead>
+<tr>
+<th>Folder</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bin</code></td>
+<td>Contains appliation binaries.</td>
+</tr>
+<tr>
+<td><code>database</code></td>
+<td>Contains an example configuration.</td>
+</tr>
+<tr>
+<td><code>doc</code></td>
+<td>Contains documentation.</td>
+</tr>
+<tr>
+<td><code>hosting</code></td>
+<td>Additional modules.</td>
+</tr>
+<tr>
+<td><code>lib</code></td>
+<td>The libraries to access the database.</td>
+</tr>
+<tr>
+<td><code>vad</code></td>
+<td>VAD packages BPEL, Conductor, tutorials, documentation.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-configuring">3. Configuring</h3>
+<p>To get started quickly, you can just use the example configuration in the <code>database</code> folder.  </p>
+<h3 id="4-starting-virtuoso">4. Starting Virtuoso</h3>
+<p>Here we have two options, the quickstart which creates a Virtuoso instance that stops once the console 
+window is closed and installing Virtuoso as a Windows Service.  </p>
+<h4 id="a-console">a. Console</h4>
+<p>Open a console in your Virtuoso directory and start it with the following command:  </p>
 <pre><code>bin\virtuoso-t.exe -f -c database/virtuoso.ini
-</code></pre><p>Closing the console or pressing ctrl-c will stop the database server.</p>
-<p><em>b. Installing Virtuoso as a Service</em><br>This process takes a few more steps, but the Server will automatically be started when the computer is restarted.<br>First you need a console with administration rights. The easiest way to get one is to open the start menu, type in &quot;cmd.exe&quot; and press ctrl-shift-enter. You then need to navigate into your virtuoso installation directory.<br>To install the Service, enter</p>
-<pre><code>bin\virtuoso-t.exe +service screate -I &quot;My Virtuoso Server&quot; -c database/virtuoso.ini
-</code></pre><p>To start the Service, enter</p>
-<pre><code>bin\virtuoso-t.exe +service start -I &quot;My Virtuoso Server&quot;
-</code></pre><p>If you want to remove it from your system, you can use</p>
-<pre><code>bin\virtuoso-t.exe +service delete -I &quot;My Virtuoso Server&quot;
-</code></pre><p><strong>5. Testing if everything works</strong></p>
-<p>Navigate to <a href="http://localhost:8890/conductor/">http://localhost:8890/conductor/</a> and try to login with dba/dba. If everything works you should now have a running Virtuoso server.</p>
-<p><strong>6.  Using Virtuoso with the Semiodesk.Trinity API</strong> </p>
-<p>When you use the default configuration, you can use the following configuration string </p>
-<p><em>&quot;provider=virtuoso;host=localhost;port=1111;uid=dba;pw=dba&quot;</em> </p>
-<p>with the Semiodesk.Trinity.
-To create the store, use the following snippet:</p>
-<pre><code>#!c#
-IStore store = Stores.CreateStore(&quot;provider=virtuoso;host=localhost;port=1111;uid=dba;pw=dba&quot;);
+</code></pre><p>Closing the console or pressing <code>CTRL+C</code> will stop the database server.</p>
+<h4 id="b-windows-service">b. Windows Service</h4>
+<p>This process takes a few more steps, but the Server will automatically be started when the computer is restarted.  </p>
+<p>First you need a console with administration rights. The easiest way to get one is to open the start menu, type 
+in <code>cmd.exe</code> and press <code>CTRL+SHIFT+ENTER</code>. You then need to navigate into your Virtuoso installation directory.</p>
+<p>To <strong>install</strong> the service, enter</p>
+<pre><code>bin\virtuoso-t.exe +service screate -I &#39;My Virtuoso Server&#39; -c database/virtuoso.ini
+</code></pre><p>To <strong>start</strong> the service, enter</p>
+<pre><code>bin\virtuoso-t.exe +service start -I &#39;My Virtuoso Server&#39;
+</code></pre><p>If you want to <strong>delete</strong> it from your system, you can use</p>
+<pre><code>bin\virtuoso-t.exe +service delete -I &#39;My Virtuoso Server&#39;
+</code></pre><h3 id="5-testing">5. Testing</h3>
+<p>Navigate to <a href="http://localhost:8890/conductor/">http://localhost:8890/conductor/</a> and try 
+to login with the credentials <code>dba/dba</code>. If everything works you should now have a running 
+Virtuoso server.</p>
+<h3 id="6-using-virtuoso">6. Using Virtuoso</h3>
+<p>When you use the default configuration, you can use the following configuration string:</p>
+<pre><code>provider=virtuoso;host=localhost;port=1111;uid=dba;pw=dba
+</code></pre><p>To create the store, use the following snippet:</p>
+<pre><code>IStore store = StoreFactory.CreateStore(&quot;provider=virtuoso;host=localhost;port=1111;uid=dba;pw=dba&quot;);
 </code></pre></article>
           </div>
           
@@ -112,7 +149,7 @@ IStore store = Stores.CreateStore(&quot;provider=virtuoso;host=localhost;port=11
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Documentation/tutorials/virtuoso.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/semiodesk/trinity-rdf/blob/release/1.0/Documentation/tutorials/virtuoso.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
