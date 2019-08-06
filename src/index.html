@@ -59,8 +59,8 @@
       <div class="container h-100">
         <div id="masthead-content" class="h-100 p-relative">
           <div class="row text-center text-lg-left">
-            <div class="col-12 col-lg-7 pt-lg-5">
-              <h1 class="mt-lg-5">Entity Framework for Graph Databases.</h1>
+            <div class="col-12 col-lg-6 pt-lg-5">
+              <h1>Entity Framework for Graph Databases.</h1>
 
               <p class="font-weight-light my-4 pr-sm-5">
                 Enterprise ready object mapper for developing RDF knowledge graph applications with .NET
@@ -70,7 +70,7 @@
                 <i class="fas fa-download fa-2x"></i><span class="fa-2x-label">Download</span>
               </button>
               <a href="https://github.com/semiodesk/trinity-rdf" target="_blank" class="btn btn-xl mt-3">
-                <i class="fab fa-github fa-2x"></i><span class="fa-2x-label">Source Code</span>
+                <i class="fab fa-github fa-2x"></i><span class="fa-2x-label d-none d-sm-inline">Source Code</span>
               </a>
             </div>
           </div>
@@ -81,7 +81,7 @@
     <section class="page-section bg-gray pt-4" id="about">
       <div class="container">
         <div class="row">
-          <div class="col-md-4" data-aos="fade-up">
+          <div class="col-md-4" data-aos="fade-right">
             <div class="mt-5">
               <div class="text-center">
                 <i class="fas fa-4x fa-smile-beam mb-4 text-primary"></i>
@@ -102,7 +102,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
             <div class="mt-5">
               <div class="text-center">
                 <i class="fas fa-4x fa-lightbulb mb-4 text-primary"></i>
@@ -123,7 +123,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="200">
             <div class="mt-5">
               <div class="text-center">
                 <i class="fas fa-4x fa-clock mb-4 text-primary"></i>
@@ -173,7 +173,7 @@
 
         <div class="carousel-inner" role="listbox" style="min-height: 350px">
           <div class="carousel-item active">
-            <div class="container p-relative p-0">
+            <div class="container p-relative p-3">
               <h2>Object Mapping</h2>
               <div class="row">
                 <div class="col-lg-6 p-lg-3">
@@ -184,7 +184,7 @@
                     on introspection.
                   </p>
                   <a class="btn btn-primary btn-xl my-4" href="#about"
-                    ><i class="fas fa-download mr-3"></i> Download Example</a
+                    ><i class="fas fa-download mx-auto mx-lg-0"></i> Download Example</a
                   >
                 </div>
                 <div class="col-lg-6">
@@ -213,7 +213,7 @@ p.Commit();
             </div>
           </div>
           <div class="carousel-item">
-            <div class="container p-0">
+            <div class="container p-relative p-3">
               <h2>LINQ</h2>
               <div class="row">
                 <div class="col-lg-6 p-lg-3">
@@ -246,7 +246,7 @@ foreach (<span class="type">Person</span> p in persons.Where(
             </div>
           </div>
           <div class="carousel-item">
-            <div class="container p-0">
+            <div class="container p-relative p-3">
               <h2>Data Binding</h2>
               <div class="row">
                 <div class="col-lg-6 p-lg-3">
@@ -281,7 +281,7 @@ public class Person : Resource
             </div>
           </div>
           <div class="carousel-item">
-            <div class="container p-0">
+            <div class="container p-relative p-3">
               <h2>Data Virtualization</h2>
               <div class="row">
                 <div class="col-lg-6 p-lg-3">
@@ -320,53 +320,50 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
     <section id="triplestores" class="page-section pt-1">
       <div class="container">
         <hr />
-        <h6 class="text-center text-muted mb-4">Supported Databases</h6>
+        <h6 class="text-center text-muted mt-4 mb-4">Supported Databases</h6>
         <table class="bg-gray mt-4" data-aos="flip-left">
           <thead>
-            <th>Name</th>
-            <th>Inferencing</th>
-            <th>Clusterable</th>
-            <th>Transactions</th>
-            <th>License</th>
+            <th class="d-none d-sm-table-caption">Name</th>
+            <th class="d-none d-sm-table-caption">Inferencing</th>
+            <th class="d-none d-sm-table-caption">Clusterable</th>
+            <th class="d-none d-sm-table-caption">Transactions</th>
+            <th class="d-none d-sm-table-caption">License</th>
           </thead>
           <tr>
-            <td>
+            <td class="text-center text-sm-left">
               <a
                 href="https://github.com/dotnetrdf/dotnetrdf/wiki/UserGuide-Working-With-Triple-Stores#in-memory-triple-stores"
                 target="_blank"
                 >In-Memory</a
               >
             </td>
-            <td><i class="fas fa-times"></i></td>
-            <td><i class="fas fa-times"></i></td>
-            <td><i class="fas fa-times"></i></td>
-            <td><a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a></td>
+            <td class="d-none d-sm-table-cell"><i class="fas fa-times"></i></td>
+            <td class="d-none d-sm-table-cell"><i class="fas fa-times"></i></td>
+            <td class="d-none d-sm-table-cell"><i class="fas fa-times"></i></td>
+            <td class="d-none d-sm-table-cell"><a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a></td>
           </tr>
           <tr>
-            <td><a href="https://github.com/openlink/virtuoso-opensource" target="_blank">OpenLink Virtuoso</a></td>
-            <td><i class="fas fa-check"></i></td>
-            <td><i class="fas fa-check"></i></td>
-            <td><i class="fas fa-check"></i></td>
-            <td><a href="https://opensource.org/licenses/GPL-2.0" target="_blank">GPL 2.0</a>, Commercial</td>
-            <td></td>
+            <td class="text-center text-sm-left"><a href="https://github.com/openlink/virtuoso-opensource" target="_blank">OpenLink Virtuoso</a></td>
+            <td class="d-none d-sm-table-cell"><i class="fas fa-check"></i></td>
+            <td class="d-none d-sm-table-cell"><i class="fas fa-check"></i></td>
+            <td class="d-none d-sm-table-cell"><i class="fas fa-check"></i></td>
+            <td class="d-none d-sm-table-cell"><a href="https://opensource.org/licenses/GPL-2.0" target="_blank">GPL 2.0</a>, Commercial</td>
           </tr>
           <tr>
-            <td><a href="https://stardog.com/" target="_blank">Stardog</a></td>
-            <td><i class="fas fa-check"></i></td>
-            <td><i class="fas fa-check"></i></td>
-            <td><i class="fas fa-check"></i></td>
-            <td>Commercial</td>
-            <td></td>
+            <td class="text-center text-sm-left"><a href="https://stardog.com/" target="_blank">Stardog</a></td>
+            <td class="d-none d-sm-table-cell"><i class="fas fa-check"></i></td>
+            <td class="d-none d-sm-table-cell"><i class="fas fa-check"></i></td>
+            <td class="d-none d-sm-table-cell"><i class="fas fa-check"></i></td>
+            <td class="d-none d-sm-table-cell">Commercial</td>
           </tr>
-
           <tr>
-            <td><a href="https://www.w3.org/TR/sparql11-protocol/" target="_blank">SPARQL 1.1 Protocol</a></td>
-            <td colspan="5">Trinity RDF can connect to all databases supporting the SPARQL query language.</td>
+            <td class="text-center text-sm-left"><a href="https://www.w3.org/TR/sparql11-protocol/" target="_blank">SPARQL 1.1 Protocol</a></td>
+            <td class="d-none d-sm-table-cell" colspan="4">Trinity RDF can connect to all databases supporting the SPARQL query language.</td>
           </tr>
         </table>
 
         <div class="text-center text-muted mt-5">
-          <h6>Your store is not supported?</h6>
+          <p>Your store is not listed?</p>
           <a class="btn btn-primary btn-xl btn-contact" href="#triplestores">Contact us</a>
         </div>
       </div>
@@ -375,40 +372,40 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
     <section>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-6 bg-gray-light text-center" id="documentation">
-            <div class="p-5 m-md-5">
+          <div class="col-lg-6 bg-gray text-center" id="documentation">
+            <div class="px-2 px-sm-5 py-5 m-md-5">
               <i class="fas fa-4x fa-book-open mb-4 text-primary"></i>
               <h2 class="mb-2">Documentation</h2>
-              <p>We advise starters to take a look at the following sections in our <a href="doc/">online documentation</a>:</p>
+              <p>We advise starters to read the following sections in our <a href="doc/">documentation</a>:</p>
 
               <ul class="list-unstyled">
                 <li>
-                  <a class="btn btn-xl btn-accent" href="doc/tutorials/firstSteps.html" target="_blank"
+                  <a class="btn btn-xl btn-accent mx-0 p-2" href="doc/tutorials/firstSteps.html" target="_blank"
                     ><i class="fas fa-file-alt fa-2x"></i> <span class="fa-2x-label">First Steps</span></a
                   >
                 </li>
                 <li>
-                  <a class="btn btn-xl btn-accent" href="doc/tutorials/intro.html" target="_blank"
+                  <a class="btn btn-xl btn-accent mx-0 p-2" href="doc/tutorials/intro.html" target="_blank"
                     ><i class="fas fa-file-alt fa-2x"></i> <span class="fa-2x-label">Tutorials</span></a
                   >
                 </li>
                 <li>
-                  <a class="btn btn-xl btn-accent" href="doc/api/"
+                  <a class="btn btn-xl btn-accent mx-0 p-2" href="doc/api/"
                     ><i class="fas fa-file-alt fa-2x"></i> <span class="fa-2x-label">API Reference</span></a
                   >
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-lg-6 bg-gray text-center" id="contributing">
-            <div class="p-5 m-md-5">
+          <div class="col-lg-6 bg-gray-light text-center" id="contributing">
+            <div class="px-2 px-sm-5 py-5 m-md-5">
               <i class="fas fa-4x fa-users mb-4 text-primary"></i>
               <h2 class="text-center mb-2">Come in, we're open!</h2>
               <p class="mb-4">Find answers to your questions in our community:</p>
               <ul class="list-unstyled">
                 <li>
                   <a
-                    class="btn btn-xl btn-accent mx-2"
+                    class="btn btn-xl btn-accent mx-0 p-2"
                     href="https://github.com/semiodesk/trinity-rdf"
                     target="_blank"
                   >
@@ -418,7 +415,7 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
                 </li>
                 <li>
                   <a
-                    class="btn btn-xl btn-accent mx-2"
+                    class="btn btn-xl btn-accent mx-0 p-2"
                     href="https://stackoverflow.com/questions/tagged/trinity-rdf"
                     target="_blank"
                   >
@@ -441,7 +438,10 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
               Our desire was for our developers to not need to write SPARQL queries, and the ORM enabled by Trinity has
               helped us to achieve this goal.
             </blockquote>
-            <span class="author">- Brett Leida, Systems Architect at Schneider Electric</span>
+            <div class="author">
+              <h5 class="name">Brett Leida</h5>
+              <small class="role">Systems Architect at Schneider Electric</small>
+            </div>
           </div>
         </div>
       </div>
@@ -589,7 +589,7 @@ Hello,
       </div>
     </div>
 
-    <footer id="footer" class="footer bg-dark text-white p-5">
+    <footer id="footer" class="footer bg-dark text-white px-0 px-sm-5 py-5">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
@@ -648,7 +648,9 @@ Hello,
     <script src="https://static.semiodesk.com/semiodesk.trinity/release/stable/currentVersion.php"></script>
 
     <script>
-      AOS.init();
+      AOS.init({
+        easing: "ease-out-back"
+      });
 
       $("#features-slider").ready(function() {
         hljs.initHighlighting();
