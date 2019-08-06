@@ -56,10 +56,11 @@
     </nav>
 
     <header class="masthead p-relative content-top">
-      <div class="container h-100">
-        <div id="masthead-content" class="h-100 p-relative">
+      <div class="masthead-gradient"></div>
+      <div class="masthead-content">
+        <div class="container h-100">
           <div class="row text-center text-lg-left">
-            <div class="col-12 col-lg-6 pt-lg-5">
+            <div class="col-12 col-lg-6 col-xl-5 pt-lg-5" data-aos="zoom-in">
               <h1>Entity Framework for Graph Databases.</h1>
 
               <p class="font-weight-light my-4 pr-sm-5">
@@ -78,10 +79,10 @@
       </div>
     </header>
 
-    <section class="page-section bg-gray pt-4" id="about">
+    <section class="page-section bg-gray pt-4 px-4 px-sm-0" id="about">
       <div class="container">
         <div class="row">
-          <div class="col-md-4" data-aos="fade-right">
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
             <div class="mt-5">
               <div class="text-center">
                 <i class="fas fa-4x fa-smile-beam mb-4 text-primary"></i>
@@ -102,7 +103,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="200">
             <div class="mt-5">
               <div class="text-center">
                 <i class="fas fa-4x fa-lightbulb mb-4 text-primary"></i>
@@ -123,10 +124,10 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-4" data-aos="fade-right" data-aos-delay="200">
+          <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
             <div class="mt-5">
               <div class="text-center">
-                <i class="fas fa-4x fa-clock mb-4 text-primary"></i>
+                <i class="fas fa-4x fa-leaf mb-4 text-primary"></i>
                 <h3 class="h4 mb-2">Sustainable</h3>
               </div>
               <p class="text-muted mb-0">
@@ -154,7 +155,7 @@
       <div id="features-slider" class="carousel slide" data-interval="false">
         <div class="carousel-controls d-flex flex-row justify-content-center">
           <a class="carousel-control carousel-control-prev" href="#features-slider" role="button" data-slide="prev">
-            <i class="fas fa-3x fa-arrow-circle-left" aria-hidden="true"></i>
+            <i class="fas fa-3x fa-arrow-left" aria-hidden="true"></i>
             <span class="sr-only">Previous</span>
           </a>
 
@@ -166,7 +167,7 @@
           </ol>
 
           <a class="carousel-control carousel-control-next" href="#features-slider" role="button" data-slide="next">
-            <i class="fas fa-3x fa-arrow-circle-right" aria-hidden="true"></i>
+            <i class="fas fa-3x fa-arrow-right" aria-hidden="true"></i>
             <span class="sr-only">Next</span>
           </a>
         </div>
@@ -184,7 +185,7 @@
                     on introspection.
                   </p>
                   <a class="btn btn-primary btn-xl my-4" href="#about"
-                    ><i class="fas fa-download mx-auto mx-lg-0"></i> Download Example</a
+                    ><i class="fas fa-download mr-3"></i> Download Example</a
                   >
                 </div>
                 <div class="col-lg-6">
@@ -340,14 +341,20 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
             <td class="d-none d-sm-table-cell"><i class="fas fa-times"></i></td>
             <td class="d-none d-sm-table-cell"><i class="fas fa-times"></i></td>
             <td class="d-none d-sm-table-cell"><i class="fas fa-times"></i></td>
-            <td class="d-none d-sm-table-cell"><a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a></td>
+            <td class="d-none d-sm-table-cell">
+              <a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a>
+            </td>
           </tr>
           <tr>
-            <td class="text-center text-sm-left"><a href="https://github.com/openlink/virtuoso-opensource" target="_blank">OpenLink Virtuoso</a></td>
+            <td class="text-center text-sm-left">
+              <a href="https://github.com/openlink/virtuoso-opensource" target="_blank">OpenLink Virtuoso</a>
+            </td>
             <td class="d-none d-sm-table-cell"><i class="fas fa-check"></i></td>
             <td class="d-none d-sm-table-cell"><i class="fas fa-check"></i></td>
             <td class="d-none d-sm-table-cell"><i class="fas fa-check"></i></td>
-            <td class="d-none d-sm-table-cell"><a href="https://opensource.org/licenses/GPL-2.0" target="_blank">GPL 2.0</a>, Commercial</td>
+            <td class="d-none d-sm-table-cell">
+              <a href="https://opensource.org/licenses/GPL-2.0" target="_blank">GPL 2.0</a>, Commercial
+            </td>
           </tr>
           <tr>
             <td class="text-center text-sm-left"><a href="https://stardog.com/" target="_blank">Stardog</a></td>
@@ -357,8 +364,12 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
             <td class="d-none d-sm-table-cell">Commercial</td>
           </tr>
           <tr>
-            <td class="text-center text-sm-left"><a href="https://www.w3.org/TR/sparql11-protocol/" target="_blank">SPARQL 1.1 Protocol</a></td>
-            <td class="d-none d-sm-table-cell" colspan="4">Trinity RDF can connect to all databases supporting the SPARQL query language.</td>
+            <td class="text-center text-sm-left">
+              <a href="https://www.w3.org/TR/sparql11-protocol/" target="_blank">SPARQL 1.1 Protocol</a>
+            </td>
+            <td class="d-none d-sm-table-cell" colspan="4">
+              Trinity RDF can connect to all databases supporting the SPARQL query language.
+            </td>
           </tr>
         </table>
 

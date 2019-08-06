@@ -8,7 +8,7 @@ $(document).ready(function() {
   $(".trinity-version").text(version);
 
   // Enable smooth scrolling.
-  new SmoothScroll('a[href*="#"]');
+  new SmoothScroll('a[href*="#"]', {speed:333});
 
   // Initialize the contact form.
   const form = $("#contact-form");
