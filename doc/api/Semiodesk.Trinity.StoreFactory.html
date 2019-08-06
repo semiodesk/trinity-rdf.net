@@ -5,18 +5,17 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class StoreFactory
+    <title>Trinity RDF | Class StoreFactory
    </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class StoreFactory
    ">
-    <meta name="generator" content="docfx 2.43.2.0">
+    <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
@@ -26,28 +25,24 @@
     <div id="wrapper">
       <header>
         
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
+        <a id="page-top"></a>
+        
+        <nav class="navbar navbar-docfx navbar-expand-lg navbar-light fixed-top" role="navigation" id="mainNav">
+        	<div class="container-fluid">
+        		<div class="d-flex flex-row">
+        			<a class="navbar-brand" data-scroll="" href="/">
+        				<img id="logo" src="/doc/images/logo.svg" width="48" height="48" alt="Trinity RDF"> Trinity RDF
+        			</a>
+        			<div class="d-flex align-items-center w-100" id="navbar">
+        				<form class="navbar-form navbar-right" role="search" id="search">
+        					<div class="form-group">
+        						<input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+        					</div>
+        				</form>
+        				<div class="w-100"></div>
+        			</div>
+        		</div>
+        	</div>
         </nav>        
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
@@ -125,10 +120,90 @@ If you want to use your own store, you can load the assembly containing the prov
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreFactory_CreateStore_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreFactory.CreateStore(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/release/1.0/apiSpec/new?filename=Semiodesk_Trinity_StoreFactory_CreateMemoryStore.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreFactory.CreateMemoryStore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreFactory.cs/#L90">View Source</a>
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/release/1.0/Trinity/Stores/StoreFactory.cs/#L149">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreFactory_CreateMemoryStore_" data-uid="Semiodesk.Trinity.StoreFactory.CreateMemoryStore*"></a>
+  <h4 id="Semiodesk_Trinity_StoreFactory_CreateMemoryStore" data-uid="Semiodesk.Trinity.StoreFactory.CreateMemoryStore">CreateMemoryStore()</h4>
+  <div class="markdown level1 summary"><p>Creates a temporary in-memory store using the dotNetRDF provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IStore CreateMemoryStore()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.IStore.html">IStore</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/release/1.0/apiSpec/new?filename=Semiodesk_Trinity_StoreFactory_CreateSparqlEndpointStore_System_Uri_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreFactory.CreateSparqlEndpointStore(System.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/release/1.0/Trinity/Stores/StoreFactory.cs/#L159">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_StoreFactory_CreateSparqlEndpointStore_" data-uid="Semiodesk.Trinity.StoreFactory.CreateSparqlEndpointStore*"></a>
+  <h4 id="Semiodesk_Trinity_StoreFactory_CreateSparqlEndpointStore_System_Uri_" data-uid="Semiodesk.Trinity.StoreFactory.CreateSparqlEndpointStore(System.Uri)">CreateSparqlEndpointStore(Uri)</h4>
+  <div class="markdown level1 summary"><p>Create a store suitable for querying SPARQL protocol endpoints.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IStore CreateSparqlEndpointStore(Uri url)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>URL of the SPARQL endpoint.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.IStore.html">IStore</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/release/1.0/apiSpec/new?filename=Semiodesk_Trinity_StoreFactory_CreateStore_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreFactory.CreateStore(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/release/1.0/Trinity/Stores/StoreFactory.cs/#L88">View Source</a>
   </span>
   <a id="Semiodesk_Trinity_StoreFactory_CreateStore_" data-uid="Semiodesk.Trinity.StoreFactory.CreateStore*"></a>
   <h4 id="Semiodesk_Trinity_StoreFactory_CreateStore_System_String_" data-uid="Semiodesk.Trinity.StoreFactory.CreateStore(System.String)">CreateStore(String)</h4>
@@ -173,10 +248,10 @@ If you want to use your own store, you can load the assembly containing the prov
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreFactory_CreateStoreFromConfiguration_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreFactory.CreateStoreFromConfiguration(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/release/1.0/apiSpec/new?filename=Semiodesk_Trinity_StoreFactory_CreateStoreFromConfiguration_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreFactory.CreateStoreFromConfiguration(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreFactory.cs/#L122">View Source</a>
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/release/1.0/Trinity/Stores/StoreFactory.cs/#L120">View Source</a>
   </span>
   <a id="Semiodesk_Trinity_StoreFactory_CreateStoreFromConfiguration_" data-uid="Semiodesk.Trinity.StoreFactory.CreateStoreFromConfiguration*"></a>
   <h4 id="Semiodesk_Trinity_StoreFactory_CreateStoreFromConfiguration_System_String_" data-uid="Semiodesk.Trinity.StoreFactory.CreateStoreFromConfiguration(System.String)">CreateStoreFromConfiguration(String)</h4>
@@ -221,14 +296,14 @@ If you want to use your own store, you can load the assembly containing the prov
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreFactory_LoadProvider_System_IO_FileInfo_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreFactory.LoadProvider(System.IO.FileInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/release/1.0/apiSpec/new?filename=Semiodesk_Trinity_StoreFactory_LoadProvider_System_IO_FileInfo_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreFactory.LoadProvider(System.IO.FileInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreFactory.cs/#L199">View Source</a>
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/release/1.0/Trinity/Stores/StoreFactory.cs/#L233">View Source</a>
   </span>
   <a id="Semiodesk_Trinity_StoreFactory_LoadProvider_" data-uid="Semiodesk.Trinity.StoreFactory.LoadProvider*"></a>
   <h4 id="Semiodesk_Trinity_StoreFactory_LoadProvider_System_IO_FileInfo_" data-uid="Semiodesk.Trinity.StoreFactory.LoadProvider(System.IO.FileInfo)">LoadProvider(FileInfo)</h4>
-  <div class="markdown level1 summary"><p>Tries to load a store provider from the given assembly.</p>
+  <div class="markdown level1 summary"><p>Tries to load a store provider from the given assembly file.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -248,7 +323,8 @@ If you want to use your own store, you can load the assembly containing the prov
       <tr>
         <td><span class="xref">System.IO.FileInfo</span></td>
         <td><span class="parametername">assemblyFile</span></td>
-        <td></td>
+        <td><p>A assembly file info object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -269,14 +345,15 @@ If you want to use your own store, you can load the assembly containing the prov
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreFactory_LoadProvider_System_Reflection_Assembly_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreFactory.LoadProvider(System.Reflection.Assembly)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/release/1.0/apiSpec/new?filename=Semiodesk_Trinity_StoreFactory_LoadProvider_System_Reflection_Assembly_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreFactory.LoadProvider(System.Reflection.Assembly)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreFactory.cs/#L204">View Source</a>
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/release/1.0/Trinity/Stores/StoreFactory.cs/#L243">View Source</a>
   </span>
   <a id="Semiodesk_Trinity_StoreFactory_LoadProvider_" data-uid="Semiodesk.Trinity.StoreFactory.LoadProvider*"></a>
   <h4 id="Semiodesk_Trinity_StoreFactory_LoadProvider_System_Reflection_Assembly_" data-uid="Semiodesk.Trinity.StoreFactory.LoadProvider(System.Reflection.Assembly)">LoadProvider(Assembly)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Tries to load a store provider from the given assembly.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -295,7 +372,8 @@ If you want to use your own store, you can load the assembly containing the prov
       <tr>
         <td><span class="xref">System.Reflection.Assembly</span></td>
         <td><span class="parametername">assembly</span></td>
-        <td></td>
+        <td><p>An assembly.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -316,10 +394,10 @@ If you want to use your own store, you can load the assembly containing the prov
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreFactory_LoadProvider_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreFactory.LoadProvider(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/release/1.0/apiSpec/new?filename=Semiodesk_Trinity_StoreFactory_LoadProvider_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreFactory.LoadProvider(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreFactory.cs/#L144">View Source</a>
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/release/1.0/Trinity/Stores/StoreFactory.cs/#L169">View Source</a>
   </span>
   <a id="Semiodesk_Trinity_StoreFactory_LoadProvider_" data-uid="Semiodesk.Trinity.StoreFactory.LoadProvider*"></a>
   <h4 id="Semiodesk_Trinity_StoreFactory_LoadProvider_System_String_" data-uid="Semiodesk.Trinity.StoreFactory.LoadProvider(System.String)">LoadProvider(String)</h4>
@@ -364,10 +442,10 @@ If you want to use your own store, you can load the assembly containing the prov
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreFactory_TestConnectionString_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreFactory.TestConnectionString(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/release/1.0/apiSpec/new?filename=Semiodesk_Trinity_StoreFactory_TestConnectionString_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreFactory.TestConnectionString(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreFactory.cs/#L66">View Source</a>
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/release/1.0/Trinity/Stores/StoreFactory.cs/#L64">View Source</a>
   </span>
   <a id="Semiodesk_Trinity_StoreFactory_TestConnectionString_" data-uid="Semiodesk.Trinity.StoreFactory.TestConnectionString*"></a>
   <h4 id="Semiodesk_Trinity_StoreFactory_TestConnectionString_System_String_" data-uid="Semiodesk.Trinity.StoreFactory.TestConnectionString(System.String)">TestConnectionString(String)</h4>
@@ -418,10 +496,10 @@ If you want to use your own store, you can load the assembly containing the prov
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_StoreFactory.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/semiodesk/trinity-rdf/new/release/1.0/apiSpec/new?filename=Semiodesk_Trinity_StoreFactory.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.StoreFactory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/StoreFactory.cs/#L50" class="contribution-link">View Source</a>
+                    <a href="https://github.com/semiodesk/trinity-rdf/blob/release/1.0/Trinity/Stores/StoreFactory.cs/#L48" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

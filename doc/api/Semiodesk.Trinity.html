@@ -5,18 +5,17 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace Semiodesk.Trinity
+    <title>Trinity RDF | Namespace Semiodesk.Trinity
    </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Namespace Semiodesk.Trinity
    ">
-    <meta name="generator" content="docfx 2.43.2.0">
+    <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
@@ -26,28 +25,24 @@
     <div id="wrapper">
       <header>
         
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
+        <a id="page-top"></a>
+        
+        <nav class="navbar navbar-docfx navbar-expand-lg navbar-light fixed-top" role="navigation" id="mainNav">
+        	<div class="container-fluid">
+        		<div class="d-flex flex-row">
+        			<a class="navbar-brand" data-scroll="" href="/">
+        				<img id="logo" src="/doc/images/logo.svg" width="48" height="48" alt="Trinity RDF"> Trinity RDF
+        			</a>
+        			<div class="d-flex align-items-center w-100" id="navbar">
+        				<form class="navbar-form navbar-right" role="search" id="search">
+        					<div class="form-group">
+        						<input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+        					</div>
+        				</form>
+        				<div class="w-100"></div>
+        			</div>
+        		</div>
+        	</div>
         </nav>        
         <div class="subnav navbar navbar-default">
           <div class="container hide-when-search" id="breadcrumb">
@@ -90,10 +85,13 @@
       <section><p>A dictionary of named value bindings which represents a single query solution.</p>
 </section>
       <h4><a class="xref" href="Semiodesk.Trinity.Class.html">Class</a></h4>
-      <section><p>Represents a RDF class</p>
+      <section><p>The class of resources that are RDF classes.</p>
 </section>
       <h4><a class="xref" href="Semiodesk.Trinity.FileSystemInfoExtensions.html">FileSystemInfoExtensions</a></h4>
       <section><p>Extension to FileSystemInfo concerting UriRef handling</p>
+</section>
+      <h4><a class="xref" href="Semiodesk.Trinity.InvalidQueryException.html">InvalidQueryException</a></h4>
+      <section><p>This exception will be thrown if the store rejects the query as invalid.</p>
 </section>
       <h4><a class="xref" href="Semiodesk.Trinity.MappingDiscovery.html">MappingDiscovery</a></h4>
       <section><p>This static class is responsible for discovering mapped classes.
@@ -104,14 +102,6 @@ Every assembly that defines mapping classes needs to register them with this ser
 </section>
       <h4><a class="xref" href="Semiodesk.Trinity.Model.html">Model</a></h4>
       <section><p>A set of resources which represent a logical model for a given application domain.</p>
-</section>
-      <h4><a class="xref" href="Semiodesk.Trinity.ModelChangedEventArgs.html">ModelChangedEventArgs</a></h4>
-      <section><p>Provides information about changes in a RDF model.</p>
-</section>
-      <h4><a class="xref" href="Semiodesk.Trinity.ModelGroupFactory.html">ModelGroupFactory</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Semiodesk.Trinity.NamespaceManager.html">NamespaceManager</a></h4>
-      <section><p>Allows for easier namespace management for queries.</p>
 </section>
       <h4><a class="xref" href="Semiodesk.Trinity.NotifyPropertyChangedAttribute.html">NotifyPropertyChangedAttribute</a></h4>
       <section><p>Marks the property as NotifyingProperty.</p>
@@ -129,39 +119,23 @@ For future reference: look into PreApplicationStartMethodAttribute Class or Modu
       <h4><a class="xref" href="Semiodesk.Trinity.PropertyMapping-1.html">PropertyMapping&lt;T&gt;</a></h4>
       <section><p>This class does the heavy lifting of the property mapping mechanism. It stores the value and acts as intermediary for the resource.</p>
 </section>
-      <h4><a class="xref" href="Semiodesk.Trinity.PropertyValue.html">PropertyValue</a></h4>
-      <section></section>
       <h4><a class="xref" href="Semiodesk.Trinity.RdfClassAttribute.html">RdfClassAttribute</a></h4>
       <section><p>Decorate a class with this attribute to mark it as mapping for an RDF class of the given type.</p>
 </section>
-      <h4><a class="xref" href="Semiodesk.Trinity.RdfNamespaceAttribute.html">RdfNamespaceAttribute</a></h4>
-      <section></section>
       <h4><a class="xref" href="Semiodesk.Trinity.RdfPropertyAttribute.html">RdfPropertyAttribute</a></h4>
       <section><p>Decorate a property with this attribute to mark it as mapped RDF property with the given type.</p>
 </section>
       <h4><a class="xref" href="Semiodesk.Trinity.Resource.html">Resource</a></h4>
       <section><p>This class repesents a RDF resource. </p>
 </section>
-      <h4><a class="xref" href="Semiodesk.Trinity.ResourceExtensions.html">ResourceExtensions</a></h4>
-      <section></section>
       <h4><a class="xref" href="Semiodesk.Trinity.ResourceLockedException.html">ResourceLockedException</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Semiodesk.Trinity.ResourceProvider.html">ResourceProvider</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Semiodesk.Trinity.ResourceQuery.html">ResourceQuery</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Semiodesk.Trinity.ResourceQuery.rdf.html">ResourceQuery.rdf</a></h4>
-      <section><p>The RDF Vocabulary (RDF)</p>
+      <section><p>Represents error when one or more resources you tried to access was locked.</p>
 </section>
-      <h4><a class="xref" href="Semiodesk.Trinity.ResourceQueryResult.html">ResourceQueryResult</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Semiodesk.Trinity.SortCriterion.html">SortCriterion</a></h4>
-      <section></section>
+      <h4><a class="xref" href="Semiodesk.Trinity.ResourceNotFoundException.html">ResourceNotFoundException</a></h4>
+      <section><p>Represents error when a resource could not be retrieved.</p>
+</section>
       <h4><a class="xref" href="Semiodesk.Trinity.SparqlPreprocessor.html">SparqlPreprocessor</a></h4>
-      <section><p>A <em>very</em> simple SPARQL parser. This class is primarily intended to support
-a limited range of query preprocessing tasks such as setting the values of 
-query parameters (@-variables) as quickly as possible. It does not aim to 
-support the full SPARQL standard syntax.</p>
+      <section><p>A simple SPARQL parser.</p>
 </section>
       <h4><a class="xref" href="Semiodesk.Trinity.SparqlQuery.html">SparqlQuery</a></h4>
       <section><p>A simple SPAQL Query class. This class aims to ease formulating SPARQL
@@ -172,7 +146,8 @@ namespace manager.</p>
       <section><p>The item provider for sparql queries.</p>
 </section>
       <h4><a class="xref" href="Semiodesk.Trinity.SparqlQueryPreprocessor.html">SparqlQueryPreprocessor</a></h4>
-      <section></section>
+      <section><p>A preprocsesor for SPARQL queries.</p>
+</section>
       <h4><a class="xref" href="Semiodesk.Trinity.SparqlSerializer.html">SparqlSerializer</a></h4>
       <section><p>Provides functionality to perform serialization of native .NET types into SPARQL strings.</p>
 </section>
@@ -181,8 +156,6 @@ namespace manager.</p>
 query strings by automatically setting PREFIX declarations from a given
 namespace manager.</p>
 </section>
-      <h4><a class="xref" href="Semiodesk.Trinity.StatementPattern.html">StatementPattern</a></h4>
-      <section></section>
       <h4><a class="xref" href="Semiodesk.Trinity.StoreBase.html">StoreBase</a></h4>
       <section><p>This class encapsulates the functionality of an abstract triple store. Cannot be used directly. 
 Use StoreFactory to get a concret implementation.</p>
@@ -193,6 +166,9 @@ If you want to use your own store, you can load the assembly containing the prov
 </section>
       <h4><a class="xref" href="Semiodesk.Trinity.StoreProvider.html">StoreProvider</a></h4>
       <section><p>This is the abstract store provider class. Implement it if you want to write your own store provider.</p>
+</section>
+      <h4><a class="xref" href="Semiodesk.Trinity.StoreProviderMissingException.html">StoreProviderMissingException</a></h4>
+      <section><p>Represents errors when a suitable triple store adapter could not be found.</p>
 </section>
       <h4><a class="xref" href="Semiodesk.Trinity.StringExtensions.html">StringExtensions</a></h4>
       <section><p>Collection of string extension related to Uris</p>
@@ -206,9 +182,6 @@ If you want to use your own store, you can load the assembly containing the prov
       <h4><a class="xref" href="Semiodesk.Trinity.UriRef.html">UriRef</a></h4>
       <section><p>This class extends the framework Uri class to also include fragments for
 equality testing.</p>
-</section>
-      <h4><a class="xref" href="Semiodesk.Trinity.VirtualizingResourceCollection-1.html">VirtualizingResourceCollection&lt;T&gt;</a></h4>
-      <section><p>A virtualizing collection of a resource query.</p>
 </section>
       <h4><a class="xref" href="Semiodesk.Trinity.VirtualizingSparqlCollection-1.html">VirtualizingSparqlCollection&lt;T&gt;</a></h4>
       <section><p>A virtualizing collection for sparql query results</p>
@@ -228,47 +201,36 @@ objects to XML Schema encoded strings.</p>
       <h4><a class="xref" href="Semiodesk.Trinity.IResource.html">IResource</a></h4>
       <section><p>This interface encapsulates the access to the methods of a RDF resource.</p>
 </section>
-      <h4><a class="xref" href="Semiodesk.Trinity.IResourceQueryResult.html">IResourceQueryResult</a></h4>
-      <section><p>Interface for results of a resource query.</p>
-</section>
       <h4><a class="xref" href="Semiodesk.Trinity.ISparqlQuery.html">ISparqlQuery</a></h4>
-      <section><p>A generic sparql query interface.  </p>
+      <section><p>Exposes a SPARQL query.</p>
 </section>
       <h4><a class="xref" href="Semiodesk.Trinity.ISparqlQueryResult.html">ISparqlQueryResult</a></h4>
-      <section></section>
+      <section><p>Exposes the results of a SPARQL query.</p>
+</section>
       <h4><a class="xref" href="Semiodesk.Trinity.IStore.html">IStore</a></h4>
       <section><p>The IStorage interface describes the methods an RDF Storage has to implement.</p>
 </section>
       <h4><a class="xref" href="Semiodesk.Trinity.ITransaction.html">ITransaction</a></h4>
-      <section></section>
+      <section><p>Exposes a repository which supports transactions.</p>
+</section>
       <h4><a class="xref" href="Semiodesk.Trinity.ITransactional.html">ITransactional</a></h4>
       <section><p>Interface for a transactional object</p>
 </section>
     <h3 id="enums">Enums
   </h3>
-      <h4><a class="xref" href="Semiodesk.Trinity.FilterOperation.html">FilterOperation</a></h4>
-      <section><p>Available filter operations.</p>
-</section>
-      <h4><a class="xref" href="Semiodesk.Trinity.ModelChangeType.html">ModelChangeType</a></h4>
-      <section><p>Lists all possible changes to a RDF model.</p>
-</section>
       <h4><a class="xref" href="Semiodesk.Trinity.RdfSerializationFormat.html">RdfSerializationFormat</a></h4>
       <section><p>Enumerates all supported RDF serialization formats.</p>
 </section>
-      <h4><a class="xref" href="Semiodesk.Trinity.SortDirection.html">SortDirection</a></h4>
-      <section></section>
       <h4><a class="xref" href="Semiodesk.Trinity.SparqlQueryType.html">SparqlQueryType</a></h4>
       <section><p>The SPARQL query forms as specified in <a href="http://www.w3.org/TR/rdf-sparql-query/#QueryForms">http://www.w3.org/TR/rdf-sparql-query/#QueryForms</a></p>
 </section>
       <h4><a class="xref" href="Semiodesk.Trinity.SparqlQueryVariableScope.html">SparqlQueryVariableScope</a></h4>
-      <section></section>
+      <section><p>Graph pattern scope of variables defined in a SPARQL query.</p>
+</section>
     <h3 id="delegates">Delegates
   </h3>
       <h4><a class="xref" href="Semiodesk.Trinity.FinishedTransactionEvent.html">FinishedTransactionEvent</a></h4>
       <section><p>Handle for transaction events.</p>
-</section>
-      <h4><a class="xref" href="Semiodesk.Trinity.ModelChangedDelegate.html">ModelChangedDelegate</a></h4>
-      <section><p>Interface for ModelChanged event handlers.</p>
 </section>
       <h4><a class="xref" href="Semiodesk.Trinity.XsdTypeMapper.ObjectDeserializationDelegate.html">XsdTypeMapper.ObjectDeserializationDelegate</a></h4>
       <section><p>Deserialization delegate, format for deserialization functions. </p>

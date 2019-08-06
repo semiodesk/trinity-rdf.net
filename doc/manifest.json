@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "yg7G1OptNFXbYrj04PBI8w=="
+          "hash": "qPKQ5vnkQwNJhlr0ryPW1w=="
         }
       },
       "is_incremental": false,
@@ -52,7 +52,931 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "yVV8YmGOIcb7WTRKKVm+Ow=="
+          "hash": "Q1F5SW4xdm75h1VyraZIsg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.BindingSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.BindingSet.html",
+          "hash": "fteOQOSsbRhz16JE9aqtBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Class.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Class.html",
+          "hash": "lWqUKlomOVREqfapaoWFkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Collections.AsyncVirtualizingCollection-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Collections.AsyncVirtualizingCollection-1.html",
+          "hash": "WNfKXSbfyrNkYxtnghHiFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Collections.AsyncVirtualizingSparqlCollection-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Collections.AsyncVirtualizingSparqlCollection-1.html",
+          "hash": "oboTR4RLNu5H7W3f/CTwkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Collections.IItemsProvider-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Collections.IItemsProvider-1.html",
+          "hash": "DM+pInLoJzl4lfyfkhLP+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Collections.VirtualizingCollection-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Collections.VirtualizingCollection-1.html",
+          "hash": "RJ/x6pKA5ntSbAZIHC5j0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Collections.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Collections.html",
+          "hash": "KMXAIiFe6hSVZC4T+14QAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.FileSystemInfoExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.FileSystemInfoExtensions.html",
+          "hash": "Lgqj1gJjRWFvOMFJ4nfxQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.FinishedTransactionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.FinishedTransactionEvent.html",
+          "hash": "Ew/5nhXfhaJ2I0ezBW//mg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.IModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.IModel.html",
+          "hash": "oMWgguHp+/8/evOMgSyxPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.IModelGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.IModelGroup.html",
+          "hash": "3BKfpBxJVkCWCk0Uh5WLLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.IResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.IResource.html",
+          "hash": "k9caTAGlOhUxhlXMkHB9ug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.ISparqlQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.ISparqlQuery.html",
+          "hash": "VKupnG4HQg7NfIY0LbxwyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.ISparqlQueryResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.ISparqlQueryResult.html",
+          "hash": "ChqiqDfLayEmKa1y3WpMZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.IStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.IStore.html",
+          "hash": "TKcWyBLP8bbtB4RUpssjcA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.ITransaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.ITransaction.html",
+          "hash": "DOHHxD+3xNBPGC+dHSxtqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.ITransactional.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.ITransactional.html",
+          "hash": "2FWXWxuTANmMpwyURgs8Cw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.InvalidQueryException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.InvalidQueryException.html",
+          "hash": "NGb0lNLdzCt7YWP/dctnVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.MappingDiscovery.MappingClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.MappingDiscovery.MappingClass.html",
+          "hash": "3Eu6f1xdUY1NXePHhSiiSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.MappingDiscovery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.MappingDiscovery.html",
+          "hash": "8wN+m64VMhHVi6tA5daedg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Model.html",
+          "hash": "QTMnUfbQVhUVbqeSG7Tmdg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.NotifyPropertyChangedAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.NotifyPropertyChangedAttribute.html",
+          "hash": "K7L4spwtBb0DWdYgcA+oLw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Ontology.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Ontology.html",
+          "hash": "G17bQQZZAAIgzFtHDODIRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.OntologyDiscovery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.OntologyDiscovery.html",
+          "hash": "JQusk56/5CUufS6lofatBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Property.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Property.html",
+          "hash": "TMsjwSQ0NOf6QiJPjypWYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.PropertyMapping-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.PropertyMapping-1.html",
+          "hash": "T+tQcYeHq5RyveoP2syxwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Query.ConstantExpressionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Query.ConstantExpressionExtensions.html",
+          "hash": "Sp6sc7EaqdPaoKxXrDg4pw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Query.MemberInfoExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Query.MemberInfoExtensions.html",
+          "hash": "PKEF45Ps6LKwOf8jNW2Ekg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Query.MethodCallExpressionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Query.MethodCallExpressionExtensions.html",
+          "hash": "cC457xdbvcocN3dfLxf9Dg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Query.NodeFactoryExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Query.NodeFactoryExtensions.html",
+          "hash": "HQ/vXr1yr/t4NeYFF2vs2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Query.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Query.html",
+          "hash": "tSmbV3xBLIPqh/PJIc8zUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.RdfClassAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.RdfClassAttribute.html",
+          "hash": "vEuZ0PEm9PmMQSKU3IbZ8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.RdfPropertyAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.RdfPropertyAttribute.html",
+          "hash": "fYNPMMzM8mfqL7/PtO4xZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.RdfSerializationFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.RdfSerializationFormat.html",
+          "hash": "8VljuCupro6U+7rDwuIovA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Resource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Resource.html",
+          "hash": "WVR/7Vn8k4T8uMtbviq92A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.ResourceLockedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.ResourceLockedException.html",
+          "hash": "+QQOs/8F2gIAsP/keaIeNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.ResourceNotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.ResourceNotFoundException.html",
+          "hash": "/Ro8Y7TH1THEMIZDzbqYUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Serialization.JsonResourceConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Serialization.JsonResourceConverter.html",
+          "hash": "kgGVsLvIximE3rryjImTqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Serialization.JsonResourceSerializerSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Serialization.JsonResourceSerializerSettings.html",
+          "hash": "9d3pIY6lEoSiPoS5Wc1IYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Serialization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Serialization.html",
+          "hash": "InbfV9EFKH0LRO18R87EIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.SparqlPreprocessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.SparqlPreprocessor.html",
+          "hash": "IPi6+DN7R8WPDeNjqIpF8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.SparqlQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.SparqlQuery.html",
+          "hash": "XQnxxfWNo8yocvC/hvi0cA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.SparqlQueryItemsProvider-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.SparqlQueryItemsProvider-1.html",
+          "hash": "D+yuQO3c6eEfUVfaeuSq7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.SparqlQueryPreprocessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.SparqlQueryPreprocessor.html",
+          "hash": "H4aqY55KTTPJjrRFFd37fA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.SparqlQueryType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.SparqlQueryType.html",
+          "hash": "a6LfQ4mdoKQEzUJpDVeqyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.SparqlQueryVariableScope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.SparqlQueryVariableScope.html",
+          "hash": "CsWZocOO0y5+zOGohN6X/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.SparqlSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.SparqlSerializer.html",
+          "hash": "9HiY2bPSEFeSkauY0MAqhw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.SparqlUpdate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.SparqlUpdate.html",
+          "hash": "C2hOBv4oGaTHaw4SISjyRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.ITripleProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.ITripleProvider.html",
+          "hash": "f12mNAAVa79scSpcNQsyuw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.SparqlEndpointStoreProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.SparqlEndpointStoreProvider.html",
+          "hash": "C9Q5264cPrBLC85/Q9Ixcw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.Stardog.StardogResultHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.Stardog.StardogResultHandler.html",
+          "hash": "PJFtuE0URlDWyApE7rBzKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.Stardog.StardogStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.Stardog.StardogStore.html",
+          "hash": "na7nNqC1EPiZ+IHMWrjuZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.Stardog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.Stardog.html",
+          "hash": "xIRf8WpHXOujhTglvoRxvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.StardogStoreProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.StardogStoreProvider.html",
+          "hash": "ALJOlfszoHkMn2v/wP+7Bw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.Virtuoso.Graph.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.Virtuoso.Graph.html",
+          "hash": "7H7reDhHxLa1EwUPCZdQxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.Virtuoso.Ruleset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.Virtuoso.Ruleset.html",
+          "hash": "wA7IekBomKJY+tOP1KU4DQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.Virtuoso.Rulesets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.Virtuoso.Rulesets.html",
+          "hash": "mulk+L4T+qkJKprGz/qlaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoStoreProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoStoreProvider.html",
+          "hash": "NYpE25a5Ki+QTHQvv5+38Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoTransaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoTransaction.html",
+          "hash": "/ZGh2lNulkDsScmAKEhSIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.Virtuoso.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.Virtuoso.html",
+          "hash": "3dGgjdOpxKFqEd4aTrSlGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.dotNetRDFStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.dotNetRDFStore.html",
+          "hash": "fBhvlRR3uR29KSiQbFNJ+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.dotNetRDFStoreProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.dotNetRDFStoreProvider.html",
+          "hash": "QY4dGaiNQDAugoOqN55SSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.html",
+          "hash": "c2Cg01zEpENGWDgvUsm1rA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.StoreBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.StoreBase.html",
+          "hash": "D84dgNaQ1xNwfwd5bDRvYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.StoreFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.StoreFactory.html",
+          "hash": "L4ccGtHpyGCc+HcgO0EOWg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.StoreProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.StoreProvider.html",
+          "hash": "tdqf3DW5B4rUpnahpU31ww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.StoreProviderMissingException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.StoreProviderMissingException.html",
+          "hash": "YhG7G8KGcxH1iEHo9WGtNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.StringExtensions.html",
+          "hash": "dlPBaA74JFJrmcl6PvPLog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.TransactionEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.TransactionEventArgs.html",
+          "hash": "QdZdCnP/OcF+a7VznEH2Kg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.UriExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.UriExtensions.html",
+          "hash": "x55rfoRlXoL3Q/HVjkxNtA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.UriRef.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.UriRef.html",
+          "hash": "DblrrB0lO+mHOB4DQu+IFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.VirtualizingSparqlCollection-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.VirtualizingSparqlCollection-1.html",
+          "hash": "VrQ7ODWCvz2UBabfAwtafg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.XsdTypeMapper.ObjectDeserializationDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.XsdTypeMapper.ObjectDeserializationDelegate.html",
+          "hash": "ipb2djI07Yuukxtn/3ZOfw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.XsdTypeMapper.ObjectSerializationDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.XsdTypeMapper.ObjectSerializationDelegate.html",
+          "hash": "Yns8CV7xq/sDewBWgAw/wg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.XsdTypeMapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.XsdTypeMapper.html",
+          "hash": "C12xrBD0Ph+tuFA/wuhDWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.html",
+          "hash": "EPZYZtqt+7dmjnobbdb6SQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "SPB4a+Vbp1Lp+J6xdVpg/w=="
         }
       },
       "is_incremental": false,
@@ -64,7 +988,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "ED8HYtZtS7ogSF0bfpSFsQ=="
+          "hash": "F14zFW20k5OPPDkC7Fj+pA=="
         }
       },
       "is_incremental": false,
@@ -76,7 +1000,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/firstSteps.html",
-          "hash": "+vrXrXoG2o1QcxpmWI5oLw=="
+          "hash": "YUrwH9bZaxrciftjPMaRQA=="
         }
       },
       "is_incremental": false,
@@ -88,7 +1012,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/installation.html",
-          "hash": "XNSMIeYPMyoajfEGT+y/sA=="
+          "hash": "vEFYCdvN7z1uO2hVx3HhJA=="
         }
       },
       "is_incremental": false,
@@ -100,7 +1024,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/intro.html",
-          "hash": "AjbL1dPCBfaqYS1wtFQRYQ=="
+          "hash": "R8U2ZIq+OiKt5nzE68UQLQ=="
         }
       },
       "is_incremental": false,
@@ -112,7 +1036,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/license.html",
-          "hash": "XWRdgVRYpqt1hlxBwvpEKQ=="
+          "hash": "z1pUakQ67V232zzxihROwg=="
         }
       },
       "is_incremental": false,
@@ -124,7 +1048,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/musicBrowser.html",
-          "hash": "h9gkdvjGX/LWVRlIrB9uyQ=="
+          "hash": "I17vc1chb9MmVUvyTPxGwA=="
         }
       },
       "is_incremental": false,
@@ -136,7 +1060,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/simpleUnity.html",
-          "hash": "rVVK/dccjfrQp0lBMGltQg=="
+          "hash": "FbmuaRup5ffT8VNiKGgZNQ=="
         }
       },
       "is_incremental": false,
@@ -160,7 +1084,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/virtuoso.html",
-          "hash": "FAfhhI9oNEvnBzigINwQnQ=="
+          "hash": "WBxco2FodZyMSLhnmSPtug=="
         }
       },
       "is_incremental": false,
@@ -172,7 +1096,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/webApp.html",
-          "hash": "dG9wXjQvDMgDY/AVcO4kaA=="
+          "hash": "BzZiBKiA9z6nOb//nKbpfw=="
         }
       },
       "is_incremental": false,
@@ -190,13 +1114,6 @@
         "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -204,10 +1121,23 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 76,
+          "skipped_file_count": 0
+        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 10,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
           "skipped_file_count": 0
         }
       }
