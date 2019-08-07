@@ -691,5 +691,27 @@ Hello,
         e.preventDefault();
       });
     </script>
+
+    <script type="application/ld+json">
+      [
+        {
+          "@id": "https://trinity-rdf.net",
+          "@context": "http://schema.org",
+          "@type": "SoftwareSourceCode",
+          "image": "https://trinity-rdf.net/assets/img/trinity-logo.svg",
+          "codeRepository": "https://github.com/semiodesk/trinity-rdf",
+          "programmingLanguage": "C#",
+          "runtimePlatform": ".NET Framework",
+          "license": "https://opensource.org/licenses/MIT",
+          "publisher": {
+            "@id": "https://semiodesk.com",
+            "@type": "Corporation",
+            "name": "Semiodesk GmbH",
+            "sameAs": "https://semiodesk.com",
+            "url": "https://semiodesk.com"
+          }
+        }
+      ]
+    </script>
   </body>
 </html>
