@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "qPKQ5vnkQwNJhlr0ryPW1w=="
+          "hash": "6yJXTS4YUc6h+oyEmXJyNg=="
         }
       },
       "is_incremental": false,
@@ -76,7 +76,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Class.html",
-          "hash": "lWqUKlomOVREqfapaoWFkQ=="
+          "hash": "QUU0ZZOHYviFDlvZNchrFQ=="
         }
       },
       "is_incremental": false,
@@ -196,7 +196,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.IResource.html",
-          "hash": "k9caTAGlOhUxhlXMkHB9ug=="
+          "hash": "J4Q72jVGuTSqUC5qIfB4pQ=="
         }
       },
       "is_incremental": false,
@@ -304,7 +304,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Model.html",
-          "hash": "QTMnUfbQVhUVbqeSG7Tmdg=="
+          "hash": "KOwaXMwj8wfUS+hWE6zIKw=="
         }
       },
       "is_incremental": false,
@@ -352,7 +352,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Property.html",
-          "hash": "TMsjwSQ0NOf6QiJPjypWYg=="
+          "hash": "XgFu6vSc//tvEOoHcafv9w=="
         }
       },
       "is_incremental": false,
@@ -432,6 +432,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.QueryTypeNotSupportedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.QueryTypeNotSupportedException.html",
+          "hash": "ZpEsudiL7Kbt++JGEfyp0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Semiodesk.Trinity.RdfClassAttribute.yml",
       "output": {
         ".html": {
@@ -472,7 +484,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Resource.html",
-          "hash": "WVR/7Vn8k4T8uMtbviq92A=="
+          "hash": "g6ju7q3czMerUPAgFHXZ1A=="
         }
       },
       "is_incremental": false,
@@ -664,7 +676,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.Stardog.StardogResultHandler.html",
-          "hash": "PJFtuE0URlDWyApE7rBzKw=="
+          "hash": "fbB91tUtk16bX7wLPTHaEQ=="
         }
       },
       "is_incremental": false,
@@ -676,7 +688,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.Stardog.StardogStore.html",
-          "hash": "na7nNqC1EPiZ+IHMWrjuZA=="
+          "hash": "eE9jjxCtkr0IGhJOqVhCTg=="
         }
       },
       "is_incremental": false,
@@ -688,7 +700,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.Stardog.html",
-          "hash": "xIRf8WpHXOujhTglvoRxvA=="
+          "hash": "Uxy03ZVK5rWj8qs7bvl0lw=="
         }
       },
       "is_incremental": false,
@@ -700,7 +712,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.StardogStoreProvider.html",
-          "hash": "ALJOlfszoHkMn2v/wP+7Bw=="
+          "hash": "1fZEcTJSKvDBRm6EXdIs6Q=="
         }
       },
       "is_incremental": false,
@@ -820,7 +832,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.StoreBase.html",
-          "hash": "D84dgNaQ1xNwfwd5bDRvYg=="
+          "hash": "6CS3OuhIKEcDzIRn5AToGA=="
         }
       },
       "is_incremental": false,
@@ -844,7 +856,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.StoreProvider.html",
-          "hash": "tdqf3DW5B4rUpnahpU31ww=="
+          "hash": "OHwtv4+NjiJJaSTDpT2vSQ=="
         }
       },
       "is_incremental": false,
@@ -857,6 +869,54 @@
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.StoreProviderMissingException.html",
           "hash": "YhG7G8KGcxH1iEHo9WGtNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.html",
+          "hash": "EVLmX34PhkSpJOcMh5s/sA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.html",
+          "hash": "jQZ0dBFW4XozNLub2/hE7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Stores.Stardog.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Stores.Stardog.StringExtensions.html",
+          "hash": "tfUMdnuSOVuic3OYrzNNJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Stores.Stardog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Stores.Stardog.html",
+          "hash": "Hcdl7AXVPPysxBWxmRGjjA=="
         }
       },
       "is_incremental": false,
@@ -904,7 +964,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.UriRef.html",
-          "hash": "DblrrB0lO+mHOB4DQu+IFg=="
+          "hash": "RjjndISmAqk7Nk/io7rPQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Urn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Urn.html",
+          "hash": "S2whvuTjdctZE7EUjWJlSg=="
         }
       },
       "is_incremental": false,
@@ -964,7 +1036,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.html",
-          "hash": "EPZYZtqt+7dmjnobbdb6SQ=="
+          "hash": "2x24Q/QhwVii1/YMR/IH5g=="
         }
       },
       "is_incremental": false,
@@ -976,7 +1048,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "SPB4a+Vbp1Lp+J6xdVpg/w=="
+          "hash": "wwyUudx3lI357k2BFw+nCA=="
         }
       },
       "is_incremental": false,
@@ -1000,7 +1072,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/firstSteps.html",
-          "hash": "YUrwH9bZaxrciftjPMaRQA=="
+          "hash": "RrPmXQqAHPXxI8M/7KQWzA=="
         }
       },
       "is_incremental": false,
@@ -1012,7 +1084,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/installation.html",
-          "hash": "vEFYCdvN7z1uO2hVx3HhJA=="
+          "hash": "C1BOqYHc0wgmAUcsaKsqyA=="
         }
       },
       "is_incremental": false,
@@ -1048,7 +1120,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/musicBrowser.html",
-          "hash": "I17vc1chb9MmVUvyTPxGwA=="
+          "hash": "53fDbLEv0oK7SaOUfByS1g=="
         }
       },
       "is_incremental": false,
@@ -1060,7 +1132,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/simpleUnity.html",
-          "hash": "FbmuaRup5ffT8VNiKGgZNQ=="
+          "hash": "yRrIk3q8H6WNjDSWSQYssg=="
         }
       },
       "is_incremental": false,
@@ -1106,12 +1178,10 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Disable incremental build by force rebuild option.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "ForceRebuild"
+        "skipped_file_count": 0
       },
       "processors": {
         "TocDocumentProcessor": {
@@ -1122,16 +1192,16 @@
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 76,
-          "skipped_file_count": 0
+          "total_file_count": 82,
+          "skipped_file_count": 82
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 10,
-          "skipped_file_count": 0
+          "skipped_file_count": 5
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

@@ -134,7 +134,7 @@ Use StoreFactory to get a concret implementation.</p>
   </span>
   <a id="Semiodesk_Trinity_StoreBase_IsReady_" data-uid="Semiodesk.Trinity.StoreBase.IsReady*"></a>
   <h4 id="Semiodesk_Trinity_StoreBase_IsReady" data-uid="Semiodesk.Trinity.StoreBase.IsReady">IsReady</h4>
-  <div class="markdown level1 summary"><p>This property gives the state of the store. True means that the connection is ready and awaiting queries.</p>
+  <div class="markdown level1 summary"><p>Indicates if the store is connected and awaiting queries.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -219,7 +219,8 @@ For example, to log to the console, set this property to System.Console.Write(Sy
       <tr>
         <td><span class="xref">System.Data.IsolationLevel</span></td>
         <td><span class="parametername">isolationLevel</span></td>
-        <td></td>
+        <td><p>Isolation level of the operations executed in the transaction.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -534,12 +535,14 @@ public virtual IModel CreateModel(Uri uri)</code></pre>
       <tr>
         <td><a class="xref" href="Semiodesk.Trinity.SparqlUpdate.html">SparqlUpdate</a></td>
         <td><span class="parametername">update</span></td>
-        <td></td>
+        <td><p>SPARQL Update to be executed.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Semiodesk.Trinity.ITransaction.html">ITransaction</a></td>
         <td><span class="parametername">transaction</span></td>
-        <td></td>
+        <td><p>An optional transaction.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -552,7 +555,7 @@ public virtual IModel CreateModel(Uri uri)</code></pre>
   </span>
   <a id="Semiodesk_Trinity_StoreBase_ExecuteQuery_" data-uid="Semiodesk.Trinity.StoreBase.ExecuteQuery*"></a>
   <h4 id="Semiodesk_Trinity_StoreBase_ExecuteQuery_Semiodesk_Trinity_ISparqlQuery_Semiodesk_Trinity_ITransaction_" data-uid="Semiodesk.Trinity.StoreBase.ExecuteQuery(Semiodesk.Trinity.ISparqlQuery,Semiodesk.Trinity.ITransaction)">ExecuteQuery(ISparqlQuery, ITransaction)</h4>
-  <div class="markdown level1 summary"><p>Executes a SparqlQuery on the store.</p>
+  <div class="markdown level1 summary"><p>Executes a <code>SparqlQuery</code> on the store.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -572,12 +575,14 @@ public virtual IModel CreateModel(Uri uri)</code></pre>
       <tr>
         <td><a class="xref" href="Semiodesk.Trinity.ISparqlQuery.html">ISparqlQuery</a></td>
         <td><span class="parametername">query</span></td>
-        <td></td>
+        <td><p>SPARQL query to be executed.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="Semiodesk.Trinity.ITransaction.html">ITransaction</a></td>
         <td><span class="parametername">transaction</span></td>
-        <td></td>
+        <td><p>An optional transaction.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -625,7 +630,7 @@ public virtual IModel CreateModel(Uri uri)</code></pre>
       <tr>
         <td><span class="xref">System.Uri</span></td>
         <td><span class="parametername">uri</span></td>
-        <td><p>Uri of the model.</p>
+        <td><p>Model URI.</p>
 </td>
       </tr>
     </tbody>

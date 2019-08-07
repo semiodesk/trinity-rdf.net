@@ -1537,18 +1537,18 @@ references:
   isSpec: "True"
   fullName: Semiodesk.Trinity.IResource.ListProperties
   nameWithType: IResource.ListProperties
-- uid: Semiodesk.Trinity.IResource.ListValues
-  name: ListValues()
-  href: api/Semiodesk.Trinity.IResource.html#Semiodesk_Trinity_IResource_ListValues
-  commentId: M:Semiodesk.Trinity.IResource.ListValues
-  fullName: Semiodesk.Trinity.IResource.ListValues()
-  nameWithType: IResource.ListValues()
 - uid: Semiodesk.Trinity.IResource.ListValues(Semiodesk.Trinity.Property)
   name: ListValues(Property)
   href: api/Semiodesk.Trinity.IResource.html#Semiodesk_Trinity_IResource_ListValues_Semiodesk_Trinity_Property_
   commentId: M:Semiodesk.Trinity.IResource.ListValues(Semiodesk.Trinity.Property)
   fullName: Semiodesk.Trinity.IResource.ListValues(Semiodesk.Trinity.Property)
   nameWithType: IResource.ListValues(Property)
+- uid: Semiodesk.Trinity.IResource.ListValues(System.Boolean)
+  name: ListValues(Boolean)
+  href: api/Semiodesk.Trinity.IResource.html#Semiodesk_Trinity_IResource_ListValues_System_Boolean_
+  commentId: M:Semiodesk.Trinity.IResource.ListValues(System.Boolean)
+  fullName: Semiodesk.Trinity.IResource.ListValues(System.Boolean)
+  nameWithType: IResource.ListValues(Boolean)
 - uid: Semiodesk.Trinity.IResource.ListValues*
   name: ListValues
   href: api/Semiodesk.Trinity.IResource.html#Semiodesk_Trinity_IResource_ListValues_
@@ -3284,6 +3284,38 @@ references:
   isSpec: "True"
   fullName: Semiodesk.Trinity.Query.NodeFactoryExtensions.CreateLiteralNode
   nameWithType: NodeFactoryExtensions.CreateLiteralNode
+- uid: Semiodesk.Trinity.QueryTypeNotSupportedException
+  name: QueryTypeNotSupportedException
+  href: api/Semiodesk.Trinity.QueryTypeNotSupportedException.html
+  commentId: T:Semiodesk.Trinity.QueryTypeNotSupportedException
+  fullName: Semiodesk.Trinity.QueryTypeNotSupportedException
+  nameWithType: QueryTypeNotSupportedException
+- uid: Semiodesk.Trinity.QueryTypeNotSupportedException.#ctor(Semiodesk.Trinity.SparqlQueryType)
+  name: QueryTypeNotSupportedException(SparqlQueryType)
+  href: api/Semiodesk.Trinity.QueryTypeNotSupportedException.html#Semiodesk_Trinity_QueryTypeNotSupportedException__ctor_Semiodesk_Trinity_SparqlQueryType_
+  commentId: M:Semiodesk.Trinity.QueryTypeNotSupportedException.#ctor(Semiodesk.Trinity.SparqlQueryType)
+  fullName: Semiodesk.Trinity.QueryTypeNotSupportedException.QueryTypeNotSupportedException(Semiodesk.Trinity.SparqlQueryType)
+  nameWithType: QueryTypeNotSupportedException.QueryTypeNotSupportedException(SparqlQueryType)
+- uid: Semiodesk.Trinity.QueryTypeNotSupportedException.#ctor*
+  name: QueryTypeNotSupportedException
+  href: api/Semiodesk.Trinity.QueryTypeNotSupportedException.html#Semiodesk_Trinity_QueryTypeNotSupportedException__ctor_
+  commentId: Overload:Semiodesk.Trinity.QueryTypeNotSupportedException.#ctor
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.QueryTypeNotSupportedException.QueryTypeNotSupportedException
+  nameWithType: QueryTypeNotSupportedException.QueryTypeNotSupportedException
+- uid: Semiodesk.Trinity.QueryTypeNotSupportedException.QueryType
+  name: QueryType
+  href: api/Semiodesk.Trinity.QueryTypeNotSupportedException.html#Semiodesk_Trinity_QueryTypeNotSupportedException_QueryType
+  commentId: P:Semiodesk.Trinity.QueryTypeNotSupportedException.QueryType
+  fullName: Semiodesk.Trinity.QueryTypeNotSupportedException.QueryType
+  nameWithType: QueryTypeNotSupportedException.QueryType
+- uid: Semiodesk.Trinity.QueryTypeNotSupportedException.QueryType*
+  name: QueryType
+  href: api/Semiodesk.Trinity.QueryTypeNotSupportedException.html#Semiodesk_Trinity_QueryTypeNotSupportedException_QueryType_
+  commentId: Overload:Semiodesk.Trinity.QueryTypeNotSupportedException.QueryType
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.QueryTypeNotSupportedException.QueryType
+  nameWithType: QueryTypeNotSupportedException.QueryType
 - uid: Semiodesk.Trinity.RdfClassAttribute
   name: RdfClassAttribute
   href: api/Semiodesk.Trinity.RdfClassAttribute.html
@@ -3771,18 +3803,18 @@ references:
   isSpec: "True"
   fullName: Semiodesk.Trinity.Resource.ListProperties
   nameWithType: Resource.ListProperties
-- uid: Semiodesk.Trinity.Resource.ListValues
-  name: ListValues()
-  href: api/Semiodesk.Trinity.Resource.html#Semiodesk_Trinity_Resource_ListValues
-  commentId: M:Semiodesk.Trinity.Resource.ListValues
-  fullName: Semiodesk.Trinity.Resource.ListValues()
-  nameWithType: Resource.ListValues()
 - uid: Semiodesk.Trinity.Resource.ListValues(Semiodesk.Trinity.Property)
   name: ListValues(Property)
   href: api/Semiodesk.Trinity.Resource.html#Semiodesk_Trinity_Resource_ListValues_Semiodesk_Trinity_Property_
   commentId: M:Semiodesk.Trinity.Resource.ListValues(Semiodesk.Trinity.Property)
   fullName: Semiodesk.Trinity.Resource.ListValues(Semiodesk.Trinity.Property)
   nameWithType: Resource.ListValues(Property)
+- uid: Semiodesk.Trinity.Resource.ListValues(System.Boolean)
+  name: ListValues(Boolean)
+  href: api/Semiodesk.Trinity.Resource.html#Semiodesk_Trinity_Resource_ListValues_System_Boolean_
+  commentId: M:Semiodesk.Trinity.Resource.ListValues(System.Boolean)
+  fullName: Semiodesk.Trinity.Resource.ListValues(System.Boolean)
+  nameWithType: Resource.ListValues(Boolean)
 - uid: Semiodesk.Trinity.Resource.ListValues*
   name: ListValues
   href: api/Semiodesk.Trinity.Resource.html#Semiodesk_Trinity_Resource_ListValues_
@@ -5431,19 +5463,6 @@ references:
   isSpec: "True"
   fullName: Semiodesk.Trinity.Store.Stardog.StardogResultHandler.StardogResultHandler
   nameWithType: StardogResultHandler.StardogResultHandler
-- uid: Semiodesk.Trinity.Store.Stardog.StardogResultHandler.BoolResult
-  name: BoolResult
-  href: api/Semiodesk.Trinity.Store.Stardog.StardogResultHandler.html#Semiodesk_Trinity_Store_Stardog_StardogResultHandler_BoolResult
-  commentId: P:Semiodesk.Trinity.Store.Stardog.StardogResultHandler.BoolResult
-  fullName: Semiodesk.Trinity.Store.Stardog.StardogResultHandler.BoolResult
-  nameWithType: StardogResultHandler.BoolResult
-- uid: Semiodesk.Trinity.Store.Stardog.StardogResultHandler.BoolResult*
-  name: BoolResult
-  href: api/Semiodesk.Trinity.Store.Stardog.StardogResultHandler.html#Semiodesk_Trinity_Store_Stardog_StardogResultHandler_BoolResult_
-  commentId: Overload:Semiodesk.Trinity.Store.Stardog.StardogResultHandler.BoolResult
-  isSpec: "True"
-  fullName: Semiodesk.Trinity.Store.Stardog.StardogResultHandler.BoolResult
-  nameWithType: StardogResultHandler.BoolResult
 - uid: Semiodesk.Trinity.Store.Stardog.StardogResultHandler.GetAnwser
   name: GetAnwser()
   href: api/Semiodesk.Trinity.Store.Stardog.StardogResultHandler.html#Semiodesk_Trinity_Store_Stardog_StardogResultHandler_GetAnwser
@@ -5676,6 +5695,19 @@ references:
   isSpec: "True"
   fullName: Semiodesk.Trinity.Store.Stardog.StardogStore.ListModels
   nameWithType: StardogStore.ListModels
+- uid: Semiodesk.Trinity.Store.Stardog.StardogStore.OnTransactionCompleted(System.Object,Semiodesk.Trinity.TransactionEventArgs)
+  name: OnTransactionCompleted(Object, TransactionEventArgs)
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogStore.html#Semiodesk_Trinity_Store_Stardog_StardogStore_OnTransactionCompleted_System_Object_Semiodesk_Trinity_TransactionEventArgs_
+  commentId: M:Semiodesk.Trinity.Store.Stardog.StardogStore.OnTransactionCompleted(System.Object,Semiodesk.Trinity.TransactionEventArgs)
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogStore.OnTransactionCompleted(System.Object, Semiodesk.Trinity.TransactionEventArgs)
+  nameWithType: StardogStore.OnTransactionCompleted(Object, TransactionEventArgs)
+- uid: Semiodesk.Trinity.Store.Stardog.StardogStore.OnTransactionCompleted*
+  name: OnTransactionCompleted
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogStore.html#Semiodesk_Trinity_Store_Stardog_StardogStore_OnTransactionCompleted_
+  commentId: Overload:Semiodesk.Trinity.Store.Stardog.StardogStore.OnTransactionCompleted
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogStore.OnTransactionCompleted
+  nameWithType: StardogStore.OnTransactionCompleted
 - uid: Semiodesk.Trinity.Store.Stardog.StardogStore.Read(System.IO.Stream,System.Uri,Semiodesk.Trinity.RdfSerializationFormat,System.Boolean)
   name: Read(Stream, Uri, RdfSerializationFormat, Boolean)
   href: api/Semiodesk.Trinity.Store.Stardog.StardogStore.html#Semiodesk_Trinity_Store_Stardog_StardogStore_Read_System_IO_Stream_System_Uri_Semiodesk_Trinity_RdfSerializationFormat_System_Boolean_
@@ -6389,6 +6421,288 @@ references:
   isSpec: "True"
   fullName: Semiodesk.Trinity.StoreProviderMissingException.StoreProviderMissingException
   nameWithType: StoreProviderMissingException.StoreProviderMissingException
+- uid: Semiodesk.Trinity.Stores.Stardog
+  name: Semiodesk.Trinity.Stores.Stardog
+  href: api/Semiodesk.Trinity.Stores.Stardog.html
+  commentId: N:Semiodesk.Trinity.Stores.Stardog
+  fullName: Semiodesk.Trinity.Stores.Stardog
+  nameWithType: Semiodesk.Trinity.Stores.Stardog
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogTransaction
+  name: StardogTransaction
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.html
+  commentId: T:Semiodesk.Trinity.Stores.Stardog.StardogTransaction
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogTransaction
+  nameWithType: StardogTransaction
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.#ctor(VDS.RDF.Storage.StardogConnector)
+  name: StardogTransaction(StardogConnector)
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.html#Semiodesk_Trinity_Stores_Stardog_StardogTransaction__ctor_VDS_RDF_Storage_StardogConnector_
+  commentId: M:Semiodesk.Trinity.Stores.Stardog.StardogTransaction.#ctor(VDS.RDF.Storage.StardogConnector)
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.StardogTransaction(VDS.RDF.Storage.StardogConnector)
+  nameWithType: StardogTransaction.StardogTransaction(StardogConnector)
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.#ctor*
+  name: StardogTransaction
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.html#Semiodesk_Trinity_Stores_Stardog_StardogTransaction__ctor_
+  commentId: Overload:Semiodesk.Trinity.Stores.Stardog.StardogTransaction.#ctor
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.StardogTransaction
+  nameWithType: StardogTransaction.StardogTransaction
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.AddTripleCount
+  name: AddTripleCount
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.html#Semiodesk_Trinity_Stores_Stardog_StardogTransaction_AddTripleCount
+  commentId: P:Semiodesk.Trinity.Stores.Stardog.StardogTransaction.AddTripleCount
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.AddTripleCount
+  nameWithType: StardogTransaction.AddTripleCount
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.AddTripleCount*
+  name: AddTripleCount
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.html#Semiodesk_Trinity_Stores_Stardog_StardogTransaction_AddTripleCount_
+  commentId: Overload:Semiodesk.Trinity.Stores.Stardog.StardogTransaction.AddTripleCount
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.AddTripleCount
+  nameWithType: StardogTransaction.AddTripleCount
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.Commit
+  name: Commit()
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.html#Semiodesk_Trinity_Stores_Stardog_StardogTransaction_Commit
+  commentId: M:Semiodesk.Trinity.Stores.Stardog.StardogTransaction.Commit
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.Commit()
+  nameWithType: StardogTransaction.Commit()
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.Commit*
+  name: Commit
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.html#Semiodesk_Trinity_Stores_Stardog_StardogTransaction_Commit_
+  commentId: Overload:Semiodesk.Trinity.Stores.Stardog.StardogTransaction.Commit
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.Commit
+  nameWithType: StardogTransaction.Commit
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.Dispose
+  name: Dispose()
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.html#Semiodesk_Trinity_Stores_Stardog_StardogTransaction_Dispose
+  commentId: M:Semiodesk.Trinity.Stores.Stardog.StardogTransaction.Dispose
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.Dispose()
+  nameWithType: StardogTransaction.Dispose()
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.Dispose*
+  name: Dispose
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.html#Semiodesk_Trinity_Stores_Stardog_StardogTransaction_Dispose_
+  commentId: Overload:Semiodesk.Trinity.Stores.Stardog.StardogTransaction.Dispose
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.Dispose
+  nameWithType: StardogTransaction.Dispose
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.HasPendingChanges
+  name: HasPendingChanges
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.html#Semiodesk_Trinity_Stores_Stardog_StardogTransaction_HasPendingChanges
+  commentId: P:Semiodesk.Trinity.Stores.Stardog.StardogTransaction.HasPendingChanges
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.HasPendingChanges
+  nameWithType: StardogTransaction.HasPendingChanges
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.HasPendingChanges*
+  name: HasPendingChanges
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.html#Semiodesk_Trinity_Stores_Stardog_StardogTransaction_HasPendingChanges_
+  commentId: Overload:Semiodesk.Trinity.Stores.Stardog.StardogTransaction.HasPendingChanges
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.HasPendingChanges
+  nameWithType: StardogTransaction.HasPendingChanges
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.IsActive
+  name: IsActive
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.html#Semiodesk_Trinity_Stores_Stardog_StardogTransaction_IsActive
+  commentId: P:Semiodesk.Trinity.Stores.Stardog.StardogTransaction.IsActive
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.IsActive
+  nameWithType: StardogTransaction.IsActive
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.IsActive*
+  name: IsActive
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.html#Semiodesk_Trinity_Stores_Stardog_StardogTransaction_IsActive_
+  commentId: Overload:Semiodesk.Trinity.Stores.Stardog.StardogTransaction.IsActive
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.IsActive
+  nameWithType: StardogTransaction.IsActive
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.IsolationLevel
+  name: IsolationLevel
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.html#Semiodesk_Trinity_Stores_Stardog_StardogTransaction_IsolationLevel
+  commentId: P:Semiodesk.Trinity.Stores.Stardog.StardogTransaction.IsolationLevel
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.IsolationLevel
+  nameWithType: StardogTransaction.IsolationLevel
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.IsolationLevel*
+  name: IsolationLevel
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.html#Semiodesk_Trinity_Stores_Stardog_StardogTransaction_IsolationLevel_
+  commentId: Overload:Semiodesk.Trinity.Stores.Stardog.StardogTransaction.IsolationLevel
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.IsolationLevel
+  nameWithType: StardogTransaction.IsolationLevel
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.OnFinishedTransaction
+  name: OnFinishedTransaction
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.html#Semiodesk_Trinity_Stores_Stardog_StardogTransaction_OnFinishedTransaction
+  commentId: E:Semiodesk.Trinity.Stores.Stardog.StardogTransaction.OnFinishedTransaction
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.OnFinishedTransaction
+  nameWithType: StardogTransaction.OnFinishedTransaction
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.RemoveTripleCount
+  name: RemoveTripleCount
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.html#Semiodesk_Trinity_Stores_Stardog_StardogTransaction_RemoveTripleCount
+  commentId: P:Semiodesk.Trinity.Stores.Stardog.StardogTransaction.RemoveTripleCount
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.RemoveTripleCount
+  nameWithType: StardogTransaction.RemoveTripleCount
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.RemoveTripleCount*
+  name: RemoveTripleCount
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.html#Semiodesk_Trinity_Stores_Stardog_StardogTransaction_RemoveTripleCount_
+  commentId: Overload:Semiodesk.Trinity.Stores.Stardog.StardogTransaction.RemoveTripleCount
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.RemoveTripleCount
+  nameWithType: StardogTransaction.RemoveTripleCount
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.Rollback
+  name: Rollback()
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.html#Semiodesk_Trinity_Stores_Stardog_StardogTransaction_Rollback
+  commentId: M:Semiodesk.Trinity.Stores.Stardog.StardogTransaction.Rollback
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.Rollback()
+  nameWithType: StardogTransaction.Rollback()
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.Rollback*
+  name: Rollback
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.html#Semiodesk_Trinity_Stores_Stardog_StardogTransaction_Rollback_
+  commentId: Overload:Semiodesk.Trinity.Stores.Stardog.StardogTransaction.Rollback
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogTransaction.Rollback
+  nameWithType: StardogTransaction.Rollback
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter
+  name: StardogUpdateSparqlConverter
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.html
+  commentId: T:Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter
+  nameWithType: StardogUpdateSparqlConverter
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.#ctor
+  name: StardogUpdateSparqlConverter()
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.html#Semiodesk_Trinity_Stores_Stardog_StardogUpdateSparqlConverter__ctor
+  commentId: M:Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.#ctor
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.StardogUpdateSparqlConverter()
+  nameWithType: StardogUpdateSparqlConverter.StardogUpdateSparqlConverter()
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.#ctor(Semiodesk.Trinity.Store.Stardog.StardogStore)
+  name: StardogUpdateSparqlConverter(StardogStore)
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.html#Semiodesk_Trinity_Stores_Stardog_StardogUpdateSparqlConverter__ctor_Semiodesk_Trinity_Store_Stardog_StardogStore_
+  commentId: M:Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.#ctor(Semiodesk.Trinity.Store.Stardog.StardogStore)
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.StardogUpdateSparqlConverter(Semiodesk.Trinity.Store.Stardog.StardogStore)
+  nameWithType: StardogUpdateSparqlConverter.StardogUpdateSparqlConverter(StardogStore)
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.#ctor*
+  name: StardogUpdateSparqlConverter
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.html#Semiodesk_Trinity_Stores_Stardog_StardogUpdateSparqlConverter__ctor_
+  commentId: Overload:Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.#ctor
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.StardogUpdateSparqlConverter
+  nameWithType: StardogUpdateSparqlConverter.StardogUpdateSparqlConverter
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.Additions
+  name: Additions
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.html#Semiodesk_Trinity_Stores_Stardog_StardogUpdateSparqlConverter_Additions
+  commentId: P:Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.Additions
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.Additions
+  nameWithType: StardogUpdateSparqlConverter.Additions
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.Additions*
+  name: Additions
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.html#Semiodesk_Trinity_Stores_Stardog_StardogUpdateSparqlConverter_Additions_
+  commentId: Overload:Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.Additions
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.Additions
+  nameWithType: StardogUpdateSparqlConverter.Additions
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.GraphUri
+  name: GraphUri
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.html#Semiodesk_Trinity_Stores_Stardog_StardogUpdateSparqlConverter_GraphUri
+  commentId: P:Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.GraphUri
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.GraphUri
+  nameWithType: StardogUpdateSparqlConverter.GraphUri
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.GraphUri*
+  name: GraphUri
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.html#Semiodesk_Trinity_Stores_Stardog_StardogUpdateSparqlConverter_GraphUri_
+  commentId: Overload:Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.GraphUri
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.GraphUri
+  nameWithType: StardogUpdateSparqlConverter.GraphUri
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.LastParsedQuery
+  name: LastParsedQuery
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.html#Semiodesk_Trinity_Stores_Stardog_StardogUpdateSparqlConverter_LastParsedQuery
+  commentId: P:Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.LastParsedQuery
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.LastParsedQuery
+  nameWithType: StardogUpdateSparqlConverter.LastParsedQuery
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.LastParsedQuery*
+  name: LastParsedQuery
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.html#Semiodesk_Trinity_Stores_Stardog_StardogUpdateSparqlConverter_LastParsedQuery_
+  commentId: Overload:Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.LastParsedQuery
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.LastParsedQuery
+  nameWithType: StardogUpdateSparqlConverter.LastParsedQuery
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.ParseQuery(System.String)
+  name: ParseQuery(String)
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.html#Semiodesk_Trinity_Stores_Stardog_StardogUpdateSparqlConverter_ParseQuery_System_String_
+  commentId: M:Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.ParseQuery(System.String)
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.ParseQuery(System.String)
+  nameWithType: StardogUpdateSparqlConverter.ParseQuery(String)
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.ParseQuery*
+  name: ParseQuery
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.html#Semiodesk_Trinity_Stores_Stardog_StardogUpdateSparqlConverter_ParseQuery_
+  commentId: Overload:Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.ParseQuery
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.ParseQuery
+  nameWithType: StardogUpdateSparqlConverter.ParseQuery
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.PrimaryUri
+  name: PrimaryUri
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.html#Semiodesk_Trinity_Stores_Stardog_StardogUpdateSparqlConverter_PrimaryUri
+  commentId: P:Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.PrimaryUri
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.PrimaryUri
+  nameWithType: StardogUpdateSparqlConverter.PrimaryUri
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.PrimaryUri*
+  name: PrimaryUri
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.html#Semiodesk_Trinity_Stores_Stardog_StardogUpdateSparqlConverter_PrimaryUri_
+  commentId: Overload:Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.PrimaryUri
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.PrimaryUri
+  nameWithType: StardogUpdateSparqlConverter.PrimaryUri
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.Removals
+  name: Removals
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.html#Semiodesk_Trinity_Stores_Stardog_StardogUpdateSparqlConverter_Removals
+  commentId: P:Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.Removals
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.Removals
+  nameWithType: StardogUpdateSparqlConverter.Removals
+- uid: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.Removals*
+  name: Removals
+  href: api/Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.html#Semiodesk_Trinity_Stores_Stardog_StardogUpdateSparqlConverter_Removals_
+  commentId: Overload:Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.Removals
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.Removals
+  nameWithType: StardogUpdateSparqlConverter.Removals
+- uid: Semiodesk.Trinity.Stores.Stardog.StringExtensions
+  name: StringExtensions
+  href: api/Semiodesk.Trinity.Stores.Stardog.StringExtensions.html
+  commentId: T:Semiodesk.Trinity.Stores.Stardog.StringExtensions
+  fullName: Semiodesk.Trinity.Stores.Stardog.StringExtensions
+  nameWithType: StringExtensions
+- uid: Semiodesk.Trinity.Stores.Stardog.StringExtensions.Between(System.String,System.String,System.String,System.Int32)
+  name: Between(String, String, String, Int32)
+  href: api/Semiodesk.Trinity.Stores.Stardog.StringExtensions.html#Semiodesk_Trinity_Stores_Stardog_StringExtensions_Between_System_String_System_String_System_String_System_Int32_
+  commentId: M:Semiodesk.Trinity.Stores.Stardog.StringExtensions.Between(System.String,System.String,System.String,System.Int32)
+  fullName: Semiodesk.Trinity.Stores.Stardog.StringExtensions.Between(System.String, System.String, System.String, System.Int32)
+  nameWithType: StringExtensions.Between(String, String, String, Int32)
+- uid: Semiodesk.Trinity.Stores.Stardog.StringExtensions.Between(System.String,System.String,System.String,System.Int32@,System.Int32)
+  name: Between(String, String, String, out Int32, Int32)
+  href: api/Semiodesk.Trinity.Stores.Stardog.StringExtensions.html#Semiodesk_Trinity_Stores_Stardog_StringExtensions_Between_System_String_System_String_System_String_System_Int32__System_Int32_
+  commentId: M:Semiodesk.Trinity.Stores.Stardog.StringExtensions.Between(System.String,System.String,System.String,System.Int32@,System.Int32)
+  name.vb: Between(String, String, String, ByRef Int32, Int32)
+  fullName: Semiodesk.Trinity.Stores.Stardog.StringExtensions.Between(System.String, System.String, System.String, out System.Int32, System.Int32)
+  fullName.vb: Semiodesk.Trinity.Stores.Stardog.StringExtensions.Between(System.String, System.String, System.String, ByRef System.Int32, System.Int32)
+  nameWithType: StringExtensions.Between(String, String, String, out Int32, Int32)
+  nameWithType.vb: StringExtensions.Between(String, String, String, ByRef Int32, Int32)
+- uid: Semiodesk.Trinity.Stores.Stardog.StringExtensions.Between*
+  name: Between
+  href: api/Semiodesk.Trinity.Stores.Stardog.StringExtensions.html#Semiodesk_Trinity_Stores_Stardog_StringExtensions_Between_
+  commentId: Overload:Semiodesk.Trinity.Stores.Stardog.StringExtensions.Between
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Stores.Stardog.StringExtensions.Between
+  nameWithType: StringExtensions.Between
+- uid: Semiodesk.Trinity.Stores.Stardog.StringExtensions.BetweenSingleQuotes(System.String,System.Int32@)
+  name: BetweenSingleQuotes(String, out Int32)
+  href: api/Semiodesk.Trinity.Stores.Stardog.StringExtensions.html#Semiodesk_Trinity_Stores_Stardog_StringExtensions_BetweenSingleQuotes_System_String_System_Int32__
+  commentId: M:Semiodesk.Trinity.Stores.Stardog.StringExtensions.BetweenSingleQuotes(System.String,System.Int32@)
+  name.vb: BetweenSingleQuotes(String, ByRef Int32)
+  fullName: Semiodesk.Trinity.Stores.Stardog.StringExtensions.BetweenSingleQuotes(System.String, out System.Int32)
+  fullName.vb: Semiodesk.Trinity.Stores.Stardog.StringExtensions.BetweenSingleQuotes(System.String, ByRef System.Int32)
+  nameWithType: StringExtensions.BetweenSingleQuotes(String, out Int32)
+  nameWithType.vb: StringExtensions.BetweenSingleQuotes(String, ByRef Int32)
+- uid: Semiodesk.Trinity.Stores.Stardog.StringExtensions.BetweenSingleQuotes*
+  name: BetweenSingleQuotes
+  href: api/Semiodesk.Trinity.Stores.Stardog.StringExtensions.html#Semiodesk_Trinity_Stores_Stardog_StringExtensions_BetweenSingleQuotes_
+  commentId: Overload:Semiodesk.Trinity.Stores.Stardog.StringExtensions.BetweenSingleQuotes
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Stores.Stardog.StringExtensions.BetweenSingleQuotes
+  nameWithType: StringExtensions.BetweenSingleQuotes
 - uid: Semiodesk.Trinity.StringExtensions
   name: StringExtensions
   href: api/Semiodesk.Trinity.StringExtensions.html
@@ -6540,6 +6854,25 @@ references:
   isSpec: "True"
   fullName: Semiodesk.Trinity.UriRef.GetHashCode
   nameWithType: UriRef.GetHashCode
+- uid: Semiodesk.Trinity.Urn
+  name: Urn
+  href: api/Semiodesk.Trinity.Urn.html
+  commentId: T:Semiodesk.Trinity.Urn
+  fullName: Semiodesk.Trinity.Urn
+  nameWithType: Urn
+- uid: Semiodesk.Trinity.Urn.#ctor(System.String)
+  name: Urn(String)
+  href: api/Semiodesk.Trinity.Urn.html#Semiodesk_Trinity_Urn__ctor_System_String_
+  commentId: M:Semiodesk.Trinity.Urn.#ctor(System.String)
+  fullName: Semiodesk.Trinity.Urn.Urn(System.String)
+  nameWithType: Urn.Urn(String)
+- uid: Semiodesk.Trinity.Urn.#ctor*
+  name: Urn
+  href: api/Semiodesk.Trinity.Urn.html#Semiodesk_Trinity_Urn__ctor_
+  commentId: Overload:Semiodesk.Trinity.Urn.#ctor
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Urn.Urn
+  nameWithType: Urn.Urn
 - uid: Semiodesk.Trinity.VirtualizingSparqlCollection`1
   name: VirtualizingSparqlCollection<T>
   href: api/Semiodesk.Trinity.VirtualizingSparqlCollection-1.html
