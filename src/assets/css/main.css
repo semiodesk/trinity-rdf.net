@@ -50,7 +50,7 @@ blockquote:before {
   font-weight: 900;
   position: absolute;
   top: 0;
-  color: #e8e8e8;
+  color: #4a4a4a;
   font-size: 34px;
   content: "\f10d";
   right: 100%;
@@ -476,7 +476,7 @@ a.text-dark:focus {
   top: 0;
   bottom: 0;
   z-index: 0;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgb(243, 233, 245) 100%);
+  background-image: linear-gradient(to bottom, #fff 0%, #eee 80%);
 }
 
 .masthead-content {
@@ -567,11 +567,11 @@ pre code.cs .type {
 
 .bg-gray,
 .bg-gray .hljs {
-  background-color: rgb(243, 233, 245);
+  background-color: #eee;
 }
 
 .bg-gray-light {
-  background-color: rgb(246, 239, 248);
+  background-color: #f3f3f3;
 }
 
 .bg-gray-dark {

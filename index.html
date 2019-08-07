@@ -196,7 +196,7 @@ public class Person : Resource
 }
                   </code></pre>
                   <pre><code class="cs">// Create a new instance of person with a GUID
-var p = model.CreateResource&lt;<span class="type">Person</span>&gt;();
+var p = Context.CreateResource&lt;<span class="type">Person</span>&gt;();
 p.Name = "John Doe";
 p.Birthday = new <span class="type">DateTime</span>(1985, 6, 17);
 p.Commit();
@@ -222,7 +222,7 @@ p.Commit();
                 <div class="col-lg-6">
                   <pre><code class="cs">// Create a queryable context with inferencing enabled so that the
 // query also returns instances of sub-types of person.
-var persons = model.AsQueryable&lt;<span class="type">Person</span>&gt;(true);
+var persons = Context.AsQueryable&lt;<span class="type">Person</span>&gt;(true);
 
 // Select all persons born after 1st January 2000 and
 // who have a name starting with "A" or "a".
@@ -290,8 +290,8 @@ public class Person : Resource
                   >
                 </div>
                 <div class="col-lg-6">
-                  <pre><code class="cs">// Load 100 items per page
-var persons = model.AsQueryable&lt;<b class="type">Person</b>&gt;();
+                  <pre><code class="cs">
+var persons = Context.AsQueryable&lt;<b class="type">Person</b>&gt;();
 
 // Load 10 persons per page.
 var pageSize = 10;
