@@ -11,27 +11,27 @@ $(document).ready(function() {
   new SmoothScroll('a[href*="#"]', {speed:333});
 
   // Initialize the contact form.
-  const form = $("#contact-form");
+  const form = $("#form-contact");
 
   if (form) {
     $(".form-status-sending").css("display", "none");
     $(".form-status-ok").css("display", "none");
     $(".form-status-error").css("display", "none");
-
-    $('.btn-submit').click(function(e) {
-      form.submit();
-    });
     
     form.submit(function(e) {
       e.preventDefault();
 
       // Prepare data to send
-      const data = {};
-      const formElements = Array.from(form);
-      formElements.map(input => (data[input.name] = input.value));
+      data = {
+        name: form.find("#name").val(),
+        email: form.find("#email").val(),
+        organization: form.find("#organization").val(),
+        subject: form.find("#subject").val(),
+        message: form.find("#message").val()
+      };
 
       // Log what our lambda function will receive
-      console.log(JSON.stringify(data));
+      console.warn(data, JSON.stringify(data));
 
       $(".btn-submit").prop("disabled", true);
       $(".form-status-sending").css("display", "block");

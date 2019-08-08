@@ -592,10 +592,13 @@ pre code.cs .type {
 }
 
 .form-status-msg {
-  background: #efefef;
-  border-radius: 5px;
+  font-size: .9em;
   padding: 5px;
   margin-bottom: 3px;
+}
+
+.form-status-msg b {
+  font-weight: 500;
 }
 
 .form-status-sending {
@@ -751,6 +754,34 @@ pre code.cs .type {
 }
 
 /* DocFX */
+#form-contact {
+  min-width: 450px;
+}
+
 .navbar-docfx .navbar-nav {
   float: right;
+}
+
+.input-group-text,
+input.form-control,
+textarea.form-control {
+  background: #eee;
+  border: none;
+  border-radius: 0;
+}
+
+.input-group-text img {
+  opacity: .5;
+}
+
+input.is-invalid,
+textarea.is-invalid {
+  border: 1px solid #BB3417 !important;
+  background-image: none !important ;
+}
+
+.form-control.is-invalid ~ .invalid-feedback {
+  color: #BB3417;
+  display: inline;
+  margin-right: .5em;
 }

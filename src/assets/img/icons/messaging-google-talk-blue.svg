@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Outline_Version"
+   data-name="Outline Version"
+   viewBox="0 0 24 24"
+   version="1.1"
+   sodipodi:docname="messaging-google-talk-blue.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata13">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>messaging-google-talk</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs11" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="3840"
+     inkscape:window-height="2004"
+     id="namedview9"
+     showgrid="false"
+     inkscape:zoom="9.8333333"
+     inkscape:cx="41.073199"
+     inkscape:cy="12"
+     inkscape:window-x="-16"
+     inkscape:window-y="-16"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Outline_Version" />
+  <title
+     id="title2">messaging-google-talk</title>
+  <path
+     d="M12,.86C5.38.86,0,5.31,0,10.79a9,9,0,0,0,3.41,6.93c0,1.23-.74,2.62-2.33,4.13a.75.75,0,0,0,.78,1.25c3.28-1.21,7-2.48,7.65-2.6a14.63,14.63,0,0,0,2.49.21c6.62,0,12-4.45,12-9.93S18.62.86,12,.86Zm0,18.36A13.12,13.12,0,0,1,9.69,19c-.2,0-.6-.11-5.72,1.72a5.14,5.14,0,0,0,.9-3.49.75.75,0,0,0-.27-.48,7.64,7.64,0,0,1-3.09-6C1.5,6.14,6.21,2.36,12,2.36s10.5,3.78,10.5,8.43S17.79,19.21,12,19.21Z"
+     id="path4"
+     style="fill:#119eda;fill-opacity:1" />
+  <path
+     d="M14.06,4.07a.75.75,0,0,0-.3,1.47c3.13.64,5.32,2.89,5.32,5.46a5.23,5.23,0,0,1-2.35,4.19.75.75,0,1,0,.87,1.22,6.7,6.7,0,0,0,3-5.41C20.58,7.7,17.9,4.85,14.06,4.07Z"
+     id="path6"
+     style="fill:#119eda;fill-opacity:1" />
+</svg>
