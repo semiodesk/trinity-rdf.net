@@ -375,7 +375,9 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
 
         <div class="text-center text-muted mt-5">
           <p>Your store is not listed?</p>
-          <a class="btn btn-primary btn-xl btn-contact" href="#triplestores">Contact us</a>
+          <a class="btn btn-primary btn-xl btn-contact" href="#triplestores">
+            <i class="fas fa-comment mr-3"></i><span class="btn-label">Contact us</span>
+          </a>
         </div>
       </div>
     </section>
@@ -445,13 +447,13 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
       <div class="container">
         <div class="d-flex justify-content-center">
           <div class="quote" data-aos="fade-down">
-            <blockquote>
+            <blockquote class="brand-se">
               Our desire was for our developers to not need to write SPARQL queries, and the ORM enabled by Trinity has
               helped us to achieve this goal.
             </blockquote>
             <div class="author">
               <h5 class="name">Brett Leida</h5>
-              <small class="role">Systems Architect at Schneider Electric</small>
+              <small class="role">Systems Architect, Schneider Electric</small>
             </div>
           </div>
         </div>
@@ -495,6 +497,15 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
                   window.
                 </p>
               </div>
+            </div>
+
+            <h5 class="mt-4">Download Example</h5>
+            <p>If you are new to Trinity RDF, just download our example app which helps you to get started quickly.</p>
+
+            <div class="text-center">
+              <a class="btn btn-xl btn-primary my-3" href="/assets/downloads/TrinityExample-1.0.0.zip">
+                <i class="fas fa-download mr-3"></i><span class="btn-label">Download Example</span>
+              </a>
             </div>
           </div>
           <div class="modal-footer d-flex flex-column justify-content-start align-items-start bg-gray">
