@@ -30,9 +30,6 @@ $(document).ready(function() {
         message: form.find("#message").val()
       };
 
-      // Log what our lambda function will receive
-      console.warn(data, JSON.stringify(data));
-
       $(".btn-submit").prop("disabled", true);
       $(".form-status-sending").css("display", "block");
       $(".form-status-ok").css("display", "none");
