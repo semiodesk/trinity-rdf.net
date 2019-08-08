@@ -640,16 +640,20 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
 
     <script src="https://static.semiodesk.com/semiodesk.trinity/release/stable/currentVersion.php"></script>
 
+    <!-- Scroll Animations -->
     <script>
-      AOS.init({
-        easing: "ease-out-back"
-      });
+      AOS.init({ easing: "ease-out-back" });
+    </script>
 
+    <!-- Features Slider -->
+    <script>
       $("#features-slider").ready(function() {
         hljs.initHighlighting();
       });
+    </script>
 
-      // CONTACT FORM
+    <!-- Contact Dialog -->
+    <script>
       $(".btn-contact").click(function(e) {
         e.preventDefault();
 
@@ -660,19 +664,28 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
         $("#name").focus();
       });
 
+      bootstrapValidate("#name", "min:5:Enter at least 5 characters.");
+      bootstrapValidate("#email", "email:Enter a valid e-mail address.");
+      bootstrapValidate("#organization", "min:2:Enter at least 2 characters.");
+      bootstrapValidate("#subject", "min:3:Enter at least 3 characters.");
+      bootstrapValidate("#message", "min:3:Enter at least 3 characters.");
+    </script>
+
+    <!-- Download Dialog -->
+    <script>
+      // Clear the contents of the code block so typed.js does not go crazy.
+      $("#nuget").text("");
+
       $(".btn-download").click(function(e) {
         e.preventDefault();
 
         $("#modal-download").modal("show");
       });
 
-      $("#nuget").text("");
-
       var typed;
 
       $("#modal-download").on("shown.bs.modal", function() {
         if (!typed) {
-          // Clear the contents of the code block so typed.js does not go crazy.
           typed = new Typed("#nuget", {
             strings: ["PM> Install-Package Semiodesk.Trinity"],
             typeSpeed: 20,
@@ -680,12 +693,6 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
           });
         }
       });
-
-      bootstrapValidate("#name", "min:5:Enter at least 5 characters.");
-      bootstrapValidate("#email", "email:Enter a valid e-mail address.");
-      bootstrapValidate("#organization", "min:2:Enter at least 2 characters.");
-      bootstrapValidate("#subject", "min:3:Enter at least 3 characters.");
-      bootstrapValidate("#message", "min:3:Enter at least 3 characters.");
     </script>
 
     <script type="application/ld+json">
