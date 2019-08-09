@@ -69,7 +69,7 @@ $(document).ready(function() {
         callback(true, response.target.response);
       };
 
-      xhr.open(form.method, form.action, true);
+      xhr.open(form.attr('method'), form.attr('action'), true);
       xhr.setRequestHeader("Accept", "application/json; charset=utf-8");
       xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
 
