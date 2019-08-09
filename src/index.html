@@ -99,7 +99,9 @@
                 <li>
                   <i class="fa-li fa fa-check text-blue"></i> <span class="fw-500">Shallow Learning Curve</span>
                 </li>
-                <li><i class="fa-li fa fa-check text-blue"></i> <span class="fw-500">LINQ</span></li>
+                <li>
+                  <i class="fa-li fa fa-check text-blue"></i> <span class="fw-500">LINQ</span>
+                </li>
               </ul>
             </div>
           </div>
@@ -114,7 +116,9 @@
                 which have not been explicitly saved.
               </p>
               <ul class="fa-ul mt-3">
-                <li><i class="fa-li fa fa-check text-blue"></i> <span class="fw-500">Logical Reasoning</span></li>
+                <li>
+                  <i class="fa-li fa fa-check text-blue"></i> <span class="fw-500">Logical Reasoning</span>
+                </li>
                 <li>
                   <i class="fa-li fa fa-check text-blue"></i> <span class="fw-500">Write Simpler Queries</span>
                 </li>
@@ -140,9 +144,11 @@
                 </li>
                 <li>
                   <i class="fa-li fa fa-check text-blue"></i>
-                  <span class="fw-500">Standardized RDF Graph Technology</span>
+                  <span class="fw-500">Standardized Graph Technology</span>
                 </li>
-                <li><i class="fa-li fa fa-check text-blue"></i> <span class="fw-500">Vendor Independent</span></li>
+                <li>
+                  <i class="fa-li fa fa-check text-blue"></i> <span class="fw-500">Vendor Independent</span>
+                </li>
               </ul>
             </div>
           </div>
@@ -647,7 +653,6 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
     <!--build:js assets/js/main.min.js -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="node_modules/bootstrap-validate/dist/bootstrap-validate.js"></script>
     <script src="node_modules/smooth-scroll/dist/smooth-scroll.js"></script>
     <script src="node_modules/typed.js/lib/typed.js"></script>
     <script src="node_modules/aos/dist/aos.js"></script>
@@ -680,12 +685,6 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
       $("#modal-contact").on("shown.bs.modal", function() {
         $("#name").focus();
       });
-
-      bootstrapValidate("#name", "min:5:Enter at least 5 characters.");
-      bootstrapValidate("#email", "email:Enter a valid e-mail address.");
-      bootstrapValidate("#organization", "min:2:Enter at least 2 characters.");
-      bootstrapValidate("#subject", "min:3:Enter at least 3 characters.");
-      bootstrapValidate("#message", "min:3:Enter at least 3 characters.");
     </script>
 
     <!-- Download Dialog -->
