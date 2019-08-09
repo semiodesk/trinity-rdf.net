@@ -14,7 +14,7 @@ gulp.task("compact-useref", function() {
     .pipe(useref())
     .pipe(gulpIf("*.js", uglify()))
     .pipe(gulpIf("*.css", cssnano()))
-    .pipe(gulpIf("*.css", replace('../../fonts/roboto/', '../assets/webfonts/')))
+    .pipe(gulpIf("*.css", replace('../../fonts/roboto/', '../../assets/webfonts/')))
     .pipe(gulp.dest(".."));
 });
 
