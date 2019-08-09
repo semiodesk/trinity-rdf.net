@@ -6,6 +6,7 @@ var gulpIf = require("gulp-if");
 var cssnano = require("gulp-cssnano");
 var imagemin = require("gulp-imagemin");
 var cache = require("gulp-cache");
+var replace = require("gulp-replace");
 
 gulp.task("compact-useref", function() {
   return gulp
@@ -13,15 +14,13 @@ gulp.task("compact-useref", function() {
     .pipe(useref())
     .pipe(gulpIf("*.js", uglify()))
     .pipe(gulpIf("*.css", cssnano()))
+    .pipe(gulpIf("*.css", replace('../../fonts/roboto/', '../assets/webfonts/')))
     .pipe(gulp.dest(".."));
 });
 
 gulp.task("copy-fonts", function() {
   gulp
     .src("node_modules/roboto-fontface/fonts/roboto/*.{ttf,woff,woff2,eof,svg}")
-    .pipe(gulp.dest("../assets/webfonts/"));
-  gulp
-    .src("node_modules/roboto-fontface/fonts/roboto-slab/*.{ttf,woff,woff2,eof,svg}")
     .pipe(gulp.dest("../assets/webfonts/"));
   return gulp
     .src("node_modules/@fortawesome/fontawesome-free/webfonts/*.{ttf,woff,woff2,eof,svg}")
