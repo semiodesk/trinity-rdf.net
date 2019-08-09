@@ -24,7 +24,7 @@ $(document).ready(function() {
       // Prepare data to send
       data = {
         name: form.find("#name").val(),
-        email: form.find("#email").val(),
+        reply_to: form.find("#email").val(),
         organization: form.find("#organization").val(),
         subject: form.find("#subject").val(),
         message: form.find("#message").val()
@@ -46,8 +46,6 @@ $(document).ready(function() {
           $(".form-status-sending").css("display", "none");
           $(".form-status-ok").css("display", "block");
           $(".form-status-error").css("display", "none");
-
-          form.reset();
         }
       });
     });
