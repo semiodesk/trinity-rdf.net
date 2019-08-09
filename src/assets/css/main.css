@@ -601,14 +601,6 @@ pre code.cs .type {
   font-weight: 500;
 }
 
-.form-status-sending {
-  background: #efefef;
-}
-
-.form-status-ok {
-  background: #efefef;
-}
-
 .form-status-ok .fas {
   color: #76b041;
 }
@@ -755,7 +747,8 @@ pre code.cs .type {
 
 /* DocFX */
 #form-contact {
-  min-width: 450px;
+  width: 100%;
+  max-width: 450px;
 }
 
 .navbar-docfx .navbar-nav {
