@@ -72,7 +72,8 @@ $(document).ready(function() {
       xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
 
       // Send the collected data as JSON
-      xhr.send(JSON.stringify(data));
+      //xhr.send(JSON.stringify(data));
+      xhr.send("{ email: 'sebastian@semiodesk.com'");
     };
   }
 });
