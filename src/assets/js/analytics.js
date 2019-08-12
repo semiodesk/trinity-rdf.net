@@ -1,4 +1,4 @@
-var property = 'UA-121854370-1';
+var property = 'UA-121854370-2';
 
 window.dataLayer = window.dataLayer || [];
 
@@ -26,13 +26,13 @@ var gaOptOut = function() {
 }
 
 var hidePrivacyNotice = function() {
-    $('#privacy-notice').hide();
+  $('#privacy-notice').hide();
 }
 
 var showPrivacyNotice = function() {
-    $('#privacy-notice').show();
+  $('#privacy-notice').show();
 }
     
 if(document.cookie.indexOf(disableStr) == -1) {
-    showPrivacyNotice();
+  showPrivacyNotice();
 }
