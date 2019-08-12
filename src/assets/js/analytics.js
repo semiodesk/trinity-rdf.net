@@ -1,4 +1,4 @@
-var property = 'UA-121854370-2';
+var property = 'UA-145472631-1';
 
 window.dataLayer = window.dataLayer || [];
 
