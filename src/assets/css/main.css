@@ -73,6 +73,16 @@ blockquote.brand-se:before {
 }
 
 h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.text-brand {
+  font-family: myriad-pro, sans-serif;
+}
+
+h1,
 h2 {
   color: #333;
 }
@@ -394,6 +404,10 @@ a.text-dark:focus {
   color: white;
 }
 
+#mainNav .navbar-brand .text-brand {
+  font-size: 1.2em;
+}
+
 #mainNav .navbar-collapse {
   width: 200px;
   margin-left: auto;
@@ -521,7 +535,7 @@ a.text-dark:focus {
   }
 
   .masthead h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     max-width: 25em;
     margin-top: 100px;
   }
