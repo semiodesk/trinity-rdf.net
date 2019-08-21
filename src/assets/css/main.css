@@ -357,6 +357,13 @@ a.text-dark:focus {
   box-shadow: 0 0 0 0.2rem rgba(246, 122, 88, 0.5);
 }
 
+.btn-round {
+  border-radius: 50%;
+  width: auto;
+  height: auto;
+  padding: 15px;
+}
+
 .btn-white {
   color: #984caa;
   background-color: #fff;

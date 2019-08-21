@@ -510,20 +510,18 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
       <div class="modal-dialog modal-dialog-centered">
         <form id="form-contact" role="form" action="https://contact.modom.io/form/send" method="post">
           <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header flex-column">
               <div class="d-flex flex-row justify-content-start align-items-center w-100">
                 <img src="assets/img/icons/headphones-customer-support-human-purple.svg" class="mr-3" width="32" />
                 <h5 class="modal-title text-primary w-100">Contact</h5>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
-            </div>
-            <div class="modal-body">
-              <div class="show-toggled text-muted mb-4">
-                Use this contact form below to send a message to
-                <a href="https://semiodesk.com" target="_blank">Semiodesk</a>. Our usual response time is 1-2 business
+              <div class="text-muted my-3">
+                Use this contact form below to send a message to Semiodesk. Our usual response time is 1-2 business
                 days.
               </div>
-
+            </div>
+            <div class="modal-body">
               <div class="form-group">
                 <label class="sr-only" for="name">Name</label>
                 <input type="name" class="form-control" id="name" placeholder="Name" required />
@@ -583,11 +581,18 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
                   </div>
                 </div>
               </div>
+              <div class="float-right">
+                <button type="submit" class="btn btn-primary btn-round">
+                  <img src="assets/img/icons/send-email.svg" width="24" alt="Send" />
+                </button>
+              </div>
             </div>
             <div class="modal-footer">
-              <button type="submit" class="btn btn-primary btn-submit px-5 ml-auto mr-auto">
-                <img src="assets/img/icons/send-email.svg" width="24" alt="Send" />
-              </button>
+              <div class="d-flex flex-row justify-content-center align-items-center w-100">
+                <a href="https://semiodesk.com" target="_blank"
+                  ><img src="assets/img/semiodesk-black.svg" style="opacity: .3" width="150" alt="Semiodesk"
+                /></a>
+              </div>
             </div>
           </div>
         </form>
