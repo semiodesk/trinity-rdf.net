@@ -4,11 +4,55 @@ $(document).ready(function() {
     $(e.currentTarget).toggleClass("is-active");
   });
 
-  // Set the trinity version in the header.
-  $(".trinity-version").text(version);
-
   // Enable smooth scrolling.
-  new SmoothScroll('a[href*="#"]', {speed:333});
+  new SmoothScroll('a[href*="#"]', { speed: 333 });
+
+  // Send an HTTP request.
+  var sendRequest = function(method, url, data, callback) {
+    // Construct an HTTP request
+    var xhr = new XMLHttpRequest();
+
+    // Callback function
+    xhr.onloadend = response => {
+      if (response.target.status === 200) {
+        callback(false, response.target.response);
+      } else {
+        callback(true, response.target.response);
+      }
+    };
+
+    xhr.onerror = response => {
+      callback(true, response.target.response);
+    };
+
+    xhr.open(method, url, true);
+    xhr.setRequestHeader("Accept", "application/json; charset=utf-8");
+    xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+
+    if (data) {
+      // Send the collected data as JSON
+      xhr.send(JSON.stringify(data));
+    } else {
+      xhr.send();
+    }
+  };
+
+  // Retrieve latest Trinity version from NuGet.
+  sendRequest(
+    "GET",
+    "https://api.nuget.org/v3/registration3-gz-semver2/semiodesk.trinity/index.json",
+    undefined,
+    function(err, response) {
+      if (response) {
+        var catalog = JSON.parse(response);
+
+        if (catalog.items && catalog.items.length > 0) {
+          // Set the Trinity RDF version number.
+          $(".trinity-version").text(catalog.items[0].upper);
+        }
+      }
+    }
+  );
 
   // Initialize the contact form.
   const form = $("#form-contact");
@@ -17,7 +61,7 @@ $(document).ready(function() {
     $(".form-status-sending").css("display", "none");
     $(".form-status-ok").css("display", "none");
     $(".form-status-error").css("display", "none");
-    
+
     form.submit(function(e) {
       e.preventDefault();
 
@@ -35,7 +79,10 @@ $(document).ready(function() {
       $(".form-status-ok").css("display", "none");
       $(".form-status-error").css("display", "none");
 
-      sendEmail(data, function(err, response) {
+      var method = form.attr("method");
+      var url = form.attr("action");
+
+      sendRequest(method, url, data, function(err, response) {
         if (err) {
           $(".btn-submit").prop("disabled", false);
           $(".form-status-sending").css("display", "none");
@@ -49,30 +96,5 @@ $(document).ready(function() {
         }
       });
     });
-
-    var sendEmail = function(data, callback) {
-      // Construct an HTTP request
-      var xhr = new XMLHttpRequest();
-
-      // Callback function
-      xhr.onloadend = response => {
-        if (response.target.status === 200) {
-          callback(false, response.target.response);
-        } else {
-          callback(true, response.target.response);
-        }
-      };
-
-      xhr.onerror = response => {
-        callback(true, response.target.response);
-      };
-
-      xhr.open(form.attr('method'), form.attr('action'), true);
-      xhr.setRequestHeader("Accept", "application/json; charset=utf-8");
-      xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
-
-      // Send the collected data as JSON
-      xhr.send(JSON.stringify(data));
-    };
   }
 });

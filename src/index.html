@@ -319,11 +319,11 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
         <h6 class="text-center text-muted mt-4 mb-4">Supported Databases</h6>
         <table class="bg-gray mt-4" data-aos="flip-left">
           <thead>
-            <th class="d-none d-sm-table-caption">Name</th>
-            <th class="d-none d-sm-table-caption">Inferencing</th>
-            <th class="d-none d-sm-table-caption">Clusterable</th>
-            <th class="d-none d-sm-table-caption">Transactions</th>
-            <th class="d-none d-sm-table-caption">License</th>
+            <th class="d-none d-sm-table-cell">Name</th>
+            <th class="d-none d-sm-table-cell">Inferencing</th>
+            <th class="d-none d-sm-table-cell">Clusterable</th>
+            <th class="d-none d-sm-table-cell">Transactions</th>
+            <th class="d-none d-sm-table-cell">License</th>
           </thead>
           <tr>
             <td class="text-center text-sm-left">
@@ -346,7 +346,7 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
             </td>
             <td class="d-none d-sm-table-cell"><i class="fas fa-check"></i></td>
             <td class="d-none d-sm-table-cell"><i class="fas fa-check"></i></td>
-            <td class="d-none d-sm-table-cell"><i class="fas fa-check"></i></td>
+            <td class="d-none d-sm-table-cell"><i class="fas fa-times"></i></td>
             <td class="d-none d-sm-table-cell">
               <a href="https://opensource.org/licenses/GPL-2.0" target="_blank">GPL 2.0</a>, Commercial
             </td>
@@ -661,8 +661,6 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
     <script src="assets/js/main.js"></script>
     <script src="assets/js/analytics.js"></script>
     <!--endbuild -->
-
-    <script src="https://static.semiodesk.com/semiodesk.trinity/release/stable/currentVersion.php"></script>
 
     <!-- Scroll Animations -->
     <script>
