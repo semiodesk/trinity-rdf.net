@@ -65,6 +65,12 @@ $(document).ready(function() {
     form.submit(function(e) {
       e.preventDefault();
 
+      if(gtag) {
+        gtag("event", "generate_lead", {
+          event_category: "engagement"
+        });
+      }
+
       // Prepare data to send
       data = {
         name: form.find("#name").val(),

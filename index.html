@@ -172,7 +172,7 @@
                     on introspection.
                   </p>
                   <a class="btn btn-primary btn-xl my-4" href="/assets/downloads/TrinityExample-1.0.0.zip"
-                    ><i class="fas fa-download mr-3"></i> Download Example</a
+                    ><i class="fas fa-download btn-download-example mr-3"></i> Download Example</a
                   >
                 </div>
                 <div class="col-lg-6">
@@ -211,7 +211,7 @@ p.Commit();
                     joins attached!
                   </p>
                   <a class="btn btn-primary btn-xl my-4" href="/assets/downloads/TrinityExample-1.0.0.zip"
-                    ><i class="fas fa-download mr-3"></i> Download Example</a
+                    ><i class="fas fa-download btn-download-example mr-3"></i> Download Example</a
                   >
                 </div>
                 <div class="col-lg-6">
@@ -245,7 +245,7 @@ foreach (<span class="type">Person</span> p in persons.Where(
                     do the heavy lifting for you.
                   </p>
                   <a class="btn btn-primary btn-xl my-4" href="/assets/downloads/TrinityExample-1.0.0.zip"
-                    ><i class="fas fa-download mr-3"></i> Download Example</a
+                    ><i class="fas fa-download btn-download-example mr-3"></i> Download Example</a
                   >
                 </div>
                 <div class="col-lg-6">
@@ -281,7 +281,7 @@ public class Person : Resource
                     has built-in support for paging if you are creating more advanced queries.
                   </p>
                   <a class="btn btn-primary btn-xl my-4" href="/assets/downloads/TrinityExample-1.0.0.zip"
-                    ><i class="fas fa-download mr-3"></i> Download Example</a
+                    ><i class="fas fa-download btn-download-example mr-3"></i> Download Example</a
                   >
                 </div>
                 <div class="col-lg-6">
@@ -490,7 +490,7 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
             <p>If you are new to Trinity RDF, just download our example app which helps you to get started quickly.</p>
 
             <div class="text-center">
-              <a class="btn btn-xl btn-primary my-3" href="/assets/downloads/TrinityExample-1.0.0.zip">
+              <a class="btn btn-xl btn-primary btn-download-example my-3" href="/assets/downloads/TrinityExample-1.0.0.zip">
                 <i class="fas fa-download mr-3"></i><span class="btn-label">Download Example</span>
               </a>
             </div>
@@ -676,6 +676,12 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
       $(".btn-contact").click(function(e) {
         e.preventDefault();
 
+        if(gtag) {
+          gtag("event", "focus", {
+            event_category: "contact"
+          });
+        }
+
         $("#modal-contact").modal("show");
       });
 
@@ -692,7 +698,22 @@ foreach (<b class="type">Person</b> p in persons.Skip(1 * pageSize).Take(pageSiz
       $(".btn-download").click(function(e) {
         e.preventDefault();
 
+        if(gtag) {
+          gtag("event", "open-dialog", {
+            event_category: "content"
+          });
+        }
+
         $("#modal-download").modal("show");
+      });
+
+      $(".btn-download-example").click(function(e) {
+        if(gtag) {
+          gtag("event", "download", {
+            event_category: "content",
+            event_label: "example"
+          });
+        }
       });
 
       var typed;
