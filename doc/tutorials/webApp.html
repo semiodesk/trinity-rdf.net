@@ -29,7 +29,7 @@
         	<div class="container-fluid">
         		<div class="d-flex flex-row">
         			<a class="navbar-brand" data-scroll="" href="/">
-        				<img id="logo" src="/images/logo.svg" width="48" height="48" alt="Trinity RDF"> Trinity RDF
+        				<img id="logo" src="/doc/images/logo.svg" width="48" height="48" alt="Trinity RDF"> Trinity RDF
         			</a>
         			<div class="d-flex align-items-center w-100" id="navbar">
         				<form class="navbar-form navbar-right" role="search" id="search">
@@ -75,7 +75,7 @@
 
 <p><strong>IMPORTANT:</strong> This example was written for an older version of Semiodesk.Trinity and might not be compatible with the current release.</p>
 <p>This example demonstrate how to use Semiodesk Trinity with ASP.NET MVC 5 and SignalR. The resulting application is able to generate random people and connections between them. The web page visualizes the dependencies in a graph with <a href="https://d3js.org/">D3js</a>.</p>
-<p><img src="/images/examples/webApp/1927643689-result.png" alt="result.png"></p>
+<p><img src="../images/examples/webApp/1927643689-result.png" alt="result.png"></p>
 <p>You can download the finished example from<br><a href="http://static.semiodesk.com/semiodesk.trinity/examples/0.9/WebApp.zip">http://static.semiodesk.com/semiodesk.trinity/examples/0.9/WebApp.zip</a></p>
 <p>Because of the way NuGet works, you have to add the Semiodesk Trinity packages manually.  Open the Nuget Package Manager console (&quot;Tools&quot; -&gt; &quot;NuGet Package Manager&quot; -&gt; &quot;Package Manager Console&quot;) and install Semiodesk.Trinity.Modelling to the DataModel Project and Semiodesk.Trinity.Core to the EbApp.</p>
 <pre><code>#!
@@ -100,7 +100,7 @@ public IEnumerable&lt;Uri&gt; knows
 <h2 id="displaying-the-data">Displaying the Data</h2>
 <p>The actual data is not rendered directly to html, but queried by the Javascript code that is deployed using ASP.NET. Creating a data backend is very easy using the aforementioned repository pattern and <a href="http://signalr.net/">SignalR</a>. This has the advantage that the data can be loaded asynchronously, while the web page is already displayed.</p>
 <p>The following diagram shows the full process how the data is acquired.
-<img src="/images/examples/webApp/698958943-process.png" alt="process.png"></p>
+<img src="../images/examples/webApp/698958943-process.png" alt="process.png"></p>
 <p>The result is then transformed to create a visualisation with D3.</p>
 <h2 id="checklist">Checklist</h2>
 <p>Things to consider when you build a new project with ASP.NET and Trinity:</p>
