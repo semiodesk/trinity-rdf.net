@@ -89,8 +89,12 @@ need to be easily accessible from native .NET languages. If you are using the <c
 package you are ready to go.</p>
 <h3 id="ontology-constants">Ontology Constants</h3>
 <p>In a pre-compilation step, our framework generates a C# representation of your ontologies in a file named 
-<code><em>obj/ontologies.g.cs</em></code>. 
-It creates classes for each ontology configured in <code>App.config</code>. These classes contain basic information 
+<code><em>Ontologies/Ontologies.g.cs</em></code>. </p>
+<p>Make sure to register the assembly containing the ontologies by calling one of the following methods.</p>
+<pre><code>OntologyDiscovery.RegisterCallingAssembly();
+// OR
+OntologyDiscovery.AddAssembly(Assembly.GetAssembly(typeof(rdf)));
+</code></pre><p>The generated file creates classes for each ontology configured in <code>ontologies.config</code>. These classes contain basic information 
 about the ontology:</p>
 <pre><code>// Default ontology namespace prefix (i.e. &quot;schema&quot;).
 string prefix = schema.Prefix;
@@ -106,28 +110,30 @@ string personUriString = SCHEMA.Person;
 </code></pre><p>These constants can then be used to create queries, add values to resources or create mappings.</p>
 <p>The convention is that lower case ontology classes (e.g. rdf) contains the Class and Property instances, 
 upper case classes (e.g. RDF) contains the string representations neccessary for the attributes.</p>
-<p>The generation of the ontolgies can be configured in the <code>App.config</code> file:</p>
-<pre><code>&lt;configuration&gt;
-  ...
-  &lt;configSections&gt;
-    &lt;section name=&quot;TrinitySettings&quot; type=&quot;Semiodesk.Trinity.Configuration.TrinitySettings, Semiodesk.Trinity&quot; /&gt;
-  &lt;/configSections&gt;
+<p>The generation of the ontolgies can be configured in the <code>ontologies.config</code> file:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+&lt;configuration&gt;
+  &lt;ontologies namespace=&quot;TrinityExample&quot; &gt;
 
-  &lt;!-- Generate the ontology classes in the &#39;CliExample&#39;-namespace --&gt;
-  &lt;TrinitySettings namespace=&quot;CliExample&quot;&gt;
-    &lt;OntologySettings&gt;
-      &lt;!--Generate the class &#39;CliExample.rdf&#39; from the contents of the file Ontologies\rdf.rdf --&gt;
-      &lt;Ontology Uri=&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot; Prefix=&quot;rdf&quot;&gt;
-        &lt;FileSource Location=&quot;Ontologies\rdf.rdf&quot; /&gt;
-      &lt;/Ontology&gt;
-    &lt;/OntologySettings&gt;
-  &lt;/TrinitySettings&gt;
-  ...
+    &lt;!--http://www.w3.org/1999/02/22-rdf-syntax-ns#--&gt;
+    &lt;ontology uri=&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot; prefix=&quot;rdf&quot;&gt;
+      &lt;filesource location=&quot;Ontologies/rdf.ttl&quot;/&gt;
+    &lt;/ontology&gt;
+
+    &lt;!--http://www.w3.org/2000/01/rdf-schema#--&gt;
+    &lt;ontology uri=&quot;http://www.w3.org/2000/01/rdf-schema#&quot; prefix=&quot;rdfs&quot;&gt;
+      &lt;filesource location=&quot;Ontologies/rdfs.ttl&quot;/&gt;
+    &lt;/ontology&gt;
+
+    &lt;ontology uri=&quot;http://schema.org/&quot; prefix=&quot;schema&quot;&gt;
+      &lt;filesource location=&quot;Ontologies/schema.ttl&quot;/&gt;
+    &lt;/ontology&gt;
+  &lt;/ontologies&gt;
 &lt;/configuration&gt;
-</code></pre><p>Using the <code>namespace</code> attribute of the <code>TrinitySettings</code> element you can control 
+</code></pre><p>Using the <code>namespace</code> attribute of the <code>ontologies</code> element you can control 
 the CLR namespace in which the ontologies should be generated.</p>
-<p>The <code>Uri</code> is the namespace of the ontology. The <code>Prefix</code> is a short identifier for the ontology. 
-It is used as the generated classes name. The <code>FileSource</code> element defines the location of the file 
+<p>The <code>uri</code> is the namespace of the ontology. The <code>prefix</code> is a short identifier for the ontology. 
+It is used as the generated classes name. The <code>filesource</code> element defines the location of the file 
 relative to the configuration.</p>
 <p><strong>Note:</strong> If you are using NuGet, please be aware that if you change the framework (for example from .Net 4.5 to 
 .Net 3.5 you need to retarget the packages. In most cases the easiest way to do that is by reinstalling them.</p>
@@ -154,7 +160,7 @@ is also possible to write and load a custom store module.</p>
 <h3 id="loading-configurations">Loading Configurations</h3>
 <p>The ontologies specified in the configuration need to be loaded into the store to do things like inferencing. The 
 method to do this is called <code>Store.LoadOntologySettings()</code>. Optionally it can be given the path of a 
-configuration file. By default it will use the <code>App.config</code> file of the current assembly. As second 
+configuration file. By default it will use the <code>ontologies.config</code> file of the current assembly. As second 
 parameter you can define the base directory for the ontologies.</p>
 <p><strong>IMPORTANT:</strong> Do not forget to set all ontologies to &quot;Copy always&quot; so they will be found at runtime.</p>
 <pre><code>store.LoadOntologySettings();
@@ -202,21 +208,25 @@ You can download the open source version of it <a href="http://virtuoso.openlink
 </tr>
 </tbody>
 </table>
-<p>Rulesets can be defined in the <code>App.config</code> like this:</p>
-<pre><code>&lt;configuration&gt;
+<p>Rulesets can be defined in the <code>ontologies.config</code> like this:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+&lt;configuration&gt;
   ...
-  &lt;TrinitySettings&gt;
-    &lt;VirtuosoStoreSettings&gt;
-      &lt;RuleSets&gt;
-        &lt;RuleSet Uri=&quot;urn:semiodesk/ruleset&quot;&gt;
-          &lt;Graphs&gt;
-            &lt;Graph Uri=&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot; /&gt;
-          &lt;/Graphs&gt;
-        &lt;/RuleSet&gt;
-      &lt;/RuleSets&gt;
-    &lt;/VirtuosoStoreSettings&gt;
-  &lt;/TrinitySettings&gt;
-  ...
+
+  &lt;stores&gt;
+    &lt;store type=&quot;virtuoso&quot;&gt;
+      &lt;data&gt;
+        &lt;rulesets&gt;
+          &lt;ruleset uri=&quot;urn:semiodesk/test/ruleset&quot;&gt;
+            &lt;graph uri=&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;/&gt;
+            &lt;graph uri=&quot;http://www.w3.org/2000/01/rdf-schema#&quot;/&gt;
+            &lt;graph uri=&quot;http://www.w3.org/2002/07/owl#&quot;/&gt;
+            &lt;graph uri=&quot;http://xmlns.com/foaf/0.1/&quot;/&gt;
+          &lt;/ruleset&gt;
+        &lt;/rulesets&gt;
+      &lt;/data&gt;
+    &lt;/store&gt;
+  &lt;/stores&gt;
 &lt;/configuration&gt;
 </code></pre><h3 id="sparql-endpoints">Sparql Endpoints</h3>
 <p>SPARQL endpoints offer a platform independent way to access linked data sets.</p>
@@ -231,6 +241,7 @@ remember that you have to save the content manually before shutting down the app
 <p>If you want to use the Trinity RDF with an unsupported store, you can write a custom store 
 provider and register it. With the following function you can try to load the custom module:</p>
 <pre><code>StoreFactory.LoadProvider(&quot;CustomStoreProvider.dll&quot;)
+StoreFactory.LoadProvider(Assembly.GetExecutingAssembly());
 </code></pre><p>The <code>CustomStoreProvider.dll</code> needs to contain a class derived from StoreProvider and 
 an IStore implementation to work. Then you can create a connection to the store by calling the 
 <code>CreateStore</code> function with the provider name you set.</p>
@@ -346,11 +357,17 @@ john2.Commit();
 </code></pre><h2 id="object-mapping-orm">Object Mapping (ORM)</h2>
 <p>Trinity RDF offers two ways for defining object mappings. The recommended way is by decorating classes and 
 properties using attributes. The mapping is then implemented in a post-compiler step by our byte-code manipulator (cilg.exe).</p>
-<p>If for some reasons you cannot do that, you can also implement the mapping manually. In the following we describe both ways.</p>
+<p>If for some reason you are not able do that, you can also implement the mapping manually. In the following we describe both ways.</p>
 <p><strong>Note:</strong> 
 Valid types for mapping are all value types, <code>DateTime</code> structs and classes derived from Resource. Additionally, all
 collections of these types which implement the <code>IList</code> interface.</p>
-<h3 id="using-decorators">Using Decorators</h3>
+<h3 id="initialization">Initialization</h3>
+<p>To regiser the mapped classes make sure to register the assembly containing them by calling the appropriate MappingDiscovery method.</p>
+<p>Use the following one if you have a small project and have everything in one assembly.</p>
+<pre><code>MappingDiscovery.RegisterCallingAssembly();
+</code></pre><p>If you have a dedicate data model assembly you can use the following call. You only have to provide one type, the rest will be loaded directly from the assembly.</p>
+<pre><code>MappingDiscovery.RegisterAssembly(Assembly.GetAssembly(typeof(MyMappedType)));
+</code></pre><h3 id="using-decorators">Using Decorators</h3>
 <pre><code>// The class needs to be decorated with the RDF class it is being mapped to.
 [RdfClass(SCHEMA.Person)]
 public class Person : Agent

@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Users/faubulous/Files/Projects/2019/trinity-rdf/Documentation",
+  "source_base_path": "C:/Projects/trinity-rdf/Documentation",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -18,7 +18,128 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "6yJXTS4YUc6h+oyEmXJyNg=="
+          "hash": "dVmWdNQ9eQPQSFG1/sgObA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "data/FirstSteps-1.0rc7.zip",
+      "output": {
+        "resource": {
+          "relative_path": "data/FirstSteps-1.0rc7.zip"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "data/starter.zip",
+      "output": {
+        "resource": {
+          "relative_path": "data/starter.zip"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/examples/firststeps/nuget.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/examples/firststeps/nuget.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/examples/firststeps/structure.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/examples/firststeps/structure.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/examples/musicBrowser/2022201284-MusicBrowser.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/examples/musicBrowser/2022201284-MusicBrowser.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/examples/musicBrowser/225525627-ClassDiagram.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/examples/musicBrowser/225525627-ClassDiagram.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/examples/unity/1059885734-FolderStructure.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/examples/unity/1059885734-FolderStructure.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/examples/unity/397689992-onclick.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/examples/unity/397689992-onclick.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/examples/unity/932505194-result.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/examples/unity/932505194-result.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/examples/webApp/1927643689-result.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/examples/webApp/1927643689-result.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/examples/webApp/698958943-process.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/examples/webApp/698958943-process.png"
         }
       },
       "is_incremental": false,
@@ -172,7 +293,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.IModel.html",
-          "hash": "oMWgguHp+/8/evOMgSyxPw=="
+          "hash": "8BC5wKesaJTghAj1NiUsVA=="
         }
       },
       "is_incremental": false,
@@ -292,7 +413,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.MappingDiscovery.html",
-          "hash": "8wN+m64VMhHVi6tA5daedg=="
+          "hash": "mJJwpewsZAXl+oxZNITXIQ=="
         }
       },
       "is_incremental": false,
@@ -304,7 +425,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Model.html",
-          "hash": "KOwaXMwj8wfUS+hWE6zIKw=="
+          "hash": "VUbdDSCmVMXVGEQ+5whCCQ=="
         }
       },
       "is_incremental": false,
@@ -340,7 +461,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.OntologyDiscovery.html",
-          "hash": "JQusk56/5CUufS6lofatBw=="
+          "hash": "OfhGLQlWRzSdLPwHrBydEw=="
         }
       },
       "is_incremental": false,
@@ -688,7 +809,43 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.Stardog.StardogStore.html",
-          "hash": "eE9jjxCtkr0IGhJOqVhCTg=="
+          "hash": "10IrY6ILNlOxVFh1c2hO9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.Stardog.StardogTransaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.Stardog.StardogTransaction.html",
+          "hash": "LG3PvN8mya4X3BF5uWo+Vw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.html",
+          "hash": "XKQ+kyNraEEEPxPr0jvNUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.Stardog.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.Stardog.StringExtensions.html",
+          "hash": "rbLLDwmTtYUbv+PYSQKz2Q=="
         }
       },
       "is_incremental": false,
@@ -700,7 +857,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.Stardog.html",
-          "hash": "Uxy03ZVK5rWj8qs7bvl0lw=="
+          "hash": "6bJ1IffOnsbQYqfBA0i3rg=="
         }
       },
       "is_incremental": false,
@@ -876,54 +1033,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Semiodesk.Trinity.Stores.Stardog.StardogTransaction.html",
-          "hash": "EVLmX34PhkSpJOcMh5s/sA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Semiodesk.Trinity.Stores.Stardog.StardogUpdateSparqlConverter.html",
-          "hash": "jQZ0dBFW4XozNLub2/hE7g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Semiodesk.Trinity.Stores.Stardog.StringExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Semiodesk.Trinity.Stores.Stardog.StringExtensions.html",
-          "hash": "tfUMdnuSOVuic3OYrzNNJA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Semiodesk.Trinity.Stores.Stardog.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Semiodesk.Trinity.Stores.Stardog.html",
-          "hash": "Hcdl7AXVPPysxBWxmRGjjA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "obj/api/Semiodesk.Trinity.StringExtensions.yml",
       "output": {
         ".html": {
@@ -1048,7 +1157,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "wwyUudx3lI357k2BFw+nCA=="
+          "hash": "gw58ZMub//FY6MA2FDRVtg=="
         }
       },
       "is_incremental": false,
@@ -1072,7 +1181,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/firstSteps.html",
-          "hash": "RrPmXQqAHPXxI8M/7KQWzA=="
+          "hash": "5gYBa21DLkWpfG1f+LM1Cw=="
         }
       },
       "is_incremental": false,
@@ -1120,7 +1229,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/musicBrowser.html",
-          "hash": "53fDbLEv0oK7SaOUfByS1g=="
+          "hash": "syf51FhiIuQNybbwXupfRg=="
         }
       },
       "is_incremental": false,
@@ -1132,7 +1241,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/simpleUnity.html",
-          "hash": "yRrIk3q8H6WNjDSWSQYssg=="
+          "hash": "Ql02YFE9DbIOUUhUtjNedg=="
         }
       },
       "is_incremental": false,
@@ -1144,7 +1253,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/toc.html",
-          "hash": "V3FcxruqArsyRfsIJoFr/Q=="
+          "hash": "KZpYRdkoD5foKNJeYQOkwA=="
         }
       },
       "is_incremental": false,
@@ -1168,7 +1277,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/webApp.html",
-          "hash": "BzZiBKiA9z6nOb//nKbpfw=="
+          "hash": "9+sqmUnRemEUcsgWF9xdJw=="
         }
       },
       "is_incremental": false,
@@ -1184,6 +1293,13 @@
         "skipped_file_count": 0
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -1194,21 +1310,14 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 82,
-          "skipped_file_count": 82
+          "total_file_count": 81,
+          "skipped_file_count": 80
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 10,
-          "skipped_file_count": 5
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
+          "skipped_file_count": 9
         }
       }
     },
