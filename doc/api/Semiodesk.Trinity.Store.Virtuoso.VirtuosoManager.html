@@ -1,0 +1,1506 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Trinity RDF | Class VirtuosoManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class VirtuosoManager
+   ">
+    <meta name="generator" content="docfx 2.44.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <a id="page-top"></a>
+        
+        <nav class="navbar navbar-docfx navbar-expand-lg navbar-light fixed-top" role="navigation" id="mainNav">
+        	<div class="container-fluid">
+        		<div class="d-flex flex-row">
+        			<a class="navbar-brand" data-scroll="" href="/">
+        				<img id="logo" src="/doc/images/logo.svg" width="48" height="48" alt="Trinity RDF"> Trinity RDF
+        			</a>
+        			<div class="d-flex align-items-center w-100" id="navbar">
+        				<form class="navbar-form navbar-right" role="search" id="search">
+        					<div class="form-group">
+        						<input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+        					</div>
+        				</form>
+        				<div class="w-100"></div>
+        			</div>
+        		</div>
+        	</div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager">
+  
+  
+  <h1 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager" class="text-break">Class VirtuosoManager
+  </h1>
+  <div class="markdown level0 summary"><p>A Manager for accessing the Native Virtuoso Quad Store</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector</span></div>
+    <div class="level2"><span class="xref">VirtuosoManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">VDS.RDF.Storage.IAsyncStorageProvider</span></div>
+    <div><span class="xref">VDS.RDF.Storage.IUpdateableStorage</span></div>
+    <div><span class="xref">VDS.RDF.Storage.IQueryableStorage</span></div>
+    <div><span class="xref">VDS.RDF.Storage.IStorageProvider</span></div>
+    <div><span class="xref">VDS.RDF.Storage.IStorageCapabilities</span></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.LoadGraph(VDS.RDF.IGraph, System.Uri, VDS.RDF.Storage.AsyncStorageCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.LoadGraph(VDS.RDF.IGraph, System.String, VDS.RDF.Storage.AsyncStorageCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.LoadGraph(VDS.RDF.IRdfHandler, System.Uri, VDS.RDF.Storage.AsyncStorageCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.LoadGraph(VDS.RDF.IRdfHandler, System.String, VDS.RDF.Storage.AsyncStorageCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.SaveGraph(VDS.RDF.IGraph, VDS.RDF.Storage.AsyncStorageCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.UpdateGraph(System.Uri, System.Collections.Generic.IEnumerable&lt;VDS.RDF.Triple&gt;, System.Collections.Generic.IEnumerable&lt;VDS.RDF.Triple&gt;, VDS.RDF.Storage.AsyncStorageCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.UpdateGraph(System.String, System.Collections.Generic.IEnumerable&lt;VDS.RDF.Triple&gt;, System.Collections.Generic.IEnumerable&lt;VDS.RDF.Triple&gt;, VDS.RDF.Storage.AsyncStorageCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.DeleteGraph(System.Uri, VDS.RDF.Storage.AsyncStorageCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.DeleteGraph(System.String, VDS.RDF.Storage.AsyncStorageCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.ListGraphs(VDS.RDF.Storage.AsyncStorageCallback, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.ParentServer</span>
+    </div>
+    <div>
+      <span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.AsyncParentServer</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Semiodesk.Trinity.Store.Virtuoso.html">Semiodesk.Trinity.Store.Virtuoso</a></h6>
+  <h6><strong>Assembly</strong>: Semiodesk.Trinity.Virtuoso.dll</h6>
+  <h5 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VirtuosoManager : BaseAsyncSafeConnector, IAsyncStorageProvider, IUpdateableStorage, IQueryableStorage, IStorageProvider, IStorageCapabilities, IDisposable</code></pre>
+  </div>
+  <h5 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>
+This class implements <span class="xref">VDS.RDF.Storage.IStorageProvider</span> allowing it to be used with any of the general classes that support this interface as well as the Virtuoso specific classes.
+</p>
+<p>
+Although this class takes a Database Name to ensure compatability with any Virtuoso installation (i.e. this allows for the Native Quad Store to be in a non-standard database) generally you should always specify <strong>DB</strong> as the Database Name parameter
+</p>
+<p>
+Virtuoso automatically assigns IDs to Blank Nodes input into it, these IDs are <strong>not</strong> based on the actual Blank Node ID so inputting a Blank Node with the same ID multiple times will result in multiple Nodes being created in Virtuoso.  This means that data containing Blank Nodes which is stored to Virtuoso and then retrieved will have different Blank Node IDs to those input.  In addition there is no guarentee that when you save a Graph containing Blank Nodes into Virtuoso that retrieving it will give the same Blank Node IDs even if the Graph being saved was originally retrieved from Virtuoso.  Finally please see the remarks on the <a class="xref" href="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_UpdateGraph_System_Uri_System_Collections_Generic_IEnumerable_VDS_RDF_Triple__System_Collections_Generic_IEnumerable_VDS_RDF_Triple__">UpdateGraph(Uri, IEnumerable&lt;Triple&gt;, IEnumerable&lt;Triple&gt;)</a> method which deal with how insertion and deletion of triples containing blank nodes into existing graphs operates.
+</p>
+<p>
+You can use a null Uri or an empty String as a Uri to indicate that operations should affect the Default Graph.  Where the argument is only a Graph a null <span class="xref">VDS.RDF.IGraph.BaseUri</span> property indicates that the Graph affects the Default Graph
+</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L215">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.#ctor*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_System_String_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.#ctor(System.String)">VirtuosoManager(String)</h4>
+  <div class="markdown level1 summary"><p>Creates a Manager for a Virtuoso Native Quad Store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VirtuosoManager(string connectionString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">connectionString</span></td>
+        <td><p>Connection String</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Allows the end user to specify a customised connection string</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_System_String_System_Int32_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.%23ctor(System.String%2CSystem.Int32%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L174">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.#ctor*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_System_String_System_Int32_System_String_System_String_System_String_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.#ctor(System.String,System.Int32,System.String,System.String,System.String)">VirtuosoManager(String, Int32, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a Manager for a Virtuoso Native Quad Store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VirtuosoManager(string server, int port, string db, string user, string password)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">server</span></td>
+        <td><p>Server</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">port</span></td>
+        <td><p>Port</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">db</span></td>
+        <td><p>Database Name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>Username</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>Password</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_System_String_System_Int32_System_String_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.%23ctor(System.String%2CSystem.Int32%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L135">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.#ctor*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_System_String_System_Int32_System_String_System_String_System_String_System_Int32_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.#ctor(System.String,System.Int32,System.String,System.String,System.String,System.Int32)">VirtuosoManager(String, Int32, String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates a Manager for a Virtuoso Native Quad Store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VirtuosoManager(string server, int port, string db, string user, string password, int timeout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">server</span></td>
+        <td><p>Server</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">port</span></td>
+        <td><p>Port</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">db</span></td>
+        <td><p>Database Name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>Username</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>Password</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>Connection Timeout in Seconds</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_System_String_System_Int32_System_String_System_String_System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Timeouts less than equal to zero are ignored and treated as using the default timeout which is dictated by the underlying Virtuoso ADO.Net provider</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.%23ctor(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L203">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.#ctor*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_System_String_System_String_System_String_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.#ctor(System.String,System.String,System.String)">VirtuosoManager(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a Manager for a Virtuoso Native Quad Store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VirtuosoManager(string db, string user, string password)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">db</span></td>
+        <td><p>Database Name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>Username</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>Password</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_System_String_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Assumes the Server is on the localhost and the port is the default installation port of 1111</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_System_String_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.%23ctor(System.String%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L189">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.#ctor*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_System_String_System_String_System_String_System_Int32_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.#ctor(System.String,System.String,System.String,System.Int32)">VirtuosoManager(String, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates a Manager for a Virtuoso Native Quad Store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VirtuosoManager(string db, string user, string password, int timeout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">db</span></td>
+        <td><p>Database Name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">user</span></td>
+        <td><p>Username</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">password</span></td>
+        <td><p>Password</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>Connection Timeout in Seconds</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_System_String_System_String_System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Assumes the Server is on the localhost and the port is the default installation port of 1111</p>
+</div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_DefaultDB.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DefaultDB%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L101">View Source</a>
+  </span>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_DefaultDB" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DefaultDB">DefaultDB</h4>
+  <div class="markdown level1 summary"><p>Default Database for Virtuoso Server Quad Store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string DefaultDB = &quot;DB&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_DefaultPort.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DefaultPort%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L96">View Source</a>
+  </span>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_DefaultPort" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DefaultPort">DefaultPort</h4>
+  <div class="markdown level1 summary"><p>Default Port for Virtuoso Servers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DefaultPort = 1111</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_DeleteSupported.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteSupported%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L1301">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_DeleteSupported_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteSupported*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_DeleteSupported" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteSupported">DeleteSupported</h4>
+  <div class="markdown level1 summary"><p>Returns that deleting Graphs is supported</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool DeleteSupported { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.DeleteSupported</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_HasActiveTransaction.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.HasActiveTransaction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L1519">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_HasActiveTransaction_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.HasActiveTransaction*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_HasActiveTransaction" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.HasActiveTransaction">HasActiveTransaction</h4>
+  <div class="markdown level1 summary"><p>Gets whether there is any active transaction on the Virtuoso database</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasActiveTransaction { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_HasOpenConnection.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.HasOpenConnection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L1511">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_HasOpenConnection_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.HasOpenConnection*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_HasOpenConnection" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.HasOpenConnection">HasOpenConnection</h4>
+  <div class="markdown level1 summary"><p>Gets whether there is an active connection to the Virtuoso database</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasOpenConnection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_IOBehaviour.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IOBehaviour%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L561">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_IOBehaviour_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IOBehaviour*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_IOBehaviour" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IOBehaviour">IOBehaviour</h4>
+  <div class="markdown level1 summary"><p>Gets the IO Behaviour of the store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IOBehaviour IOBehaviour { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VDS.RDF.Storage.IOBehaviour</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.IOBehaviour</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_IsReadOnly.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IsReadOnly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L740">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_IsReadOnly_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IsReadOnly*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_IsReadOnly" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IsReadOnly">IsReadOnly</h4>
+  <div class="markdown level1 summary"><p>Returns that the Manager is not read-only</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsReadOnly { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.IsReadOnly</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_IsReady.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IsReady%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L732">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_IsReady_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IsReady*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_IsReady" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IsReady">IsReady</h4>
+  <div class="markdown level1 summary"><p>Returns that the Manager is ready</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsReady { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.IsReady</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_ListGraphsSupported.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ListGraphsSupported%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L1358">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_ListGraphsSupported_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ListGraphsSupported*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_ListGraphsSupported" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ListGraphsSupported">ListGraphsSupported</h4>
+  <div class="markdown level1 summary"><p>Returns that listing graphs is supported</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool ListGraphsSupported { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.ListGraphsSupported</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_UpdateSupported.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateSupported%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L724">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_UpdateSupported_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateSupported*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_UpdateSupported" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateSupported">UpdateSupported</h4>
+  <div class="markdown level1 summary"><p>Indicates that Updates are supported by the Virtuoso Native Quad Store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool UpdateSupported { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.UpdateSupported</span></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_DeleteGraph_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteGraph(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L1280">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_DeleteGraph_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteGraph*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_DeleteGraph_System_String_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteGraph(System.String)">DeleteGraph(String)</h4>
+  <div class="markdown level1 summary"><p>Deletes a Graph from the store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DeleteGraph(string graphUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">graphUri</span></td>
+        <td><p>URI of the Graph to delete</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.DeleteGraph(System.String)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_DeleteGraph_System_Uri_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteGraph(System.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L1271">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_DeleteGraph_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteGraph*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_DeleteGraph_System_Uri_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteGraph(System.Uri)">DeleteGraph(Uri)</h4>
+  <div class="markdown level1 summary"><p>Deletes a Graph from the Virtuoso store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DeleteGraph(Uri graphUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">graphUri</span></td>
+        <td><p>URI of the Graph to delete</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.DeleteGraph(System.Uri)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_Dispose.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L1531">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_Dispose_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Dispose*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_Dispose" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Disposes of the Manager</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.Dispose()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_ListGraphs.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ListGraphs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L1310">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_ListGraphs_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ListGraphs*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_ListGraphs" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ListGraphs">ListGraphs()</h4>
+  <div class="markdown level1 summary"><p>Lists the Graphs in the store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerable&lt;Uri&gt; ListGraphs()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Uri</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.ListGraphs()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_LoadGraph_VDS_RDF_IGraph_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph(VDS.RDF.IGraph%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L297">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_LoadGraph_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_LoadGraph_VDS_RDF_IGraph_System_String_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph(VDS.RDF.IGraph,System.String)">LoadGraph(IGraph, String)</h4>
+  <div class="markdown level1 summary"><p>Loads a Graph from the Quad Store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LoadGraph(IGraph g, string graphUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VDS.RDF.IGraph</span></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>Graph to load into</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">graphUri</span></td>
+        <td><p>URI of the Graph to Load</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.LoadGraph(VDS.RDF.IGraph, System.String)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_LoadGraph_VDS_RDF_IGraph_System_Uri_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph(VDS.RDF.IGraph%2CSystem.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L230">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_LoadGraph_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_LoadGraph_VDS_RDF_IGraph_System_Uri_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph(VDS.RDF.IGraph,System.Uri)">LoadGraph(IGraph, Uri)</h4>
+  <div class="markdown level1 summary"><p>Loads a Graph from the Quad Store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LoadGraph(IGraph g, Uri graphUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VDS.RDF.IGraph</span></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>Graph to load into</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">graphUri</span></td>
+        <td><p>URI of the Graph to Load</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.LoadGraph(VDS.RDF.IGraph, System.Uri)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_LoadGraph_VDS_RDF_IRdfHandler_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph(VDS.RDF.IRdfHandler%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L314">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_LoadGraph_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_LoadGraph_VDS_RDF_IRdfHandler_System_String_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph(VDS.RDF.IRdfHandler,System.String)">LoadGraph(IRdfHandler, String)</h4>
+  <div class="markdown level1 summary"><p>Loads a Graph from the Quad Store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LoadGraph(IRdfHandler handler, string graphUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VDS.RDF.IRdfHandler</span></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>RDF Handler</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">graphUri</span></td>
+        <td><p>URI of the Graph to Load</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.LoadGraph(VDS.RDF.IRdfHandler, System.String)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_LoadGraph_VDS_RDF_IRdfHandler_System_Uri_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph(VDS.RDF.IRdfHandler%2CSystem.Uri)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L244">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_LoadGraph_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_LoadGraph_VDS_RDF_IRdfHandler_System_Uri_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph(VDS.RDF.IRdfHandler,System.Uri)">LoadGraph(IRdfHandler, Uri)</h4>
+  <div class="markdown level1 summary"><p>Loads a Graph from the Quad Store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void LoadGraph(IRdfHandler handler, Uri graphUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VDS.RDF.IRdfHandler</span></td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>RDF Handler</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">graphUri</span></td>
+        <td><p>URI of the Graph to Load</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.LoadGraph(VDS.RDF.IRdfHandler, System.Uri)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_Query_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Query(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L766">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_Query_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Query*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_Query_System_String_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Query(System.String)">Query(String)</h4>
+  <div class="markdown level1 summary"><p>Executes a SPARQL Query on the native Quad Store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Query(string sparqlQuery)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sparqlQuery</span></td>
+        <td><p>SPARQL Query to execute</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_Query_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+This method will first attempt to parse the query into a <a class="xref" href="Semiodesk.Trinity.SparqlQuery.html">SparqlQuery</a> object.  If this succeeds then the Query Type can be used to determine how to handle the response.
+</p>
+<p>
+If the parsing fails then the query will be executed anyway using Virtuoso&apos;s SPASQL (SPARQL + SQL) syntax.  Parsing can fail because Virtuoso supports various SPARQL extensions which the library does not support.  These include things like aggregate functions but also SPARUL updates (the non-standard precusor to SPARQL 1.1 Update).
+</p>
+<p>
+If you use an aggregate query which has an Integer, Decimal or Double type result then you will receive a <span class="xref">VDS.RDF.Query.SparqlResultSet</span> containing a single <span class="xref">VDS.RDF.Query.SparqlResult</span> which has contains a binding for a variable named <strong>Result</strong> which contains a <span class="xref">VDS.RDF.LiteralNode</span> typed to the appropriate datatype.
+</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VDS.RDF.Query.RdfQueryException</span></td>
+        <td><p>Thrown if an error occurs in making the query</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_Query_VDS_RDF_IRdfHandler_VDS_RDF_ISparqlResultsHandler_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Query(VDS.RDF.IRdfHandler%2CVDS.RDF.ISparqlResultsHandler%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L797">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_Query_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Query*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_Query_VDS_RDF_IRdfHandler_VDS_RDF_ISparqlResultsHandler_System_String_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Query(VDS.RDF.IRdfHandler,VDS.RDF.ISparqlResultsHandler,System.String)">Query(IRdfHandler, ISparqlResultsHandler, String)</h4>
+  <div class="markdown level1 summary"><p>Executes a SPARQL Query on the native Quad Store processing the results with an appropriate handler from those provided</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Query(IRdfHandler rdfHandler, ISparqlResultsHandler resultsHandler, string sparqlQuery)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VDS.RDF.IRdfHandler</span></td>
+        <td><span class="parametername">rdfHandler</span></td>
+        <td><p>RDF Handler</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">VDS.RDF.ISparqlResultsHandler</span></td>
+        <td><span class="parametername">resultsHandler</span></td>
+        <td><p>Results Handler</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sparqlQuery</span></td>
+        <td><p>SPARQL Query to execute</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_Query_VDS_RDF_IRdfHandler_VDS_RDF_ISparqlResultsHandler_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+This method will first attempt to parse the query into a <a class="xref" href="Semiodesk.Trinity.SparqlQuery.html">SparqlQuery</a> object.  If this succeeds then the Query Type can be used to determine how to handle the response.
+</p>
+<p>
+If the parsing fails then the query will be executed anyway using Virtuoso&apos;s SPASQL (SPARQL + SQL) syntax.  Parsing can fail because Virtuoso supports various SPARQL non-standardised extensions which the library does not support.  These include things like aggregate functions but also SPARUL updates (the non-standard precusor to SPARQL 1.1 Update).
+</p>
+<p>
+If you use an aggregate query which has an Integer, Decimal or Double type result then you will receive a <span class="xref">VDS.RDF.Query.SparqlResultSet</span> containing a single <span class="xref">VDS.RDF.Query.SparqlResult</span> which has contains a binding for a variable named <strong>Result</strong> which contains a <span class="xref">VDS.RDF.LiteralNode</span> typed to the appropriate datatype.
+</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VDS.RDF.Query.RdfQueryException</span></td>
+        <td><p>Thrown if an error occurs in making the query</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_SaveGraph_VDS_RDF_IGraph_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.SaveGraph(VDS.RDF.IGraph)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L524">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_SaveGraph_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.SaveGraph*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_SaveGraph_VDS_RDF_IGraph_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.SaveGraph(VDS.RDF.IGraph)">SaveGraph(IGraph)</h4>
+  <div class="markdown level1 summary"><p>Saves a Graph into the Quad Store (Warning: Completely replaces any existing Graph with the same URI)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SaveGraph(IGraph g)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VDS.RDF.IGraph</span></td>
+        <td><span class="parametername">g</span></td>
+        <td><p>Graph to save</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.SaveGraph(VDS.RDF.IGraph)</span></div>
+  <h5 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_SaveGraph_VDS_RDF_IGraph__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Completely replaces any previously saved Graph with the same Graph URI</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_ToString.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L1542">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_ToString_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ToString*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_ToString" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Gets a String which gives details of the Connection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_Update_System_String_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Update(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L1212">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_Update_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Update*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_Update_System_String_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Update(System.String)">Update(String)</h4>
+  <div class="markdown level1 summary"><p>Executes a SPARQL Update on the native Quad Store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update(string sparqlUpdate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sparqlUpdate</span></td>
+        <td><p>SPARQL Update to execute</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_Update_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+This method will first attempt to parse the update into a <span class="xref">VDS.RDF.Update.SparqlUpdateCommandSet</span> object.  If this succeeds then each command in the command set will be issued to Virtuoso.
+</p>
+<p>
+If the parsing fails then the update will be executed anyway using Virtuoso&apos;s SPASQL (SPARQL + SQL) syntax.  Parsing can fail because Virtuoso supports various SPARQL extensions which the library does not support and primarily supports SPARUL updates (the precusor to SPARQL 1.1 Update).
+</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VDS.RDF.Update.SparqlUpdateException</span></td>
+        <td><p>Thrown if an error occurs in making the update</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_UpdateGraph_System_String_System_Collections_Generic_IEnumerable_VDS_RDF_Triple__System_Collections_Generic_IEnumerable_VDS_RDF_Triple__.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateGraph(System.String%2CSystem.Collections.Generic.IEnumerable%7BVDS.RDF.Triple%7D%2CSystem.Collections.Generic.IEnumerable%7BVDS.RDF.Triple%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L715">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_UpdateGraph_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateGraph*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_UpdateGraph_System_String_System_Collections_Generic_IEnumerable_VDS_RDF_Triple__System_Collections_Generic_IEnumerable_VDS_RDF_Triple__" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateGraph(System.String,System.Collections.Generic.IEnumerable{VDS.RDF.Triple},System.Collections.Generic.IEnumerable{VDS.RDF.Triple})">UpdateGraph(String, IEnumerable&lt;Triple&gt;, IEnumerable&lt;Triple&gt;)</h4>
+  <div class="markdown level1 summary"><p>Updates a Graph in the Quad Store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UpdateGraph(string graphUri, IEnumerable&lt;Triple&gt; additions, IEnumerable&lt;Triple&gt; removals)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">graphUri</span></td>
+        <td><p>Graph Uri of the Graph to update</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">VDS.RDF.Triple</span>&gt;</td>
+        <td><span class="parametername">additions</span></td>
+        <td><p>Triples to be added</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">VDS.RDF.Triple</span>&gt;</td>
+        <td><span class="parametername">removals</span></td>
+        <td><p>Triples to be removed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.UpdateGraph(System.String, System.Collections.Generic.IEnumerable&lt;VDS.RDF.Triple&gt;, System.Collections.Generic.IEnumerable&lt;VDS.RDF.Triple&gt;)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_UpdateGraph_System_Uri_System_Collections_Generic_IEnumerable_VDS_RDF_Triple__System_Collections_Generic_IEnumerable_VDS_RDF_Triple__.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateGraph(System.Uri%2CSystem.Collections.Generic.IEnumerable%7BVDS.RDF.Triple%7D%2CSystem.Collections.Generic.IEnumerable%7BVDS.RDF.Triple%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L583">View Source</a>
+  </span>
+  <a id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_UpdateGraph_" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateGraph*"></a>
+  <h4 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_UpdateGraph_System_Uri_System_Collections_Generic_IEnumerable_VDS_RDF_Triple__System_Collections_Generic_IEnumerable_VDS_RDF_Triple__" data-uid="Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateGraph(System.Uri,System.Collections.Generic.IEnumerable{VDS.RDF.Triple},System.Collections.Generic.IEnumerable{VDS.RDF.Triple})">UpdateGraph(Uri, IEnumerable&lt;Triple&gt;, IEnumerable&lt;Triple&gt;)</h4>
+  <div class="markdown level1 summary"><p>Updates a Graph in the Quad Store</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UpdateGraph(Uri graphUri, IEnumerable&lt;Triple&gt; additions, IEnumerable&lt;Triple&gt; removals)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">graphUri</span></td>
+        <td><p>Graph Uri of the Graph to update</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">VDS.RDF.Triple</span>&gt;</td>
+        <td><span class="parametername">additions</span></td>
+        <td><p>Triples to be added</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">VDS.RDF.Triple</span>&gt;</td>
+        <td><span class="parametername">removals</span></td>
+        <td><p>Triples to be removed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">VDS.RDF.Storage.BaseAsyncSafeConnector.UpdateGraph(System.Uri, System.Collections.Generic.IEnumerable&lt;VDS.RDF.Triple&gt;, System.Collections.Generic.IEnumerable&lt;VDS.RDF.Triple&gt;)</span></div>
+  <h5 id="Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_UpdateGraph_System_Uri_System_Collections_Generic_IEnumerable_VDS_RDF_Triple__System_Collections_Generic_IEnumerable_VDS_RDF_Triple___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+In the case of inserts where blank nodes are present the data will be inserted but new blank nodes will be created.  You cannot insert data that refers to existing blank nodes via this method, consider using a INSERT WHERE style SPARQL Update instead.
+</p>
+<p>
+Note that Blank Nodes cannot always be deleted successfully, if you have retrieved the triples you are now trying to delete from Virtuoso and they contain blank nodes then this will likely work as expected.  Otherwise deletetions of Blank Nodes cannot be guaranteed.
+</p>
+<p>
+If the Graph being modified is relatively small it may be safer to load the graph into memory, makes the modifications there and then persist the graph back to the store (which overwrites the previous version of the graph).
+</p>
+</div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">VDS.RDF.Storage.IAsyncStorageProvider</span>
+  </div>
+  <div>
+      <span class="xref">VDS.RDF.Storage.IUpdateableStorage</span>
+  </div>
+  <div>
+      <span class="xref">VDS.RDF.Storage.IQueryableStorage</span>
+  </div>
+  <div>
+      <span class="xref">VDS.RDF.Storage.IStorageProvider</span>
+  </div>
+  <div>
+      <span class="xref">VDS.RDF.Storage.IStorageCapabilities</span>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity.Virtuoso/VirtuosoManager.cs/#L90" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

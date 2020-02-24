@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Projects/trinity-rdf/Documentation",
+  "source_base_path": "C:/Users/faubulous/Files/Projects/2019/trinity-rdf/Documentation",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "dVmWdNQ9eQPQSFG1/sgObA=="
+          "hash": "3tyXUerbb9Q2CwHQCdjG2A=="
         }
       },
       "is_incremental": false,
@@ -173,7 +173,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "Q1F5SW4xdm75h1VyraZIsg=="
+          "hash": "7Q/g/cP4m4XAHWU5POQ3xw=="
         }
       },
       "is_incremental": false,
@@ -185,7 +185,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.BindingSet.html",
-          "hash": "fteOQOSsbRhz16JE9aqtBQ=="
+          "hash": "SGnw8yH8n+ruq2/ietyI2w=="
         }
       },
       "is_incremental": false,
@@ -197,7 +197,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Class.html",
-          "hash": "QUU0ZZOHYviFDlvZNchrFQ=="
+          "hash": "DgYZ/YO8OqordUGCJzjaGQ=="
         }
       },
       "is_incremental": false,
@@ -209,7 +209,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Collections.AsyncVirtualizingCollection-1.html",
-          "hash": "WNfKXSbfyrNkYxtnghHiFw=="
+          "hash": "OkBXwuvsEgZ3zETiTuTOCA=="
         }
       },
       "is_incremental": false,
@@ -221,7 +221,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Collections.AsyncVirtualizingSparqlCollection-1.html",
-          "hash": "oboTR4RLNu5H7W3f/CTwkQ=="
+          "hash": "h3LG0cGEXstXc1gXPeV0fw=="
         }
       },
       "is_incremental": false,
@@ -233,7 +233,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Collections.IItemsProvider-1.html",
-          "hash": "DM+pInLoJzl4lfyfkhLP+A=="
+          "hash": "ye0QazpUSDH++h8vFOZ2kw=="
         }
       },
       "is_incremental": false,
@@ -245,7 +245,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Collections.VirtualizingCollection-1.html",
-          "hash": "RJ/x6pKA5ntSbAZIHC5j0Q=="
+          "hash": "GZdEPzYra1Nd5MCSN6zmFQ=="
         }
       },
       "is_incremental": false,
@@ -257,7 +257,31 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Collections.html",
-          "hash": "KMXAIiFe6hSVZC4T+14QAQ=="
+          "hash": "lNGGpAOiL+44v0rtKMyT1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Extensions.NamespaceMapperExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Extensions.NamespaceMapperExtensions.html",
+          "hash": "vtoKB/sSWVaejMAq89EpPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Extensions.html",
+          "hash": "bxwuk5/9J5Sj5SscIsoy0g=="
         }
       },
       "is_incremental": false,
@@ -269,7 +293,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.FileSystemInfoExtensions.html",
-          "hash": "Lgqj1gJjRWFvOMFJ4nfxQA=="
+          "hash": "Jg/2j2TblZKxxzgyqnvrfw=="
         }
       },
       "is_incremental": false,
@@ -281,7 +305,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.FinishedTransactionEvent.html",
-          "hash": "Ew/5nhXfhaJ2I0ezBW//mg=="
+          "hash": "MPjADm+v4FlYopUnbFv7rQ=="
         }
       },
       "is_incremental": false,
@@ -293,7 +317,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.IModel.html",
-          "hash": "8BC5wKesaJTghAj1NiUsVA=="
+          "hash": "0wLwDduPFTQgI/kRnPyfcg=="
         }
       },
       "is_incremental": false,
@@ -305,7 +329,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.IModelGroup.html",
-          "hash": "3BKfpBxJVkCWCk0Uh5WLLA=="
+          "hash": "/O+svY3QT3pAzmEX7+i3JA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.INamespaceMap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.INamespaceMap.html",
+          "hash": "g68Rs4cPdOOIUYgWd3aPjw=="
         }
       },
       "is_incremental": false,
@@ -317,7 +353,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.IResource.html",
-          "hash": "J4Q72jVGuTSqUC5qIfB4pQ=="
+          "hash": "CUZg0qGuVC2ghE1VbWnfoQ=="
         }
       },
       "is_incremental": false,
@@ -329,7 +365,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.ISparqlQuery.html",
-          "hash": "VKupnG4HQg7NfIY0LbxwyA=="
+          "hash": "z6toBnxb9deFu4dBWcaUVg=="
         }
       },
       "is_incremental": false,
@@ -341,7 +377,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.ISparqlQueryResult.html",
-          "hash": "ChqiqDfLayEmKa1y3WpMZw=="
+          "hash": "IjvAPzSZKu0NM8ECZpDGVA=="
         }
       },
       "is_incremental": false,
@@ -353,7 +389,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.IStore.html",
-          "hash": "TKcWyBLP8bbtB4RUpssjcA=="
+          "hash": "DMxcSgYVqgwXQ74oe5C2bQ=="
         }
       },
       "is_incremental": false,
@@ -365,7 +401,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.ITransaction.html",
-          "hash": "DOHHxD+3xNBPGC+dHSxtqw=="
+          "hash": "+zVFCFPWuCtZP5u4+mk3qw=="
         }
       },
       "is_incremental": false,
@@ -377,7 +413,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.ITransactional.html",
-          "hash": "2FWXWxuTANmMpwyURgs8Cw=="
+          "hash": "72PWK3xwc9eHveXvM7nrVQ=="
         }
       },
       "is_incremental": false,
@@ -389,7 +425,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.InvalidQueryException.html",
-          "hash": "NGb0lNLdzCt7YWP/dctnVA=="
+          "hash": "oSIYgFhGsYWmWvqTWkaaug=="
         }
       },
       "is_incremental": false,
@@ -401,7 +437,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.MappingDiscovery.MappingClass.html",
-          "hash": "3Eu6f1xdUY1NXePHhSiiSg=="
+          "hash": "KPnNmmZhidF+PJYFEwzH4A=="
         }
       },
       "is_incremental": false,
@@ -413,7 +449,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.MappingDiscovery.html",
-          "hash": "8wN+m64VMhHVi6tA5daedg=="
+          "hash": "y8d2GVxFQzPM3UXd0PZFFw=="
         }
       },
       "is_incremental": false,
@@ -425,7 +461,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Model.html",
-          "hash": "VUbdDSCmVMXVGEQ+5whCCQ=="
+          "hash": "we0pvnfGx6/Cm0D51jPdAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.NamespaceMap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.NamespaceMap.html",
+          "hash": "V6t+NHI9cCwmgxk8fk2E4Q=="
         }
       },
       "is_incremental": false,
@@ -437,7 +485,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.NotifyPropertyChangedAttribute.html",
-          "hash": "K7L4spwtBb0DWdYgcA+oLw=="
+          "hash": "MT0KkOw7g/vbGhEkMYGn3A=="
         }
       },
       "is_incremental": false,
@@ -449,7 +497,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Ontology.html",
-          "hash": "G17bQQZZAAIgzFtHDODIRQ=="
+          "hash": "6fZ2KDp4Lo9XJ95lOcZYUg=="
         }
       },
       "is_incremental": false,
@@ -461,7 +509,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.OntologyDiscovery.html",
-          "hash": "OfhGLQlWRzSdLPwHrBydEw=="
+          "hash": "1kXKVOPzhOG8sjMYvaXhcg=="
         }
       },
       "is_incremental": false,
@@ -473,7 +521,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Property.html",
-          "hash": "XgFu6vSc//tvEOoHcafv9w=="
+          "hash": "3eES1B6T9DJLZkSsxyyJ4g=="
         }
       },
       "is_incremental": false,
@@ -485,7 +533,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.PropertyMapping-1.html",
-          "hash": "T+tQcYeHq5RyveoP2syxwg=="
+          "hash": "MxYGQP6INWKFpqZ81mMJRw=="
         }
       },
       "is_incremental": false,
@@ -497,7 +545,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Query.ConstantExpressionExtensions.html",
-          "hash": "Sp6sc7EaqdPaoKxXrDg4pw=="
+          "hash": "T5zV+9oikGU2+ukiFCeMIw=="
         }
       },
       "is_incremental": false,
@@ -509,7 +557,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Query.MemberInfoExtensions.html",
-          "hash": "PKEF45Ps6LKwOf8jNW2Ekg=="
+          "hash": "K5d9Cb5pKz+XolDPvIXojA=="
         }
       },
       "is_incremental": false,
@@ -521,7 +569,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Query.MethodCallExpressionExtensions.html",
-          "hash": "cC457xdbvcocN3dfLxf9Dg=="
+          "hash": "kb9o3O+hOOiSrjthXqXgxA=="
         }
       },
       "is_incremental": false,
@@ -533,7 +581,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Query.NodeFactoryExtensions.html",
-          "hash": "HQ/vXr1yr/t4NeYFF2vs2A=="
+          "hash": "CJJIcEXidMnFhZXQSZGk2w=="
         }
       },
       "is_incremental": false,
@@ -545,7 +593,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Query.html",
-          "hash": "tSmbV3xBLIPqh/PJIc8zUA=="
+          "hash": "/urrfxTK1Asa/5Y61/koJA=="
         }
       },
       "is_incremental": false,
@@ -557,7 +605,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.QueryTypeNotSupportedException.html",
-          "hash": "ZpEsudiL7Kbt++JGEfyp0w=="
+          "hash": "WACtQTFxenMnRbX7640NPg=="
         }
       },
       "is_incremental": false,
@@ -569,7 +617,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.RdfClassAttribute.html",
-          "hash": "vEuZ0PEm9PmMQSKU3IbZ8w=="
+          "hash": "CklZ+AMJptl07TgtVOYjdg=="
         }
       },
       "is_incremental": false,
@@ -581,7 +629,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.RdfPropertyAttribute.html",
-          "hash": "fYNPMMzM8mfqL7/PtO4xZQ=="
+          "hash": "aADqhg8DoYvpDpRFX6XBaw=="
         }
       },
       "is_incremental": false,
@@ -593,7 +641,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.RdfSerializationFormat.html",
-          "hash": "8VljuCupro6U+7rDwuIovA=="
+          "hash": "UnAbbihBvIJYm4ldJWxRJA=="
         }
       },
       "is_incremental": false,
@@ -605,7 +653,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Resource.html",
-          "hash": "g6ju7q3czMerUPAgFHXZ1A=="
+          "hash": "OtJCACApRv7pFXAjWrbBmw=="
         }
       },
       "is_incremental": false,
@@ -617,7 +665,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.ResourceLockedException.html",
-          "hash": "+QQOs/8F2gIAsP/keaIeNA=="
+          "hash": "b0sBDTjvDhVHzpylxkXLFg=="
         }
       },
       "is_incremental": false,
@@ -629,7 +677,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.ResourceNotFoundException.html",
-          "hash": "/Ro8Y7TH1THEMIZDzbqYUw=="
+          "hash": "yf/NpYCI3ZGf4EP3IYBj9g=="
         }
       },
       "is_incremental": false,
@@ -641,7 +689,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Serialization.JsonResourceConverter.html",
-          "hash": "kgGVsLvIximE3rryjImTqw=="
+          "hash": "Z5sFj0fDShoH/ESl4L8ahA=="
         }
       },
       "is_incremental": false,
@@ -653,7 +701,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Serialization.JsonResourceSerializerSettings.html",
-          "hash": "9d3pIY6lEoSiPoS5Wc1IYQ=="
+          "hash": "KWgkg7Lc8gb6pgZIpiZ49g=="
         }
       },
       "is_incremental": false,
@@ -665,7 +713,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Serialization.html",
-          "hash": "InbfV9EFKH0LRO18R87EIQ=="
+          "hash": "FmTWAkcT6zI03Ggi76vlPA=="
         }
       },
       "is_incremental": false,
@@ -677,7 +725,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.SparqlPreprocessor.html",
-          "hash": "IPi6+DN7R8WPDeNjqIpF8w=="
+          "hash": "/B96HAQ1dq6YoSb+3W5qfg=="
         }
       },
       "is_incremental": false,
@@ -689,7 +737,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.SparqlQuery.html",
-          "hash": "XQnxxfWNo8yocvC/hvi0cA=="
+          "hash": "gLDdBjDVit/T2IdiukoM0g=="
         }
       },
       "is_incremental": false,
@@ -701,7 +749,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.SparqlQueryItemsProvider-1.html",
-          "hash": "D+yuQO3c6eEfUVfaeuSq7w=="
+          "hash": "Vmxa6TZUjyoPyoXwDvJKQQ=="
         }
       },
       "is_incremental": false,
@@ -713,7 +761,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.SparqlQueryPreprocessor.html",
-          "hash": "H4aqY55KTTPJjrRFFd37fA=="
+          "hash": "5pwGq7/8w4ImZvLZhd9JZQ=="
         }
       },
       "is_incremental": false,
@@ -725,7 +773,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.SparqlQueryType.html",
-          "hash": "a6LfQ4mdoKQEzUJpDVeqyA=="
+          "hash": "V0oyGCBjrz+lMhMx+SYaxw=="
         }
       },
       "is_incremental": false,
@@ -737,7 +785,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.SparqlQueryVariableScope.html",
-          "hash": "CsWZocOO0y5+zOGohN6X/g=="
+          "hash": "M2F1B/PaMFOtI9TYK29fRA=="
         }
       },
       "is_incremental": false,
@@ -749,7 +797,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.SparqlSerializer.html",
-          "hash": "9HiY2bPSEFeSkauY0MAqhw=="
+          "hash": "a/hi+KykPZSUjy3xdKSBfQ=="
         }
       },
       "is_incremental": false,
@@ -761,7 +809,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.SparqlUpdate.html",
-          "hash": "C2hOBv4oGaTHaw4SISjyRQ=="
+          "hash": "552b6OEjx+nSMqHtSDKlUg=="
         }
       },
       "is_incremental": false,
@@ -773,7 +821,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.ITripleProvider.html",
-          "hash": "f12mNAAVa79scSpcNQsyuw=="
+          "hash": "97GiPklYSDJR9VMSDQ2wLg=="
         }
       },
       "is_incremental": false,
@@ -785,7 +833,43 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.SparqlEndpointStoreProvider.html",
-          "hash": "C9Q5264cPrBLC85/Q9Ixcw=="
+          "hash": "rmJUSpPr//37LijWiD1PWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.Stardog.ReadEndEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.Stardog.ReadEndEventHandler.html",
+          "hash": "2sSid4a9ZnKq/NR4azYrqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.Stardog.ReadStartEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.Stardog.ReadStartEventHandler.html",
+          "hash": "LcjIoVrrsZnA4/Ms3dKVQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.Stardog.ReadTripleEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.Stardog.ReadTripleEventHandler.html",
+          "hash": "WJ9aHr+U6Ff6JbiBGnXyaw=="
         }
       },
       "is_incremental": false,
@@ -797,7 +881,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.Stardog.StardogResultHandler.html",
-          "hash": "fbB91tUtk16bX7wLPTHaEQ=="
+          "hash": "gUgdTuWtkq8z6QhoAXD3JQ=="
         }
       },
       "is_incremental": false,
@@ -809,7 +893,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.Stardog.StardogStore.html",
-          "hash": "10IrY6ILNlOxVFh1c2hO9g=="
+          "hash": "oFsbsmTzRrXReow5jkZlBA=="
         }
       },
       "is_incremental": false,
@@ -821,7 +905,31 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.Stardog.StardogTransaction.html",
-          "hash": "LG3PvN8mya4X3BF5uWo+Vw=="
+          "hash": "iWpFuHqz2g7k2kzbrrff7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.html",
+          "hash": "ur89rtzOx8Dypv0Renl45w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.html",
+          "hash": "hUnHy7mbCY0Tw66Nn+Nkhg=="
         }
       },
       "is_incremental": false,
@@ -833,7 +941,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.html",
-          "hash": "XKQ+kyNraEEEPxPr0jvNUw=="
+          "hash": "Tnk88IVzcTqJL07lxDn70g=="
         }
       },
       "is_incremental": false,
@@ -845,7 +953,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.Stardog.StringExtensions.html",
-          "hash": "rbLLDwmTtYUbv+PYSQKz2Q=="
+          "hash": "ug6k8SbNPLCK3dZvARjNzg=="
         }
       },
       "is_incremental": false,
@@ -857,7 +965,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.Stardog.html",
-          "hash": "6bJ1IffOnsbQYqfBA0i3rg=="
+          "hash": "dn6TLbsIorLkSsCkT7PiXQ=="
         }
       },
       "is_incremental": false,
@@ -869,7 +977,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.StardogStoreProvider.html",
-          "hash": "1fZEcTJSKvDBRm6EXdIs6Q=="
+          "hash": "wUEyeGBKRPox1HY2AfBulA=="
         }
       },
       "is_incremental": false,
@@ -881,7 +989,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.Virtuoso.Graph.html",
-          "hash": "7H7reDhHxLa1EwUPCZdQxg=="
+          "hash": "E4xCj5/uNRGLpfHZvxXuRg=="
         }
       },
       "is_incremental": false,
@@ -893,7 +1001,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.Virtuoso.Ruleset.html",
-          "hash": "wA7IekBomKJY+tOP1KU4DQ=="
+          "hash": "L+eDffZiaU60XXi1coBtew=="
         }
       },
       "is_incremental": false,
@@ -905,7 +1013,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.Virtuoso.Rulesets.html",
-          "hash": "mulk+L4T+qkJKprGz/qlaw=="
+          "hash": "55UmFcdYfFqu6wUYYT5g6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html",
+          "hash": "cOoMXac30dcqnFjqjimZUA=="
         }
       },
       "is_incremental": false,
@@ -917,7 +1037,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoStoreProvider.html",
-          "hash": "NYpE25a5Ki+QTHQvv5+38Q=="
+          "hash": "PdDBUzdyeja/uQ92Y4eFuQ=="
         }
       },
       "is_incremental": false,
@@ -929,7 +1049,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoTransaction.html",
-          "hash": "/ZGh2lNulkDsScmAKEhSIA=="
+          "hash": "fk/DIXC3KB64tGZO58kshA=="
         }
       },
       "is_incremental": false,
@@ -941,7 +1061,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.Virtuoso.html",
-          "hash": "3dGgjdOpxKFqEd4aTrSlGQ=="
+          "hash": "iH91aoHF2zDjczadWOyUQw=="
         }
       },
       "is_incremental": false,
@@ -953,7 +1073,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.dotNetRDFStore.html",
-          "hash": "fBhvlRR3uR29KSiQbFNJ+A=="
+          "hash": "SKNJR5OKaCxPW2dWjmiIXQ=="
         }
       },
       "is_incremental": false,
@@ -965,7 +1085,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.dotNetRDFStoreProvider.html",
-          "hash": "QY4dGaiNQDAugoOqN55SSQ=="
+          "hash": "zvhC7Y/85/jCUa6lDz+pKw=="
         }
       },
       "is_incremental": false,
@@ -977,7 +1097,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Store.html",
-          "hash": "c2Cg01zEpENGWDgvUsm1rA=="
+          "hash": "QydX7MY8K67bbtpq+uqiXA=="
         }
       },
       "is_incremental": false,
@@ -989,7 +1109,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.StoreBase.html",
-          "hash": "6CS3OuhIKEcDzIRn5AToGA=="
+          "hash": "CvtLc7sehpEzv5MQLn7ChQ=="
         }
       },
       "is_incremental": false,
@@ -1001,7 +1121,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.StoreFactory.html",
-          "hash": "L4ccGtHpyGCc+HcgO0EOWg=="
+          "hash": "DjjoBKCnn2ZAN2OpKDMkgg=="
         }
       },
       "is_incremental": false,
@@ -1013,7 +1133,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.StoreProvider.html",
-          "hash": "OHwtv4+NjiJJaSTDpT2vSQ=="
+          "hash": "2Nlv6pMctWKoa3CqKHXDvA=="
         }
       },
       "is_incremental": false,
@@ -1025,7 +1145,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.StoreProviderMissingException.html",
-          "hash": "YhG7G8KGcxH1iEHo9WGtNg=="
+          "hash": "gvvG5FP+arN4w9I0M6P+4Q=="
         }
       },
       "is_incremental": false,
@@ -1037,7 +1157,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.StringExtensions.html",
-          "hash": "dlPBaA74JFJrmcl6PvPLog=="
+          "hash": "ea9MgW2Q5TARoLdHuLREQQ=="
         }
       },
       "is_incremental": false,
@@ -1049,7 +1169,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.TransactionEventArgs.html",
-          "hash": "QdZdCnP/OcF+a7VznEH2Kg=="
+          "hash": "LL98mEN8RyonxVLIHEKAmw=="
         }
       },
       "is_incremental": false,
@@ -1061,7 +1181,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.UriExtensions.html",
-          "hash": "x55rfoRlXoL3Q/HVjkxNtA=="
+          "hash": "Yh9rqPMCIky1zeU2NWcsRg=="
         }
       },
       "is_incremental": false,
@@ -1073,7 +1193,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.UriRef.html",
-          "hash": "RjjndISmAqk7Nk/io7rPQQ=="
+          "hash": "DFfn3fIwuJR+hM7frUv6wA=="
         }
       },
       "is_incremental": false,
@@ -1085,7 +1205,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.Urn.html",
-          "hash": "S2whvuTjdctZE7EUjWJlSg=="
+          "hash": "TubSX24kO6epYzyHoaCB4w=="
         }
       },
       "is_incremental": false,
@@ -1097,7 +1217,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.VirtualizingSparqlCollection-1.html",
-          "hash": "VrQ7ODWCvz2UBabfAwtafg=="
+          "hash": "9coPS5FkajVHGz+i6mGsrQ=="
         }
       },
       "is_incremental": false,
@@ -1109,7 +1229,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.XsdTypeMapper.ObjectDeserializationDelegate.html",
-          "hash": "ipb2djI07Yuukxtn/3ZOfw=="
+          "hash": "pduN3VhKpkFUo2rfKbE7mA=="
         }
       },
       "is_incremental": false,
@@ -1121,7 +1241,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.XsdTypeMapper.ObjectSerializationDelegate.html",
-          "hash": "Yns8CV7xq/sDewBWgAw/wg=="
+          "hash": "mOaVBNZKTTngKEGrV4mPsA=="
         }
       },
       "is_incremental": false,
@@ -1133,7 +1253,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.XsdTypeMapper.html",
-          "hash": "C12xrBD0Ph+tuFA/wuhDWw=="
+          "hash": "9kQstqGgdLZohWQEbY6Hfg=="
         }
       },
       "is_incremental": false,
@@ -1145,7 +1265,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Semiodesk.Trinity.html",
-          "hash": "2x24Q/QhwVii1/YMR/IH5g=="
+          "hash": "Xst7hv7flNr+OxE3tL6LVQ=="
         }
       },
       "is_incremental": false,
@@ -1157,7 +1277,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "gw58ZMub//FY6MA2FDRVtg=="
+          "hash": "RYqgkijAZe12d7YJ0z3+XQ=="
         }
       },
       "is_incremental": false,
@@ -1181,7 +1301,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/firstSteps.html",
-          "hash": "iEAn+n4v3IuSHTpletG1dQ=="
+          "hash": "bnSFpIIV9eiFtdI1Apio1w=="
         }
       },
       "is_incremental": false,
@@ -1193,7 +1313,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/installation.html",
-          "hash": "C1BOqYHc0wgmAUcsaKsqyA=="
+          "hash": "O0U17Omsp6pfXcENvA0Gaw=="
         }
       },
       "is_incremental": false,
@@ -1205,7 +1325,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/intro.html",
-          "hash": "R8U2ZIq+OiKt5nzE68UQLQ=="
+          "hash": "SLjrM8K+Eirj3KalUDDHNA=="
         }
       },
       "is_incremental": false,
@@ -1217,7 +1337,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/license.html",
-          "hash": "z1pUakQ67V232zzxihROwg=="
+          "hash": "fR68irn0YiXwmcx7E+zVKQ=="
         }
       },
       "is_incremental": false,
@@ -1229,7 +1349,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/musicBrowser.html",
-          "hash": "xmtmCNdjdK4wZM8R2tVQQg=="
+          "hash": "wDFjnHbOGlLc31hlysFQkg=="
         }
       },
       "is_incremental": false,
@@ -1241,7 +1361,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/simpleUnity.html",
-          "hash": "GXfM+adtoM6nMp91dLRVzA=="
+          "hash": "xoR6xlCjBAf+TTpQulWXXg=="
         }
       },
       "is_incremental": false,
@@ -1265,7 +1385,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/virtuoso.html",
-          "hash": "WBxco2FodZyMSLhnmSPtug=="
+          "hash": "ffpPCO7qbBMX+0xmAjF06Q=="
         }
       },
       "is_incremental": false,
@@ -1277,7 +1397,7 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/webApp.html",
-          "hash": "LrZeKXUFlhVonONbZFx0cQ=="
+          "hash": "nTWSUCWzTou1tWb2Oxxk1w=="
         }
       },
       "is_incremental": false,
@@ -1287,19 +1407,14 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -1307,17 +1422,24 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 10,
-          "skipped_file_count": 7
+          "total_file_count": 0,
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 81,
-          "skipped_file_count": 81
+          "total_file_count": 91,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 10,
+          "skipped_file_count": 0
         }
       }
     },

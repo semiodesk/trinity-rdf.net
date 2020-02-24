@@ -5,12 +5,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Trinity RDF | Class ResourceQuery.rdf
+    <title>Trinity RDF | Class NamespaceMapperExtensions
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ResourceQuery.rdf
+    <meta name="title" content="Class NamespaceMapperExtensions
    ">
-    <meta name="generator" content="docfx 2.43.2.0">
+    <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -24,6 +24,8 @@
   </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
+        
+        <a id="page-top"></a>
         
         <nav class="navbar navbar-docfx navbar-expand-lg navbar-light fixed-top" role="navigation" id="mainNav">
         	<div class="container-fluid">
@@ -70,18 +72,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Semiodesk.Trinity.ResourceQuery.rdf">
+            <article class="content wrap" id="_content" data-uid="Semiodesk.Trinity.Extensions.NamespaceMapperExtensions">
   
   
-  <h1 id="Semiodesk_Trinity_ResourceQuery_rdf" data-uid="Semiodesk.Trinity.ResourceQuery.rdf" class="text-break">Class ResourceQuery.rdf
+  <h1 id="Semiodesk_Trinity_Extensions_NamespaceMapperExtensions" data-uid="Semiodesk.Trinity.Extensions.NamespaceMapperExtensions" class="text-break">Class NamespaceMapperExtensions
   </h1>
-  <div class="markdown level0 summary"><p>The RDF Vocabulary (RDF)</p>
+  <div class="markdown level0 summary"><p>Extension methods for the dotNetRDF INamespaceMapper class.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">ResourceQuery.rdf</span></div>
+    <div class="level1"><span class="xref">NamespaceMapperExtensions</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -107,41 +109,51 @@
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Semiodesk.Trinity.html">Semiodesk.Trinity</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Semiodesk.Trinity.Extensions.html">Semiodesk.Trinity.Extensions</a></h6>
   <h6><strong>Assembly</strong>: Semiodesk.Trinity.dll</h6>
-  <h5 id="Semiodesk_Trinity_ResourceQuery_rdf_syntax">Syntax</h5>
+  <h5 id="Semiodesk_Trinity_Extensions_NamespaceMapperExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected static class rdf</code></pre>
+    <pre><code class="lang-csharp hljs">public static class NamespaceMapperExtensions</code></pre>
   </div>
-  <h3 id="fields">Fields
+  <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_ResourceQuery_rdf_type.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.ResourceQuery.rdf.type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Extensions_NamespaceMapperExtensions_ImportNamespaces_VDS_RDF_INamespaceMapper_Semiodesk_Trinity_INamespaceMap_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Extensions.NamespaceMapperExtensions.ImportNamespaces(VDS.RDF.INamespaceMapper%2CSemiodesk.Trinity.INamespaceMap)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Query/ResourceQuery.cs/#L50">View Source</a>
+    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Extensions/NamespaceMapperExtensions.cs/#L44">View Source</a>
   </span>
-  <h4 id="Semiodesk_Trinity_ResourceQuery_rdf_type" data-uid="Semiodesk.Trinity.ResourceQuery.rdf.type">type</h4>
-  <div class="markdown level1 summary"><p>The subject is an instance of a class.</p>
+  <a id="Semiodesk_Trinity_Extensions_NamespaceMapperExtensions_ImportNamespaces_" data-uid="Semiodesk.Trinity.Extensions.NamespaceMapperExtensions.ImportNamespaces*"></a>
+  <h4 id="Semiodesk_Trinity_Extensions_NamespaceMapperExtensions_ImportNamespaces_VDS_RDF_INamespaceMapper_Semiodesk_Trinity_INamespaceMap_" data-uid="Semiodesk.Trinity.Extensions.NamespaceMapperExtensions.ImportNamespaces(VDS.RDF.INamespaceMapper,Semiodesk.Trinity.INamespaceMap)">ImportNamespaces(INamespaceMapper, INamespaceMap)</h4>
+  <div class="markdown level1 summary"><p>Import namespaces from a namespace dictionary and replace the currently defined ones.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly Property type</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ImportNamespaces(this INamespaceMapper mapper, INamespaceMap namespaces)</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Semiodesk.Trinity.Property.html">Property</a></td>
-        <td></td>
+        <td><span class="xref">VDS.RDF.INamespaceMapper</span></td>
+        <td><span class="parametername">mapper</span></td>
+        <td><p>A namespace mapper.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semiodesk.Trinity.INamespaceMap.html">INamespaceMap</a></td>
+        <td><span class="parametername">namespaces</span></td>
+        <td><p>A namesapce map.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -153,10 +165,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_ResourceQuery_rdf.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.ResourceQuery.rdf%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Extensions_NamespaceMapperExtensions.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Extensions.NamespaceMapperExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Query/ResourceQuery.cs/#L45" class="contribution-link">View Source</a>
+                    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Extensions/NamespaceMapperExtensions.cs/#L37" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

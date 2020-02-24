@@ -888,6 +888,31 @@ references:
   fullName.vb: Semiodesk.Trinity.Collections.VirtualizingCollection(Of T).System.Collections.IList.Remove
   nameWithType: VirtualizingCollection<T>.IList.Remove
   nameWithType.vb: VirtualizingCollection(Of T).System.Collections.IList.Remove
+- uid: Semiodesk.Trinity.Extensions
+  name: Semiodesk.Trinity.Extensions
+  href: api/Semiodesk.Trinity.Extensions.html
+  commentId: N:Semiodesk.Trinity.Extensions
+  fullName: Semiodesk.Trinity.Extensions
+  nameWithType: Semiodesk.Trinity.Extensions
+- uid: Semiodesk.Trinity.Extensions.NamespaceMapperExtensions
+  name: NamespaceMapperExtensions
+  href: api/Semiodesk.Trinity.Extensions.NamespaceMapperExtensions.html
+  commentId: T:Semiodesk.Trinity.Extensions.NamespaceMapperExtensions
+  fullName: Semiodesk.Trinity.Extensions.NamespaceMapperExtensions
+  nameWithType: NamespaceMapperExtensions
+- uid: Semiodesk.Trinity.Extensions.NamespaceMapperExtensions.ImportNamespaces(VDS.RDF.INamespaceMapper,Semiodesk.Trinity.INamespaceMap)
+  name: ImportNamespaces(INamespaceMapper, INamespaceMap)
+  href: api/Semiodesk.Trinity.Extensions.NamespaceMapperExtensions.html#Semiodesk_Trinity_Extensions_NamespaceMapperExtensions_ImportNamespaces_VDS_RDF_INamespaceMapper_Semiodesk_Trinity_INamespaceMap_
+  commentId: M:Semiodesk.Trinity.Extensions.NamespaceMapperExtensions.ImportNamespaces(VDS.RDF.INamespaceMapper,Semiodesk.Trinity.INamespaceMap)
+  fullName: Semiodesk.Trinity.Extensions.NamespaceMapperExtensions.ImportNamespaces(VDS.RDF.INamespaceMapper, Semiodesk.Trinity.INamespaceMap)
+  nameWithType: NamespaceMapperExtensions.ImportNamespaces(INamespaceMapper, INamespaceMap)
+- uid: Semiodesk.Trinity.Extensions.NamespaceMapperExtensions.ImportNamespaces*
+  name: ImportNamespaces
+  href: api/Semiodesk.Trinity.Extensions.NamespaceMapperExtensions.html#Semiodesk_Trinity_Extensions_NamespaceMapperExtensions_ImportNamespaces_
+  commentId: Overload:Semiodesk.Trinity.Extensions.NamespaceMapperExtensions.ImportNamespaces
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Extensions.NamespaceMapperExtensions.ImportNamespaces
+  nameWithType: NamespaceMapperExtensions.ImportNamespaces
 - uid: Semiodesk.Trinity.FileSystemInfoExtensions
   name: FileSystemInfoExtensions
   href: api/Semiodesk.Trinity.FileSystemInfoExtensions.html
@@ -1183,6 +1208,19 @@ references:
   fullName.vb: Semiodesk.Trinity.IModel.GetResources(Of T)(System.Boolean, Semiodesk.Trinity.ITransaction)
   nameWithType: IModel.GetResources<T>(Boolean, ITransaction)
   nameWithType.vb: IModel.GetResources(Of T)(Boolean, ITransaction)
+- uid: Semiodesk.Trinity.IModel.IgnoreUnmappedProperties
+  name: IgnoreUnmappedProperties
+  href: api/Semiodesk.Trinity.IModel.html#Semiodesk_Trinity_IModel_IgnoreUnmappedProperties
+  commentId: P:Semiodesk.Trinity.IModel.IgnoreUnmappedProperties
+  fullName: Semiodesk.Trinity.IModel.IgnoreUnmappedProperties
+  nameWithType: IModel.IgnoreUnmappedProperties
+- uid: Semiodesk.Trinity.IModel.IgnoreUnmappedProperties*
+  name: IgnoreUnmappedProperties
+  href: api/Semiodesk.Trinity.IModel.html#Semiodesk_Trinity_IModel_IgnoreUnmappedProperties_
+  commentId: Overload:Semiodesk.Trinity.IModel.IgnoreUnmappedProperties
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.IModel.IgnoreUnmappedProperties
+  nameWithType: IModel.IgnoreUnmappedProperties
 - uid: Semiodesk.Trinity.IModel.IsEmpty
   name: IsEmpty
   href: api/Semiodesk.Trinity.IModel.html#Semiodesk_Trinity_IModel_IsEmpty
@@ -1241,12 +1279,12 @@ references:
   isSpec: "True"
   fullName: Semiodesk.Trinity.IModel.Uri
   nameWithType: IModel.Uri
-- uid: Semiodesk.Trinity.IModel.Write(System.IO.Stream,Semiodesk.Trinity.RdfSerializationFormat)
-  name: Write(Stream, RdfSerializationFormat)
-  href: api/Semiodesk.Trinity.IModel.html#Semiodesk_Trinity_IModel_Write_System_IO_Stream_Semiodesk_Trinity_RdfSerializationFormat_
-  commentId: M:Semiodesk.Trinity.IModel.Write(System.IO.Stream,Semiodesk.Trinity.RdfSerializationFormat)
-  fullName: Semiodesk.Trinity.IModel.Write(System.IO.Stream, Semiodesk.Trinity.RdfSerializationFormat)
-  nameWithType: IModel.Write(Stream, RdfSerializationFormat)
+- uid: Semiodesk.Trinity.IModel.Write(System.IO.Stream,Semiodesk.Trinity.RdfSerializationFormat,Semiodesk.Trinity.INamespaceMap)
+  name: Write(Stream, RdfSerializationFormat, INamespaceMap)
+  href: api/Semiodesk.Trinity.IModel.html#Semiodesk_Trinity_IModel_Write_System_IO_Stream_Semiodesk_Trinity_RdfSerializationFormat_Semiodesk_Trinity_INamespaceMap_
+  commentId: M:Semiodesk.Trinity.IModel.Write(System.IO.Stream,Semiodesk.Trinity.RdfSerializationFormat,Semiodesk.Trinity.INamespaceMap)
+  fullName: Semiodesk.Trinity.IModel.Write(System.IO.Stream, Semiodesk.Trinity.RdfSerializationFormat, Semiodesk.Trinity.INamespaceMap)
+  nameWithType: IModel.Write(Stream, RdfSerializationFormat, INamespaceMap)
 - uid: Semiodesk.Trinity.IModel.Write*
   name: Write
   href: api/Semiodesk.Trinity.IModel.html#Semiodesk_Trinity_IModel_Write_
@@ -1273,6 +1311,12 @@ references:
   isSpec: "True"
   fullName: Semiodesk.Trinity.IModelGroup.DefaultModel
   nameWithType: IModelGroup.DefaultModel
+- uid: Semiodesk.Trinity.INamespaceMap
+  name: INamespaceMap
+  href: api/Semiodesk.Trinity.INamespaceMap.html
+  commentId: T:Semiodesk.Trinity.INamespaceMap
+  fullName: Semiodesk.Trinity.INamespaceMap
+  nameWithType: INamespaceMap
 - uid: Semiodesk.Trinity.InvalidQueryException
   name: InvalidQueryException
   href: api/Semiodesk.Trinity.InvalidQueryException.html
@@ -2143,12 +2187,12 @@ references:
   isSpec: "True"
   fullName: Semiodesk.Trinity.IStore.RemoveModel
   nameWithType: IStore.RemoveModel
-- uid: Semiodesk.Trinity.IStore.Write(System.IO.Stream,System.Uri,Semiodesk.Trinity.RdfSerializationFormat)
-  name: Write(Stream, Uri, RdfSerializationFormat)
-  href: api/Semiodesk.Trinity.IStore.html#Semiodesk_Trinity_IStore_Write_System_IO_Stream_System_Uri_Semiodesk_Trinity_RdfSerializationFormat_
-  commentId: M:Semiodesk.Trinity.IStore.Write(System.IO.Stream,System.Uri,Semiodesk.Trinity.RdfSerializationFormat)
-  fullName: Semiodesk.Trinity.IStore.Write(System.IO.Stream, System.Uri, Semiodesk.Trinity.RdfSerializationFormat)
-  nameWithType: IStore.Write(Stream, Uri, RdfSerializationFormat)
+- uid: Semiodesk.Trinity.IStore.Write(System.IO.Stream,System.Uri,Semiodesk.Trinity.RdfSerializationFormat,Semiodesk.Trinity.INamespaceMap)
+  name: Write(Stream, Uri, RdfSerializationFormat, INamespaceMap)
+  href: api/Semiodesk.Trinity.IStore.html#Semiodesk_Trinity_IStore_Write_System_IO_Stream_System_Uri_Semiodesk_Trinity_RdfSerializationFormat_Semiodesk_Trinity_INamespaceMap_
+  commentId: M:Semiodesk.Trinity.IStore.Write(System.IO.Stream,System.Uri,Semiodesk.Trinity.RdfSerializationFormat,Semiodesk.Trinity.INamespaceMap)
+  fullName: Semiodesk.Trinity.IStore.Write(System.IO.Stream, System.Uri, Semiodesk.Trinity.RdfSerializationFormat, Semiodesk.Trinity.INamespaceMap)
+  nameWithType: IStore.Write(Stream, Uri, RdfSerializationFormat, INamespaceMap)
 - uid: Semiodesk.Trinity.IStore.Write*
   name: Write
   href: api/Semiodesk.Trinity.IStore.html#Semiodesk_Trinity_IStore_Write_
@@ -2699,6 +2743,19 @@ references:
   fullName.vb: Semiodesk.Trinity.Model.GetResources(Of T)(System.Boolean, Semiodesk.Trinity.ITransaction)
   nameWithType: Model.GetResources<T>(Boolean, ITransaction)
   nameWithType.vb: Model.GetResources(Of T)(Boolean, ITransaction)
+- uid: Semiodesk.Trinity.Model.IgnoreUnmappedProperties
+  name: IgnoreUnmappedProperties
+  href: api/Semiodesk.Trinity.Model.html#Semiodesk_Trinity_Model_IgnoreUnmappedProperties
+  commentId: P:Semiodesk.Trinity.Model.IgnoreUnmappedProperties
+  fullName: Semiodesk.Trinity.Model.IgnoreUnmappedProperties
+  nameWithType: Model.IgnoreUnmappedProperties
+- uid: Semiodesk.Trinity.Model.IgnoreUnmappedProperties*
+  name: IgnoreUnmappedProperties
+  href: api/Semiodesk.Trinity.Model.html#Semiodesk_Trinity_Model_IgnoreUnmappedProperties_
+  commentId: Overload:Semiodesk.Trinity.Model.IgnoreUnmappedProperties
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Model.IgnoreUnmappedProperties
+  nameWithType: Model.IgnoreUnmappedProperties
 - uid: Semiodesk.Trinity.Model.IsEmpty
   name: IsEmpty
   href: api/Semiodesk.Trinity.Model.html#Semiodesk_Trinity_Model_IsEmpty
@@ -2757,12 +2814,12 @@ references:
   isSpec: "True"
   fullName: Semiodesk.Trinity.Model.Uri
   nameWithType: Model.Uri
-- uid: Semiodesk.Trinity.Model.Write(System.IO.Stream,Semiodesk.Trinity.RdfSerializationFormat)
-  name: Write(Stream, RdfSerializationFormat)
-  href: api/Semiodesk.Trinity.Model.html#Semiodesk_Trinity_Model_Write_System_IO_Stream_Semiodesk_Trinity_RdfSerializationFormat_
-  commentId: M:Semiodesk.Trinity.Model.Write(System.IO.Stream,Semiodesk.Trinity.RdfSerializationFormat)
-  fullName: Semiodesk.Trinity.Model.Write(System.IO.Stream, Semiodesk.Trinity.RdfSerializationFormat)
-  nameWithType: Model.Write(Stream, RdfSerializationFormat)
+- uid: Semiodesk.Trinity.Model.Write(System.IO.Stream,Semiodesk.Trinity.RdfSerializationFormat,Semiodesk.Trinity.INamespaceMap)
+  name: Write(Stream, RdfSerializationFormat, INamespaceMap)
+  href: api/Semiodesk.Trinity.Model.html#Semiodesk_Trinity_Model_Write_System_IO_Stream_Semiodesk_Trinity_RdfSerializationFormat_Semiodesk_Trinity_INamespaceMap_
+  commentId: M:Semiodesk.Trinity.Model.Write(System.IO.Stream,Semiodesk.Trinity.RdfSerializationFormat,Semiodesk.Trinity.INamespaceMap)
+  fullName: Semiodesk.Trinity.Model.Write(System.IO.Stream, Semiodesk.Trinity.RdfSerializationFormat, Semiodesk.Trinity.INamespaceMap)
+  nameWithType: Model.Write(Stream, RdfSerializationFormat, INamespaceMap)
 - uid: Semiodesk.Trinity.Model.Write*
   name: Write
   href: api/Semiodesk.Trinity.Model.html#Semiodesk_Trinity_Model_Write_
@@ -2770,6 +2827,12 @@ references:
   isSpec: "True"
   fullName: Semiodesk.Trinity.Model.Write
   nameWithType: Model.Write
+- uid: Semiodesk.Trinity.NamespaceMap
+  name: NamespaceMap
+  href: api/Semiodesk.Trinity.NamespaceMap.html
+  commentId: T:Semiodesk.Trinity.NamespaceMap
+  fullName: Semiodesk.Trinity.NamespaceMap
+  nameWithType: NamespaceMap
 - uid: Semiodesk.Trinity.NotifyPropertyChangedAttribute
   name: NotifyPropertyChangedAttribute
   href: api/Semiodesk.Trinity.NotifyPropertyChangedAttribute.html
@@ -2794,6 +2857,12 @@ references:
   commentId: M:Semiodesk.Trinity.OntologyDiscovery.AddAssembly(System.Reflection.Assembly)
   fullName: Semiodesk.Trinity.OntologyDiscovery.AddAssembly(System.Reflection.Assembly)
   nameWithType: OntologyDiscovery.AddAssembly(Assembly)
+- uid: Semiodesk.Trinity.OntologyDiscovery.AddAssembly(System.Type)
+  name: AddAssembly(Type)
+  href: api/Semiodesk.Trinity.OntologyDiscovery.html#Semiodesk_Trinity_OntologyDiscovery_AddAssembly_System_Type_
+  commentId: M:Semiodesk.Trinity.OntologyDiscovery.AddAssembly(System.Type)
+  fullName: Semiodesk.Trinity.OntologyDiscovery.AddAssembly(System.Type)
+  nameWithType: OntologyDiscovery.AddAssembly(Type)
 - uid: Semiodesk.Trinity.OntologyDiscovery.AddAssembly*
   name: AddAssembly
   href: api/Semiodesk.Trinity.OntologyDiscovery.html#Semiodesk_Trinity_OntologyDiscovery_AddAssembly_
@@ -4914,12 +4983,12 @@ references:
   isSpec: "True"
   fullName: Semiodesk.Trinity.SparqlSerializer.SerializeOffsetLimit
   nameWithType: SparqlSerializer.SerializeOffsetLimit
-- uid: Semiodesk.Trinity.SparqlSerializer.SerializeResource(Semiodesk.Trinity.IResource)
-  name: SerializeResource(IResource)
-  href: api/Semiodesk.Trinity.SparqlSerializer.html#Semiodesk_Trinity_SparqlSerializer_SerializeResource_Semiodesk_Trinity_IResource_
-  commentId: M:Semiodesk.Trinity.SparqlSerializer.SerializeResource(Semiodesk.Trinity.IResource)
-  fullName: Semiodesk.Trinity.SparqlSerializer.SerializeResource(Semiodesk.Trinity.IResource)
-  nameWithType: SparqlSerializer.SerializeResource(IResource)
+- uid: Semiodesk.Trinity.SparqlSerializer.SerializeResource(Semiodesk.Trinity.IResource,System.Boolean)
+  name: SerializeResource(IResource, Boolean)
+  href: api/Semiodesk.Trinity.SparqlSerializer.html#Semiodesk_Trinity_SparqlSerializer_SerializeResource_Semiodesk_Trinity_IResource_System_Boolean_
+  commentId: M:Semiodesk.Trinity.SparqlSerializer.SerializeResource(Semiodesk.Trinity.IResource,System.Boolean)
+  fullName: Semiodesk.Trinity.SparqlSerializer.SerializeResource(Semiodesk.Trinity.IResource, System.Boolean)
+  nameWithType: SparqlSerializer.SerializeResource(IResource, Boolean)
 - uid: Semiodesk.Trinity.SparqlSerializer.SerializeResource*
   name: SerializeResource
   href: api/Semiodesk.Trinity.SparqlSerializer.html#Semiodesk_Trinity_SparqlSerializer_SerializeResource_
@@ -5271,12 +5340,12 @@ references:
   isSpec: "True"
   fullName: Semiodesk.Trinity.Store.dotNetRDFStore.TryParse
   nameWithType: dotNetRDFStore.TryParse
-- uid: Semiodesk.Trinity.Store.dotNetRDFStore.Write(System.IO.Stream,System.Uri,Semiodesk.Trinity.RdfSerializationFormat)
-  name: Write(Stream, Uri, RdfSerializationFormat)
-  href: api/Semiodesk.Trinity.Store.dotNetRDFStore.html#Semiodesk_Trinity_Store_dotNetRDFStore_Write_System_IO_Stream_System_Uri_Semiodesk_Trinity_RdfSerializationFormat_
-  commentId: M:Semiodesk.Trinity.Store.dotNetRDFStore.Write(System.IO.Stream,System.Uri,Semiodesk.Trinity.RdfSerializationFormat)
-  fullName: Semiodesk.Trinity.Store.dotNetRDFStore.Write(System.IO.Stream, System.Uri, Semiodesk.Trinity.RdfSerializationFormat)
-  nameWithType: dotNetRDFStore.Write(Stream, Uri, RdfSerializationFormat)
+- uid: Semiodesk.Trinity.Store.dotNetRDFStore.Write(System.IO.Stream,System.Uri,Semiodesk.Trinity.RdfSerializationFormat,Semiodesk.Trinity.INamespaceMap)
+  name: Write(Stream, Uri, RdfSerializationFormat, INamespaceMap)
+  href: api/Semiodesk.Trinity.Store.dotNetRDFStore.html#Semiodesk_Trinity_Store_dotNetRDFStore_Write_System_IO_Stream_System_Uri_Semiodesk_Trinity_RdfSerializationFormat_Semiodesk_Trinity_INamespaceMap_
+  commentId: M:Semiodesk.Trinity.Store.dotNetRDFStore.Write(System.IO.Stream,System.Uri,Semiodesk.Trinity.RdfSerializationFormat,Semiodesk.Trinity.INamespaceMap)
+  fullName: Semiodesk.Trinity.Store.dotNetRDFStore.Write(System.IO.Stream, System.Uri, Semiodesk.Trinity.RdfSerializationFormat, Semiodesk.Trinity.INamespaceMap)
+  nameWithType: dotNetRDFStore.Write(Stream, Uri, RdfSerializationFormat, INamespaceMap)
 - uid: Semiodesk.Trinity.Store.dotNetRDFStore.Write*
   name: Write
   href: api/Semiodesk.Trinity.Store.dotNetRDFStore.html#Semiodesk_Trinity_Store_dotNetRDFStore_Write_
@@ -5457,6 +5526,24 @@ references:
   commentId: N:Semiodesk.Trinity.Store.Stardog
   fullName: Semiodesk.Trinity.Store.Stardog
   nameWithType: Semiodesk.Trinity.Store.Stardog
+- uid: Semiodesk.Trinity.Store.Stardog.ReadEndEventHandler
+  name: ReadEndEventHandler
+  href: api/Semiodesk.Trinity.Store.Stardog.ReadEndEventHandler.html
+  commentId: T:Semiodesk.Trinity.Store.Stardog.ReadEndEventHandler
+  fullName: Semiodesk.Trinity.Store.Stardog.ReadEndEventHandler
+  nameWithType: ReadEndEventHandler
+- uid: Semiodesk.Trinity.Store.Stardog.ReadStartEventHandler
+  name: ReadStartEventHandler
+  href: api/Semiodesk.Trinity.Store.Stardog.ReadStartEventHandler.html
+  commentId: T:Semiodesk.Trinity.Store.Stardog.ReadStartEventHandler
+  fullName: Semiodesk.Trinity.Store.Stardog.ReadStartEventHandler
+  nameWithType: ReadStartEventHandler
+- uid: Semiodesk.Trinity.Store.Stardog.ReadTripleEventHandler
+  name: ReadTripleEventHandler
+  href: api/Semiodesk.Trinity.Store.Stardog.ReadTripleEventHandler.html
+  commentId: T:Semiodesk.Trinity.Store.Stardog.ReadTripleEventHandler
+  fullName: Semiodesk.Trinity.Store.Stardog.ReadTripleEventHandler
+  nameWithType: ReadTripleEventHandler
 - uid: Semiodesk.Trinity.Store.Stardog.StardogResultHandler
   name: StardogResultHandler
   href: api/Semiodesk.Trinity.Store.Stardog.StardogResultHandler.html
@@ -5753,12 +5840,12 @@ references:
   isSpec: "True"
   fullName: Semiodesk.Trinity.Store.Stardog.StardogStore.RemoveModel
   nameWithType: StardogStore.RemoveModel
-- uid: Semiodesk.Trinity.Store.Stardog.StardogStore.Write(System.IO.Stream,System.Uri,Semiodesk.Trinity.RdfSerializationFormat)
-  name: Write(Stream, Uri, RdfSerializationFormat)
-  href: api/Semiodesk.Trinity.Store.Stardog.StardogStore.html#Semiodesk_Trinity_Store_Stardog_StardogStore_Write_System_IO_Stream_System_Uri_Semiodesk_Trinity_RdfSerializationFormat_
-  commentId: M:Semiodesk.Trinity.Store.Stardog.StardogStore.Write(System.IO.Stream,System.Uri,Semiodesk.Trinity.RdfSerializationFormat)
-  fullName: Semiodesk.Trinity.Store.Stardog.StardogStore.Write(System.IO.Stream, System.Uri, Semiodesk.Trinity.RdfSerializationFormat)
-  nameWithType: StardogStore.Write(Stream, Uri, RdfSerializationFormat)
+- uid: Semiodesk.Trinity.Store.Stardog.StardogStore.Write(System.IO.Stream,System.Uri,Semiodesk.Trinity.RdfSerializationFormat,Semiodesk.Trinity.INamespaceMap)
+  name: Write(Stream, Uri, RdfSerializationFormat, INamespaceMap)
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogStore.html#Semiodesk_Trinity_Store_Stardog_StardogStore_Write_System_IO_Stream_System_Uri_Semiodesk_Trinity_RdfSerializationFormat_Semiodesk_Trinity_INamespaceMap_
+  commentId: M:Semiodesk.Trinity.Store.Stardog.StardogStore.Write(System.IO.Stream,System.Uri,Semiodesk.Trinity.RdfSerializationFormat,Semiodesk.Trinity.INamespaceMap)
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogStore.Write(System.IO.Stream, System.Uri, Semiodesk.Trinity.RdfSerializationFormat, Semiodesk.Trinity.INamespaceMap)
+  nameWithType: StardogStore.Write(Stream, Uri, RdfSerializationFormat, INamespaceMap)
 - uid: Semiodesk.Trinity.Store.Stardog.StardogStore.Write*
   name: Write
   href: api/Semiodesk.Trinity.Store.Stardog.StardogStore.html#Semiodesk_Trinity_Store_Stardog_StardogStore_Write_
@@ -5811,6 +5898,19 @@ references:
   isSpec: "True"
   fullName: Semiodesk.Trinity.Store.Stardog.StardogTransaction.Commit
   nameWithType: StardogTransaction.Commit
+- uid: Semiodesk.Trinity.Store.Stardog.StardogTransaction.Connector
+  name: Connector
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogTransaction.html#Semiodesk_Trinity_Store_Stardog_StardogTransaction_Connector
+  commentId: P:Semiodesk.Trinity.Store.Stardog.StardogTransaction.Connector
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogTransaction.Connector
+  nameWithType: StardogTransaction.Connector
+- uid: Semiodesk.Trinity.Store.Stardog.StardogTransaction.Connector*
+  name: Connector
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogTransaction.html#Semiodesk_Trinity_Store_Stardog_StardogTransaction_Connector_
+  commentId: Overload:Semiodesk.Trinity.Store.Stardog.StardogTransaction.Connector
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogTransaction.Connector
+  nameWithType: StardogTransaction.Connector
 - uid: Semiodesk.Trinity.Store.Stardog.StardogTransaction.Dispose
   name: Dispose()
   href: api/Semiodesk.Trinity.Store.Stardog.StardogTransaction.html#Semiodesk_Trinity_Store_Stardog_StardogTransaction_Dispose
@@ -5959,6 +6059,64 @@ references:
   isSpec: "True"
   fullName: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.LastParsedQuery
   nameWithType: StardogUpdateSparqlConverter.LastParsedQuery
+- uid: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode
+  name: StardogUpdateSparqlConverter.ParsedNode
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.html
+  commentId: T:Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode
+  nameWithType: StardogUpdateSparqlConverter.ParsedNode
+- uid: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.IsLiteralNode
+  name: IsLiteralNode
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.html#Semiodesk_Trinity_Store_Stardog_StardogUpdateSparqlConverter_ParsedNode_IsLiteralNode
+  commentId: P:Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.IsLiteralNode
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.IsLiteralNode
+  nameWithType: StardogUpdateSparqlConverter.ParsedNode.IsLiteralNode
+- uid: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.IsLiteralNode*
+  name: IsLiteralNode
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.html#Semiodesk_Trinity_Store_Stardog_StardogUpdateSparqlConverter_ParsedNode_IsLiteralNode_
+  commentId: Overload:Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.IsLiteralNode
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.IsLiteralNode
+  nameWithType: StardogUpdateSparqlConverter.ParsedNode.IsLiteralNode
+- uid: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.LiteralType
+  name: LiteralType
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.html#Semiodesk_Trinity_Store_Stardog_StardogUpdateSparqlConverter_ParsedNode_LiteralType
+  commentId: P:Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.LiteralType
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.LiteralType
+  nameWithType: StardogUpdateSparqlConverter.ParsedNode.LiteralType
+- uid: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.LiteralType*
+  name: LiteralType
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.html#Semiodesk_Trinity_Store_Stardog_StardogUpdateSparqlConverter_ParsedNode_LiteralType_
+  commentId: Overload:Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.LiteralType
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.LiteralType
+  nameWithType: StardogUpdateSparqlConverter.ParsedNode.LiteralType
+- uid: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.ToString
+  name: ToString()
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.html#Semiodesk_Trinity_Store_Stardog_StardogUpdateSparqlConverter_ParsedNode_ToString
+  commentId: M:Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.ToString
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.ToString()
+  nameWithType: StardogUpdateSparqlConverter.ParsedNode.ToString()
+- uid: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.ToString*
+  name: ToString
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.html#Semiodesk_Trinity_Store_Stardog_StardogUpdateSparqlConverter_ParsedNode_ToString_
+  commentId: Overload:Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.ToString
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.ToString
+  nameWithType: StardogUpdateSparqlConverter.ParsedNode.ToString
+- uid: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.Value
+  name: Value
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.html#Semiodesk_Trinity_Store_Stardog_StardogUpdateSparqlConverter_ParsedNode_Value
+  commentId: P:Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.Value
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.Value
+  nameWithType: StardogUpdateSparqlConverter.ParsedNode.Value
+- uid: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.Value*
+  name: Value
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.html#Semiodesk_Trinity_Store_Stardog_StardogUpdateSparqlConverter_ParsedNode_Value_
+  commentId: Overload:Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.Value
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParsedNode.Value
+  nameWithType: StardogUpdateSparqlConverter.ParsedNode.Value
 - uid: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.ParseQuery(System.String)
   name: ParseQuery(String)
   href: api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.html#Semiodesk_Trinity_Store_Stardog_StardogUpdateSparqlConverter_ParseQuery_System_String_
@@ -5998,6 +6156,77 @@ references:
   isSpec: "True"
   fullName: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.Removals
   nameWithType: StardogUpdateSparqlConverter.Removals
+- uid: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet
+  name: StardogUpdateSparqlConverter.TripleSet
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.html
+  commentId: T:Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet
+  nameWithType: StardogUpdateSparqlConverter.TripleSet
+- uid: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.Object
+  name: Object
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.html#Semiodesk_Trinity_Store_Stardog_StardogUpdateSparqlConverter_TripleSet_Object
+  commentId: P:Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.Object
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.Object
+  nameWithType: StardogUpdateSparqlConverter.TripleSet.Object
+- uid: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.Object*
+  name: Object
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.html#Semiodesk_Trinity_Store_Stardog_StardogUpdateSparqlConverter_TripleSet_Object_
+  commentId: Overload:Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.Object
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.Object
+  nameWithType: StardogUpdateSparqlConverter.TripleSet.Object
+- uid: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.Predicate
+  name: Predicate
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.html#Semiodesk_Trinity_Store_Stardog_StardogUpdateSparqlConverter_TripleSet_Predicate
+  commentId: P:Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.Predicate
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.Predicate
+  nameWithType: StardogUpdateSparqlConverter.TripleSet.Predicate
+- uid: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.Predicate*
+  name: Predicate
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.html#Semiodesk_Trinity_Store_Stardog_StardogUpdateSparqlConverter_TripleSet_Predicate_
+  commentId: Overload:Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.Predicate
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.Predicate
+  nameWithType: StardogUpdateSparqlConverter.TripleSet.Predicate
+- uid: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.Subject
+  name: Subject
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.html#Semiodesk_Trinity_Store_Stardog_StardogUpdateSparqlConverter_TripleSet_Subject
+  commentId: P:Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.Subject
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.Subject
+  nameWithType: StardogUpdateSparqlConverter.TripleSet.Subject
+- uid: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.Subject*
+  name: Subject
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.html#Semiodesk_Trinity_Store_Stardog_StardogUpdateSparqlConverter_TripleSet_Subject_
+  commentId: Overload:Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.Subject
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.Subject
+  nameWithType: StardogUpdateSparqlConverter.TripleSet.Subject
+- uid: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.ToString
+  name: ToString()
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.html#Semiodesk_Trinity_Store_Stardog_StardogUpdateSparqlConverter_TripleSet_ToString
+  commentId: M:Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.ToString
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.ToString()
+  nameWithType: StardogUpdateSparqlConverter.TripleSet.ToString()
+- uid: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.ToString*
+  name: ToString
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.html#Semiodesk_Trinity_Store_Stardog_StardogUpdateSparqlConverter_TripleSet_ToString_
+  commentId: Overload:Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.ToString
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.TripleSet.ToString
+  nameWithType: StardogUpdateSparqlConverter.TripleSet.ToString
+- uid: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.UpdateTriples
+  name: UpdateTriples
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.html#Semiodesk_Trinity_Store_Stardog_StardogUpdateSparqlConverter_UpdateTriples
+  commentId: P:Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.UpdateTriples
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.UpdateTriples
+  nameWithType: StardogUpdateSparqlConverter.UpdateTriples
+- uid: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.UpdateTriples*
+  name: UpdateTriples
+  href: api/Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.html#Semiodesk_Trinity_Store_Stardog_StardogUpdateSparqlConverter_UpdateTriples_
+  commentId: Overload:Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.UpdateTriples
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Stardog.StardogUpdateSparqlConverter.UpdateTriples
+  nameWithType: StardogUpdateSparqlConverter.UpdateTriples
 - uid: Semiodesk.Trinity.Store.Stardog.StringExtensions
   name: StringExtensions
   href: api/Semiodesk.Trinity.Store.Stardog.StringExtensions.html
@@ -6153,6 +6382,324 @@ references:
   isSpec: "True"
   fullName: Semiodesk.Trinity.Store.Virtuoso.Rulesets.RulesetCollection
   nameWithType: Rulesets.RulesetCollection
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager
+  name: VirtuosoManager
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html
+  commentId: T:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager
+  nameWithType: VirtuosoManager
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.#ctor(System.String)
+  name: VirtuosoManager(String)
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_System_String_
+  commentId: M:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.#ctor(System.String)
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.VirtuosoManager(System.String)
+  nameWithType: VirtuosoManager.VirtuosoManager(String)
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.#ctor(System.String,System.Int32,System.String,System.String,System.String)
+  name: VirtuosoManager(String, Int32, String, String, String)
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_System_String_System_Int32_System_String_System_String_System_String_
+  commentId: M:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.#ctor(System.String,System.Int32,System.String,System.String,System.String)
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.VirtuosoManager(System.String, System.Int32, System.String, System.String, System.String)
+  nameWithType: VirtuosoManager.VirtuosoManager(String, Int32, String, String, String)
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.#ctor(System.String,System.Int32,System.String,System.String,System.String,System.Int32)
+  name: VirtuosoManager(String, Int32, String, String, String, Int32)
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_System_String_System_Int32_System_String_System_String_System_String_System_Int32_
+  commentId: M:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.#ctor(System.String,System.Int32,System.String,System.String,System.String,System.Int32)
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.VirtuosoManager(System.String, System.Int32, System.String, System.String, System.String, System.Int32)
+  nameWithType: VirtuosoManager.VirtuosoManager(String, Int32, String, String, String, Int32)
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.#ctor(System.String,System.String,System.String)
+  name: VirtuosoManager(String, String, String)
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_System_String_System_String_System_String_
+  commentId: M:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.#ctor(System.String,System.String,System.String)
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.VirtuosoManager(System.String, System.String, System.String)
+  nameWithType: VirtuosoManager.VirtuosoManager(String, String, String)
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.#ctor(System.String,System.String,System.String,System.Int32)
+  name: VirtuosoManager(String, String, String, Int32)
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_System_String_System_String_System_String_System_Int32_
+  commentId: M:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.#ctor(System.String,System.String,System.String,System.Int32)
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.VirtuosoManager(System.String, System.String, System.String, System.Int32)
+  nameWithType: VirtuosoManager.VirtuosoManager(String, String, String, Int32)
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.#ctor*
+  name: VirtuosoManager
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager__ctor_
+  commentId: Overload:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.#ctor
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.VirtuosoManager
+  nameWithType: VirtuosoManager.VirtuosoManager
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DefaultDB
+  name: DefaultDB
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_DefaultDB
+  commentId: F:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DefaultDB
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DefaultDB
+  nameWithType: VirtuosoManager.DefaultDB
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DefaultPort
+  name: DefaultPort
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_DefaultPort
+  commentId: F:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DefaultPort
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DefaultPort
+  nameWithType: VirtuosoManager.DefaultPort
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteGraph(System.String)
+  name: DeleteGraph(String)
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_DeleteGraph_System_String_
+  commentId: M:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteGraph(System.String)
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteGraph(System.String)
+  nameWithType: VirtuosoManager.DeleteGraph(String)
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteGraph(System.Uri)
+  name: DeleteGraph(Uri)
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_DeleteGraph_System_Uri_
+  commentId: M:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteGraph(System.Uri)
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteGraph(System.Uri)
+  nameWithType: VirtuosoManager.DeleteGraph(Uri)
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteGraph*
+  name: DeleteGraph
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_DeleteGraph_
+  commentId: Overload:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteGraph
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteGraph
+  nameWithType: VirtuosoManager.DeleteGraph
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteSupported
+  name: DeleteSupported
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_DeleteSupported
+  commentId: P:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteSupported
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteSupported
+  nameWithType: VirtuosoManager.DeleteSupported
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteSupported*
+  name: DeleteSupported
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_DeleteSupported_
+  commentId: Overload:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteSupported
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.DeleteSupported
+  nameWithType: VirtuosoManager.DeleteSupported
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Dispose
+  name: Dispose()
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_Dispose
+  commentId: M:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Dispose
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Dispose()
+  nameWithType: VirtuosoManager.Dispose()
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Dispose*
+  name: Dispose
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_Dispose_
+  commentId: Overload:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Dispose
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Dispose
+  nameWithType: VirtuosoManager.Dispose
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.HasActiveTransaction
+  name: HasActiveTransaction
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_HasActiveTransaction
+  commentId: P:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.HasActiveTransaction
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.HasActiveTransaction
+  nameWithType: VirtuosoManager.HasActiveTransaction
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.HasActiveTransaction*
+  name: HasActiveTransaction
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_HasActiveTransaction_
+  commentId: Overload:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.HasActiveTransaction
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.HasActiveTransaction
+  nameWithType: VirtuosoManager.HasActiveTransaction
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.HasOpenConnection
+  name: HasOpenConnection
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_HasOpenConnection
+  commentId: P:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.HasOpenConnection
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.HasOpenConnection
+  nameWithType: VirtuosoManager.HasOpenConnection
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.HasOpenConnection*
+  name: HasOpenConnection
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_HasOpenConnection_
+  commentId: Overload:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.HasOpenConnection
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.HasOpenConnection
+  nameWithType: VirtuosoManager.HasOpenConnection
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IOBehaviour
+  name: IOBehaviour
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_IOBehaviour
+  commentId: P:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IOBehaviour
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IOBehaviour
+  nameWithType: VirtuosoManager.IOBehaviour
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IOBehaviour*
+  name: IOBehaviour
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_IOBehaviour_
+  commentId: Overload:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IOBehaviour
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IOBehaviour
+  nameWithType: VirtuosoManager.IOBehaviour
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IsReadOnly
+  name: IsReadOnly
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_IsReadOnly
+  commentId: P:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IsReadOnly
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IsReadOnly
+  nameWithType: VirtuosoManager.IsReadOnly
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IsReadOnly*
+  name: IsReadOnly
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_IsReadOnly_
+  commentId: Overload:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IsReadOnly
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IsReadOnly
+  nameWithType: VirtuosoManager.IsReadOnly
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IsReady
+  name: IsReady
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_IsReady
+  commentId: P:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IsReady
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IsReady
+  nameWithType: VirtuosoManager.IsReady
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IsReady*
+  name: IsReady
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_IsReady_
+  commentId: Overload:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IsReady
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.IsReady
+  nameWithType: VirtuosoManager.IsReady
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ListGraphs
+  name: ListGraphs()
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_ListGraphs
+  commentId: M:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ListGraphs
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ListGraphs()
+  nameWithType: VirtuosoManager.ListGraphs()
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ListGraphs*
+  name: ListGraphs
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_ListGraphs_
+  commentId: Overload:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ListGraphs
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ListGraphs
+  nameWithType: VirtuosoManager.ListGraphs
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ListGraphsSupported
+  name: ListGraphsSupported
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_ListGraphsSupported
+  commentId: P:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ListGraphsSupported
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ListGraphsSupported
+  nameWithType: VirtuosoManager.ListGraphsSupported
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ListGraphsSupported*
+  name: ListGraphsSupported
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_ListGraphsSupported_
+  commentId: Overload:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ListGraphsSupported
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ListGraphsSupported
+  nameWithType: VirtuosoManager.ListGraphsSupported
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph(VDS.RDF.IGraph,System.String)
+  name: LoadGraph(IGraph, String)
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_LoadGraph_VDS_RDF_IGraph_System_String_
+  commentId: M:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph(VDS.RDF.IGraph,System.String)
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph(VDS.RDF.IGraph, System.String)
+  nameWithType: VirtuosoManager.LoadGraph(IGraph, String)
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph(VDS.RDF.IGraph,System.Uri)
+  name: LoadGraph(IGraph, Uri)
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_LoadGraph_VDS_RDF_IGraph_System_Uri_
+  commentId: M:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph(VDS.RDF.IGraph,System.Uri)
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph(VDS.RDF.IGraph, System.Uri)
+  nameWithType: VirtuosoManager.LoadGraph(IGraph, Uri)
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph(VDS.RDF.IRdfHandler,System.String)
+  name: LoadGraph(IRdfHandler, String)
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_LoadGraph_VDS_RDF_IRdfHandler_System_String_
+  commentId: M:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph(VDS.RDF.IRdfHandler,System.String)
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph(VDS.RDF.IRdfHandler, System.String)
+  nameWithType: VirtuosoManager.LoadGraph(IRdfHandler, String)
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph(VDS.RDF.IRdfHandler,System.Uri)
+  name: LoadGraph(IRdfHandler, Uri)
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_LoadGraph_VDS_RDF_IRdfHandler_System_Uri_
+  commentId: M:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph(VDS.RDF.IRdfHandler,System.Uri)
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph(VDS.RDF.IRdfHandler, System.Uri)
+  nameWithType: VirtuosoManager.LoadGraph(IRdfHandler, Uri)
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph*
+  name: LoadGraph
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_LoadGraph_
+  commentId: Overload:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.LoadGraph
+  nameWithType: VirtuosoManager.LoadGraph
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Query(System.String)
+  name: Query(String)
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_Query_System_String_
+  commentId: M:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Query(System.String)
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Query(System.String)
+  nameWithType: VirtuosoManager.Query(String)
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Query(VDS.RDF.IRdfHandler,VDS.RDF.ISparqlResultsHandler,System.String)
+  name: Query(IRdfHandler, ISparqlResultsHandler, String)
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_Query_VDS_RDF_IRdfHandler_VDS_RDF_ISparqlResultsHandler_System_String_
+  commentId: M:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Query(VDS.RDF.IRdfHandler,VDS.RDF.ISparqlResultsHandler,System.String)
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Query(VDS.RDF.IRdfHandler, VDS.RDF.ISparqlResultsHandler, System.String)
+  nameWithType: VirtuosoManager.Query(IRdfHandler, ISparqlResultsHandler, String)
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Query*
+  name: Query
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_Query_
+  commentId: Overload:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Query
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Query
+  nameWithType: VirtuosoManager.Query
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.SaveGraph(VDS.RDF.IGraph)
+  name: SaveGraph(IGraph)
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_SaveGraph_VDS_RDF_IGraph_
+  commentId: M:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.SaveGraph(VDS.RDF.IGraph)
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.SaveGraph(VDS.RDF.IGraph)
+  nameWithType: VirtuosoManager.SaveGraph(IGraph)
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.SaveGraph*
+  name: SaveGraph
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_SaveGraph_
+  commentId: Overload:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.SaveGraph
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.SaveGraph
+  nameWithType: VirtuosoManager.SaveGraph
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ToString
+  name: ToString()
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_ToString
+  commentId: M:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ToString
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ToString()
+  nameWithType: VirtuosoManager.ToString()
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ToString*
+  name: ToString
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_ToString_
+  commentId: Overload:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ToString
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.ToString
+  nameWithType: VirtuosoManager.ToString
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Update(System.String)
+  name: Update(String)
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_Update_System_String_
+  commentId: M:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Update(System.String)
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Update(System.String)
+  nameWithType: VirtuosoManager.Update(String)
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Update*
+  name: Update
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_Update_
+  commentId: Overload:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Update
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.Update
+  nameWithType: VirtuosoManager.Update
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateGraph(System.String,System.Collections.Generic.IEnumerable{VDS.RDF.Triple},System.Collections.Generic.IEnumerable{VDS.RDF.Triple})
+  name: UpdateGraph(String, IEnumerable<Triple>, IEnumerable<Triple>)
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_UpdateGraph_System_String_System_Collections_Generic_IEnumerable_VDS_RDF_Triple__System_Collections_Generic_IEnumerable_VDS_RDF_Triple__
+  commentId: M:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateGraph(System.String,System.Collections.Generic.IEnumerable{VDS.RDF.Triple},System.Collections.Generic.IEnumerable{VDS.RDF.Triple})
+  name.vb: UpdateGraph(String, IEnumerable(Of Triple), IEnumerable(Of Triple))
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateGraph(System.String, System.Collections.Generic.IEnumerable<VDS.RDF.Triple>, System.Collections.Generic.IEnumerable<VDS.RDF.Triple>)
+  fullName.vb: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateGraph(System.String, System.Collections.Generic.IEnumerable(Of VDS.RDF.Triple), System.Collections.Generic.IEnumerable(Of VDS.RDF.Triple))
+  nameWithType: VirtuosoManager.UpdateGraph(String, IEnumerable<Triple>, IEnumerable<Triple>)
+  nameWithType.vb: VirtuosoManager.UpdateGraph(String, IEnumerable(Of Triple), IEnumerable(Of Triple))
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateGraph(System.Uri,System.Collections.Generic.IEnumerable{VDS.RDF.Triple},System.Collections.Generic.IEnumerable{VDS.RDF.Triple})
+  name: UpdateGraph(Uri, IEnumerable<Triple>, IEnumerable<Triple>)
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_UpdateGraph_System_Uri_System_Collections_Generic_IEnumerable_VDS_RDF_Triple__System_Collections_Generic_IEnumerable_VDS_RDF_Triple__
+  commentId: M:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateGraph(System.Uri,System.Collections.Generic.IEnumerable{VDS.RDF.Triple},System.Collections.Generic.IEnumerable{VDS.RDF.Triple})
+  name.vb: UpdateGraph(Uri, IEnumerable(Of Triple), IEnumerable(Of Triple))
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateGraph(System.Uri, System.Collections.Generic.IEnumerable<VDS.RDF.Triple>, System.Collections.Generic.IEnumerable<VDS.RDF.Triple>)
+  fullName.vb: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateGraph(System.Uri, System.Collections.Generic.IEnumerable(Of VDS.RDF.Triple), System.Collections.Generic.IEnumerable(Of VDS.RDF.Triple))
+  nameWithType: VirtuosoManager.UpdateGraph(Uri, IEnumerable<Triple>, IEnumerable<Triple>)
+  nameWithType.vb: VirtuosoManager.UpdateGraph(Uri, IEnumerable(Of Triple), IEnumerable(Of Triple))
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateGraph*
+  name: UpdateGraph
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_UpdateGraph_
+  commentId: Overload:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateGraph
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateGraph
+  nameWithType: VirtuosoManager.UpdateGraph
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateSupported
+  name: UpdateSupported
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_UpdateSupported
+  commentId: P:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateSupported
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateSupported
+  nameWithType: VirtuosoManager.UpdateSupported
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateSupported*
+  name: UpdateSupported
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoManager_UpdateSupported_
+  commentId: Overload:Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateSupported
+  isSpec: "True"
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoManager.UpdateSupported
+  nameWithType: VirtuosoManager.UpdateSupported
 - uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoStoreProvider
   name: VirtuosoStoreProvider
   href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoStoreProvider.html
@@ -6172,13 +6719,13 @@ references:
   isSpec: "True"
   fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoStoreProvider.VirtuosoStoreProvider
   nameWithType: VirtuosoStoreProvider.VirtuosoStoreProvider
-- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoStoreProvider.GetStore(Dictionary{System.String,System.String})
+- uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoStoreProvider.GetStore(System.Collections.Generic.Dictionary{System.String,System.String})
   name: GetStore(Dictionary<String, String>)
-  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoStoreProvider.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoStoreProvider_GetStore_Dictionary_System_String_System_String__
-  commentId: M:Semiodesk.Trinity.Store.Virtuoso.VirtuosoStoreProvider.GetStore(Dictionary{System.String,System.String})
+  href: api/Semiodesk.Trinity.Store.Virtuoso.VirtuosoStoreProvider.html#Semiodesk_Trinity_Store_Virtuoso_VirtuosoStoreProvider_GetStore_System_Collections_Generic_Dictionary_System_String_System_String__
+  commentId: M:Semiodesk.Trinity.Store.Virtuoso.VirtuosoStoreProvider.GetStore(System.Collections.Generic.Dictionary{System.String,System.String})
   name.vb: GetStore(Dictionary(Of String, String))
-  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoStoreProvider.GetStore(Dictionary<System.String, System.String>)
-  fullName.vb: Semiodesk.Trinity.Store.Virtuoso.VirtuosoStoreProvider.GetStore(Dictionary(Of System.String, System.String))
+  fullName: Semiodesk.Trinity.Store.Virtuoso.VirtuosoStoreProvider.GetStore(System.Collections.Generic.Dictionary<System.String, System.String>)
+  fullName.vb: Semiodesk.Trinity.Store.Virtuoso.VirtuosoStoreProvider.GetStore(System.Collections.Generic.Dictionary(Of System.String, System.String))
   nameWithType: VirtuosoStoreProvider.GetStore(Dictionary<String, String>)
   nameWithType.vb: VirtuosoStoreProvider.GetStore(Dictionary(Of String, String))
 - uid: Semiodesk.Trinity.Store.Virtuoso.VirtuosoStoreProvider.GetStore*
@@ -6515,12 +7062,12 @@ references:
   isSpec: "True"
   fullName: Semiodesk.Trinity.StoreBase.RemoveModel
   nameWithType: StoreBase.RemoveModel
-- uid: Semiodesk.Trinity.StoreBase.Write(System.IO.Stream,System.Uri,Semiodesk.Trinity.RdfSerializationFormat)
-  name: Write(Stream, Uri, RdfSerializationFormat)
-  href: api/Semiodesk.Trinity.StoreBase.html#Semiodesk_Trinity_StoreBase_Write_System_IO_Stream_System_Uri_Semiodesk_Trinity_RdfSerializationFormat_
-  commentId: M:Semiodesk.Trinity.StoreBase.Write(System.IO.Stream,System.Uri,Semiodesk.Trinity.RdfSerializationFormat)
-  fullName: Semiodesk.Trinity.StoreBase.Write(System.IO.Stream, System.Uri, Semiodesk.Trinity.RdfSerializationFormat)
-  nameWithType: StoreBase.Write(Stream, Uri, RdfSerializationFormat)
+- uid: Semiodesk.Trinity.StoreBase.Write(System.IO.Stream,System.Uri,Semiodesk.Trinity.RdfSerializationFormat,Semiodesk.Trinity.INamespaceMap)
+  name: Write(Stream, Uri, RdfSerializationFormat, INamespaceMap)
+  href: api/Semiodesk.Trinity.StoreBase.html#Semiodesk_Trinity_StoreBase_Write_System_IO_Stream_System_Uri_Semiodesk_Trinity_RdfSerializationFormat_Semiodesk_Trinity_INamespaceMap_
+  commentId: M:Semiodesk.Trinity.StoreBase.Write(System.IO.Stream,System.Uri,Semiodesk.Trinity.RdfSerializationFormat,Semiodesk.Trinity.INamespaceMap)
+  fullName: Semiodesk.Trinity.StoreBase.Write(System.IO.Stream, System.Uri, Semiodesk.Trinity.RdfSerializationFormat, Semiodesk.Trinity.INamespaceMap)
+  nameWithType: StoreBase.Write(Stream, Uri, RdfSerializationFormat, INamespaceMap)
 - uid: Semiodesk.Trinity.StoreBase.Write*
   name: Write
   href: api/Semiodesk.Trinity.StoreBase.html#Semiodesk_Trinity_StoreBase_Write_
@@ -6586,24 +7133,12 @@ references:
   isSpec: "True"
   fullName: Semiodesk.Trinity.StoreFactory.CreateStoreFromConfiguration
   nameWithType: StoreFactory.CreateStoreFromConfiguration
-- uid: Semiodesk.Trinity.StoreFactory.LoadProvider(System.IO.FileInfo)
-  name: LoadProvider(FileInfo)
-  href: api/Semiodesk.Trinity.StoreFactory.html#Semiodesk_Trinity_StoreFactory_LoadProvider_System_IO_FileInfo_
-  commentId: M:Semiodesk.Trinity.StoreFactory.LoadProvider(System.IO.FileInfo)
-  fullName: Semiodesk.Trinity.StoreFactory.LoadProvider(System.IO.FileInfo)
-  nameWithType: StoreFactory.LoadProvider(FileInfo)
-- uid: Semiodesk.Trinity.StoreFactory.LoadProvider(System.Reflection.Assembly)
-  name: LoadProvider(Assembly)
-  href: api/Semiodesk.Trinity.StoreFactory.html#Semiodesk_Trinity_StoreFactory_LoadProvider_System_Reflection_Assembly_
-  commentId: M:Semiodesk.Trinity.StoreFactory.LoadProvider(System.Reflection.Assembly)
-  fullName: Semiodesk.Trinity.StoreFactory.LoadProvider(System.Reflection.Assembly)
-  nameWithType: StoreFactory.LoadProvider(Assembly)
-- uid: Semiodesk.Trinity.StoreFactory.LoadProvider(System.String)
-  name: LoadProvider(String)
-  href: api/Semiodesk.Trinity.StoreFactory.html#Semiodesk_Trinity_StoreFactory_LoadProvider_System_String_
-  commentId: M:Semiodesk.Trinity.StoreFactory.LoadProvider(System.String)
-  fullName: Semiodesk.Trinity.StoreFactory.LoadProvider(System.String)
-  nameWithType: StoreFactory.LoadProvider(String)
+- uid: Semiodesk.Trinity.StoreFactory.LoadProvider(Semiodesk.Trinity.StoreProvider)
+  name: LoadProvider(StoreProvider)
+  href: api/Semiodesk.Trinity.StoreFactory.html#Semiodesk_Trinity_StoreFactory_LoadProvider_Semiodesk_Trinity_StoreProvider_
+  commentId: M:Semiodesk.Trinity.StoreFactory.LoadProvider(Semiodesk.Trinity.StoreProvider)
+  fullName: Semiodesk.Trinity.StoreFactory.LoadProvider(Semiodesk.Trinity.StoreProvider)
+  nameWithType: StoreFactory.LoadProvider(StoreProvider)
 - uid: Semiodesk.Trinity.StoreFactory.LoadProvider*
   name: LoadProvider
   href: api/Semiodesk.Trinity.StoreFactory.html#Semiodesk_Trinity_StoreFactory_LoadProvider_
@@ -6611,6 +7146,15 @@ references:
   isSpec: "True"
   fullName: Semiodesk.Trinity.StoreFactory.LoadProvider
   nameWithType: StoreFactory.LoadProvider
+- uid: Semiodesk.Trinity.StoreFactory.LoadProvider``1
+  name: LoadProvider<T>()
+  href: api/Semiodesk.Trinity.StoreFactory.html#Semiodesk_Trinity_StoreFactory_LoadProvider__1
+  commentId: M:Semiodesk.Trinity.StoreFactory.LoadProvider``1
+  name.vb: LoadProvider(Of T)()
+  fullName: Semiodesk.Trinity.StoreFactory.LoadProvider<T>()
+  fullName.vb: Semiodesk.Trinity.StoreFactory.LoadProvider(Of T)()
+  nameWithType: StoreFactory.LoadProvider<T>()
+  nameWithType.vb: StoreFactory.LoadProvider(Of T)()
 - uid: Semiodesk.Trinity.StoreFactory.TestConnectionString(System.String)
   name: TestConnectionString(String)
   href: api/Semiodesk.Trinity.StoreFactory.html#Semiodesk_Trinity_StoreFactory_TestConnectionString_System_String_

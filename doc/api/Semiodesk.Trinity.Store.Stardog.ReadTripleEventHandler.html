@@ -5,12 +5,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Trinity RDF | Enum FilterOperation
+    <title>Trinity RDF | Delegate ReadTripleEventHandler
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Enum FilterOperation
+    <meta name="title" content="Delegate ReadTripleEventHandler
    ">
-    <meta name="generator" content="docfx 2.43.2.0">
+    <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -24,6 +24,8 @@
   </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
+        
+        <a id="page-top"></a>
         
         <nav class="navbar navbar-docfx navbar-expand-lg navbar-light fixed-top" role="navigation" id="mainNav">
         	<div class="container-fluid">
@@ -70,72 +72,44 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Semiodesk.Trinity.FilterOperation">
+            <article class="content wrap" id="_content" data-uid="Semiodesk.Trinity.Store.Stardog.ReadTripleEventHandler">
   
   
-  <h1 id="Semiodesk_Trinity_FilterOperation" data-uid="Semiodesk.Trinity.FilterOperation" class="text-break">Enum FilterOperation
+  <h1 id="Semiodesk_Trinity_Store_Stardog_ReadTripleEventHandler" data-uid="Semiodesk.Trinity.Store.Stardog.ReadTripleEventHandler" class="text-break">Delegate ReadTripleEventHandler
   </h1>
-  <div class="markdown level0 summary"><p>Available filter operations.</p>
+  <div class="markdown level0 summary"><p>Handle events when during reading of an RDF file a triple has been read.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Semiodesk.Trinity.html">Semiodesk.Trinity</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Semiodesk.Trinity.Store.Stardog.html">Semiodesk.Trinity.Store.Stardog</a></h6>
   <h6><strong>Assembly</strong>: Semiodesk.Trinity.dll</h6>
-  <h5 id="Semiodesk_Trinity_FilterOperation_syntax">Syntax</h5>
+  <h5 id="Semiodesk_Trinity_Store_Stardog_ReadTripleEventHandler_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum FilterOperation</code></pre>
+    <pre><code class="lang-csharp hljs">public delegate void ReadTripleEventHandler(object sender, Triple triple);</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
+        <th>Type</th>
         <th>Name</th>
         <th>Description</th>
       </tr>
-    <thead>
+    </thead>
     <tbody>
       <tr>
-        <td id="Semiodesk_Trinity_FilterOperation_Contains">Contains</td>
-        <td><p>Contains</p>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">sender</span></td>
+        <td><p>The source of the event.</p>
 </td>
       </tr>
       <tr>
-        <td id="Semiodesk_Trinity_FilterOperation_Equal">Equal</td>
-        <td><p>Equal (==)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Semiodesk_Trinity_FilterOperation_GreaterOrEqual">GreaterOrEqual</td>
-        <td><p>Greater or Eqal (&gt;=)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Semiodesk_Trinity_FilterOperation_GreaterThan">GreaterThan</td>
-        <td><p>Greater than (&gt;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Semiodesk_Trinity_FilterOperation_LessOrEqual">LessOrEqual</td>
-        <td><p>Less or Equal (&lt;=)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Semiodesk_Trinity_FilterOperation_LessThan">LessThan</td>
-        <td><p>Less Than (&lt;)</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Semiodesk_Trinity_FilterOperation_None">None</td>
-        <td><p>No filter</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Semiodesk_Trinity_FilterOperation_NotEqual">NotEqual</td>
-        <td><p>Not Equal (!=)</p>
+        <td><span class="xref">VDS.RDF.Triple</span></td>
+        <td><span class="parametername">triple</span></td>
+        <td><p>The triple.</p>
 </td>
       </tr>
     </tbody>
-  </thead></thead></table>
+  </table>
 </article>
           </div>
           
@@ -144,10 +118,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_FilterOperation.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.FilterOperation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_Store_Stardog_ReadTripleEventHandler.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.Store.Stardog.ReadTripleEventHandler%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Query/FilterOperation.cs/#L33" class="contribution-link">View Source</a>
+                    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Stores/Stardog/StardogRdfHandler.cs/#L97" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

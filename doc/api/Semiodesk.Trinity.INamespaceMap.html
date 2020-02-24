@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Trinity RDF | Class FileSystemInfoExtensions
+    <title>Trinity RDF | Interface INamespaceMap
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class FileSystemInfoExtensions
+    <meta name="title" content="Interface INamespaceMap
    ">
     <meta name="generator" content="docfx 2.44.0.0">
     
@@ -72,99 +72,71 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Semiodesk.Trinity.FileSystemInfoExtensions">
+            <article class="content wrap" id="_content" data-uid="Semiodesk.Trinity.INamespaceMap">
   
   
-  <h1 id="Semiodesk_Trinity_FileSystemInfoExtensions" data-uid="Semiodesk.Trinity.FileSystemInfoExtensions" class="text-break">Class FileSystemInfoExtensions
+  <h1 id="Semiodesk_Trinity_INamespaceMap" data-uid="Semiodesk.Trinity.INamespaceMap" class="text-break">Interface INamespaceMap
   </h1>
-  <div class="markdown level0 summary"><p>Extension to FileSystemInfo concerting UriRef handling</p>
+  <div class="markdown level0 summary"><p>Exposes a dictionary which maps prefixes to namespace URIs.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">FileSystemInfoExtensions</span></div>
-  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
+      <span class="xref">System.Collections.Generic.IDictionary&lt;System.String, System.Uri&gt;.Add(System.String, System.Uri)</span>
     </div>
     <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+      <span class="xref">System.Collections.Generic.IDictionary&lt;System.String, System.Uri&gt;.ContainsKey(System.String)</span>
     </div>
     <div>
-      <span class="xref">System.Object.GetHashCode()</span>
+      <span class="xref">System.Collections.Generic.IDictionary&lt;System.String, System.Uri&gt;.Remove(System.String)</span>
     </div>
     <div>
-      <span class="xref">System.Object.GetType()</span>
+      <span class="xref">System.Collections.Generic.IDictionary&lt;System.String, System.Uri&gt;.TryGetValue(System.String, System.Uri)</span>
     </div>
     <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
+      <span class="xref">System.Collections.Generic.IDictionary&lt;System.String, System.Uri&gt;.Item[System.String]</span>
     </div>
     <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+      <span class="xref">System.Collections.Generic.IDictionary&lt;System.String, System.Uri&gt;.Keys</span>
     </div>
     <div>
-      <span class="xref">System.Object.ToString()</span>
+      <span class="xref">System.Collections.Generic.IDictionary&lt;System.String, System.Uri&gt;.Values</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String, System.Uri&gt;&gt;.Add(System.Collections.Generic.KeyValuePair&lt;System.String, System.Uri&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String, System.Uri&gt;&gt;.Clear()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String, System.Uri&gt;&gt;.Contains(System.Collections.Generic.KeyValuePair&lt;System.String, System.Uri&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String, System.Uri&gt;&gt;.CopyTo(System.Collections.Generic.KeyValuePair&lt;System.String, System.Uri&gt;[], System.Int32)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String, System.Uri&gt;&gt;.Remove(System.Collections.Generic.KeyValuePair&lt;System.String, System.Uri&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String, System.Uri&gt;&gt;.Count</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String, System.Uri&gt;&gt;.IsReadOnly</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String, System.Uri&gt;&gt;.GetEnumerator()</span>
+    </div>
+    <div>
+      <span class="xref">System.Collections.IEnumerable.GetEnumerator()</span>
     </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Semiodesk.Trinity.html">Semiodesk.Trinity</a></h6>
   <h6><strong>Assembly</strong>: Semiodesk.Trinity.dll</h6>
-  <h5 id="Semiodesk_Trinity_FileSystemInfoExtensions_syntax">Syntax</h5>
+  <h5 id="Semiodesk_Trinity_INamespaceMap_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class FileSystemInfoExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">public interface INamespaceMap : IDictionary&lt;string, Uri&gt;, ICollection&lt;KeyValuePair&lt;string, Uri&gt;&gt;, IEnumerable&lt;KeyValuePair&lt;string, Uri&gt;&gt;, IEnumerable</code></pre>
   </div>
-  <h3 id="methods">Methods
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_FileSystemInfoExtensions_ToUriRef_System_IO_FileSystemInfo_.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.FileSystemInfoExtensions.ToUriRef(System.IO.FileSystemInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Extensions/FileSystemInfoExtensions.cs/#L43">View Source</a>
-  </span>
-  <a id="Semiodesk_Trinity_FileSystemInfoExtensions_ToUriRef_" data-uid="Semiodesk.Trinity.FileSystemInfoExtensions.ToUriRef*"></a>
-  <h4 id="Semiodesk_Trinity_FileSystemInfoExtensions_ToUriRef_System_IO_FileSystemInfo_" data-uid="Semiodesk.Trinity.FileSystemInfoExtensions.ToUriRef(System.IO.FileSystemInfo)">ToUriRef(FileSystemInfo)</h4>
-  <div class="markdown level1 summary"><p>Create a UriRef from a FileSystemInfo</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static UriRef ToUriRef(this FileSystemInfo fileInfo)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.IO.FileSystemInfo</span></td>
-        <td><span class="parametername">fileInfo</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Semiodesk.Trinity.UriRef.html">UriRef</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 </article>
           </div>
           
@@ -173,10 +145,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_FileSystemInfoExtensions.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.FileSystemInfoExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/semiodesk/trinity-rdf/new/develop/apiSpec/new?filename=Semiodesk_Trinity_INamespaceMap.md&amp;value=---%0Auid%3A%20Semiodesk.Trinity.INamespaceMap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/Extensions/FileSystemInfoExtensions.cs/#L36" class="contribution-link">View Source</a>
+                    <a href="https://github.com/semiodesk/trinity-rdf/blob/develop/Trinity/NamespaceMap.cs/#L9" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
